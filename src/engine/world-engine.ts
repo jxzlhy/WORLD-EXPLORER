@@ -19,6 +19,8 @@ import type {
 export interface WorldEngineOptions {
   countriesUrl: string
   destinations: Destination[]
+  /** 尊重 prefers-reduced-motion:关闭呼吸脉冲等持续动画 */
+  reducedMotion?: boolean
 }
 
 type Lifecycle = 'idle' | 'initializing' | 'ready' | 'destroyed'
@@ -144,12 +146,14 @@ export class WorldEngine implements IWorldEngine {
     await this.countries.load(this.viewer, this.options.countriesUrl)
     if (this.aborted(seq)) return
 
-    this.markers.load(this.viewer, this.options.destinations)
+    this.markers.load(this.viewer, this.options.destinations, {
+      pulse: !this.options.reducedMotion,
+    })
     if (this.aborted(seq)) return
 
     this.camera = new CameraController(this.viewer)
 
-    // —— 点选分发 ——
+    // —— 点选分发 + 悬停反馈 ——
     this.pickHandler = new Cesium.ScreenSpaceEventHandler(this.viewer.canvas)
     this.pickHandler.setInputAction(
       (movement: { position: Cesium.Cartesian2 }) => {
@@ -157,6 +161,21 @@ export class WorldEngine implements IWorldEngine {
       },
       Cesium.ScreenSpaceEventType.LEFT_CLICK,
     )
+    this.pickHandler.setInputAction(
+      (movement: { endPosition: Cesium.Cartesian2 }) => {
+        this.updateHover(movement.endPosition)
+      },
+      Cesium.ScreenSpaceEventType.MOUSE_MOVE,
+    )
+  }
+
+  private updateHover(position: Cesium.Cartesian2): void {
+    if (!this.viewer || this.viewer.isDestroyed()) return
+    const picked = this.viewer.scene.pick(position)
+    const object: unknown = Cesium.defined(picked) ? (picked.id ?? picked.primitive) : undefined
+    const destinationId = this.markers.destinationIdOf(object)
+    this.markers.setHover(destinationId ?? null)
+    this.viewer.canvas.style.cursor = destinationId ? 'pointer' : ''
   }
 
   private dispatchPick(position: Cesium.Cartesian2): void {

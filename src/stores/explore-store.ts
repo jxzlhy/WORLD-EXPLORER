@@ -68,7 +68,7 @@ export const useExploreStore = defineStore('explore', {
       this.loaded = true
     },
 
-    /** 选中国家:飞往国家中心(由城市均值估算),打开国家面板 */
+    /** 选中国家:飞往国家中心(环绕校正的地理均值),打开国家面板 */
     selectCountry(countryId: string) {
       const country = this.countryById[countryId]
       if (!country) return
@@ -80,8 +80,18 @@ export const useExploreStore = defineStore('explore', {
       let lon = 0
       let lat = 0
       if (samples.length) {
-        lon = samples.reduce((s, [x]) => s + x, 0) / samples.length
-        lat = samples.reduce((s, [, y]) => s + y, 0) / samples.length
+        // 跨日期变更线校正:以首个经度为参考归一到 ±180 连续区间再平均(I-07)
+        const refLon = samples[0]![0]
+        const normalized = samples.map(([x, y]) => {
+          let l = x
+          while (l - refLon > 180) l -= 360
+          while (l - refLon < -180) l += 360
+          return [l, y] as const
+        })
+        lon = normalized.reduce((s, [x]) => s + x, 0) / normalized.length
+        lat = normalized.reduce((s, [, y]) => s + y, 0) / normalized.length
+        if (lon > 180) lon -= 360
+        if (lon < -180) lon += 360
       }
       this.panel = { kind: 'country', countryId }
       this.pendingFlight = { longitude: lon, latitude: lat, height: 9_500_000 }

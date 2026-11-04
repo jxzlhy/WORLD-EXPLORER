@@ -55,6 +55,7 @@ async function bootstrap(): Promise<void> {
   engine = new WorldEngine({
     countriesUrl: '/data/ne_110m_countries.geojson',
     destinations: explore.destinations,
+    reducedMotion: prefersReducedMotion,
   })
   try {
     await engine.initialize(globeEl.value)
