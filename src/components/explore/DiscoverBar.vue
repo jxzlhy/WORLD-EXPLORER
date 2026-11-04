@@ -18,6 +18,7 @@ const featured = computed(() => explore.todayFeatured())
       <span class="we-caps-label gold">今日精选</span>
       <span class="name">{{ featured.name }}</span>
     </button>
+    <WeButton variant="glass" @click="explore.goHome()" title="回到全球视角">◍ 全球视角</WeButton>
     <WeButton variant="spatial" @click="explore.randomDestination()">
       ✦ 随机探索
     </WeButton>

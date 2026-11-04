@@ -13,13 +13,14 @@ const ui = useUiStore()
 const explore = useExploreStore()
 const myWorld = useMyWorldStore()
 
-type Tab = 'favorites' | 'wantToGo' | 'visited'
+type Tab = 'favorites' | 'wantToGo' | 'visited' | 'recent'
 const tab = ref<Tab>('favorites')
 
 const tabs: Array<{ id: Tab; label: string }> = [
   { id: 'favorites', label: '收藏' },
   { id: 'wantToGo', label: '想去' },
   { id: 'visited', label: '去过' },
+  { id: 'recent', label: '最近探索' },
 ]
 
 const list = computed(() => {
@@ -28,7 +29,9 @@ const list = computed(() => {
       ? myWorld.favorites
       : tab.value === 'wantToGo'
         ? myWorld.wantToGo
-        : myWorld.visited
+        : tab.value === 'recent'
+          ? explore.recentIds
+          : myWorld.visited
   return ids
     .map((id) => explore.destinationById.get(id))
     .filter((d): d is NonNullable<typeof d> => !!d)

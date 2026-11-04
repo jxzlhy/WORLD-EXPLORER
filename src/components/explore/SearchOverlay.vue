@@ -16,6 +16,11 @@ const { query, results } = useSearchIndex(() => ({
   destinations: explore.destinations,
 }))
 
+// 结果集变化时重置键盘索引(空结果回车越界修复,I-13)
+watch(results, () => {
+  activeIndex.value = 0
+})
+
 watch(
   () => ui.searchOpen,
   async (open) => {

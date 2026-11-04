@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import Fuse from 'fuse.js'
 import type { City, Country, Destination } from '../domain/types'
 import type { WorldData } from '../services/data-service'
+import { loadJson, saveJson } from '../services/storage-service'
 
 export type SelectionPanel =
   | { kind: 'none' }
@@ -30,6 +31,8 @@ export const useExploreStore = defineStore('explore', {
     panel: { kind: 'none' } as SelectionPanel,
     /** 选中流的镜头意图:面板打开前引擎先飞往该目标 */
     pendingFlight: null as { longitude: number; latitude: number; height: number } | null,
+    /** 探索历史(最近 12 个目的地,本地持久化) */
+    recentIds: sanitizeList(loadJson<unknown>('recent', [])),
   }),
 
   getters: {
@@ -97,12 +100,20 @@ export const useExploreStore = defineStore('explore', {
       this.pendingFlight = { longitude: lon, latitude: lat, height: 9_500_000 }
     },
 
-    /** 选中目的地:飞往目的地(近距离),打开档案面板 */
+    /** 选中目的地:飞往目的地(近距离),打开档案面板,记录探索历史 */
     selectDestination(destinationId: string) {
       const d = this.destinationById.get(destinationId)
       if (!d) return
       this.panel = { kind: 'destination', destinationId }
       this.pendingFlight = { longitude: d.longitude, latitude: d.latitude, height: 450_000 }
+      this.recentIds = [destinationId, ...this.recentIds.filter((x) => x !== destinationId)].slice(0, 12)
+      saveJson('recent', this.recentIds)
+    },
+
+    /** 回到全球视角(探索快捷操作) */
+    goHome() {
+      this.panel = { kind: 'none' }
+      this.pendingFlight = { longitude: 105, latitude: 30, height: 20_800_000 }
     },
 
     /** 仅飞行至城市上空(城市暂无独立档案,详见 ROADMAP V1.5) */
@@ -135,6 +146,11 @@ export const useExploreStore = defineStore('explore', {
     },
   },
 })
+
+/** 近期探索列表消毒 */
+function sanitizeList(v: unknown): string[] {
+  return Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []
+}
 
 /** 全局搜索(Fuse.js 模糊匹配,中/英/别名) */
 export function useSearchIndex(getSrc: () => {

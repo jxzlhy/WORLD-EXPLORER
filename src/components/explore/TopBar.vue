@@ -4,7 +4,7 @@ import { useUiStore } from '../../stores/ui-store'
 
 const ui = useUiStore()
 
-const plannedModules = ['DESTINATIONS', 'STORIES', 'JOURNEYS', 'CINEMA', 'WONDERS']
+const plannedModules = 'DESTINATIONS · STORIES · JOURNEYS · CINEMA · WONDERS(见 ROADMAP)'
 </script>
 
 <template>
@@ -19,15 +19,7 @@ const plannedModules = ['DESTINATIONS', 'STORIES', 'JOURNEYS', 'CINEMA', 'WONDER
 
     <nav class="nav" aria-label="主导航">
       <button class="nav-item active">WORLD</button>
-      <button
-        v-for="m in plannedModules"
-        :key="m"
-        class="nav-item planned"
-        :title="`${m} 模块规划中(见 ROADMAP)`"
-        disabled
-      >
-        {{ m }}
-      </button>
+      <button class="nav-item planned" :title="plannedModules" disabled>PLANNED</button>
       <button class="nav-item" :class="{ active: ui.myWorldOpen }" @click="ui.toggleMyWorld()">
         MY WORLD
       </button>

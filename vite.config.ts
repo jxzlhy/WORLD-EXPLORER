@@ -30,5 +30,14 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 4500,
+    rollupOptions: {
+      output: {
+        // Cesium 独立分包:主应用 chunk 体积与引擎解耦,缓存友好(I-11)
+        manualChunks: {
+          cesium: ['cesium'],
+          vue: ['vue', 'vue-router', 'pinia'],
+        },
+      },
+    },
   },
 })
