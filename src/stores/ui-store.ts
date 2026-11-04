@@ -19,6 +19,8 @@ export const useUiStore = defineStore('ui', {
     cameraInfo: null as CameraInfo | null,
     searchOpen: false,
     myWorldOpen: false,
+    /** 移动端控制抽屉(≤768px 时 LeftRail 收纳于此) */
+    mobileControlsOpen: false,
   }),
   actions: {
     setLayerVisible(layer: LayerId, visible: boolean) {
@@ -50,6 +52,9 @@ export const useUiStore = defineStore('ui', {
     },
     toggleMyWorld(open?: boolean) {
       this.myWorldOpen = open ?? !this.myWorldOpen
+    },
+    toggleMobileControls(open?: boolean) {
+      this.mobileControlsOpen = open ?? !this.mobileControlsOpen
     },
   },
 })

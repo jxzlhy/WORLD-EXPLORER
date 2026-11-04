@@ -66,5 +66,9 @@ const featured = computed(() => explore.todayFeatured())
     left: var(--we-sp-2);
     bottom: 12px;
   }
+  /* 小屏收纳:今日精选折叠进「随机探索」,降低底部拥挤度 */
+  .featured {
+    display: none;
+  }
 }
 </style>

@@ -13,7 +13,21 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
 </script>
 
 <template>
-  <aside class="left-rail glass-panel intro-item" aria-label="地球控制">
+  <!-- 移动端抽屉开关(仅 ≤768px 显示) -->
+  <button
+    class="rail-toggle glass-btn"
+    aria-label="地球控制"
+    :aria-expanded="ui.mobileControlsOpen"
+    @click="ui.toggleMobileControls()"
+  >
+    {{ ui.mobileControlsOpen ? '✕' : '⚙' }}
+  </button>
+
+  <aside
+    class="left-rail glass-panel intro-item"
+    :class="{ open: ui.mobileControlsOpen }"
+    aria-label="地球控制"
+  >
     <div class="section">
       <p class="we-caps-label">图层</p>
       <label class="row">
@@ -68,6 +82,25 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
 </template>
 
 <style scoped>
+.rail-toggle {
+  display: none;
+  position: fixed;
+  right: var(--we-sp-2);
+  bottom: 56px;
+  z-index: var(--we-z-panel);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--we-glass-border);
+  background: var(--we-glass-strong);
+  backdrop-filter: blur(var(--we-blur-soft));
+  -webkit-backdrop-filter: blur(var(--we-blur-soft));
+  color: var(--we-text);
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: var(--we-shadow-pop);
+}
+
 .left-rail {
   position: fixed;
   left: var(--we-sp-4);
@@ -137,13 +170,32 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
 }
 
 @media (max-width: 768px) {
+  .rail-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
   .left-rail {
     left: var(--we-sp-2);
+    right: var(--we-sp-2);
     top: auto;
-    bottom: 64px;
+    bottom: 104px;
     transform: none;
-    width: 176px;
+    width: auto;
+    max-height: 46vh;
+    overflow-y: auto;
     padding: var(--we-sp-3);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition:
+      opacity var(--we-dur-2) var(--we-ease-out),
+      transform var(--we-dur-2) var(--we-ease-out);
+  }
+  .left-rail.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 }
 </style>
