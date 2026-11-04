@@ -21,6 +21,7 @@
 | @vitejs/plugin-vue | 6.x | MIT | Vue SFC 支持 |
 | typescript / vue-tsc | 5.9.3 | Apache-2.0 | 类型检查 |
 | vite-plugin-static-copy | 3.x | MIT | 复制 Cesium 静态资源 |
+| @playwright/test | 1.64.1 | Apache-2.0 | E2E 自动化测试(V0.2;chromium-headless-shell 156 本地缓存,不入库) |
 | eslint / typescript-eslint / eslint-plugin-vue | 9/8/10 | MIT | 代码规范 |
 | prettier | 3.6.2 | MIT | 格式化 |
 | @types/node | 24.x | MIT | Node 类型 |

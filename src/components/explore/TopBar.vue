@@ -34,7 +34,7 @@ const plannedModules = ['DESTINATIONS', 'STORIES', 'JOURNEYS', 'CINEMA', 'WONDER
     </nav>
 
     <div class="actions">
-      <button class="search-btn" @click="ui.toggleSearch(true)">
+      <button class="search-btn" aria-label="搜索世界" @click="ui.toggleSearch(true)">
         <span aria-hidden="true">⌕</span>
         <span class="search-label">搜索世界</span>
         <kbd>⌘K</kbd>
@@ -198,6 +198,25 @@ const plannedModules = ['DESTINATIONS', 'STORIES', 'JOURNEYS', 'CINEMA', 'WONDER
   }
   .nav {
     padding-left: var(--we-sp-2);
+  }
+}
+@media (max-width: 480px) {
+  .topbar {
+    gap: var(--we-sp-2);
+    padding: 5px 10px;
+  }
+  .names {
+    display: none; /* 仅保留 ◉ 品牌符号 */
+  }
+  .design-link {
+    display: none; /* 设计实验页从状态栏仍可达 */
+  }
+  .search-btn kbd {
+    display: none;
+  }
+  .nav-item {
+    padding: 6px 8px;
+    font-size: 10px;
   }
 }
 </style>

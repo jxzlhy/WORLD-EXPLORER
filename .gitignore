@@ -18,6 +18,11 @@ downloads/
 *.log
 npm-debug.log*
 
+# playwright
+test-results/
+playwright-report/
+blob-report/
+
 # env / secrets
 .env
 .env.*

@@ -1,16 +1,18 @@
 import { defineStore } from 'pinia'
 import { loadJson, saveJson } from '../services/storage-service'
+import { sanitizeNotes, sanitizeStringList, type MyWorldData } from '../services/data-validator'
 
 /**
  * MY WORLD — 我的世界(本地数据,无账号)。
  * 收藏/去过/想去 三个列表,key 均为目的地 id。
+ * 读取即消毒:localStorage 中的脏数据不会进入 store(P0 数据安全)。
  */
 export const useMyWorldStore = defineStore('my-world', {
   state: () => ({
-    favorites: loadJson<string[]>('favorites', []),
-    visited: loadJson<string[]>('visited', []),
-    wantToGo: loadJson<string[]>('want-to-go', []),
-    notes: loadJson<Record<string, string>>('notes', {}),
+    favorites: sanitizeStringList(loadJson<unknown>('favorites', [])),
+    visited: sanitizeStringList(loadJson<unknown>('visited', [])),
+    wantToGo: sanitizeStringList(loadJson<unknown>('want-to-go', [])),
+    notes: sanitizeNotes(loadJson<unknown>('notes', {})),
   }),
 
   getters: {
@@ -51,6 +53,17 @@ export const useMyWorldStore = defineStore('my-world', {
         const { [id]: _removed, ...rest } = this.notes
         this.notes = rest
       }
+      saveJson('notes', this.notes)
+    },
+    /** 应用已校验的导入数据(仅接受 parseMyWorldImport 的合法产物) */
+    applyImport(data: MyWorldData) {
+      this.favorites = sanitizeStringList(data.favorites)
+      this.visited = sanitizeStringList(data.visited)
+      this.wantToGo = sanitizeStringList(data.wantToGo)
+      this.notes = sanitizeNotes(data.notes)
+      saveJson('favorites', this.favorites)
+      saveJson('visited', this.visited)
+      saveJson('want-to-go', this.wantToGo)
       saveJson('notes', this.notes)
     },
   },
