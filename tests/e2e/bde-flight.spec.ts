@@ -68,10 +68,11 @@ test('E. 面板滚动不缩放地球', async ({ page }) => {
   await input.fill('长城')
   await input.press('Enter')
   await expect(page.locator('.detail-panel .name')).toHaveText('万里长城')
-  await expect
-    .poll(() => readAltKm(page), { timeout: 30_000, intervals: [500] })
-    .toBeLessThan(1_000)
-
+  // 等待飞行彻底结束(避免读取到收敛中的相机高度)
+  await page.waitForFunction(
+    () => !(window as unknown as Record<string, any>).__WE_ENGINE__?.isFlying(),
+    { timeout: 30_000 },
+  )
   const altBefore = await readAltKm(page)
   const panel = page.locator('.detail-panel .scroll-area')
   await panel.hover()
