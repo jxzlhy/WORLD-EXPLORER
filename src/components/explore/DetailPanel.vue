@@ -45,12 +45,25 @@ function fmtCoord(v: number, pos: string, neg: string): string {
 
 <template>
   <Transition name="panel-slide">
-    <GlassPanel v-if="destination || country" strong class="detail-panel">
-      <button class="close" aria-label="关闭面板" @click="explore.closePanel()">✕</button>
+    <GlassPanel
+      v-if="destination || country"
+      strong
+      class="detail-panel"
+    >
+      <button
+        class="close"
+        aria-label="关闭面板"
+        @click="explore.closePanel()"
+      >
+        ✕
+      </button>
 
       <!-- ==================== 目的地档案 ==================== -->
       <template v-if="destination">
-        <div class="scroll-area" :key="destination.id">
+        <div
+          :key="destination.id"
+          class="scroll-area"
+        >
           <DestinationMedia
             :id="destination.id"
             :name="destination.name"
@@ -61,10 +74,16 @@ function fmtCoord(v: number, pos: string, neg: string): string {
           <header class="head">
             <p class="we-caps-label gold">
               {{ DESTINATION_TYPE_LABELS[destination.type] }}
-              <template v-if="destination.quality === 'S'"> · S 级档案</template>
+              <template v-if="destination.quality === 'S'">
+                · S 级档案
+              </template>
             </p>
-            <h1 class="name">{{ destination.name }}</h1>
-            <p class="en">{{ destination.nameEn }}</p>
+            <h1 class="name">
+              {{ destination.name }}
+            </h1>
+            <p class="en">
+              {{ destination.nameEn }}
+            </p>
             <div class="meta">
               <span class="mono">
                 {{ fmtCoord(destination.latitude, 'N', 'S') }}
@@ -81,23 +100,44 @@ function fmtCoord(v: number, pos: string, neg: string): string {
             </div>
           </header>
 
-          <p class="lead">{{ destination.summary }}</p>
+          <p class="lead">
+            {{ destination.summary }}
+          </p>
 
-          <div class="ornament" aria-hidden="true">
+          <div
+            class="ornament"
+            aria-hidden="true"
+          >
             <i /><span>✦</span><i />
           </div>
 
           <section class="story">
-            <p v-for="(para, i) in destination.story" :key="i">{{ para }}</p>
+            <p
+              v-for="(para, i) in destination.story"
+              :key="i"
+            >
+              {{ para }}
+            </p>
           </section>
 
-          <div v-if="destination.bestSeason" class="season">
+          <div
+            v-if="destination.bestSeason"
+            class="season"
+          >
             <span class="we-caps-label">推荐探索时间</span>
             <p>{{ destination.bestSeason }}</p>
           </div>
 
-          <div class="tags" v-if="destination.tags.length">
-            <WeTag v-for="t in destination.tags" :key="t">{{ t }}</WeTag>
+          <div
+            v-if="destination.tags.length"
+            class="tags"
+          >
+            <WeTag
+              v-for="t in destination.tags"
+              :key="t"
+            >
+              {{ t }}
+            </WeTag>
           </div>
 
           <div class="actions">
@@ -128,10 +168,19 @@ function fmtCoord(v: number, pos: string, neg: string): string {
           </div>
 
           <footer class="sources">
-            <p class="we-caps-label">资料来源</p>
+            <p class="we-caps-label">
+              资料来源
+            </p>
             <ul>
-              <li v-for="s in destination.sources" :key="s.url">
-                <a :href="s.url" target="_blank" rel="noopener noreferrer">{{ s.name }}</a>
+              <li
+                v-for="s in destination.sources"
+                :key="s.url"
+              >
+                <a
+                  :href="s.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >{{ s.name }}</a>
                 <span class="license">{{ s.license }}</span>
               </li>
             </ul>
@@ -141,20 +190,43 @@ function fmtCoord(v: number, pos: string, neg: string): string {
 
       <!-- ==================== 国家概览 ==================== -->
       <template v-else-if="country">
-        <div class="scroll-area" :key="country.id">
+        <div
+          :key="country.id"
+          class="scroll-area"
+        >
           <header class="head">
-            <p class="flag" aria-hidden="true">{{ flagEmoji(country.id) }}</p>
-            <p class="we-caps-label gold">{{ country.continent }}</p>
-            <h1 class="name">{{ country.name }}</h1>
-            <p class="en">{{ country.nameEn }}</p>
+            <p
+              class="flag"
+              aria-hidden="true"
+            >
+              {{ flagEmoji(country.id) }}
+            </p>
+            <p class="we-caps-label gold">
+              {{ country.continent }}
+            </p>
+            <h1 class="name">
+              {{ country.name }}
+            </h1>
+            <p class="en">
+              {{ country.nameEn }}
+            </p>
           </header>
 
-          <p class="lead">{{ country.summary }}</p>
+          <p class="lead">
+            {{ country.summary }}
+          </p>
 
-          <div class="ornament" aria-hidden="true"><i /><span>✦</span><i /></div>
+          <div
+            class="ornament"
+            aria-hidden="true"
+          >
+            <i /><span>✦</span><i />
+          </div>
 
           <section v-if="explore.citiesOfCountry(country.id).length">
-            <p class="we-caps-label">城市</p>
+            <p class="we-caps-label">
+              城市
+            </p>
             <div class="chips">
               <button
                 v-for="c in explore.citiesOfCountry(country.id)"
@@ -172,8 +244,14 @@ function fmtCoord(v: number, pos: string, neg: string): string {
               目的地 · {{ explore.destinationsOfCountry(country.id).length }}
             </p>
             <ul class="dest-list">
-              <li v-for="d in explore.destinationsOfCountry(country.id)" :key="d.id">
-                <button class="dest-item" @click="explore.selectDestination(d.id)">
+              <li
+                v-for="d in explore.destinationsOfCountry(country.id)"
+                :key="d.id"
+              >
+                <button
+                  class="dest-item"
+                  @click="explore.selectDestination(d.id)"
+                >
                   <i :style="{ background: typeColor(d) }" />
                   <span class="n">{{ d.name }}</span>
                   <span class="t">{{ DESTINATION_TYPE_LABELS[d.type] }}</span>

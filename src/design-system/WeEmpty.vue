@@ -12,9 +12,21 @@ withDefaults(
 
 <template>
   <div class="we-empty">
-    <div class="icon" aria-hidden="true">{{ icon }}</div>
-    <p class="title">{{ title }}</p>
-    <p v-if="hint" class="hint">{{ hint }}</p>
+    <div
+      class="icon"
+      aria-hidden="true"
+    >
+      {{ icon }}
+    </div>
+    <p class="title">
+      {{ title }}
+    </p>
+    <p
+      v-if="hint"
+      class="hint"
+    >
+      {{ hint }}
+    </p>
   </div>
 </template>
 

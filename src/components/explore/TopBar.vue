@@ -10,28 +10,54 @@ const plannedModules = 'DESTINATIONS · STORIES · JOURNEYS · CINEMA · WONDERS
 <template>
   <header class="topbar">
     <div class="brand">
-      <span class="glyph" aria-hidden="true">◉</span>
+      <span
+        class="glyph"
+        aria-hidden="true"
+      >◉</span>
       <div class="names">
         <strong>WORLD EXPLORER</strong>
         <span>世界探索计划</span>
       </div>
     </div>
 
-    <nav class="nav" aria-label="主导航">
-      <button class="nav-item active">WORLD</button>
-      <button class="nav-item planned" :title="plannedModules" disabled>PLANNED</button>
-      <button class="nav-item" :class="{ active: ui.myWorldOpen }" @click="ui.toggleMyWorld()">
+    <nav
+      class="nav"
+      aria-label="主导航"
+    >
+      <button class="nav-item active">
+        WORLD
+      </button>
+      <button
+        class="nav-item planned"
+        :title="plannedModules"
+        disabled
+      >
+        PLANNED
+      </button>
+      <button
+        class="nav-item"
+        :class="{ active: ui.myWorldOpen }"
+        @click="ui.toggleMyWorld()"
+      >
         MY WORLD
       </button>
     </nav>
 
     <div class="actions">
-      <button class="search-btn" aria-label="搜索世界" @click="ui.toggleSearch(true)">
+      <button
+        class="search-btn"
+        aria-label="搜索世界"
+        @click="ui.toggleSearch(true)"
+      >
         <span aria-hidden="true">⌕</span>
         <span class="search-label">搜索世界</span>
         <kbd>⌘K</kbd>
       </button>
-      <RouterLink class="design-link" to="/design" title="设计系统实验页">Aa</RouterLink>
+      <RouterLink
+        class="design-link"
+        to="/design"
+        title="设计系统实验页"
+      >Aa</RouterLink>
     </div>
   </header>
 </template>

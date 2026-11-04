@@ -2,6 +2,31 @@
 
 All notable changes to WORLD EXPLORER are documented here.
 
+## [0.2.0] — 2026-11-05(V0.2 QUALITY · IMMERSION · EXPERIENCE)
+
+### Added
+- 逐像素昼夜合成器:真实晨昏线(-12°~+3° smoothstep)+ 夜侧城市灯光,5 分钟自动重合成,失败回退
+- Playwright E2E 体系:11 用例(启动/飞行/中断/连续目标/滚动隔离/MY WORLD/生命周期/响应式)全绿
+- 数据运行时校验(零依赖):结构/坐标/关联/重复 ID/媒体降级,坏数据剔除并报告
+- MY WORLD 导入安全:校验→预览→确认,拒绝未知 schema/类型错误/未知 ID(含回滚语义)
+- 标签屏幕空间网格防碰撞(优先级:选中>S 级>遗产/地标>普通)
+- 标记悬停放大 + pointer 光标;选中呼吸脉冲(reduced-motion 静态回退)
+- 探索历史(最近 12)+ MY WORLD「最近探索」标签页;全球视角一键返回
+- 移动端抽屉式控制面板;小屏底部重排(状态栏上移/按钮纵排)
+- 引擎生命周期状态机(idle→initializing→ready→destroyed)+ 初始化失败重试
+- 性能预算表(docs/05-ENGINEERING/PERFORMANCE-RULES.md)
+
+### Changed
+- Cesium 独立分包:应用代码 4.48MB→143KB(gzip 53KB)
+- 相机交互:单击不再打断自动旋转,拖动阈值 6px;程序飞行抵达后停止自动旋转
+- 国家中心跨日期变更线校正;TopBar 规划模块收纳为 PLANNED 单项
+- 搜索键盘索引随结果集重置;ESLint 全仓 0 error
+
+### Fixed
+- Cesium credit 署名恢复展示(NASA/Natural Earth/GIBS 署名义务,P0)
+- 初始化中途销毁的资源竞态;异步续体孤儿监听
+- MY WORLD 导入可被脏数据覆盖的 P0 缺陷(E2E 捕获后修复)
+
 ## [0.1.0] — 2026-11-05(通宵自主执行首夜)
 
 ### Added

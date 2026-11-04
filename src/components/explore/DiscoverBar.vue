@@ -18,8 +18,17 @@ const featured = computed(() => explore.todayFeatured())
       <span class="we-caps-label gold">今日精选</span>
       <span class="name">{{ featured.name }}</span>
     </button>
-    <WeButton variant="glass" @click="explore.goHome()" title="回到全球视角">◍ 全球视角</WeButton>
-    <WeButton variant="spatial" @click="explore.randomDestination()">
+    <WeButton
+      variant="glass"
+      title="回到全球视角"
+      @click="explore.goHome()"
+    >
+      ◍ 全球视角
+    </WeButton>
+    <WeButton
+      variant="spatial"
+      @click="explore.randomDestination()"
+    >
       ✦ 随机探索
     </WeButton>
   </div>
@@ -66,6 +75,9 @@ const featured = computed(() => explore.todayFeatured())
   .discover-bar {
     left: var(--we-sp-2);
     bottom: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--we-sp-2);
   }
   /* 小屏收纳:今日精选折叠进「随机探索」,降低底部拥挤度 */
   .featured {

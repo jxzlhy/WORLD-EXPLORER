@@ -84,7 +84,7 @@ export function parseMyWorldImport(raw: string, knownIds: Set<string>): ImportRe
   }
 
   const rawNotes = src['notes']
-  let notes: Record<string, string> = {}
+  const notes: Record<string, string> = {}
   if (rawNotes !== undefined) {
     if (!isNotes(rawNotes)) return { ok: false, error: '字段 notes 应为字符串键值表' }
     for (const [k, val] of Object.entries(rawNotes)) {

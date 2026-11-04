@@ -65,17 +65,33 @@ function onKeydown(e: KeyboardEvent) {
 <template>
   <Teleport to="body">
     <Transition name="search-fade">
-      <div v-if="ui.searchOpen" class="overlay" @click.self="ui.toggleSearch(false)">
-        <div class="panel glass-panel strong" role="dialog" aria-label="搜索世界">
+      <div
+        v-if="ui.searchOpen"
+        class="overlay"
+        @click.self="ui.toggleSearch(false)"
+      >
+        <div
+          class="panel glass-panel strong"
+          role="dialog"
+          aria-label="搜索世界"
+        >
           <div class="input-row">
-            <span class="glyph" aria-hidden="true">⌕</span>
+            <span
+              class="glyph"
+              aria-hidden="true"
+            >⌕</span>
             <input
               ref="inputEl"
               v-model="query"
               placeholder="搜索国家、城市、地点…(中英文均可)"
               @keydown="onKeydown"
-            />
-            <button class="esc" @click="ui.toggleSearch(false)">ESC</button>
+            >
+            <button
+              class="esc"
+              @click="ui.toggleSearch(false)"
+            >
+              ESC
+            </button>
           </div>
           <ul class="results">
             <li
@@ -85,12 +101,20 @@ function onKeydown(e: KeyboardEvent) {
               @mouseenter="activeIndex = i"
               @click="select(hit)"
             >
-              <span class="kind" :data-kind="hit.kind">{{ kindLabel[hit.kind] }}</span>
+              <span
+                class="kind"
+                :data-kind="hit.kind"
+              >{{ kindLabel[hit.kind] }}</span>
               <span class="name">{{ hit.name }}</span>
               <span class="en">{{ hit.nameEn }}</span>
               <span class="detail">{{ hit.detail }}</span>
             </li>
-            <li v-if="!results.length" class="no-result">未找到匹配的世界地点</li>
+            <li
+              v-if="!results.length"
+              class="no-result"
+            >
+              未找到匹配的世界地点
+            </li>
           </ul>
           <div class="footer">
             <span>↑↓ 选择</span>

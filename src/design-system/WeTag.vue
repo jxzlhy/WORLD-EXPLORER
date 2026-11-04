@@ -36,7 +36,10 @@ const dotColor = computed(() => {
 
 <template>
   <span class="we-tag">
-    <i :style="{ background: dotColor }" aria-hidden="true" />
+    <i
+      :style="{ background: dotColor }"
+      aria-hidden="true"
+    />
     <template v-if="label">{{ label }}</template>
     <slot v-else />
   </span>

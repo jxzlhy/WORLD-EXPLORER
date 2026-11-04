@@ -10,7 +10,10 @@ defineProps<{
 </script>
 
 <template>
-  <div class="glass-panel" :class="{ strong }">
+  <div
+    class="glass-panel"
+    :class="{ strong }"
+  >
     <slot />
   </div>
 </template>

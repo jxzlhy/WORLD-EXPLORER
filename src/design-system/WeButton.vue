@@ -18,7 +18,11 @@ const cls = computed(() => [`v-${props.variant}`, `s-${props.size}`])
 </script>
 
 <template>
-  <button class="we-btn" :class="cls" :disabled="disabled">
+  <button
+    class="we-btn"
+    :class="cls"
+    :disabled="disabled"
+  >
     <slot />
   </button>
 </template>

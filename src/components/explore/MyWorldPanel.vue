@@ -93,16 +93,31 @@ function cancelImport(): void {
 <template>
   <Teleport to="body">
     <Transition name="myworld-slide">
-      <GlassPanel v-if="ui.myWorldOpen" strong class="my-world">
+      <GlassPanel
+        v-if="ui.myWorldOpen"
+        strong
+        class="my-world"
+      >
         <header class="head">
           <div>
-            <p class="we-caps-label gold">MY WORLD</p>
+            <p class="we-caps-label gold">
+              MY WORLD
+            </p>
             <h2>我的世界</h2>
           </div>
-          <button class="close" aria-label="关闭" @click="ui.toggleMyWorld(false)">✕</button>
+          <button
+            class="close"
+            aria-label="关闭"
+            @click="ui.toggleMyWorld(false)"
+          >
+            ✕
+          </button>
         </header>
 
-        <div class="tabs" role="tablist">
+        <div
+          class="tabs"
+          role="tablist"
+        >
           <button
             v-for="t in tabs"
             :key="t.id"
@@ -123,8 +138,14 @@ function cancelImport(): void {
             hint="在任意目的地面板中点亮 ♡,它就会出现在这里"
           />
           <ul v-else>
-            <li v-for="d in list" :key="d.id">
-              <button class="item" @click="explore.selectDestination(d.id); ui.toggleMyWorld(false)">
+            <li
+              v-for="d in list"
+              :key="d.id"
+            >
+              <button
+                class="item"
+                @click="explore.selectDestination(d.id); ui.toggleMyWorld(false)"
+              >
                 <span class="name">{{ d.name }}</span>
                 <span class="country">{{ explore.countryById[d.countryId]?.name }}</span>
               </button>
@@ -133,22 +154,69 @@ function cancelImport(): void {
         </div>
 
         <footer class="data-ops">
-          <WeButton variant="ghost" size="sm" @click="exportData">导出 JSON</WeButton>
-          <WeButton variant="ghost" size="sm" @click="fileInput?.click()">导入 JSON</WeButton>
-          <input ref="fileInput" type="file" accept="application/json" hidden @change="onImportFile" />
+          <WeButton
+            variant="ghost"
+            size="sm"
+            @click="exportData"
+          >
+            导出 JSON
+          </WeButton>
+          <WeButton
+            variant="ghost"
+            size="sm"
+            @click="fileInput?.click()"
+          >
+            导入 JSON
+          </WeButton>
+          <input
+            ref="fileInput"
+            type="file"
+            accept="application/json"
+            hidden
+            @change="onImportFile"
+          >
         </footer>
 
         <!-- 导入预览 / 错误 -->
-        <div v-if="importError" class="import-msg error" role="alert">✕ {{ importError }}</div>
-        <div v-if="importPreview" class="import-msg preview">
-          <p class="we-caps-label">导入预览</p>
+        <div
+          v-if="importError"
+          class="import-msg error"
+          role="alert"
+        >
+          ✕ {{ importError }}
+        </div>
+        <div
+          v-if="importPreview"
+          class="import-msg preview"
+        >
+          <p class="we-caps-label">
+            导入预览
+          </p>
           <ul class="preview-list">
             <li>收藏 {{ importPreview.stats.favorites }} · 想去 {{ importPreview.stats.wantToGo }} · 去过 {{ importPreview.stats.visited }} · 笔记 {{ importPreview.stats.notes }}</li>
-            <li v-for="w in importPreview.warnings" :key="w" class="warn">{{ w }}</li>
+            <li
+              v-for="w in importPreview.warnings"
+              :key="w"
+              class="warn"
+            >
+              {{ w }}
+            </li>
           </ul>
           <div class="preview-actions">
-            <WeButton variant="primary" size="sm" @click="confirmImport">确认导入</WeButton>
-            <WeButton variant="ghost" size="sm" @click="cancelImport">取消</WeButton>
+            <WeButton
+              variant="primary"
+              size="sm"
+              @click="confirmImport"
+            >
+              确认导入
+            </WeButton>
+            <WeButton
+              variant="ghost"
+              size="sm"
+              @click="cancelImport"
+            >
+              取消
+            </WeButton>
           </div>
         </div>
       </GlassPanel>

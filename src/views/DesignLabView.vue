@@ -17,13 +17,18 @@ const switchDemo2 = ref(false)
   <div class="design-lab">
     <header class="lab-head">
       <div>
-        <p class="we-caps-label gold">WORLD EXPLORER · DESIGN LAB</p>
+        <p class="we-caps-label gold">
+          WORLD EXPLORER · DESIGN LAB
+        </p>
         <h1>设计系统实验页</h1>
         <p class="sub">
           Tokens 单一事实来源:<code>src/styles/tokens.css</code> · 本页验证组件与规范的真实渲染效果
         </p>
       </div>
-      <RouterLink class="back" to="/">← 返回地球</RouterLink>
+      <RouterLink
+        class="back"
+        to="/"
+      >← 返回地球</RouterLink>
     </header>
 
     <main class="lab-body">
@@ -31,12 +36,16 @@ const switchDemo2 = ref(false)
       <section>
         <h2>01 · 色彩系统</h2>
         <div class="swatches">
-          <div v-for="c in [
-            ['--we-void', '虚空'], ['--we-bg', '底色'], ['--we-bg-raised', '浮层'],
-            ['--we-gold', '探索金'], ['--we-gold-deep', '深金'], ['--we-cyan', '空间青'],
-            ['--we-type-natural', '自然绿'], ['--we-type-island', '海岛青'],
-            ['--we-type-geology', '地质赭'], ['--we-success', '成功'], ['--we-warning', '警示'], ['--we-danger', '危险'],
-          ] as const" :key="c[0]" class="swatch">
+          <div
+            v-for="c in [
+              ['--we-void', '虚空'], ['--we-bg', '底色'], ['--we-bg-raised', '浮层'],
+              ['--we-gold', '探索金'], ['--we-gold-deep', '深金'], ['--we-cyan', '空间青'],
+              ['--we-type-natural', '自然绿'], ['--we-type-island', '海岛青'],
+              ['--we-type-geology', '地质赭'], ['--we-success', '成功'], ['--we-warning', '警示'], ['--we-danger', '危险'],
+            ] as const"
+            :key="c[0]"
+            class="swatch"
+          >
             <i :style="{ background: `var(${c[0]})` }" />
             <span>{{ c[1] }}</span>
             <code>{{ c[0] }}</code>
@@ -48,13 +57,19 @@ const switchDemo2 = ref(false)
       <section>
         <h2>02 · 字体与排版</h2>
         <GlassPanel class="specimen">
-          <p class="display">五洲四海,皆可抵达</p>
-          <p class="en-display">EXPLORE THE WORLD · DISCOVER ITS STORIES</p>
+          <p class="display">
+            五洲四海,皆可抵达
+          </p>
+          <p class="en-display">
+            EXPLORE THE WORLD · DISCOVER ITS STORIES
+          </p>
           <p class="body-text">
             正文使用系统无衬线(PingFang SC / SF Pro)。大标题使用宋体衬线,营造数字博物馆的编辑气质;
             坐标与数据使用等宽字体,强调地理与仪器感。
           </p>
-          <p class="mono-line mono">31.2304° N · 121.4737° E · ALT 408 KM</p>
+          <p class="mono-line mono">
+            31.2304° N · 121.4737° E · ALT 408 KM
+          </p>
         </GlassPanel>
       </section>
 
@@ -63,17 +78,47 @@ const switchDemo2 = ref(false)
         <h2>03 · 按钮(WeButton)</h2>
         <GlassPanel class="row-panel">
           <div class="row">
-            <WeButton variant="primary">主行动</WeButton>
-            <WeButton variant="spatial">空间行动</WeButton>
-            <WeButton variant="glass">玻璃</WeButton>
-            <WeButton variant="ghost">幽灵</WeButton>
-            <WeButton variant="danger">危险</WeButton>
-            <WeButton variant="primary" disabled>禁用</WeButton>
+            <WeButton variant="primary">
+              主行动
+            </WeButton>
+            <WeButton variant="spatial">
+              空间行动
+            </WeButton>
+            <WeButton variant="glass">
+              玻璃
+            </WeButton>
+            <WeButton variant="ghost">
+              幽灵
+            </WeButton>
+            <WeButton variant="danger">
+              危险
+            </WeButton>
+            <WeButton
+              variant="primary"
+              disabled
+            >
+              禁用
+            </WeButton>
           </div>
           <div class="row">
-            <WeButton size="sm" variant="glass">Small</WeButton>
-            <WeButton size="md" variant="glass">Medium</WeButton>
-            <WeButton size="lg" variant="primary">Large</WeButton>
+            <WeButton
+              size="sm"
+              variant="glass"
+            >
+              Small
+            </WeButton>
+            <WeButton
+              size="md"
+              variant="glass"
+            >
+              Medium
+            </WeButton>
+            <WeButton
+              size="lg"
+              variant="primary"
+            >
+              Large
+            </WeButton>
           </div>
         </GlassPanel>
       </section>
@@ -103,8 +148,15 @@ const switchDemo2 = ref(false)
             </div>
           </GlassPanel>
           <div class="glass-compare">
-            <GlassPanel class="mini">标准玻璃(glass)</GlassPanel>
-            <GlassPanel strong class="mini">强化玻璃(strong)</GlassPanel>
+            <GlassPanel class="mini">
+              标准玻璃(glass)
+            </GlassPanel>
+            <GlassPanel
+              strong
+              class="mini"
+            >
+              强化玻璃(strong)
+            </GlassPanel>
           </div>
         </div>
       </section>
@@ -117,10 +169,17 @@ const switchDemo2 = ref(false)
             <WeSpinner label="轨道加载" />
           </GlassPanel>
           <GlassPanel class="center-panel">
-            <WeEmpty title="暂无收藏" hint="去地球各处点亮 ♡" />
+            <WeEmpty
+              title="暂无收藏"
+              hint="去地球各处点亮 ♡"
+            />
           </GlassPanel>
           <GlassPanel class="center-panel pad">
-            <DestinationMedia id="demo-great-wall" name="万里长城" type-color="var(--we-type-heritage)" />
+            <DestinationMedia
+              id="demo-great-wall"
+              name="万里长城"
+              type-color="var(--we-type-heritage)"
+            />
           </GlassPanel>
         </div>
       </section>

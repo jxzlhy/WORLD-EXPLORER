@@ -13,14 +13,24 @@
 - [x] MY WORLD(收藏/想去/去过 + JSON 导入导出)
 - [x] 真实浏览器验证(FPS 107–120,零控制台错误)
 
-## V0.2 — POLISH PASS(下一阶段)
+## V0.2 — POLISH PASS(✅ 2026-11-05 达成)
 
-- [ ] GIBS 瓦片层真机复验与调优(maximumLevel/降级体验)
-- [ ] 昼夜逐像素混合(Globe Surface Shader)替换整层近似
-- [ ] 标签防碰撞(网格分桶 / 优先级)
-- [ ] 路由懒加载切分,主 chunk 拆分 Cesium
-- [ ] 响应式四轮验收(1920/1440/1280/768/390)
-- [ ] Playwright 自动化:飞行中断/连续点击/面板滚动三条关键用例
+- [x] Playwright E2E 体系(A–H 11 用例,含无头 WebGL)
+- [x] 引擎生命周期状态机 + 初始化失败重试 + 署名恢复(P0)
+- [x] 昼夜逐像素合成(公开 API 方案,非内部 Shader;晨昏线截图验证)
+- [x] 标签防碰撞 + 标记悬停/选中脉冲 + 国家中心环绕校正
+- [x] 数据运行时校验 + MY WORLD 导入安全(校验→预览→确认)
+- [x] Cesium 独立分包(应用 143KB)+ 性能预算表
+- [x] 移动端抽屉式控制 + 五档响应式验收
+- [x] UX:探索历史 / 全球视角返回 / PLANNED 导航语义 / 搜索键盘边界
+
+## V0.3 — DEPTH PASS(下一阶段)
+
+- [ ] 云层(许可链核验后接入)与 Balanced 质量档
+- [ ] Heap 自动采集与内存回归用例(Playwright CDP)
+- [ ] tokens 残留 rgba 收敛;DetailPanel 内容交错动画(GSAP stagger)
+- [ ] 数据扩容:城市档案(V1.5 前置)+ 目的地 100+
+- [ ] Mimosa 完整安全审计(本会话两次上限截断)
 
 ## V1.0 — THE LIVING EARTH
 

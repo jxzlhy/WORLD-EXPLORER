@@ -2,7 +2,7 @@
   "name": "world-explorer",
   "description": "WORLD EXPLORER — 3D Interactive Global Exploration Platform",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "engines": {
     "node": ">=20"

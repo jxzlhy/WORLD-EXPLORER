@@ -38,7 +38,7 @@ const seed = computed(() => {
       :src="media!.file"
       :alt="name"
       loading="lazy"
-    />
+    >
     <svg
       v-else
       viewBox="0 0 400 250"
@@ -47,18 +47,53 @@ const seed = computed(() => {
       :aria-label="`${name} — 程序生成示意图`"
     >
       <defs>
-        <radialGradient :id="`g-${id}`" cx="70%" cy="20%" r="90%">
-          <stop offset="0%" stop-color="#14243d" />
-          <stop offset="55%" stop-color="#0a1424" />
-          <stop offset="100%" stop-color="#050a13" />
+        <radialGradient
+          :id="`g-${id}`"
+          cx="70%"
+          cy="20%"
+          r="90%"
+        >
+          <stop
+            offset="0%"
+            stop-color="#14243d"
+          />
+          <stop
+            offset="55%"
+            stop-color="#0a1424"
+          />
+          <stop
+            offset="100%"
+            stop-color="#050a13"
+          />
         </radialGradient>
-        <radialGradient :id="`o-${id}`" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" :stop-color="typeColor" stop-opacity="0.5" />
-          <stop offset="100%" :stop-color="typeColor" stop-opacity="0" />
-          <stop offset="100%" :stop-color="typeColor" stop-opacity="0" />
+        <radialGradient
+          :id="`o-${id}`"
+          cx="50%"
+          cy="50%"
+          r="50%"
+        >
+          <stop
+            offset="0%"
+            :stop-color="typeColor"
+            stop-opacity="0.5"
+          />
+          <stop
+            offset="100%"
+            :stop-color="typeColor"
+            stop-opacity="0"
+          />
+          <stop
+            offset="100%"
+            :stop-color="typeColor"
+            stop-opacity="0"
+          />
         </radialGradient>
       </defs>
-      <rect width="400" height="250" :fill="`url(#g-${id})`" />
+      <rect
+        width="400"
+        height="250"
+        :fill="`url(#g-${id})`"
+      />
       <!-- 经纬弧线 -->
       <path
         d="M -40 190 Q 200 130 440 190"
@@ -73,7 +108,12 @@ const seed = computed(() => {
         fill="none"
       />
       <!-- 天体 -->
-      <circle :cx="seed.orbX * 4" :cy="seed.orbY * 2.4" :r="seed.orbR * 2.2" :fill="`url(#o-${id})`" />
+      <circle
+        :cx="seed.orbX * 4"
+        :cy="seed.orbY * 2.4"
+        :r="seed.orbR * 2.2"
+        :fill="`url(#o-${id})`"
+      />
       <circle
         :cx="seed.orbX * 4"
         :cy="seed.orbY * 2.4"
@@ -82,10 +122,30 @@ const seed = computed(() => {
         opacity="0.85"
       />
       <!-- 星点 -->
-      <circle :cx="320 + seed.drift * 3" cy="40" r="1.4" fill="rgba(239,244,252,0.8)" />
-      <circle :cx="80 + seed.drift * 2" cy="60" r="1" fill="rgba(239,244,252,0.55)" />
-      <circle :cx="200" :cy="30 + seed.drift" r="1.1" fill="rgba(239,244,252,0.4)" />
-      <circle :cx="355 - seed.drift" cy="90" r="0.8" fill="rgba(239,244,252,0.5)" />
+      <circle
+        :cx="320 + seed.drift * 3"
+        cy="40"
+        r="1.4"
+        fill="rgba(239,244,252,0.8)"
+      />
+      <circle
+        :cx="80 + seed.drift * 2"
+        cy="60"
+        r="1"
+        fill="rgba(239,244,252,0.55)"
+      />
+      <circle
+        :cx="200"
+        :cy="30 + seed.drift"
+        r="1.1"
+        fill="rgba(239,244,252,0.4)"
+      />
+      <circle
+        :cx="355 - seed.drift"
+        cy="90"
+        r="0.8"
+        fill="rgba(239,244,252,0.5)"
+      />
       <!-- 名称 -->
       <text
         x="24"
@@ -107,11 +167,22 @@ const seed = computed(() => {
         ILLUSTRATIVE · NON-PHOTO
       </text>
     </svg>
-    <figcaption v-if="verified && media?.author" class="credit">
+    <figcaption
+      v-if="verified && media?.author"
+      class="credit"
+    >
       © {{ media.author }} · {{ media.license }}
     </figcaption>
-    <figcaption v-else class="credit dim">示意图 · 待收录真实影像</figcaption>
-    <span class="scrim" aria-hidden="true" />
+    <figcaption
+      v-else
+      class="credit dim"
+    >
+      示意图 · 待收录真实影像
+    </figcaption>
+    <span
+      class="scrim"
+      aria-hidden="true"
+    />
   </figure>
 </template>
 

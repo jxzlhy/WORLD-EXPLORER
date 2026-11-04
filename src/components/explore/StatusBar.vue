@@ -24,13 +24,29 @@ const heightKm = computed(() => {
 
 <template>
   <footer class="status-bar intro-item">
-    <RouterLink class="lab" to="/design" title="设计系统">DESIGN LAB</RouterLink>
+    <RouterLink
+      class="lab"
+      to="/design"
+      title="设计系统"
+    >DESIGN LAB</RouterLink>
     <span class="mono">{{ lonLat }}</span>
-    <span class="sep hide-mobile" aria-hidden="true">·</span>
+    <span
+      class="sep hide-mobile"
+      aria-hidden="true"
+    >·</span>
     <span class="mono hide-mobile">ALT {{ heightKm }}</span>
-    <span class="sep hide-mobile" aria-hidden="true">·</span>
-    <span class="mono" :class="{ warn: ui.fps < 30 }">{{ ui.fps }} FPS</span>
-    <span class="sep hide-mobile" aria-hidden="true">·</span>
+    <span
+      class="sep hide-mobile"
+      aria-hidden="true"
+    >·</span>
+    <span
+      class="mono"
+      :class="{ warn: ui.fps < 30 }"
+    >{{ ui.fps }} FPS</span>
+    <span
+      class="sep hide-mobile"
+      aria-hidden="true"
+    >·</span>
     <span class="mono hide-mobile">{{ explore.destinations.length }} DESTINATIONS</span>
   </footer>
 </template>
@@ -79,7 +95,8 @@ const heightKm = computed(() => {
 @media (max-width: 768px) {
   .status-bar {
     right: var(--we-sp-2);
-    bottom: 12px;
+    bottom: auto;
+    top: 68px; /* 移到顶栏下方,为底部按钮/署名让位 */
     gap: 6px;
   }
   .hide-mobile {

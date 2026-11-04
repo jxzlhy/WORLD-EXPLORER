@@ -185,24 +185,54 @@ onUnmounted(() => {
 
 <template>
   <div class="explore">
-    <div ref="globeEl" class="globe-canvas" aria-label="3D 地球" />
+    <div
+      ref="globeEl"
+      class="globe-canvas"
+      aria-label="3D 地球"
+    />
 
     <!-- 引擎/数据加载态 -->
     <Transition name="fade">
-      <div v-if="loading && !ui.engineError" class="loading-veil">
-        <WeSpinner :size="36" label="正在唤醒地球" />
+      <div
+        v-if="loading && !ui.engineError"
+        class="loading-veil"
+      >
+        <WeSpinner
+          :size="36"
+          label="正在唤醒地球"
+        />
       </div>
     </Transition>
 
     <!-- 引擎错误态(可重试) -->
-    <div v-if="ui.engineError" class="error-veil" role="alert">
-      <p class="title">启动遇到问题</p>
-      <p class="msg">{{ ui.engineError }}</p>
+    <div
+      v-if="ui.engineError"
+      class="error-veil"
+      role="alert"
+    >
+      <p class="title">
+        启动遇到问题
+      </p>
+      <p class="msg">
+        {{ ui.engineError }}
+      </p>
       <div class="error-actions">
-        <WeButton variant="primary" @click="retry">重新初始化</WeButton>
-        <WeButton variant="ghost" @click="ui.setEngineError('')">忽略继续</WeButton>
+        <WeButton
+          variant="primary"
+          @click="retry"
+        >
+          重新初始化
+        </WeButton>
+        <WeButton
+          variant="ghost"
+          @click="ui.setEngineError('')"
+        >
+          忽略继续
+        </WeButton>
       </div>
-      <p class="hint">若持续失败,请检查浏览器是否支持 WebGL,或刷新页面。</p>
+      <p class="hint">
+        若持续失败,请检查浏览器是否支持 WebGL,或刷新页面。
+      </p>
     </div>
 
     <template v-if="ui.engineReady">

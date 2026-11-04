@@ -29,7 +29,9 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
     aria-label="地球控制"
   >
     <div class="section">
-      <p class="we-caps-label">图层</p>
+      <p class="we-caps-label">
+        图层
+      </p>
       <label class="row">
         <span>国家边界</span>
         <WeSwitch v-model="ui.layers.countries" />
@@ -47,8 +49,14 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
     <div class="divider" />
 
     <div class="section">
-      <p class="we-caps-label">昼夜模式</p>
-      <div class="segmented" role="radiogroup" aria-label="昼夜模式">
+      <p class="we-caps-label">
+        昼夜模式
+      </p>
+      <div
+        class="segmented"
+        role="radiogroup"
+        aria-label="昼夜模式"
+      >
         <button
           v-for="opt in dayNightOptions"
           :key="opt.value"
