@@ -21,29 +21,78 @@ export interface WorldEngineOptions {
   destinations: Destination[]
 }
 
+type Lifecycle = 'idle' | 'initializing' | 'ready' | 'destroyed'
+
 /**
  * WorldEngine — CesiumJS 运行时的唯一编排入口。
- * 业务层通过 IWorldEngine 接口使用,永远不直接接触 Viewer。
+ *
+ * 生命周期:idle → initializing → ready → destroyed
+ * - initialize 幂等:重复调用共享同一 Promise;
+ * - 初始化途中 destroy():通过初始化令牌(seq)中止后续步骤并清理半成品资源;
+ * - 初始化失败:回到 idle,可安全重试;
+ * - destroy 后再 initialize:抛错(组件应重建引擎实例)。
  */
 export class WorldEngine implements IWorldEngine {
   private viewer: Cesium.Viewer | null = null
-  private camera!: CameraController
-  private imagery!: ImageryLayersController
+  private camera: CameraController | null = null
+  private imagery: ImageryLayersController | null = null
   private countries = new CountriesLayer()
   private markers = new MarkersLayer()
   private pickHandler: Cesium.ScreenSpaceEventHandler | null = null
   private readonly unsubs: Array<() => void> = []
   private initPromise: Promise<void> | null = null
+  private lifecycle: Lifecycle = 'idle'
+  /** 初始化令牌:destroy() 会使其失效,从而中止仍在进行的初始化 */
+  private initSeq = 0
 
   constructor(private readonly options: WorldEngineOptions) {}
 
+  private aborted(seq: number): boolean {
+    return seq !== this.initSeq || this.lifecycle === 'destroyed'
+  }
+
+  /** 清理当前已创建的运行时资源(部分初始化或正式销毁均可用) */
+  private teardown(): void {
+    for (const unsub of this.unsubs.splice(0)) unsub()
+    this.pickHandler?.destroy()
+    this.pickHandler = null
+    this.camera?.destroy()
+    this.camera = null
+    this.imagery?.destroy()
+    this.imagery = null
+    if (this.viewer && !this.viewer.isDestroyed()) {
+      this.countries.destroy(this.viewer)
+      this.markers.destroy(this.viewer)
+      this.viewer.destroy()
+    }
+    this.viewer = null
+  }
+
   initialize(container: HTMLElement): Promise<void> {
+    if (this.lifecycle === 'destroyed') {
+      return Promise.reject(new Error('WorldEngine 已销毁,请重建实例'))
+    }
     if (this.initPromise) return this.initPromise
-    this.initPromise = this.doInitialize(container)
+    this.lifecycle = 'initializing'
+    const seq = ++this.initSeq
+    this.initPromise = this.doInitialize(container, seq).then(
+      () => {
+        if (!this.aborted(seq)) this.lifecycle = 'ready'
+      },
+      (err) => {
+        // 失败:清理半成品并回到 idle,允许重试
+        if (seq === this.initSeq) {
+          this.teardown()
+          this.lifecycle = 'idle'
+          this.initPromise = null
+        }
+        throw err
+      },
+    )
     return this.initPromise
   }
 
-  private async doInitialize(container: HTMLElement): Promise<void> {
+  private async doInitialize(container: HTMLElement, seq: number): Promise<void> {
     this.viewer = new Cesium.Viewer(container, {
       baseLayer: false, // 不使用 Cesium ion 默认底图(零依赖云服务)
       baseLayerPicker: false,
@@ -61,6 +110,7 @@ export class WorldEngine implements IWorldEngine {
         webgl: { antialias: true, powerPreference: 'high-performance' },
       },
     })
+    if (this.aborted(seq)) return
 
     const scene = this.viewer.scene
     try {
@@ -77,6 +127,11 @@ export class WorldEngine implements IWorldEngine {
       Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK,
     )
 
+    // 渲染循环异常 → 广播(应用层展示友好提示),不让用户面对黑屏
+    scene.renderError.addEventListener((_s, err) => {
+      for (const cb of this.renderErrorListeners) cb(err instanceof Error ? err : new Error(String(err)))
+    })
+
     // 开发态调试钩子(自动化测试/错误诊断用,生产构建不含)
     if (import.meta.env.DEV) {
       ;(window as unknown as Record<string, unknown>).__WE_VIEWER__ = this.viewer
@@ -84,8 +139,13 @@ export class WorldEngine implements IWorldEngine {
 
     this.imagery = new ImageryLayersController()
     await this.imagery.load(this.viewer)
+    if (this.aborted(seq)) return
+
     await this.countries.load(this.viewer, this.options.countriesUrl)
+    if (this.aborted(seq)) return
+
     this.markers.load(this.viewer, this.options.destinations)
+    if (this.aborted(seq)) return
 
     this.camera = new CameraController(this.viewer)
 
@@ -100,7 +160,7 @@ export class WorldEngine implements IWorldEngine {
   }
 
   private dispatchPick(position: Cesium.Cartesian2): void {
-    if (!this.viewer) return
+    if (!this.viewer || this.viewer.isDestroyed()) return
     const picked = this.viewer.scene.pick(position)
     if (!Cesium.defined(picked)) {
       this.emitPick({ kind: 'globe' })
@@ -121,6 +181,7 @@ export class WorldEngine implements IWorldEngine {
   }
 
   private readonly pickListeners = new Set<(p: PickPayload) => void>()
+  private readonly renderErrorListeners = new Set<(e: Error) => void>()
   private emitPick(payload: PickPayload): void {
     for (const cb of this.pickListeners) cb(payload)
   }
@@ -128,15 +189,16 @@ export class WorldEngine implements IWorldEngine {
   // ---- IWorldEngine ----
 
   flyTo(target: FlyTarget): Promise<FlyResult> {
+    if (!this.camera) return Promise.resolve('interrupted')
     return this.camera.flyTo(target)
   }
 
   cancelFlight(): void {
-    this.camera.cancelFlight()
+    this.camera?.cancelFlight()
   }
 
   isFlying(): boolean {
-    return this.camera.isFlying()
+    return this.camera?.isFlying() ?? false
   }
 
   highlightMarker(destinationId: string | null): void {
@@ -154,15 +216,15 @@ export class WorldEngine implements IWorldEngine {
   }
 
   setAutoRotate(enabled: boolean): void {
-    this.camera.setAutoRotate(enabled)
+    this.camera?.setAutoRotate(enabled)
   }
 
   setDayNightMode(mode: DayNightMode): void {
-    this.imagery.setMode(mode)
+    this.imagery?.setMode(mode)
   }
 
   setQuality(mode: 'high' | 'low'): void {
-    if (!this.viewer) return
+    if (!this.viewer || this.viewer.isDestroyed()) return
     this.viewer.resolutionScale = mode === 'low' ? 0.7 : 1.0
     try {
       this.viewer.scene.postProcessStages.fxaa.enabled = mode === 'high'
@@ -176,32 +238,30 @@ export class WorldEngine implements IWorldEngine {
     return () => this.pickListeners.delete(listener)
   }
 
+  onRenderError(listener: (e: Error) => void): () => void {
+    this.renderErrorListeners.add(listener)
+    return () => this.renderErrorListeners.delete(listener)
+  }
+
   onUserInteract(listener: () => void): () => void {
-    return this.camera.onUserInteract(listener)
+    return this.camera?.onUserInteract(listener) ?? (() => {})
   }
 
   onCameraChange(listener: (info: CameraInfo) => void): () => void {
-    return this.camera.onCameraChange(listener)
+    return this.camera?.onCameraChange(listener) ?? (() => {})
   }
 
   onStats(listener: (stats: EngineStats) => void): () => void {
-    return this.camera.onStats(listener)
+    return this.camera?.onStats(listener) ?? (() => {})
   }
 
   destroy(): void {
-    for (const unsub of this.unsubs) unsub()
-    this.unsubs.length = 0
+    if (this.lifecycle === 'destroyed') return
+    this.lifecycle = 'destroyed'
+    this.initSeq++ // 中止仍在进行的初始化
+    this.teardown()
     this.pickListeners.clear()
-    this.pickHandler?.destroy()
-    this.pickHandler = null
-    this.camera?.destroy()
-    if (this.viewer && !this.viewer.isDestroyed()) {
-      this.countries.destroy(this.viewer)
-      this.markers.destroy(this.viewer)
-      this.imagery.destroy()
-      this.viewer.destroy()
-    }
-    this.viewer = null
+    this.renderErrorListeners.clear()
     this.initPromise = null
   }
 }

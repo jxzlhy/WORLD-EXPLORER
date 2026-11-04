@@ -19,6 +19,10 @@ export class CameraController {
   private _flying = false
   private userInteracted = false
   private _autoRotate = true
+  /** 左键按下跟踪:区分「单击选择」与「拖动」(拖动才打断自动旋转/飞行) */
+  private leftDown = false
+  private leftDownPos: { x: number; y: number } | null = null
+  private static readonly DRAG_THRESHOLD_PX = 6
 
   private readonly preRenderCb: Cesium.Event.RemoveCallback
   private lastFrameTime = performance.now()
@@ -35,21 +39,35 @@ export class CameraController {
     this.canvas = viewer.canvas
     this.handler = new Cesium.ScreenSpaceEventHandler(this.canvas)
 
-    const interruptEvents = [
-      Cesium.ScreenSpaceEventType.LEFT_DOWN,
-      Cesium.ScreenSpaceEventType.MIDDLE_DOWN,
-      Cesium.ScreenSpaceEventType.RIGHT_DOWN,
+    // 立即打断:滚轮 / 捏合 / 中键与右键拖动
+    for (const type of [
       Cesium.ScreenSpaceEventType.WHEEL,
       Cesium.ScreenSpaceEventType.PINCH_START,
-    ]
-    for (const type of interruptEvents) {
+      Cesium.ScreenSpaceEventType.MIDDLE_DOWN,
+      Cesium.ScreenSpaceEventType.RIGHT_DOWN,
+    ]) {
       this.handler.setInputAction(() => this.handleUserInput(), type)
     }
+    // 左键:按下仅记录位置,移动超过阈值才判定为拖动
+    this.handler.setInputAction((movement: { position: Cesium.Cartesian2 }) => {
+      this.leftDown = true
+      this.leftDownPos = { x: movement.position.x, y: movement.position.y }
+    }, Cesium.ScreenSpaceEventType.LEFT_DOWN)
+    this.handler.setInputAction((movement: { endPosition: Cesium.Cartesian2 }) => {
+      if (!this.leftDown || !this.leftDownPos) return
+      const dx = movement.endPosition.x - this.leftDownPos.x
+      const dy = movement.endPosition.y - this.leftDownPos.y
+      if (Math.hypot(dx, dy) > CameraController.DRAG_THRESHOLD_PX) {
+        this.leftDown = false
+        this.leftDownPos = null
+        this.handleUserInput()
+      }
+    }, Cesium.ScreenSpaceEventType.MOUSE_MOVE)
 
     this.preRenderCb = viewer.scene.preRender.addEventListener(() => this.tick())
   }
 
-  /** 用户主动输入:中断飞行 + 永久关闭自动旋转 */
+  /** 用户主动输入:中断飞行 + 关闭自动旋转 */
   private handleUserInput(): void {
     this.userInteracted = true
     if (this._flying) {
@@ -108,7 +126,12 @@ export class CameraController {
         destination: Cesium.Cartesian3.fromDegrees(target.longitude, target.latitude, target.height),
         duration: target.duration,
         easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT,
-        complete: () => finish('arrived'),
+        complete: () => {
+          // 程序飞行抵达后不再自动旋转(避免选完地点地球继续漂移);
+          // 用户可通过左轨开关重新开启。
+          this.userInteracted = true
+          finish('arrived')
+        },
         cancel: () => finish('interrupted'),
       })
     })
@@ -153,6 +176,7 @@ export class CameraController {
     this.preRenderCb()
     for (const type of [
       Cesium.ScreenSpaceEventType.LEFT_DOWN,
+      Cesium.ScreenSpaceEventType.MOUSE_MOVE,
       Cesium.ScreenSpaceEventType.MIDDLE_DOWN,
       Cesium.ScreenSpaceEventType.RIGHT_DOWN,
       Cesium.ScreenSpaceEventType.WHEEL,

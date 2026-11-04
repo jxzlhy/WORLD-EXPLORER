@@ -59,6 +59,8 @@ export interface IWorldEngine {
   setQuality(mode: 'high' | 'low'): void
 
   onPick(listener: (payload: PickPayload) => void): () => void
+  /** 渲染循环异常(用于友好降级提示) */
+  onRenderError(listener: (e: Error) => void): () => void
   onUserInteract(listener: () => void): () => void
   onCameraChange(listener: (info: CameraInfo) => void): () => void
   onStats(listener: (stats: EngineStats) => void): () => void

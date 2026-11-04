@@ -26,10 +26,38 @@ body {
   overscroll-behavior: none;
 }
 
-/* 隐藏 Cesium 默认 credit(本项目数据全部本地化,来源在应用内标注) */
-.cesium-widget-credits,
+/* Cesium credit 展示区:保留署名义务,仅做视觉统一(V0.2 P0 修复 I-03)。
+   数据源署名:NASA Blue/Black Marble · Natural Earth · NASA EOSDIS GIBS */
+.cesium-widget-credits {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 6px !important;
+  transform: translateX(-50%);
+  max-width: 60vw;
+  padding: 3px 12px;
+  background: rgba(6, 11, 20, 0.55);
+  border: 1px solid rgba(148, 180, 226, 0.12);
+  border-radius: 999px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 5;
+}
+.cesium-widget-credits .cesium-credit-expand-link,
+.cesium-widget-credits a {
+  color: rgba(139, 151, 171, 0.85) !important;
+  font-size: 10px !important;
+  letter-spacing: 0.04em;
+}
 .cesium-credit-lightbox-overlay {
-  display: none !important;
+  color: #0b0f18;
+}
+
+@media (max-width: 768px) {
+  .cesium-widget-credits {
+    max-width: 44vw;
+    font-size: 9px;
+  }
 }
 
 /* 统一滚动条 */

@@ -16,8 +16,10 @@ export class ImageryLayersController {
   private mode: DayNightMode = 'realtime'
 
   async load(viewer: Cesium.Viewer): Promise<void> {
+    const nasaCredit = new Cesium.Credit('NASA Blue Marble / Black Marble (Public Domain)')
     const dayProvider = await Cesium.SingleTileImageryProvider.fromUrl(
       '/textures/earth-blue-marble.jpg',
+      { credit: nasaCredit },
     )
     viewer.imageryLayers.addImageryProvider(dayProvider)
 
@@ -40,6 +42,7 @@ export class ImageryLayersController {
 
     const nightProvider = await Cesium.SingleTileImageryProvider.fromUrl(
       '/textures/earth-night.jpg',
+      { credit: nasaCredit },
     )
     this.nightLayer = viewer.imageryLayers.addImageryProvider(nightProvider)
     this.nightLayer.alpha = 0
