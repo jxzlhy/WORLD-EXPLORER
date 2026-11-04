@@ -51,7 +51,11 @@ export class MarkersLayer {
           backgroundColor: Cesium.Color.fromCssColorString('#060b14').withAlpha(0.72),
           backgroundPadding: new Cesium.Cartesian2(7, 4),
           pixelOffset: new Cesium.Cartesian2(0, -17),
-          distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, 900_000),
+          // S 级档案标签显示更远,普通地点更近,减少密集区标签堆叠
+          distanceDisplayCondition: new Cesium.DistanceDisplayCondition(
+            0,
+            d.quality === 'S' ? 900_000 : 450_000,
+          ),
           disableDepthTestDistance: Number.POSITIVE_INFINITY,
           style: Cesium.LabelStyle.FILL,
         }),

@@ -13,6 +13,7 @@ export const useUiStore = defineStore('ui', {
     } as Record<LayerId, boolean>,
     dayNightMode: 'realtime' as DayNightMode,
     autoRotate: true,
+    lowPerf: false,
     showStats: false,
     fps: 0,
     cameraInfo: null as CameraInfo | null,
@@ -28,6 +29,9 @@ export const useUiStore = defineStore('ui', {
     },
     setAutoRotate(enabled: boolean) {
       this.autoRotate = enabled
+    },
+    setLowPerf(on: boolean) {
+      this.lowPerf = on
     },
     setEngineReady() {
       this.engineReady = true

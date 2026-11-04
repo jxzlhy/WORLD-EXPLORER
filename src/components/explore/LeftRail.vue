@@ -56,6 +56,10 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
         <WeSwitch v-model="ui.autoRotate" />
       </label>
       <label class="row">
+        <span>低性能模式</span>
+        <WeSwitch v-model="ui.lowPerf" />
+      </label>
+      <label class="row">
         <span>性能面板</span>
         <WeSwitch v-model="ui.showStats" />
       </label>

@@ -118,6 +118,10 @@ onMounted(async () => {
     () => ui.autoRotate,
     (on) => getEngine()?.setAutoRotate(on),
   )
+  watch(
+    () => ui.lowPerf,
+    (on) => getEngine()?.setQuality(on ? 'low' : 'high'),
+  )
 
   // 5. 开场序列(GSAP)——尊重 prefers-reduced-motion
   if (!prefersReducedMotion) {

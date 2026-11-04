@@ -55,6 +55,8 @@ export interface IWorldEngine {
   setLayerVisible(layer: LayerId, visible: boolean): void
   setAutoRotate(enabled: boolean): void
   setDayNightMode(mode: DayNightMode): void
+  /** 低性能模式:降低渲染分辨率 */
+  setQuality(mode: 'high' | 'low'): void
 
   onPick(listener: (payload: PickPayload) => void): () => void
   onUserInteract(listener: () => void): () => void

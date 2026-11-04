@@ -161,6 +161,16 @@ export class WorldEngine implements IWorldEngine {
     this.imagery.setMode(mode)
   }
 
+  setQuality(mode: 'high' | 'low'): void {
+    if (!this.viewer) return
+    this.viewer.resolutionScale = mode === 'low' ? 0.7 : 1.0
+    try {
+      this.viewer.scene.postProcessStages.fxaa.enabled = mode === 'high'
+    } catch {
+      /* fxaa 不可用时忽略 */
+    }
+  }
+
   onPick(listener: (payload: PickPayload) => void): () => void {
     this.pickListeners.add(listener)
     return () => this.pickListeners.delete(listener)
