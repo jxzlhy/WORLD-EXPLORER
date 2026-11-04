@@ -26,12 +26,12 @@ const heightKm = computed(() => {
   <footer class="status-bar intro-item">
     <RouterLink class="lab" to="/design" title="设计系统">DESIGN LAB</RouterLink>
     <span class="mono">{{ lonLat }}</span>
-    <span class="sep" aria-hidden="true">·</span>
-    <span class="mono">ALT {{ heightKm }}</span>
-    <span class="sep" aria-hidden="true">·</span>
+    <span class="sep hide-mobile" aria-hidden="true">·</span>
+    <span class="mono hide-mobile">ALT {{ heightKm }}</span>
+    <span class="sep hide-mobile" aria-hidden="true">·</span>
     <span class="mono" :class="{ warn: ui.fps < 30 }">{{ ui.fps }} FPS</span>
-    <span class="sep" aria-hidden="true">·</span>
-    <span class="mono">{{ explore.destinations.length }} DESTINATIONS</span>
+    <span class="sep hide-mobile" aria-hidden="true">·</span>
+    <span class="mono hide-mobile">{{ explore.destinations.length }} DESTINATIONS</span>
   </footer>
 </template>
 
@@ -82,7 +82,7 @@ const heightKm = computed(() => {
     bottom: 12px;
     gap: 6px;
   }
-  .mono:nth-of-type(n + 2) {
+  .hide-mobile {
     display: none;
   }
 }
