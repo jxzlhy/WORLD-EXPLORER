@@ -77,7 +77,7 @@
 
 - 未完成:响应式五档走查、Playwright 三用例、逐像素昼夜、标签防碰撞(全部列入 V0.2,见 ROADMAP)。
 - 需用户处理:**无**(无付费、无授权、无账号需求)。
-- Push:未配置远程仓库;如需推送请提供 remote 后执行 `git push -u origin main`(本地 4 个提交已就绪)。
+- Push:已于 2026-11-05 推送至 https://github.com/jxzlhy/WORLD-EXPLORER (`main`,钥匙串凭据认证)。后续提交执行 `git push` 即可。
 
 ## 9. Git 提交
 
