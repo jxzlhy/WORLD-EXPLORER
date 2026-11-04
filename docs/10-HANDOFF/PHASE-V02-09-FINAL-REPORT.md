@@ -61,6 +61,16 @@
 
 ## 6. Git
 
-提交序列(自 99ca569 起):99ca569 → 5ca5e1f → 09074f2 → 988e2fb → a9aef94 → 5b52af1(报告/版本)。
-⚠️ 推送状态:GitHub 于本会话末尾出现代理级 SSL 中断(github.com 与 api.github.com 均 000),
-**7 个提交暂存本地,待网络恢复后执行 `git push` 即可**(凭据此前已验证可用,无需 force)。
+提交序列(自 99ca569 起):99ca569 → 5ca5e1f → 09074f2 → 988e2fb → a9aef94 → 5b52af1 → 诊断提交(共 9 个本地提交)。**main 领先 origin/main,待代理恢复后 `git push`。**
+
+**推送受阻诊断(2026-11-05 05:00+,全部实测):**
+
+| 路径 | 结果 |
+| --- | --- |
+| 代理路径(github.com / 7897 显式) | ✗ SSL_ERROR_SYSCALL |
+| 直连真实 IP(20.205.243.166,经 AliDNS 解析) | ✗ 同样被阻(该网络 GitHub 直连有墙) |
+| Clash 控制 API(33331) | ✗ 已禁用(external-controller: '') |
+| 代理健康度对照 | registry.npmjs.org 经代理亦 000,百度直连 200 → **代理上游整体宕机,非 GitHub 单点** |
+
+**用户侧 30 秒修复**:打开 Clash Verge → 更换出口节点(或重启内核/检查订阅)→ 终端执行 `git push`。
+本地 8 个提交完整安全,凭据此前已验证可用,无需 force push。
