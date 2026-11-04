@@ -61,4 +61,6 @@
 
 ## 6. Git
 
-提交序列(自 99ca569 起):99ca569 → 5ca5e1f → 09074f2 → 988e2fb → a9aef94 → 本次收尾提交。全部推送至 origin/main。
+提交序列(自 99ca569 起):99ca569 → 5ca5e1f → 09074f2 → 988e2fb → a9aef94 → 5b52af1(报告/版本)。
+⚠️ 推送状态:GitHub 于本会话末尾出现代理级 SSL 中断(github.com 与 api.github.com 均 000),
+**7 个提交暂存本地,待网络恢复后执行 `git push` 即可**(凭据此前已验证可用,无需 force)。
