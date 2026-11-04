@@ -1,0 +1,266 @@
+[
+  {
+    "id": "is-thingvellir",
+    "name": "辛格维利尔国家公园",
+    "nameEn": "Þingvellir National Park",
+    "type": "heritage",
+    "countryId": "IS",
+    "longitude": -21.1299,
+    "latitude": 64.2559,
+    "summary": "北美板块与欧亚板块的裂缝在此裸露成谷,公元930年,世界最早的议会之一在这道裂谷中开会。地质与政治的「断层线」重合在同一片草原。",
+    "story": [
+      "冰岛位于大西洋中脊之上,两大板块在此以每年约2厘米的速度分离。阿尔曼纳加裂缝(Almannagjá)是一条可行走的「板块边界」——游客沿着裂谷步行,左脚美洲、右脚欧洲。",
+      "公元930年前后,冰岛各部族首领每年夏天在此聚会的「阿尔庭」(Alþingi)召开,立法、断案、联姻、放逐都在露天的「法律岩」(Lögberg)上完成。1944年,冰岛共和国独立庆典也特意选在此地宣布——2004年,这里因「政治与地质双重意义」列入世界遗产。",
+      "裂谷底部的丝浮拉(Silfra)裂缝充满冰川融水,能见度超过100米,是全球著名的干衣浮潜点:在0-4°C的水里,漂在两块大陆板块之间。"
+    ],
+    "bestSeason": "6-8月全天;9-3月夜间可伴极光",
+    "tags": [
+      "世界遗产",
+      "板块裂缝",
+      "议会起源",
+      "黄金圈"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1152",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Þingvellir",
+        "url": "https://en.wikipedia.org/wiki/Þingvellir",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-gullfoss",
+    "name": "黄金瀑布",
+    "nameEn": "Gullfoss",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -20.1199,
+    "latitude": 64.3271,
+    "summary": "赫维塔河在32米内两级坠落,再折进70米的玄武岩裂缝,像被大地「吞」了进去。黄金圈三景的压轴,也是冰岛环境保护史的开端。",
+    "story": [
+      "冰川融水携着火山岩粉,让瀑布在阳光下泛着金色——「黄金」之名由此而来。水流先落入11米的第一级,再横转21米坠入裂缝,观测位与水帘距离近到雨雾扑面。",
+      "20世纪初,外国投资者想在这里建水电站。农场主西格里德里·托马多蒂尔(Sigríður Tómasdóttir)以徒步、诉讼甚至以跳瀑布相抗,最终让交易流产——1979年冰岛立法将瀑布永久保护。今天瀑布停车场立着她的纪念碑,「冰岛环保之母」。",
+      "冬季,瀑布四周结成蓝冰洞窟,水雾在栏杆上冻出冰晶;夏季苔藓把崖壁染成绿色。同一个机位,两种星球。"
+    ],
+    "bestSeason": "夏季水势最盛;冬季冰晶奇景",
+    "tags": [
+      "瀑布",
+      "黄金圈",
+      "环保史",
+      "冰川融水"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Gullfoss",
+        "url": "https://en.wikipedia.org/wiki/Gullfoss",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/is-gullfoss.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGullfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_119.JPG"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-jokulsarlon",
+    "name": "杰古沙龙冰河湖",
+    "nameEn": "Jökulsárlón",
+    "type": "natural",
+    "countryId": "IS",
+    "cityId": "is-hofn",
+    "longitude": -16.2306,
+    "latitude": 64.0784,
+    "summary": "冰川泻湖:瓦特纳冰川的崩落冰山在湖中漂浮,再经一道窄口流入北大西洋。007、古墓丽影、星际穿越都来此「借景」。",
+    "story": [
+      "1934-35年间,布雷扎梅尔克冰川(Breiðamerkurjökull)后退,融水在冰舌前积成一个泻湖——它不到百年历史,却已是冰岛最深的湖(248米)。冰山从崩解到漂入大西洋,通常需要三到五年。",
+      "湖口的「钻石沙滩」(Diamond Beach)是冰山的终点站:碎冰被浪冲上黑沙滩,像散落一地的火山玻璃。日出时冰块里透出蓝金两色——那是千年压缩气泡对光的选择性散射。",
+      "冰湖是气候变化的实时档案:1975年湖面约8平方公里,如今超过25平方公里。每一块漂走的冰,都在给这个世纪计时。"
+    ],
+    "bestSeason": "全年;11-3月有机会看到冰洞与极光同框",
+    "tags": [
+      "冰川湖",
+      "冰山",
+      "取景地",
+      "气候档案"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Jökulsárlón",
+        "url": "https://en.wikipedia.org/wiki/Jökulsárlón",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-skogafoss",
+    "name": "斯科加瀑布",
+    "nameEn": "Skógafoss",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -19.5114,
+    "latitude": 63.5321,
+    "summary": "25米宽、60米高的矩形水帘,落在古海岸悬崖上。晴天时水雾里几乎必有双彩虹——它是冰岛「彩虹出镜率」最高的瀑布。",
+    "story": [
+      "一万年前海岸线就在瀑布脚下,如今的悬崖就是当年的海蚀崖——斯科加瀑布因此是「挂在旧国界上的河」。传说最早的维京定居者之一在崖下的洞穴里藏了一箱黄金,后人找到箱子的铁环,又眼睁睁看它缩回崖缝。",
+      "527级台阶通到崖顶观景台,那里是著名的 Fimmvörðuháls 徒步线的起点:46公里山径通往索斯莫克山谷,沿途瀑布超过二十条,被徒步者称为「瀑布走廊」。",
+      "2010年埃亚菲亚德拉火山爆发时,火山灰让瀑布的水流一度呈灰色——冰岛的瀑布从来不只是水,它同时记录着冰、火与天气的每一次谈判。"
+    ],
+    "bestSeason": "6-8月(彩虹概率最高);冬季冰挂亦奇",
+    "tags": [
+      "瀑布",
+      "彩虹",
+      "徒步起点",
+      "南岸"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Skógafoss",
+        "url": "https://en.wikipedia.org/wiki/Skógafoss",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-reynisfjara",
+    "name": "雷尼斯法加拉黑沙滩",
+    "nameEn": "Reynisfjara Black Sand Beach",
+    "type": "natural",
+    "countryId": "IS",
+    "cityId": "is-vik",
+    "longitude": -19.0448,
+    "latitude": 63.4062,
+    "summary": "火山玄武岩碎成的黑沙滩,海中矗立着雷尼斯德兰格海蚀柱,崖壁是完美的六边形玄武岩柱林。冰岛南岸的「暗黑滤镜」。",
+    "story": [
+      "黑砂不是泥沙,而是被海浪碾碎的玄武岩——火山岩与北大西洋的持续研磨,让整片海滩呈现深黑的哑光。崖壁上的柱状节理形成于熔岩缓慢冷却时的六边形收缩,像巨人手动码好的砖。",
+      "民间传说里,雷尼斯德兰格(Reynisdrangar)海柱是拖船上岸的巨魔,没能在日出前逃回山中,被阳光冻成了石头。法罗群岛的巨石与这里隔海相望——传说是成对的。",
+      "这里的美带着真实危险:南岸的「裸泳者浪」(sneaker waves)毫无预兆地深入内陆,夺走过游客生命。护栏与警示牌不是装饰——在冰岛,敬畏本身就是一种观景礼仪。"
+    ],
+    "bestSeason": "全年;注意离岸浪与落石警示",
+    "tags": [
+      "黑沙滩",
+      "玄武岩柱",
+      "民间传说",
+      "南岸"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Reynisfjara",
+        "url": "https://en.wikipedia.org/wiki/Reynisfjara",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-vatnajokull",
+    "name": "瓦特纳冰川国家公园",
+    "nameEn": "Vatnajökull National Park",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -16.9666,
+    "latitude": 64.016,
+    "summary": "欧洲体积最大的冰盖(7700立方公里)覆盖着七座活火山——冰与火在同一块岩层上直接对话。2019年整体列入世界遗产。",
+    "story": [
+      "瓦特纳冰盖的平均厚度超过400米,最厚处近千米。冰盖下藏着格里姆斯沃滕(Grímsvötn)等活火山:2011年喷发时,火山热融穿冰盖,冲出每秒数千吨的冰洪水(jökulhlaup)——冰岛的地貌,一半是火山画完冰盖描的。",
+      "冰洞是冬季限定:11月至3月,向导带游客进入冰舌边缘的蓝洞,气泡被千年压缩后,阳光在冰内只剩蓝色波段。冰洞每年位置都变——去年的洞,今年已被新的雪层封存。",
+      "冰盖的消融同样肉眼可见:测量显示过去二十年冰舌每年退缩数十至数百米。这里被列入世界遗产时,文件用了「动态地质过程的杰出示范」——所谓动态,包括正在发生的失去。"
+    ],
+    "bestSeason": "6-8月冰川徒步;11-3月冰洞季",
+    "tags": [
+      "世界遗产",
+      "冰盖",
+      "火山",
+      "冰洞"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(瓦特纳冰川国家公园)",
+        "url": "https://whc.unesco.org/en/list/1604",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Vatnajökull National Park",
+        "url": "https://en.wikipedia.org/wiki/Vatnajökull_National_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-aurora-reykjavik",
+    "name": "雷克雅未克极光",
+    "nameEn": "Northern Lights over Reykjavík",
+    "type": "observatory",
+    "countryId": "IS",
+    "cityId": "is-reykjavik",
+    "longitude": -21.9426,
+    "latitude": 64.1466,
+    "summary": "北纬64°的首都,9月至次年4月晴夜里,绿色光带常在城市上空起舞。它是「观测极光」门槛最低的城市——有时出门抬头就行。",
+    "story": [
+      "太阳风粒子沿地球磁场线撞入高层大气,氧原子发出绿光,氮原子染出紫红——极光是太阳活动的「可视信号」,常伴随11年周期的峰年增强。冰岛全岛位于极光带下缘,晴夜概率冠绝城市级目的地。",
+      "在城市内,格罗塔(Grotta)灯塔、珍珠楼(Perlan)屋顶与港口西侧是低光污染观测点;更认真的猎手会驱车逃离光晕,盯紧冰岛气象局的云量图与 KP 指数——「预报」给出的是概率,极光永远保留惊喜权。",
+      "北欧神话里极光是女武神铠甲的反光;挪威学者克里斯蒂安·伯克兰1896年用磁场实验证明其太阳成因,为现代空间物理奠基。从神话到科学,人类用了八百年读懂这场「天空的绿色帘幕」。"
+    ],
+    "bestSeason": "9月中-4月中;晴夜20:00-01:00",
+    "tags": [
+      "极光",
+      "夜空",
+      "天文观测",
+      "城市观测"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Aurora",
+        "url": "https://en.wikipedia.org/wiki/Aurora",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]

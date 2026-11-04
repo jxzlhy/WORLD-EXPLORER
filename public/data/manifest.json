@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-11-05",
+  "countriesFile": "/data/countries.json",
+  "citiesFiles": ["/data/cities.json"],
+  "destinationFiles": [
+    "/data/destinations/cn.json",
+    "/data/destinations/jp.json",
+    "/data/destinations/us.json",
+    "/data/destinations/fr.json",
+    "/data/destinations/it.json",
+    "/data/destinations/gb.json",
+    "/data/destinations/eg.json",
+    "/data/destinations/pe.json",
+    "/data/destinations/au.json",
+    "/data/destinations/is.json"
+  ]
+}

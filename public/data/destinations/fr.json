@@ -1,0 +1,268 @@
+[
+  {
+    "id": "fr-eiffel-tower",
+    "name": "埃菲尔铁塔",
+    "nameEn": "Eiffel Tower",
+    "type": "landmark",
+    "countryId": "FR",
+    "cityId": "fr-paris",
+    "longitude": 2.2945,
+    "latitude": 48.8584,
+    "summary": "1889年世界博览会入口,324米的全钢铁骨曾经是「丑陋的怪物」,如今是地球上最被拍照的建筑之一。",
+    "story": [
+      "为纪念法国大革命一百周年而建,居斯塔夫·埃菲尔的工程公司在27个月里组装了18038个锻铁构件、250万颗铆钉。建成时它是世界最高人造结构,并保持该纪录41年。",
+      "它差点在1909年被拆除——当初的设计寿命只有20年。拯救它的是无线电:军队发现铁塔是极佳的天线平台,一战期间它拦截了德军的通讯。一座「临时建筑」就这样永久留在了天际线上。",
+      "每天入夜后,铁塔亮起两万盏灯,整点闪烁五分钟。铁漆每七年重刷一次,耗漆60吨——「埃菲尔棕」共有三种色阶,底部最深,让塔身在视觉上更挺拔。"
+    ],
+    "bestSeason": "四季皆宜;日落前一小时登塔最佳",
+    "tags": [
+      "地标",
+      "工程",
+      "巴黎",
+      "取景地"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Eiffel Tower",
+        "url": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q243",
+    "quality": "S",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/fr-eiffel-tower.jpg",
+      "author": "Benh LIEU SONG",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATour_Eiffel_Wikimedia_Commons.jpg"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "fr-louvre",
+    "name": "卢浮宫",
+    "nameEn": "Louvre Museum",
+    "type": "museum",
+    "countryId": "FR",
+    "cityId": "fr-paris",
+    "longitude": 2.3376,
+    "latitude": 48.8606,
+    "summary": "从腓力二世纪念塔到文艺复兴王宫再到世界最大博物馆之一——卢浮宫本身就有八百年历史,藏品超过50万件。",
+    "story": [
+      "1190年,腓力二世在塞纳河右岸修建防御城堡;16世纪,弗朗索瓦一世把它改成文艺复兴宫殿,并在此挂上了他收藏的《蒙娜丽莎》。1793年大革命期间,王宫变为「国家博物馆」,贵族的收藏第一次向全民敞开。",
+      "卢浮宫的三件镇馆之宝恰好对应三种文明巅峰:《蒙娜丽莎》(文艺复兴)、《米洛的维纳斯》(古希腊)、《汉谟拉比法典》(美索不达米亚)。走完全部展厅约需两周——大多数人只看三件展品,这本身是另一种遗憾的参观方式。",
+      "1989年,贝聿铭的玻璃金字塔落成,最初被巴黎人痛骂为「整容失败」,如今已是「旧与新对话」的教科书案例。每天早上,游客从金字塔涌入拿破仑厅,像水滴汇入镜面。"
+    ],
+    "bestSeason": "全年;周三周五夜场人较少",
+    "tags": [
+      "博物馆",
+      "艺术",
+      "巴黎",
+      "宫殿"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Louvre",
+        "url": "https://en.wikipedia.org/wiki/Louvre",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "fr-versailles",
+    "name": "凡尔赛宫",
+    "nameEn": "Palace of Versailles",
+    "type": "heritage",
+    "countryId": "FR",
+    "cityId": "fr-paris",
+    "longitude": 2.1204,
+    "latitude": 48.8049,
+    "summary": "太阳王的宫殿,700余房间、800公顷园林。镜厅的十七面镜墙是绝对君主制的舞台布景——也是大革命的起点站。",
+    "story": [
+      "路易十四把父亲的猎庄改造成欧洲最大的宫殿,把整个法国贵族圈养在凡尔赛的礼仪体系里:起床、穿衣、用餐都是仪式,离国王越近,权力越大。园林由勒诺特雷设计,无穷的轴线与修剪过的树墙,是「理性征服自然」的立体宣言。",
+      "镜厅长73米、17扇窗对17面镜墙,1682年的烛光舞会里,镜子让火焰倍增——那是对「王即太阳」最直接的光学诠释。1919年,一战和约在此签署,德国代表被迫在镜厅签字,历史完成了一次辛辣的回环。",
+      "1789年10月,巴黎的妇女进军凡尔赛,把王室「押」回巴黎。宫殿的意义从此改写:从权力的顶点变成「旧制度」的代名词。今天这里的游客量甚至超过巴黎市中心。"
+    ],
+    "bestSeason": "4-10月(音乐喷泉日);清晨开门即入",
+    "tags": [
+      "世界遗产",
+      "宫殿",
+      "园林",
+      "法国史"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/300",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Palace of Versailles",
+        "url": "https://en.wikipedia.org/wiki/Palace_of_Versailles",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "fr-mont-saint-michel",
+    "name": "圣米歇尔山",
+    "nameEn": "Mont-Saint-Michel",
+    "type": "heritage",
+    "countryId": "FR",
+    "longitude": -1.5115,
+    "latitude": 48.6361,
+    "summary": "诺曼底海湾中的花岗岩孤岛,顶端修道院的尖顶直指天空。欧洲最大的潮差(14米)让它每天在「山」与「岛」之间切换身份。",
+    "story": [
+      "公元708年,阿夫朗什主教奥贝尔梦见天使长米歇尔,命他在礁石上建堂。此后一千三百年,朝圣者穿越流沙与潮汐抵达山脚——「通往天堂的路每天只有几小时」,是这个圣地最真实的隐喻。",
+      "修道院像洋葱一样层层向上:11世纪的罗马式教堂被压在15世纪哥特式唱诗班席位之下,修士的居所悬在教堂屋顶。涨潮时,海湾吞没滩涂,山体变成孤岛——二战时期这曾是天然要塞。",
+      "2014年新的栈桥取代了旧堤道,海水重新环绕山体。黄昏时分从桥上回望,修道院在暮色中亮灯,像一枚浮在银色沙海上的印章。"
+    ],
+    "bestSeason": "5-9月;大潮日(满月/新月前后)效果最佳",
+    "tags": [
+      "世界遗产",
+      "修道院",
+      "潮汐",
+      "诺曼底"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/80",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Mont-Saint-Michel",
+        "url": "https://en.wikipedia.org/wiki/Mont-Saint-Michel",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "fr-valensole-lavender",
+    "name": "瓦朗索勒高原",
+    "nameEn": "Valensole Plateau",
+    "type": "natural",
+    "countryId": "FR",
+    "longitude": 5.9833,
+    "latitude": 43.8333,
+    "summary": "普罗旺斯薰衣草的心脏地带,7月紫色的田垄沿山势起伏,与金黄的麦田拼成棋盘。南法的夏天在这里被「染」了出来。",
+    "story": [
+      "薰衣草在这片石灰岩高原上已生长数百年。它需要的正是这里最不缺的东西:贫瘠的土壤、强烈日照与昼夜温差——紫色的浪漫,本质是一种植物对艰苦环境的胜利。",
+      "7月中旬收割季前,田野达到颜色峰值。清晨五点的瓦朗索勒最好:露水未干,蜜蜂与薰衣草的嗡鸣同时开始,阳光从圣十字湖方向的群山后面漫过来。",
+      "梵高1888-1889年在普罗旺斯(阿尔勒)度过十五个月,画下三百余幅作品。他画的其实不是瓦朗索勒,但每个站在紫色田垄里的人都会想起《麦田上的柏树》那种旋转的、燃烧的蓝与黄。"
+    ],
+    "bestSeason": "6月下旬-7月中旬(薰衣草花期,收割前)",
+    "tags": [
+      "自然景观",
+      "薰衣草",
+      "普罗旺斯",
+      "田园"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Valensole",
+        "url": "https://en.wikipedia.org/wiki/Valensole",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "fr-chamonix-mont-blanc",
+    "name": "夏蒙尼·勃朗峰",
+    "nameEn": "Chamonix Mont-Blanc",
+    "type": "natural",
+    "countryId": "FR",
+    "cityId": "fr-chamonix",
+    "longitude": 6.8694,
+    "latitude": 45.9237,
+    "summary": "欧洲之巅勃朗峰(4809米)脚下的登山小镇,1924年首届冬奥会举办地。南针峰缆车的玻璃廊桥悬于海拔3842米。",
+    "story": [
+      "1786年8月8日,医生米歇尔-加布里埃尔·帕卡尔与水晶猎人雅克·巴尔马登顶勃朗峰——现代登山运动的元年由此写定。小镇中央至今立着纪念这次登顶的雕像,面朝山巅。",
+      "「冰海」(Mer de Glace)是法国最长的冰川,七公里长的冰河以每年数十米的速度蠕动。19世纪的绅士们骑着骡子来看它,如今缆车与齿轨火车载着游客站在同一个观景点——冰川却在肉眼可见地后退。",
+      "南针峰(Aiguille du Midi)缆车1955年通车时是世界最高缆车。山顶的「步入虚空」玻璃盒悬挑在千米深渊之上,脚下是冰川裂隙的蓝——这是阿尔卑斯式眩晕的标准配方。"
+    ],
+    "bestSeason": "6-9月(登山季)与12-4月(滑雪季)",
+    "tags": [
+      "高山",
+      "冰川",
+      "登山运动",
+      "阿尔卑斯"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Chamonix",
+        "url": "https://en.wikipedia.org/wiki/Chamonix",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "fr-etretat",
+    "name": "埃特勒塔白崖",
+    "nameEn": "Étretat Cliffs",
+    "type": "natural",
+    "countryId": "FR",
+    "longitude": 0.2044,
+    "latitude": 49.7075,
+    "summary": "诺曼底海岸的粉笔白垩崖,三座天然海蚀拱门伸入英吉利海峡。莫奈在同一片崖前画下三十余幅变奏曲。",
+    "story": [
+      "白垩崖由一亿年前的海洋微生物骨骼沉积而成,质地纯净得像切开的大理石。海水亿万年的冲蚀在南侧崖壁上凿出「大门」(La Porte d'Aval)与「大象鼻子」般的拱形,退潮时还能走到最著名的「针尖」海柱脚下。",
+      "莫奈在1883-1886年间在此架起画架,追逐同一片崖壁在不同光线下的一百种白。《埃特勒塔的悬崖》系列如今散落在世界各地美术馆——他画的其实不是崖,而是时间在一天里的颜色。",
+      "莫泊桑在埃特勒塔长大,称这里是「世界上最美的海滩」;大仲马、雨果都来过。崖顶小径(濒海步道)至今仍按当年文人散步的路线蜿蜒,冬季风暴时浪花可跃上30米崖顶。"
+    ],
+    "bestSeason": "5-9月;退潮时段可下海滩",
+    "tags": [
+      "海岸",
+      "白垩崖",
+      "印象派",
+      "诺曼底"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Étretat",
+        "url": "https://en.wikipedia.org/wiki/Étretat",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]

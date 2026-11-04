@@ -1,0 +1,87 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background: var(--we-void);
+  color: var(--we-text);
+  font-family: var(--we-sans);
+  font-size: var(--we-fs-body);
+  line-height: var(--we-lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+}
+
+/* 隐藏 Cesium 默认 credit(本项目数据全部本地化,来源在应用内标注) */
+.cesium-widget-credits,
+.cesium-credit-lightbox-overlay {
+  display: none !important;
+}
+
+/* 统一滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 180, 226, 0.18);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 180, 226, 0.32);
+}
+
+::selection {
+  background: rgba(232, 200, 150, 0.28);
+  color: var(--we-text-hi);
+}
+
+a {
+  color: var(--we-cyan);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--we-cyan);
+  outline-offset: 2px;
+  border-radius: var(--we-r-xs);
+}
+
+/* —— 通用工具类 —— */
+.we-caps-label {
+  font-size: var(--we-fs-micro);
+  letter-spacing: var(--we-ls-caps);
+  text-transform: uppercase;
+  color: var(--we-text-dim);
+  font-weight: 600;
+}
+
+.we-mono {
+  font-family: var(--we-mono);
+  font-size: var(--we-fs-small);
+  letter-spacing: 0.02em;
+}

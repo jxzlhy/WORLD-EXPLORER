@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cn-great-wall",
+    "file": "/media/destinations/cn-great-wall.jpg",
+    "author": "Velatrix",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat_Wall_of_China_July_2006.JPG",
+    "bytes": 412273,
+    "title": "File:Great Wall of China July 2006.JPG"
+  },
+  {
+    "id": "cn-forbidden-city",
+    "file": "/media/destinations/cn-forbidden-city.jpg",
+    "author": "Marcin Białek",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHall_of_Supreme_Harmony_2010.jpg",
+    "bytes": 68405,
+    "title": "File:Hall of Supreme Harmony 2010.jpg"
+  },
+  {
+    "id": "jp-mount-fuji",
+    "file": "/media/destinations/jp-mount-fuji.jpg",
+    "author": "Midori",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG",
+    "bytes": 294542,
+    "title": "File:Lake Kawaguchiko Sakura Mount Fuji 4.JPG"
+  },
+  {
+    "id": "us-grand-canyon",
+    "file": "/media/destinations/us-grand-canyon.jpg",
+    "author": "Michael Gäbler",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHazy_blue_hour_in_Grand_Canyon.JPG",
+    "bytes": 70193,
+    "title": "File:Hazy blue hour in Grand Canyon.JPG"
+  },
+  {
+    "id": "fr-eiffel-tower",
+    "file": "/media/destinations/fr-eiffel-tower.jpg",
+    "author": "Benh LIEU SONG",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATour_Eiffel_Wikimedia_Commons.jpg",
+    "bytes": 614616,
+    "title": "File:Tour Eiffel Wikimedia Commons.jpg"
+  },
+  {
+    "id": "it-colosseum",
+    "file": "/media/destinations/it-colosseum.jpg",
+    "author": "Wilfredor",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AColosseum_of_Rome_and_Roman_forum.jpg",
+    "bytes": 327751,
+    "title": "File:Colosseum of Rome and Roman forum.jpg"
+  },
+  {
+    "id": "eg-giza-pyramids",
+    "file": "/media/destinations/eg-giza-pyramids.jpg",
+    "author": "Petar Milošević",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat_Sphinx_of_Giza_%28%D8%A3%D8%A8%D9%88_%D8%A7%D9%84%D9%87%D9%88%D9%84%29.jpg",
+    "bytes": 297337,
+    "title": "File:Great Sphinx of Giza (أبو الهول).jpg"
+  },
+  {
+    "id": "pe-machu-picchu",
+    "file": "/media/destinations/pe-machu-picchu.jpg",
+    "author": "PIERRE ANDRE LECLERCQ",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMachu_Picchu_with_Huayna_Picchu_P%C3%A9rou_%283%29.jpg",
+    "bytes": 379806,
+    "title": "File:Machu Picchu with Huayna Picchu Pérou (3).jpg"
+  },
+  {
+    "id": "au-sydney-opera-house",
+    "file": "/media/destinations/au-sydney-opera-house.jpg",
+    "author": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASydney_Opera_House_-_Dec_2008.jpg",
+    "bytes": 204944,
+    "title": "File:Sydney Opera House - Dec 2008.jpg"
+  },
+  {
+    "id": "is-gullfoss",
+    "file": "/media/destinations/is-gullfoss.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGullfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_119.JPG",
+    "bytes": 432677,
+    "title": "File:Gullfoss, Suðurland, Islandia, 2014-08-16, DD 119.JPG"
+  }
+]

@@ -1,0 +1,337 @@
+[
+  {
+    "id": "cn-great-wall",
+    "name": "万里长城",
+    "nameEn": "The Great Wall",
+    "type": "heritage",
+    "countryId": "CN",
+    "cityId": "cn-beijing",
+    "longitude": 116.5704,
+    "latitude": 40.4319,
+    "summary": "人类历史上最庞大的防御工程,绵延两万余公里,跨越两千年的营造史。它不是一道墙,而是一整套由城墙、关隘、烽燧组成的边塞体系。",
+    "story": [
+      "长城并非一次建成。从战国时期各国互防的土石边墙,到秦始皇将其连缀为整体,再到明代以砖石重修的坚固边防——我们今天在北京看到的八达岭、慕田峪,大多是明代将军与工匠的手笔。",
+      "它见证的不只是战争。关市贸易、戍卒家书、孟姜女的传说、丝路商队的驼铃,都曾沿着这条山脊线流动。烽火传讯系统可以在一昼夜内将军情传遍千里,是前现代世界最快的「通信网络」。",
+      "1987年,长城被列入首批世界文化遗产。宇航员从太空用肉眼看不到长城——但这个流传甚广的传说,恰恰说明了它在人类想象中的位置。"
+    ],
+    "bestSeason": "秋季(10月中下旬,层林尽染,天气晴朗)",
+    "tags": [
+      "世界遗产",
+      "古代军事",
+      "明代建筑",
+      "徒步"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/438",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Great Wall of China",
+        "url": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q37600",
+    "quality": "S",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/cn-great-wall.jpg",
+      "author": "Velatrix",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat_Wall_of_China_July_2006.JPG"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-forbidden-city",
+    "name": "北京故宫",
+    "nameEn": "The Forbidden City",
+    "type": "heritage",
+    "countryId": "CN",
+    "cityId": "cn-beijing",
+    "longitude": 116.3972,
+    "latitude": 39.9163,
+    "summary": "明清两代皇宫,世界上现存规模最大、保存最完整的木结构宫殿群。九千余间房,七十二年才完成备料,却只用了四年正式施工。",
+    "story": [
+      "1406年,永乐皇帝朱棣下令营建新都。约百万工匠与民夫用了十四年,在中轴线正对子午线的位置上竖起这座「紫禁城」。黄色琉璃瓦只允许皇家使用,朱红宫墙在北方冬季的阳光下像凝固的火焰。",
+      "这里住过明清两代24位皇帝。太和殿广场可以容纳数万人朝贺,但皇帝的寝宫不过十余平米——权力与生活的尺度对比,就藏在这种空间落差里。",
+      "1925年,故宫博物院成立,昔日禁区成为每年接待千万人次观众的博物馆。186万余件藏品,从《清明上河图》到乾隆玉玺,构成一部连续的中华文明实物史。"
+    ],
+    "bestSeason": "秋季(9-10月)与初雪后",
+    "tags": [
+      "世界遗产",
+      "宫殿",
+      "博物馆",
+      "明清历史"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/439",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Forbidden City",
+        "url": "https://en.wikipedia.org/wiki/Forbidden_City",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q217074",
+    "quality": "S",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/cn-forbidden-city.jpg",
+      "author": "Marcin Białek",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHall_of_Supreme_Harmony_2010.jpg"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-terracotta-army",
+    "name": "秦始皇兵马俑",
+    "nameEn": "Terracotta Army",
+    "type": "heritage",
+    "countryId": "CN",
+    "cityId": "cn-xian",
+    "longitude": 109.2785,
+    "latitude": 34.3841,
+    "summary": "为秦始皇陵守卫的地下军团,八千余件陶俑千人千面。1974年由当地农民打井时偶然发现,被称为「二十世纪最重要的考古发现之一」。",
+    "story": [
+      "公元前246年,十三岁的嬴政即位秦王,同年开始为自己修建陵墓。动用刑徒与工匠七十余万人,营建近四十年。兵马俑坑只是陵墓东侧的守卫部队——地宫本体至今未被发掘。",
+      "每件陶俑都以真人模塑:发髻、铠甲、鞋底的针脚各不相同。原本通体施以彩绘,朱红、粉绿、天蓝,出土后几分钟内颜料便氧化卷曲脱落。今天的「灰扑扑」,其实是两千年色彩的残影。",
+      "1974年3月,临潼西杨村农民杨志发等人打井抗旱,锄头碰到了陶俑的头颅。此后一号坑、二号坑、三号坑陆续重见天日,一支沉默的军团重新列队。"
+    ],
+    "bestSeason": "春秋两季(避开暑期高峰)",
+    "tags": [
+      "世界遗产",
+      "考古",
+      "秦代",
+      "世界奇迹"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/441",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Terracotta Army",
+        "url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q163698",
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-mogao-caves",
+    "name": "莫高窟",
+    "nameEn": "Mogao Caves",
+    "type": "heritage",
+    "countryId": "CN",
+    "cityId": "cn-dunhuang",
+    "longitude": 94.8096,
+    "latitude": 40.0359,
+    "summary": "鸣沙山崖壁上的千年画廊,735个洞窟、4.5万平方米壁画。丝绸之路上的佛教艺术宝库,又称「千佛洞」。",
+    "story": [
+      "公元366年,僧人乐尊行至鸣沙山东麓,见夕阳中三危山金光万道、状若千佛,遂凿下第一个洞窟。此后十个世纪,历朝僧侣与供养人在崖壁上不断开凿,留下从未中断的艺术地层。",
+      "第96窟的北大像高三十五米,依崖而建;第220窟的初唐经变壁画色彩如新。1900年,道士王圆箓在清理积沙时意外发现藏经洞——五万余件文书重见天日,却在此后流散于世界各地,成为学术史上的千古憾事。",
+      "今天的研究者用数字化手段为每一个洞窟建立毫米级档案。壁画上的飞天不依靠翅膀,只凭飘带与流云便翱翔千年——那是东方对「飞翔」的独特想象。"
+    ],
+    "bestSeason": "5-6月或9-10月(避开沙尘与酷暑)",
+    "tags": [
+      "世界遗产",
+      "佛教艺术",
+      "壁画",
+      "丝绸之路"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/440",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Mogao Caves",
+        "url": "https://en.wikipedia.org/wiki/Mogao_Caves",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q345729",
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-potala-palace",
+    "name": "布达拉宫",
+    "nameEn": "Potala Palace",
+    "type": "heritage",
+    "countryId": "CN",
+    "cityId": "cn-lhasa",
+    "longitude": 91.1172,
+    "latitude": 29.6579,
+    "summary": "红山之巅的宫堡式建筑群,海拔3700米,世界海拔最高的古代宫殿。白宫与红宫相叠十三层,像从山岩中生长出来。",
+    "story": [
+      "公元7世纪,松赞干布迁都拉萨,为迎娶文成公主在红山上筑宫。现存建筑主体为十七世纪五世达赖喇嘛时期重建:白宫是政务与起居之所,红宫供奉历代达赖灵塔,最贵重的一座塔身包裹黄金三千余公斤。",
+      "宫内墙道曲折如迷宫,据说房间数以千计却无人能数清。墙壁由「白玛草」墙层压而成,既减轻墙体重量,又让深红颜色千年不褪——这是高原建筑独有的智慧。",
+      "每年藏历九月「粉刷季」,信众以牛奶、蜂蜜、白灰混合的涂料粉刷宫墙,布达拉宫因此被当地人称为「香甜的宫殿」。"
+    ],
+    "bestSeason": "5-10月(夏季含氧量较高,注意高原反应)",
+    "tags": [
+      "世界遗产",
+      "宫殿",
+      "藏传佛教",
+      "高原"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/707",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Potala Palace",
+        "url": "https://en.wikipedia.org/wiki/Potala_Palace",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-li-river",
+    "name": "桂林漓江",
+    "nameEn": "Li River",
+    "type": "natural",
+    "countryId": "CN",
+    "cityId": "cn-guilin",
+    "longitude": 110.2902,
+    "latitude": 25.2736,
+    "summary": "从桂林到阳朔的83公里水程,是喀斯特地貌的教科书式展演。青峰夹岸、绿水潆洄,「江作青罗带,山如碧玉篸」。",
+    "story": [
+      "三亿多年前,这里是一片汪洋。海底碳酸盐沉积成岩,又历经亿万年流水溶蚀,塑造出平地拔起的孤峰与蜿蜒的地下河——桂林山水因此被称为「中国喀斯特的皇冠」。",
+      "漓江两岸的渔火竹筏、鸬鹚捕鱼,自古就是画境。20元人民币背面的图案,取的正是兴坪段「黄布倒影」——它是世界上被印刷次数最多的风景之一。",
+      "九马画山、黄牛峡、兴坪古镇,每一处弯道都对应一段传说。乘船顺流而下,四个半小时里山形水色不断变换,像徐徐展开的长卷。"
+    ],
+    "bestSeason": "4-10月(丰水期,江面开阔)",
+    "tags": [
+      "自然奇观",
+      "喀斯特",
+      "山水",
+      "乘船游"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Li River",
+        "url": "https://en.wikipedia.org/wiki/Li_River_(Guangxi)",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-jiuzhaigou",
+    "name": "九寨沟",
+    "nameEn": "Jiuzhaigou Valley",
+    "type": "natural",
+    "countryId": "CN",
+    "longitude": 103.9166,
+    "latitude": 33.2622,
+    "summary": "岷山山脉中的高山湖泊群,一百余个海子如翡翠链条挂在雪山脚下。水色因钙华与藻类而呈现难以名状的蓝绿层次。",
+    "story": [
+      "「九寨」得名于沟内九个藏族村寨。当地人相信,男神达戈以风云磨成宝镜赠予女神沃洛色嫫,宝镜意外跌落人间,碎成一百零八片——每一片,都是一个海子。",
+      "五花海的水底钙华与沉木构成另一片森林;诺日朗瀑布是中国最宽的钙华瀑布之一。这里的湖水最大能见度达二十米,水与山的边界常常是错觉。",
+      "2017年8月8日,九寨沟发生7.0级地震,诺日朗瀑布一度垮塌。经过自然恢复与生态修复,景区以限流方式重新开放——脆弱的美丽,需要更温柔的注视。"
+    ],
+    "bestSeason": "10月中下旬(秋色倒影最盛)",
+    "tags": [
+      "世界遗产",
+      "湖泊",
+      "藏区",
+      "秋色"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/288",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Jiuzhaigou",
+        "url": "https://en.wikipedia.org/wiki/Jiuzhaigou",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-the-bund",
+    "name": "上海外滩",
+    "nameEn": "The Bund",
+    "type": "landmark",
+    "countryId": "CN",
+    "cityId": "cn-shanghai",
+    "longitude": 121.49,
+    "latitude": 31.24,
+    "summary": "黄浦江西岸的万国建筑博览群,52幢老建筑与对岸陆家嘴的摩天森林隔江对望,一条江倒映着中国近现代的一百七十年。",
+    "story": [
+      "1843年上海开埠,外滩成为码头与租界金融区的开端。汇丰银行大楼、海关大楼、和平饭店……「远东华尔街」在亚细亚的江岸上复制了一整条欧洲建筑史的横截面。",
+      "夜晚是外滩最好的时间:老建筑亮起暖金色的泛光,江对岸的东方明珠与上海中心流光闪烁。轮渡鸣笛驶过,江风里同时有1920年代与2120年代的气息。",
+      "清晨的外滩则是另一座城:晨练的老人、赶潮的江水、和平饭店门前的老式转门。城市把最喧嚣与最安静的时刻,都给了这条江岸。"
+    ],
+    "bestSeason": "四季皆宜,春秋最佳;傍晚至夜灯时段",
+    "tags": [
+      "城市地标",
+      "建筑群",
+      "夜景",
+      "近代史"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: The Bund",
+        "url": "https://en.wikipedia.org/wiki/The_Bund",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]

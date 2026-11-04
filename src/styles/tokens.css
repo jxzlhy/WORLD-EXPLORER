@@ -1,0 +1,114 @@
+/**
+ * WORLD EXPLORER — Design Tokens (单一事实来源)
+ * 所有组件只允许引用这些变量,禁止在组件内私自定义颜色/字号/圆角。
+ * 规范详见 docs/03-DESIGN-SYSTEM/DESIGN-TOKENS.md
+ */
+:root {
+  /* ---------- 色彩 · 底色(深空) ---------- */
+  --we-void: #030609;
+  --we-bg: #060b14;
+  --we-bg-raised: #0c1322;
+
+  /* ---------- 色彩 · 玻璃面板 ---------- */
+  --we-glass: rgba(10, 17, 31, 0.55);
+  --we-glass-strong: rgba(9, 15, 28, 0.84);
+  --we-glass-border: rgba(148, 180, 226, 0.14);
+  --we-glass-highlight: rgba(255, 255, 255, 0.06);
+
+  /* ---------- 色彩 · 文字 ---------- */
+  --we-text-hi: #eff4fc;
+  --we-text: #c7d0de;
+  --we-text-dim: #8b97ab;
+  --we-text-faint: #5a6478;
+
+  /* ---------- 色彩 · 强调 ---------- */
+  --we-gold: #e8c896; /* Editorial · 探索与故事 */
+  --we-gold-strong: #f5dcb0;
+  --we-gold-deep: #c9a06a;
+  --we-cyan: #6fc3ff; /* Spatial · 交互与地理 */
+  --we-cyan-deep: #3e8fd6;
+
+  /* ---------- 色彩 · 语义 ---------- */
+  --we-success: #6fd8a0;
+  --we-warning: #e8b45a;
+  --we-danger: #e86a6a;
+
+  /* ---------- 地标分类色 ---------- */
+  --we-type-heritage: #e8c896;
+  --we-type-natural: #7fd8b0;
+  --we-type-landmark: #6fc3ff;
+  --we-type-city: #d5def0;
+  --we-type-geology: #d8a87f;
+  --we-type-island: #8fd6e8;
+
+  /* ---------- 字体 ---------- */
+  --we-serif: 'Songti SC', 'STSong', Georgia, 'Times New Roman', serif;
+  --we-sans:
+    -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --we-mono: 'SF Mono', ui-monospace, 'JetBrains Mono', Menlo, Consolas, monospace;
+
+  /* ---------- 字号 / 行高 ---------- */
+  --we-fs-display: 44px;
+  --we-fs-title: 26px;
+  --we-fs-h2: 19px;
+  --we-fs-body: 14px;
+  --we-fs-small: 12px;
+  --we-fs-micro: 10px;
+  --we-lh-tight: 1.25;
+  --we-lh-normal: 1.6;
+  --we-lh-loose: 1.9;
+  --we-ls-caps: 0.18em;
+
+  /* ---------- 间距(4px 网格) ---------- */
+  --we-sp-1: 4px;
+  --we-sp-2: 8px;
+  --we-sp-3: 12px;
+  --we-sp-4: 16px;
+  --we-sp-5: 20px;
+  --we-sp-6: 24px;
+  --we-sp-8: 32px;
+  --we-sp-10: 40px;
+
+  /* ---------- 圆角 ---------- */
+  --we-r-xs: 6px;
+  --we-r-sm: 10px;
+  --we-r-md: 14px;
+  --we-r-lg: 20px;
+  --we-r-full: 999px;
+
+  /* ---------- 阴影 / 玻璃 ---------- */
+  --we-blur: 28px;
+  --we-blur-soft: 18px;
+  --we-shadow-panel: 0 18px 60px rgba(0, 0, 0, 0.55), 0 2px 12px rgba(0, 0, 0, 0.4);
+  --we-shadow-pop: 0 12px 40px rgba(0, 0, 0, 0.5);
+  --we-inner-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+
+  /* ---------- 动效 ---------- */
+  --we-dur-1: 150ms;
+  --we-dur-2: 280ms;
+  --we-dur-3: 520ms;
+  --we-dur-4: 900ms;
+  --we-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --we-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ---------- 层级 ---------- */
+  --we-z-globe: 0;
+  --we-z-panel: 10;
+  --we-z-topbar: 20;
+  --we-z-overlay: 30;
+  --we-z-modal: 40;
+
+  /* ---------- 响应式断点(JS 侧同值参考) ---------- */
+  --we-bp-mobile: 768px;
+  --we-bp-narrow: 1024px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --we-dur-1: 0ms;
+    --we-dur-2: 0ms;
+    --we-dur-3: 0ms;
+    --we-dur-4: 0ms;
+  }
+}

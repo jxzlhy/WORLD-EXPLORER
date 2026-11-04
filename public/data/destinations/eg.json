@@ -1,0 +1,253 @@
+[
+  {
+    "id": "eg-giza-pyramids",
+    "name": "吉萨金字塔群",
+    "nameEn": "Pyramids of Giza",
+    "type": "heritage",
+    "countryId": "EG",
+    "cityId": "eg-cairo",
+    "longitude": 31.1342,
+    "latitude": 29.9792,
+    "summary": "古世界七大奇迹中唯一存留至今的一处。胡夫金字塔在近四千年里保持「世界最高建筑」纪录,由约230万块巨石垒成。",
+    "story": [
+      "公元前2560年前后,胡夫金字塔落成:底边230米,误差不到20厘米;塔高146米,方位几乎正对真北。四千五百年前的工程师如何做到,至今仍在产生新的假说——直坡、螺旋坡、内部坡道各执一词。",
+      "狮身人面像蹲守在金字塔东侧,长73米,由整块石灰岩雕成。它的鼻子在14世纪被人为凿去(一说是炮击,一说是宗教破坏)——谜团本身也成了这座雕像的一部分。",
+      "金字塔不是奴隶建造的。工人村遗址显示,建造者是有面包配给、有医疗的轮班劳工,墓志上写着「胡夫的朋友」之类的头衔。原来这座「永恒」的工程,是靠普通人的伙食、班次与尊严完成的。"
+    ],
+    "bestSeason": "11-2月;清晨开门即入,避开正午",
+    "tags": [
+      "世界遗产",
+      "古代奇迹",
+      "法老",
+      "金字塔"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(孟菲斯及墓地)",
+        "url": "https://whc.unesco.org/en/list/86",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Giza pyramid complex",
+        "url": "https://en.wikipedia.org/wiki/Giza_pyramid_complex",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q121942",
+    "quality": "S",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/eg-giza-pyramids.jpg",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat_Sphinx_of_Giza_%28%D8%A3%D8%A8%D9%88_%D8%A7%D9%84%D9%87%D9%88%D9%84%29.jpg"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "eg-luxor-temple",
+    "name": "卢克索神庙",
+    "nameEn": "Luxor Temple",
+    "type": "heritage",
+    "countryId": "EG",
+    "cityId": "eg-luxor",
+    "longitude": 32.6396,
+    "latitude": 25.6996,
+    "summary": "古底比斯的南殿,献给阿蒙神「再生」形态。它最特别之处在于始终「活着」:法老厅、罗马军营、清真寺在同一平面上叠了三千年。",
+    "story": [
+      "新王国时期,每年奥佩特节,阿蒙神像从卡纳克乘船沿斯芬克斯大道南下,在此「与自己的灵魂会合」——神庙是整个节日的终点站。两公里长的斯芬克斯大道2021年修复贯通,可以从卢克索神庙一路走到卡纳克。",
+      "亚历山大大帝之后,罗马人把这里改成军营教堂;19世纪时,清真寺(阿布·哈贾吉)直接建在神庙庭院里,至今仍在使用。三层时空在同一面墙上叠加,考古学在这里是活着的城市史。",
+      "方尖碑原本成对,另一根1836年被运往巴黎,现在协和广场——离开埃及那天,它在船上摇晃了整整三个月。留下的这一根高25米,贴满金箔,如今是卢克索夜景的中心。"
+    ],
+    "bestSeason": "11-2月;夜场灯光下最震撼",
+    "tags": [
+      "世界遗产",
+      "神庙",
+      "底比斯",
+      "夜游"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(古底比斯)",
+        "url": "https://whc.unesco.org/en/list/87",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Luxor Temple",
+        "url": "https://en.wikipedia.org/wiki/Luxor_Temple",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "eg-valley-of-kings",
+    "name": "帝王谷",
+    "nameEn": "Valley of the Kings",
+    "type": "heritage",
+    "countryId": "EG",
+    "cityId": "eg-luxor",
+    "longitude": 32.6014,
+    "latitude": 25.7402,
+    "summary": "尼罗河西岸的干谷,新王国时期64位法老的地下陵墓。图坦卡蒙墓在此沉睡三千余年,1922年被霍华德·卡特推开。",
+    "story": [
+      "为了防盗,新王国法老放弃了金字塔,把陵墓藏进山谷岩层深处:墓道垂直下凿百余米,壁画沿墓道铺满,从太阳神颂歌一直画到冥界十二小时的旅程。这里的星空穹顶和《门之书》是世界最古老的「宇宙图」之一。",
+      "1922年11月,卡特的助手在台阶下清扫出一道密封石门,凿开一个小孔,借烛光望进去:「我看见了奇迹」——图坦卡蒙墓是帝王谷唯一基本未被盗掘的王墓,五千余件随葬品包括那只著名的黄金面具。",
+      "墓穴壁画的核心不是死亡,而是再生:太阳每晚穿过冥界,清晨重生;法老随行,与神同行。死亡在这里被画成一条船的航程——尼罗河的逻辑,延伸到了永恒。"
+    ],
+    "bestSeason": "11-2月;清晨开谷即入",
+    "tags": [
+      "世界遗产",
+      "陵墓",
+      "考古",
+      "壁画"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(古底比斯)",
+        "url": "https://whc.unesco.org/en/list/87",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Valley of the Kings",
+        "url": "https://en.wikipedia.org/wiki/Valley_of_the_Kings",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "eg-abu-simbel",
+    "name": "阿布辛贝神庙",
+    "nameEn": "Abu Simbel",
+    "type": "heritage",
+    "countryId": "EG",
+    "cityId": "eg-aswan",
+    "longitude": 31.6258,
+    "latitude": 22.3372,
+    "summary": "拉美西斯二世在努比亚崖壁上凿出的巨像神庙,四尊20米坐像俯瞰纳赛尔湖。每年2月22日与10月22日,阳光会照亮殿内最深处的神像。",
+    "story": [
+      "神庙建成于公元前1264年前后,深达60余米的殿堂尽头,四神并坐:拉美西斯与三位主神。每年两次,初升的阳光穿过65米门廊,精确照亮其中三尊——黑暗之神普塔始终留在阴影里。这种天文精度,让「太阳节」延续至今。",
+      "1960年代,阿斯旺高坝蓄水将淹没神庙。联合国发起史上最大规模文物保护行动:整座神庙被切割成2000余块、每块重达30吨的石块,在65米高处的重建址上原样拼回——1968年完成,全球五十多个国家参与出资。",
+      "搬迁后,太阳节迟到了一天(原为2月21日)——天文对齐在重建中出现了细微偏差。奇迹是人工的,误差也是:这本身就是20世纪人类给自己立的一座碑。"
+    ],
+    "bestSeason": "2月/10月太阳节前后;清晨从阿斯旺出发",
+    "tags": [
+      "世界遗产",
+      "巨像",
+      "文物保护奇迹",
+      "努比亚"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(努比亚遗址)",
+        "url": "https://whc.unesco.org/en/list/88",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Abu Simbel",
+        "url": "https://en.wikipedia.org/wiki/Abu_Simbel",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "eg-karnak",
+    "name": "卡纳克神庙",
+    "nameEn": "Karnak Temple",
+    "type": "heritage",
+    "countryId": "EG",
+    "cityId": "eg-luxor",
+    "longitude": 32.6573,
+    "latitude": 25.7188,
+    "summary": "人类史上最大的宗教建筑群之一,134根多柱厅石柱排成森林。两千年间,每一位重要法老都在此加盖自己的印记。",
+    "story": [
+      "卡纳克不是一座神庙,而是一座「神庙城市」:从公元前2055年到托勒密时代,历代法老在阿蒙神区不断扩建,围墙内有十余座神庙、方尖碑、圣湖。多柱厅面积超过5000平方米,134根石柱最高24米,柱顶能站百人。",
+      "哈特谢普苏特的方尖碑高29米,整块红花岗岩——她是古埃及为数不多的女法老,后继者曾试图用石墙把她「砌」出历史,而墙反而保存了石碑。",
+      "圣湖边的圣甲虫雕像,据说绕行七圈能带来姻缘。傍晚的声光秀让柱林在蓝紫色灯光中明灭——三千年的石头,仍在使用。"
+    ],
+    "bestSeason": "11-2月;清晨或声光秀场次",
+    "tags": [
+      "世界遗产",
+      "神庙",
+      "多柱厅",
+      "底比斯"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(古底比斯)",
+        "url": "https://whc.unesco.org/en/list/87",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Karnak",
+        "url": "https://en.wikipedia.org/wiki/Karnak",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "eg-bibliotheca-alexandrina",
+    "name": "亚历山大图书馆",
+    "nameEn": "Bibliotheca Alexandrina",
+    "type": "landmark",
+    "countryId": "EG",
+    "cityId": "eg-cairo",
+    "longitude": 29.9092,
+    "latitude": 31.2089,
+    "summary": "2002年在古代大图书馆原址附近落成的现代图书馆,倾斜的圆盘屋顶朝向地中海,像一轮从海面升起的太阳。",
+    "story": [
+      "古代亚历山大图书馆是托勒密王朝的野心:收藏「全世界的书」,鼎盛时据称藏书四十万至七十万卷,欧几里得、埃拉托色尼曾在此工作——后者正是在这里量出了地球周长。",
+      "古馆毁于数百年间的战火与衰退,具体过程至今是史学悬案。1990年代,埃及联合 UNESCO 推动复兴:新馆2002年落成,可容纳八百万册书,包括全球仅存的《苏格拉底手稿》类珍本的数字化档案。",
+      "新馆墙体外立面刻着120余种文字的字符——从汉字到盲文。馆内设有手稿博物馆与天文馆;它不再试图「收藏全部知识」,而是重新扮演那个古老的角色:地中海的思想港口。"
+    ],
+    "bestSeason": "全年;上午光线入馆最佳",
+    "tags": [
+      "图书馆",
+      "建筑",
+      "亚历山大",
+      "知识史"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Bibliotheca Alexandrina",
+        "url": "https://en.wikipedia.org/wiki/Bibliotheca_Alexandrina",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "B",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]

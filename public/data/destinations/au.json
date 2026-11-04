@@ -1,0 +1,251 @@
+[
+  {
+    "id": "au-great-barrier-reef",
+    "name": "大堡礁",
+    "nameEn": "Great Barrier Reef",
+    "type": "natural",
+    "countryId": "AU",
+    "cityId": "au-cairns",
+    "longitude": 147.7,
+    "latitude": -18.2861,
+    "summary": "从太空可见的活体结构:2300公里长、2900个独立礁体、400余种珊瑚。它是地球上最大的生物建筑,也是全球暖化最敏感的哨兵。",
+    "story": [
+      "大堡礁的「建筑师」是毫米级的珊瑚虫:它们分泌碳酸钙骨骼,亿万个体层层堆叠成礁体。现在的礁体年龄约六千至八千年,生长在更古老的礁盘之上——整个系统像一座有地层的城市。",
+      "1975年澳大利亚立法设立海洋公园区划,1981年整体列入世界遗产。但「管理」抵挡不了温度:1998、2002、2016、2017、2020、2022、2024年接连发生大规模白化事件——珊瑚排出共生藻后,礁体从彩虹变成骨骼白。",
+      "凯恩斯与圣灵群岛是两大门户。浮潜者在外堡礁看到的每一天都在变化:珊瑚产卵夜(11月满月后)的「雪暴」、鹦嘴鱼啃礁的声音、小丑鱼在海葵里眨眼——这里仍是地球上最丰富的肉眼可见的生态剧场。"
+    ],
+    "bestSeason": "6-10月(水温适中,能见度高)",
+    "tags": [
+      "世界遗产",
+      "珊瑚礁",
+      "潜水",
+      "生态"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/154",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Great Barrier Reef",
+        "url": "https://en.wikipedia.org/wiki/Great_Barrier_Reef",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q1801",
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "au-sydney-opera-house",
+    "name": "悉尼歌剧院",
+    "nameEn": "Sydney Opera House",
+    "type": "landmark",
+    "countryId": "AU",
+    "cityId": "au-sydney",
+    "longitude": 151.2153,
+    "latitude": -33.8568,
+    "summary": "丹麦建筑师约恩·乌松的「帆影」:105.6万块自洁瓷砖覆盖十组贝壳。它是最年轻的世界遗产之一,也是20世纪最著名的「难产」建筑。",
+    "story": [
+      "1957年,38岁的乌松从233个国际竞赛方案中胜出——评委会成员、美国建筑师沙里宁从落选堆里把它捞了回来。但「贝壳」如何建成,当时谁也不知道;乌松最终用「球体切割几何」统一了所有曲面:所有壳片都来自同一个直径75米的虚拟球。",
+      "工程预算从700万澳元膨胀到1.02亿,工期从4年拖到14年。1966年,乌松在政府拖欠款项与舆论风暴中辞职,终生没有回到澳大利亚看一眼建成的大厅。2007年歌剧院列入世界遗产时,文件特别写明:这是「20世纪不可复制的杰作」——以及一段关于理想主义代价的记录。",
+      "如今每年超过1800场演出在这里进行。傍晚从环形码头望去,白帆随天色从珍珠白变成霞紫——悉尼人叫它「回家时看到的第一盏灯」。"
+    ],
+    "bestSeason": "全年; Vivid Sydney 灯光节(5-6月)最盛",
+    "tags": [
+      "世界遗产",
+      "建筑",
+      "歌剧院",
+      "悉尼"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/166",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Sydney Opera House",
+        "url": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q1049931",
+    "quality": "S",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/au-sydney-opera-house.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASydney_Opera_House_-_Dec_2008.jpg"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "au-uluru",
+    "name": "乌鲁鲁(艾尔斯岩)",
+    "nameEn": "Uluru / Ayers Rock",
+    "type": "geology",
+    "countryId": "AU",
+    "longitude": 131.0369,
+    "latitude": -25.3444,
+    "summary": "红色中部的巨型砂岩独石,长3.6公里、高出荒漠平原348米。对阿南古人是创世的圣址,1985年起由原住民正式收回共同管理。",
+    "story": [
+      "乌鲁鲁是约5.5亿年前沉积砂岩在地壳抬升后「翻身」露出的一角——整块岩层深埋地下数公里,我们看到的是它的「冰山一角」。日落时岩体从赭红到深紫的变色调色,来自砂岩中铁质对光谱的氧化反应。",
+      "对阿南古(Yankunytjatjara/Pitjantjatjara)人而言,乌鲁鲁不是风景而是「图伦」(Tjukurpa,创世法)的实体:岩壁上的洞穴与裂痕,都是祖先在梦幻时代留下的痕迹。岩画遮棚至今仍是有性别与年龄门槛的圣地。",
+      "1985年10月26日,澳大利亚政府把乌鲁鲁-卡塔丘塔国家公园所有权交还阿南古人,再以99年租约共同管理。2019年10月25日,登山步道永久关闭——「这不是给我们,而是留给世界的一份礼物,请用手看,不要用脚。」"
+    ],
+    "bestSeason": "5-9月(避开夏季40°C酷暑);日出日落各看一次",
+    "tags": [
+      "世界遗产",
+      "原住民圣地",
+      "红土中心",
+      "地质"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(乌鲁鲁-卡塔丘塔)",
+        "url": "https://whc.unesco.org/en/list/447",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Uluru",
+        "url": "https://en.wikipedia.org/wiki/Uluru",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q191775",
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "au-twelve-apostles",
+    "name": "十二使徒岩",
+    "nameEn": "Twelve Apostles",
+    "type": "geology",
+    "countryId": "AU",
+    "longitude": 143.105,
+    "latitude": -38.665,
+    "summary": "大洋路尽头的石灰岩海柱群,南大洋的浪把崖壁切成一根根独立石塔。如今仅存八根——海岸线每年都在后退约两厘米。",
+    "story": [
+      "这些石柱是一亿年前的海洋沉积石灰岩,被海浪以每天数毫米的速度持续雕刻:先是洞穴,然后是拱门,拱门坍塌后留下孤柱。2005年7月,一根50米高的石柱在游客注视下坍塌——整个过程只用了几秒,「使徒」从九根变八根。",
+      "大洋路(Great Ocean Road)由一战退伍军人修建,1932年通车,是世界上最大的战争纪念构筑物:590名士兵用镐与铲,在悬崖上凿出这条243公里的公路。",
+      "观赏位最佳在日出:陆侧山影渐退,石柱从剪影变为金红。直升机航线从海上回望,能看到整条「石灰岩长城」的解剖图——洞、拱、柱、阶,是同一部侵蚀史的四个章节。"
+    ],
+    "bestSeason": "3-5月与9-11月;日出或黄昏",
+    "tags": [
+      "海岸",
+      "石灰岩",
+      "大洋路",
+      "侵蚀地貌"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Twelve Apostles (Victoria)",
+        "url": "https://en.wikipedia.org/wiki/Twelve_Apostles_(Victoria)",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "au-kakadu",
+    "name": "卡卡杜国家公园",
+    "nameEn": "Kakadu National Park",
+    "type": "natural",
+    "countryId": "AU",
+    "longitude": 132.5,
+    "latitude": -12.85,
+    "summary": "澳大利亚最大的国家公园(近两万平方公里),从季风雨林到红土悬崖。岩壁上的原住民绘画连续覆盖两万年——世界现存最长的艺术记录。",
+    "story": [
+      "乌比尔(Ubirr)与诺兰吉(Nourlangie)岩廊里,岩石画层层覆盖:最早的「动感人物」(Dynamic Figures)距今约两万年,最新的「接触期绘画」画着19世纪的帆船与水牛——一部画在石头上的连续编年史,1981年列入世界遗产(含文化与自然双属性)。",
+      "吉姆·吉姆瀑布(Jim Jim Falls)与双瀑布(Twin Falls)在雨季水量惊人,旱季则露出黑色岩壁;黄水湿地(Yellow Water)的日落游船穿行于鳄鱼与上万只候鸟之间——同一片土地在两个季节里是完全不同的两个世界。",
+      "公园由澳大利亚公园管理局与比宁吉/蒙吉利原住民传统所有者联合管理,岩画内容由族内长者主持讲述。这里不是「被保存的自然」,而是仍在被讲述的家园。"
+    ],
+    "bestSeason": "6-8月旱季(部分道路雨季封闭)",
+    "tags": [
+      "世界遗产",
+      "岩画",
+      "湿地",
+      "原住民"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/147",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Kakadu National Park",
+        "url": "https://en.wikipedia.org/wiki/Kakadu_National_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "au-tasmanian-wilderness",
+    "name": "塔斯马尼亚荒原",
+    "nameEn": "Tasmanian Wilderness",
+    "type": "natural",
+    "countryId": "AU",
+    "longitude": 145.7,
+    "latitude": -41.9,
+    "summary": "世界最后几片温带荒原之一,占塔斯马尼亚岛五分之一。摇篮山的湖面倒影、露脊湾的岩顶灯塔、两万年前冰川U形谷,构成「世界尽头」的具体形状。",
+    "story": [
+      "1982年,近140万公顷荒原整体列入世界遗产,是极少数同时满足七项文化遗产与自然遗产标准的地方。冰川把这片土地犁成数千个湖泊;南洋的强风把海岸削成锯齿状的海崖。",
+      "摇篮山(Cradle Mountain)与鸽湖的倒影是塔州的明信片封面:清晨无风时,花岗岩尖峰与铁灰色湖水互为镜像。Overland Track 六日徒步线每年10月至5月开放,单向通行,需提前购票——荒原管理得像一座博物馆。",
+      "2.4万年前,冰期把巴斯海峡变成陆桥,原住民步行来到塔斯马尼亚。库特娜库纳岩穴(Kutikina Cave)的考古层显示他们在冰期最冷时仍在此生活——世界尽头的「世界尽头」,一直有人家。"
+    ],
+    "bestSeason": "11-4月(南半球夏季);Overland Track 10月-5月",
+    "tags": [
+      "世界遗产",
+      "荒原",
+      "冰川地貌",
+      "徒步"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/181",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Tasmanian Wilderness",
+        "url": "https://en.wikipedia.org/wiki/Tasmanian_Wilderness_World_Heritage_Area",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]

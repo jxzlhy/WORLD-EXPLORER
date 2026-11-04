@@ -1,0 +1,297 @@
+[
+  {
+    "id": "it-colosseum",
+    "name": "罗马斗兽场",
+    "nameEn": "Colosseum",
+    "type": "heritage",
+    "countryId": "IT",
+    "cityId": "it-rome",
+    "longitude": 12.4922,
+    "latitude": 41.8902,
+    "summary": "公元80年落成的巨型剧场,可容纳五万观众的混凝土与凝灰岩杰作。它是罗马工程能力的纪念碑,也是帝国娱乐政治的核心舞台。",
+    "story": [
+      "韦帕芗皇帝在尼禄「金宫」的旧址上兴建斗兽场,把暴君的私人湖泊还给罗马人民。开幕百日庆典中,数千头野兽与角斗士在这里登台——观众席按社会等级严格分区,连看戏都是一场秩序演练。",
+      "它的技术细节直到今天仍被研究:八十个拱门让观众在几分钟内全部疏散(现代体育场仍在模仿);地下通道(hypogeum)有32个笼室升降口,猛兽与布景从地下「变」到场地中央。",
+      "中世纪它被当作采石场,大理石被拆去建圣彼得大教堂。本笃会教士曾在其中居住,底部一度长满植物——19世纪浪漫主义者称之为「植物学的天堂」。今天,十字架与帝国废墟在同一个拱门下共存。"
+    ],
+    "bestSeason": "4-6月与9-10月;清晨第一批入场",
+    "tags": [
+      "世界遗产",
+      "古罗马",
+      "竞技场",
+      "罗马"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(罗马历史中心)",
+        "url": "https://whc.unesco.org/en/list/91",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Colosseum",
+        "url": "https://en.wikipedia.org/wiki/Colosseum",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q102187",
+    "quality": "S",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/it-colosseum.jpg",
+      "author": "Wilfredor",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AColosseum_of_Rome_and_Roman_forum.jpg"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-venice",
+    "name": "威尼斯",
+    "nameEn": "Venice",
+    "type": "city",
+    "countryId": "IT",
+    "cityId": "it-venice",
+    "longitude": 12.3155,
+    "latitude": 45.4408,
+    "summary": "118座岛、400余座桥、177条水道——一座「没有汽车的城市」。它建立在数百万根木桩之上,正在缓慢下沉,却依然优雅。",
+    "story": [
+      "公元5世纪,难民为躲避蛮族入侵逃入潟湖,在淤泥中打入橡木桩,再在桩上铺放伊斯特拉石板——威尼斯的地基是一整片「水下森林」。说来奇妙,正是水的隔绝,让这座城在之后一千年里成为地中海的贸易女王。",
+      "里亚托桥与叹息桥之间,是马可·波罗出发去东方的港口。圣马可广场拿破仑称之为「欧洲最美的客厅」,涨水(acqua alta)时它变成一面巨大的镜子,游客在木栈道上排队走过。",
+      "潮汐、游轮与下沉正在改变威尼斯。1973年起意大利立法保护老城,摩西闸门(MOSE)系统于2020年首次启用,在大潮中托起移动闸壁。这座城市和海洋的谈判,还远没有结束。"
+    ],
+    "bestSeason": "4-6月与9-10月;避开夏季邮轮高峰",
+    "tags": [
+      "世界遗产",
+      "水城",
+      "运河",
+      "贡多拉"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/394",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Venice",
+        "url": "https://en.wikipedia.org/wiki/Venice",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-florence-duomo",
+    "name": "圣母百花大教堂",
+    "nameEn": "Florence Cathedral (Duomo)",
+    "type": "heritage",
+    "countryId": "IT",
+    "cityId": "it-florence",
+    "longitude": 11.256,
+    "latitude": 43.7731,
+    "summary": "布鲁内莱斯基的砖砌穹顶(1436年)横跨45米,不用脚手架支撑而自成一体,是文艺复兴工程学的第一声惊雷。",
+    "story": [
+      "1296年动工的大教堂,主体在140年后依然没有屋顶——45米的跨度超出了当时所有建造知识。1418年,金匠出身的布鲁内莱斯基赢得竞赛:他没有用传统的木拱架,而是设计了双层砖壳的「鱼骨式」砌法,让穹顶在砌筑过程中自我支撑。",
+      "穹顶外贴彩色陶砖,内部则是瓦萨里的《末日审判》。463级台阶盘旋于两层壳体之间的暗道,爬到顶部灯笼亭,整个托斯卡纳的红瓦屋顶在脚下展开——米开朗琪罗正是在这里获得灵感,后来建出了圣彼得大教堂穹顶。",
+      "大教堂与钟楼、洗礼堂构成佛罗伦萨的中心三角。洗礼堂「天堂之门」的鎏金铜雕让米开朗琪罗感叹:用它做天堂之门都配得上。"
+    ],
+    "bestSeason": "4-6月与9-10月;穹顶登顶需预约",
+    "tags": [
+      "世界遗产",
+      "教堂",
+      "文艺复兴",
+      "穹顶"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(佛罗伦萨历史中心)",
+        "url": "https://whc.unesco.org/en/list/174",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Florence Cathedral",
+        "url": "https://en.wikipedia.org/wiki/Florence_Cathedral",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-leaning-tower-pisa",
+    "name": "比萨斜塔",
+    "nameEn": "Leaning Tower of Pisa",
+    "type": "landmark",
+    "countryId": "IT",
+    "longitude": 10.3966,
+    "latitude": 43.723,
+    "summary": "1173年动工的钟楼,因地基松软在第二层完工时开始倾斜。它以「错误」成为世界奇迹——现倾斜角约3.97度。",
+    "story": [
+      "建到第三层时,南部软黏土承受不住重量,塔身开始向南倾斜。工程停了一百年——讽刺的是,正是这段等待让地基沉降稳定,塔「学会了」与自己的倾斜共存。此后历代工匠试图在上层反向补偿,塔身因此微微弯曲如香蕉。",
+      "伽利略传说中在此做过自由落体实验:两个不同质量的球同时落地。史学界对此存疑,但这个传说让斜塔从建筑事故升格为科学圣地。二战中,美军士兵拒绝炮击钟楼区——「它太美了,舍不得毁」。",
+      "1990-2001年,工程师用抽出地下水土方的方式把倾角从5.5度拉回约4度,并预言可以再稳三百年。今天游客们仍排队在同一角度摆出「扶塔」姿势——人类需要一点可爱的失败。"
+    ],
+    "bestSeason": "4-6月与9-10月;清晨草坪光线最佳",
+    "tags": [
+      "奇迹广场",
+      "钟楼",
+      "工程史",
+      "取景地"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(比萨奇迹广场)",
+        "url": "https://whc.unesco.org/en/list/395",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Leaning Tower of Pisa",
+        "url": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-pompeii",
+    "name": "庞贝古城",
+    "nameEn": "Pompeii",
+    "type": "heritage",
+    "countryId": "IT",
+    "longitude": 14.4869,
+    "latitude": 40.7497,
+    "summary": "公元79年维苏威火山喷发中被火山灰封存的罗马城市。时间在正午停住:面包还在炉里,狗还拴在门边,两万人的一瞬被凝固成两千年。",
+    "story": [
+      "公元79年10月(一说8月24日),维苏威火山两天内喷出数立方公里的火山灰与浮石。庞贝被埋在4-6米厚的灰烬之下,直到1748年才被重新「掘开」——现代考古学在这座城市里诞生。",
+      "火山灰包裹了遇难者的身体,尸体腐化后留下人形空腔。1863年,考古学家朱塞佩·菲奥雷利往空腔里注入石膏,「人形石膏像」由此诞生:蜷缩的母亲、相拥的恋人、捂着嘴的狗——它们让「灾难」第一次有了可触摸的细节。",
+      "庞贝的墙上有选举标语、角斗士涂鸦和「此处租住」的房源广告;面包房的石磨、妓院的价目表、别墅里的警示犬马赛克都在原位。这不是废墟,是一座还热着的城市标本。"
+    ],
+    "bestSeason": "4-6月与9-10月;清晨入场避晒",
+    "tags": [
+      "世界遗产",
+      "考古",
+      "古罗马",
+      "火山"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/829",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Pompeii",
+        "url": "https://en.wikipedia.org/wiki/Pompeii",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-cinque-terre",
+    "name": "五渔村",
+    "nameEn": "Cinque Terre",
+    "type": "island",
+    "countryId": "IT",
+    "longitude": 9.6439,
+    "latitude": 44.1461,
+    "summary": "利古里亚海岸悬崖上的五个彩色渔村,被两千公里的干石墙梯田固定在坡上。火车像穿针一样在海崖隧道间穿行。",
+    "story": [
+      "五个村子——蒙特罗索、韦尔纳扎、科尔尼利亚、马纳罗拉、里奥马焦雷——的历史可追溯至11世纪。中世纪农民在陡坡上垒起干石墙种植葡萄与柠檬,石墙总长约6000公里,「相当于从意大利砌到中国再折返」。",
+      "村庄涂色并非为了游客:渔夫出海归航时,浓雾里需要鲜明的颜色辨认家门。马纳罗拉悬崖上的俯瞰视角是五渔村的「标准照」——落日时分,黄色小屋嵌在深蓝海面上,像随手放错的一盒颜料。",
+      "1997年,五渔村连同波托韦内雷被列入世界遗产;1999年成立国家公园。徒步小径「爱之路」连接里奥马焦雷与马纳罗拉,全长不到一公里,却是全球求婚率最高的海边步道之一。"
+    ],
+    "bestSeason": "4-6月与9月;7-8月人流最高",
+    "tags": [
+      "世界遗产",
+      "渔村",
+      "海岸",
+      "徒步"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/826",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Cinque Terre",
+        "url": "https://en.wikipedia.org/wiki/Cinque_Terre",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-dolomites",
+    "name": "多洛米蒂",
+    "nameEn": "The Dolomites",
+    "type": "geology",
+    "countryId": "IT",
+    "longitude": 11.844,
+    "latitude": 46.41,
+    "summary": "阿尔卑斯山最上镜的一段:白云岩尖塔在日落时被染成玫瑰色(Enrosadira),「苍白之山」变成燃烧的山。",
+    "story": [
+      "两亿五千万年前,这里曾是热带浅海,珊瑚礁演化成今日的「化石山脉」——白云岩(dolomite)因以法国地质学家德奥达·德·多洛米厄(Déodat de Dolomieu)而命名。三峰山(Tre Cime di Lavaredo)的三根石柱是阿尔卑斯最著名的轮廓。",
+      "第一次世界大战期间,意奥战线就横贯多洛米蒂:士兵在垂直岩壁上开凿坑道与窗口,如今仍可在拉加祖奥伊的战争隧道里行走。「铁索栈道」(via ferrata)正是由战时钢缆演变成今天的登山设施。",
+      "日落时分的「玫瑰色晚霞」是白云岩的专属现象:岩石中的锰与日光角度互动,山体在十分钟内从白变粉再变深红。当地传说那是「月亮国王」的玫瑰花园在燃烧。"
+    ],
+    "bestSeason": "6-9月徒步;12-3月滑雪;日落时分必看",
+    "tags": [
+      "世界遗产",
+      "山脉",
+      "白云岩",
+      "徒步"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1287",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Dolomites",
+        "url": "https://en.wikipedia.org/wiki/Dolomites",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]

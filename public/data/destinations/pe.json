@@ -1,0 +1,245 @@
+[
+  {
+    "id": "pe-machu-picchu",
+    "name": "马丘比丘",
+    "nameEn": "Machu Picchu",
+    "type": "heritage",
+    "countryId": "PE",
+    "cityId": "pe-cusco",
+    "longitude": -72.545,
+    "latitude": -13.1631,
+    "summary": "海拔2430米山脊上的印加石城,1911年被宾厄姆重新发现时被藤蔓覆盖。它为何建在云端、为何被废弃,至今没有完整答案。",
+    "story": [
+      "马丘比丘约建于15世纪中叶帕查库提皇帝时期。两百吨重——不,是重达数十吨的花岗岩块被从采石场运上山脊,石块之间严丝合缝,连刀片都插不进,而印加人没有铁器、没有轮子、也没有驮重牲口。",
+      "城市的选址是天文与地形的合谋:太阳神庙的窗口对准六月冬至的日出;梯田的排水系统让这座年降水近两千毫米的山城稳稳站住五百年。1911年,耶鲁学者海勒姆·宾厄姆在寻找「印加失落之城」时被当地农夫引上山——他找错了城,却找到了更伟大的那座。",
+      "每日限流:印加古道徒步者最多500人(含向导与挑夫),火车游客分时段进入。清晨云雾散开前的马丘比丘像悬浮在安第斯山上——克丘亚语的「古老的山」,名不虚传。"
+    ],
+    "bestSeason": "5-9月(旱季);清晨第一批入城",
+    "tags": [
+      "世界遗产",
+      "印加",
+      "考古",
+      "安第斯"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/274",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Machu Picchu",
+        "url": "https://en.wikipedia.org/wiki/Machu_Picchu",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q10223",
+    "quality": "S",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/pe-machu-picchu.jpg",
+      "author": "PIERRE ANDRE LECLERCQ",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMachu_Picchu_with_Huayna_Picchu_P%C3%A9rou_%283%29.jpg"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-cusco-historic",
+    "name": "库斯科历史中心",
+    "nameEn": "Historic Centre of Cusco",
+    "type": "heritage",
+    "countryId": "PE",
+    "cityId": "pe-cusco",
+    "longitude": -71.9785,
+    "latitude": -13.517,
+    "summary": "「世界之脐」——印加帝国的首都,西班牙殖民者在印加石墙上盖起巴洛克教堂。城市本身是一座双层文明的地层剖面。",
+    "story": [
+      "库斯科的城市规划是一头美洲狮的形状:神庙是头,广场是腹,堡垒是尾——印加人把宇宙观直接写进了街道。太阳神殿科里坎查的石墙精确到地震时石块会「跳舞」后归位,而不倒。",
+      "1533年西班牙人到来,拆掉神庙,在印加基座上建起教堂与修道院。地震多次摧毁殖民建筑,而印加石墙始终站立——今天你在城中看到的是「石墙上面挂阳台」的混血城市,1983年整体列入世界遗产。",
+      "每年6月24日的太阳节(Inti Raymi)是南美最大的原住民庆典之一,上万人从广场走到萨塞瓦曼堡垒重演祭日仪式。城市窄巷里的石缝中,常见朝圣者把手指按进去感受石头余温——那是印加人留给这座城的体温。"
+    ],
+    "bestSeason": "5-9月旱季;6月下旬太阳节",
+    "tags": [
+      "世界遗产",
+      "印加",
+      "殖民建筑",
+      "海拔3400米"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/273",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Cusco",
+        "url": "https://en.wikipedia.org/wiki/Cusco",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-nazca-lines",
+    "name": "纳斯卡线条",
+    "nameEn": "Nazca Lines",
+    "type": "geology",
+    "countryId": "PE",
+    "longitude": -75.13,
+    "latitude": -14.739,
+    "summary": "荒漠戈壁上刻出的巨型图案:蜂鸟、猴子、蜘蛛、太空人,最长超过300米,只能从空中辨认。公元前500年-公元500年间谁为谁而画?",
+    "story": [
+      "纳斯卡人掀开深色铁砾石,露出下方浅黄土壤,再压紧边缘防风化——如此简单的工艺,造出了数百个几何图形与生物画像。因为极度干燥、无风的荒漠气候,它们保存了两千年。",
+      "1939年,医生保罗·科索克乘机掠过荒漠,发现了「为天空而画」的图案。蜂鸟翼展66米,线条误差不超过几度;「太空人」图案则更像戴着头盔的祭祀舞者。观景台只能看到两三个图形,看全景必须乘小飞机。",
+      "主流解释是祈雨仪式:纳斯卡地区年降水几乎为零,图案可能是向山神与水神「可视化」的祷文。2019年,研究人员用 AI 辅助新发现了140余个图形——无人机与算法,成了两千年后第一批「读懂天空视角」的访客。"
+    ],
+    "bestSeason": "5-10月;上午能见度最高",
+    "tags": [
+      "世界遗产",
+      "地画",
+      "谜团",
+      "飞行观光"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/700",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Nazca Lines",
+        "url": "https://en.wikipedia.org/wiki/Nazca_Lines",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-lake-titicaca",
+    "name": "的的喀喀湖",
+    "nameEn": "Lake Titicaca",
+    "type": "natural",
+    "countryId": "PE",
+    "longitude": -69.87,
+    "latitude": -15.84,
+    "summary": "海拔3812米的世界最高可通航大湖,秘鲁与玻利维亚共享。乌鲁斯人用数十层托托拉芦苇捆出浮岛,在上面生活了数百年。",
+    "story": [
+      "在安第斯宇宙观里,的的喀喀湖是世界的起点:太阳神与月亮神从湖中升起,印加的创世神话由此展开。湖水终年低温却相对温暖,让高海拔湖区成为农牧文明的摇篮。",
+      "乌鲁斯(Uros)人是湖上的「浮岛民族」:托托拉芦苇一层层捆扎成岛,连房屋、船都是同一种草。芦苇底部会被水腐蚀,整座岛必须每月补铺新草——住在「正在生长的土地」上,是这里最诗意也最真实的日常。",
+      "塔基利(Taquile)岛以纺织闻名,男人的针织帽颜色表明婚姻状况:红白相间是单身。1994年起,湖上的塔基利纺织艺术被列入人类非物质文化遗产名录。"
+    ],
+    "bestSeason": "5-10月旱季;普诺出发一日或多日船游",
+    "tags": [
+      "高原湖泊",
+      "浮岛",
+      "原住民文化",
+      "安第斯"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Lake Titicaca",
+        "url": "https://en.wikipedia.org/wiki/Lake_Titicaca",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-rainbow-mountain",
+    "name": "彩虹山",
+    "nameEn": "Vinicunca (Rainbow Mountain)",
+    "type": "geology",
+    "countryId": "PE",
+    "cityId": "pe-cusco",
+    "longitude": -71.3036,
+    "latitude": -13.8697,
+    "summary": "海拔5203米的矿彩山体:铁、铜、硫化物在沉积岩里染出七层色带。全球变暖让这片雪下山脊在近年「脱雪显色」。",
+    "story": [
+      "彩虹山其实一直都在:三叠纪沉积岩中的矿物让它天然拥有赭红、硫黄、孔雀绿与钛白。但常年积雪把色彩封在山下——随着雪线上升,2010年代初它才「显形」,并迅速成为安第斯最上镜的新地标。",
+      "色彩带是地质年代的时间轴:每一层代表一次远古的湖相或河相沉积,像切开的多层蛋糕。阳光角度不同,饱和度也随之改变——清晨色最浓,正午偏灰。",
+      "登顶最后100米坡陡氧稀,多数人走三步停一步,和海拔5200米的自己谈判。山顶的羊驼与当地牧民共享这一刻——他们比游客更早知道,这座山每天都在变色。"
+    ],
+    "bestSeason": "5-9月旱季;库斯科出发一日团",
+    "tags": [
+      "地质奇观",
+      "高海拔",
+      "徒步",
+      "安第斯"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Vinicunca",
+        "url": "https://en.wikipedia.org/wiki/Vinicunca",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "B",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-inca-trail",
+    "name": "印加古道(马丘比丘段)",
+    "nameEn": "Inca Trail",
+    "type": "heritage",
+    "countryId": "PE",
+    "cityId": "pe-cusco",
+    "longitude": -72.593,
+    "latitude": -13.1872,
+    "summary": "绵延三万公里的印加路网在安第斯山中最著名的一段:四天徒步,翻越海拔4215米的死女人山口,从太阳门走进马丘比丘。",
+    "story": [
+      "印加路网(Qhapaq Ñan)总长约四万公里,把一个没有车轮、没有文字的帝国缝合在一起:驿站每隔一天脚程设一座,信使接力传递结绳信息,一天可传240公里——那是一个用双腿运行的「高速网络」。2014年,整条路网被列入世界遗产。",
+      "经典四日线从82公里标出发:第一天沿乌鲁班巴河谷缓行,第二天翻越死女人山口(Dead Woman's Pass,4215米),此后云雾森林接管山路,石板路穿过印加驿站与梯田。第三天黄昏,徒步者会经过太阳门(Inti Punku)——马丘比丘在脚下云海中亮起第一道光。",
+      "古道每日限500人(含向导与挑夫),需数月前预约。挑夫团队背着数十公斤的装备在石阶上超越游客——这条路真正的守护者,是他们的膝盖与肩。"
+    ],
+    "bestSeason": "5-9月旱季;2月养护闭路",
+    "tags": [
+      "世界遗产",
+      "徒步",
+      "印加路网",
+      "朝圣之路"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(Qhapaq Ñan)",
+        "url": "https://whc.unesco.org/en/list/1459",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Inca Trail to Machu Picchu",
+        "url": "https://en.wikipedia.org/wiki/Inca_Trail_to_Machu_Picchu",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]

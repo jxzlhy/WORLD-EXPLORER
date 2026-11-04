@@ -1,0 +1,172 @@
+[
+  {
+    "id": "gb-westminster",
+    "name": "威斯敏斯特宫与大本钟",
+    "nameEn": "Palace of Westminster & Big Ben",
+    "type": "heritage",
+    "countryId": "GB",
+    "cityId": "gb-london",
+    "longitude": -0.1246,
+    "latitude": 51.5007,
+    "summary": "泰晤士河畔的哥特复兴式国会大厦,96米的伊丽莎白塔上悬挂着「大本钟」。英国议会民主制的心脏与报时钟。",
+    "story": [
+      "现建筑建于1834年大火之后,查尔斯·巴里设计、奥古斯塔斯·普金完成室内——普金后来疯掉,但他留下的雕饰密度让这座宫殿成为哥特复兴的巅峰。旧宫唯一的幸存者是威斯敏斯特大厅,1097年的橡木锤梁屋顶至今无钉。",
+      "「大本钟」其实只是大钟的名字(一说取自本杰明·霍尔爵士),塔楼在2012年更名为伊丽莎白塔。钟摆上叠放着一枚旧便士——加减一枚,一天快慢各变五分之二秒,维多利亚时代的微调技术沿用至今。",
+      "议会开幕时,国王不能进入下议院——那是1642年查理一世闯入逮捕五名议员未遂之后定下的规矩。建筑本身就是一部立宪史:每一道门槛都对应一次王权与议会的谈判。"
+    ],
+    "bestSeason": "全年;黄昏河岸灯光最上镜",
+    "tags": ["世界遗产", "议会", "哥特复兴", "伦敦"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/426", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Palace of Westminster", "url": "https://en.wikipedia.org/wiki/Palace_of_Westminster", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-british-museum",
+    "name": "大英博物馆",
+    "nameEn": "British Museum",
+    "type": "museum",
+    "countryId": "GB",
+    "cityId": "gb-london",
+    "longitude": -0.127,
+    "latitude": 51.5194,
+    "summary": "1753年成立的世界首个公共国家博物馆,800万件藏品覆盖人类文明全程。大中庭的玻璃网格屋顶本身就是一件展品。",
+    "story": [
+      "馆藏起点是汉斯·斯隆爵士的七万余件私人收藏——他遗嘱规定藏品「不以个人名义,而以全人类利益」保存。1759年博物馆免费开放,门票理念延续至今。",
+      "罗塞塔石碑(公元前196年)是馆里最拥挤的展柜:一块刻有三种文字的玄武岩石碑,成为商博良破译象形文字的钥匙。帕特农神庙雕塑、复活节岛石像、埃及木乃伊——每件藏品背后都有一段殖民与收藏史的争议,博物馆对此并不回避。",
+      "诺曼·福斯特设计的大中庭(2000年)是欧洲最大有顶广场,3312块玻璃自圆心螺旋铺开。在这里抬头,能同时看到19世纪的石柱与21世纪的天光——文明的时间线在头顶交汇。"
+    ],
+    "bestSeason": "全年;周五夜场至20:30",
+    "tags": ["博物馆", "人类文明", "伦敦", "免费"],
+    "sources": [
+      { "name": "Wikipedia: British Museum", "url": "https://en.wikipedia.org/wiki/British_Museum", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-stonehenge",
+    "name": "巨石阵",
+    "nameEn": "Stonehenge",
+    "type": "heritage",
+    "countryId": "GB",
+    "longitude": -1.8262,
+    "latitude": 51.1789,
+    "summary": "索尔兹伯里平原上的史前环形石阵,最大的砂岩漂砾重达30吨,竖立于约公元前2500年。它的用途至今没有定论。",
+    "story": [
+      "巨石阵经历了至少五个建造阶段,横跨千年。蓝砂石来自230公里外的威尔士普雷塞利山——在新石器时代,没有车轮可用的情况下,这是整个不列颠最疯狂的水陆联运工程。",
+      "夏至日,日出光线精确穿过「踵石」直抵阵列中心;冬至日落方向亦对称。它至少是一座与太阳历法相关的圣所。2023年,科学家在附近发现猪骨与宴饮遗迹,证实人们在冬至、夏至从全岛赶来聚会——像一场持续了四千年的节庆。",
+      "附近的杜灵顿垣墙(巨木阵)与巨石阵遥遥相对:一木一石,一「生者之城」一「逝者之所」。新石器时代的建筑师,或许早就规划好了整套生死仪式的地理。"
+    ],
+    "bestSeason": "6月21日夏至(免费开放日)或春秋晴日清晨",
+    "tags": ["世界遗产", "史前", "谜团", "天文"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/373", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Stonehenge", "url": "https://en.wikipedia.org/wiki/Stonehenge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "wikidataId": "Q105013",
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-edinburgh-castle",
+    "name": "爱丁堡城堡",
+    "nameEn": "Edinburgh Castle",
+    "type": "heritage",
+    "countryId": "GB",
+    "cityId": "gb-edinburgh",
+    "longitude": -3.1999,
+    "latitude": 55.9486,
+    "summary": "死火山岩顶上的要塞,俯瞰整座「北方雅典」。苏格兰王权象征「命运之石」与王冠在此保存;每天下午一点鸣放礼炮。",
+    "story": [
+      "城堡岩是三亿五千万年前死火山的颈管,冰川把两侧削成天然的斜坡要塞。人类在此居住已近三千年——比罗马伦敦更早。11世纪,苏格兰国王马尔科姆三世与圣玛格丽特的宫殿就建在岩顶。",
+      "命运之石(Stone of Destiny)是苏格兰国王加冕的宝座之石,1296年被爱德华一世运往威斯敏斯特,700年后的1996年正式归还苏格兰——那块「回家」的石头,如今就陈列在城堡王冠室里。",
+      "每天13:00(周日除外)的 One O'Clock Gun 准时鸣响,这是1856年给福斯湾船只对时的传统。八月军乐节时,城堡前广场的看台像一座临时歌剧院,风笛声在城市上空回荡。"
+    ],
+    "bestSeason": "8月(军乐节)与5-6月;风大,备外套",
+    "tags": ["城堡", "苏格兰", "火山岩", "军乐节"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心(爱丁堡老城与新城)", "url": "https://whc.unesco.org/en/list/728", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Edinburgh Castle", "url": "https://en.wikipedia.org/wiki/Edinburgh_Castle", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-lake-district",
+    "name": "湖区国家公园",
+    "nameEn": "Lake District",
+    "type": "natural",
+    "countryId": "GB",
+    "longitude": -3.0886,
+    "latitude": 54.4609,
+    "summary": "英格兰最大的国家公园,16个湖泊与英格兰全部最高峰。华兹华斯的诗、比阿特丽克斯的彼得兔,都从这里的湖畔长出来。",
+    "story": [
+      "冰期把这片山地犁成碗状盆地,融水填满后成为湖区。温德米尔湖是英格兰最大湖泊,斯科费尔峰(978米)是英格兰最高点——「一国之最」在几十公里内成对出现,密度惊人。",
+      "1798年,华兹华斯与柯勒律治在此发表《抒情歌谣集》,拉开英国浪漫主义序幕。华兹华斯在格拉斯米尔住了半生,他认为湖区的羊栏、石墙与山径是「人与自然协作」的范本——2017年,湖区以「文化景观」之名整体列入世界遗产,理由几乎就是他的诗。",
+      "1905年,波特小姐在温德米尔写下《彼得兔的故事》,并用版税买下山庄农场,身后把四千英亩土地捐给国民信托。今天的湖区,一半是风景,一半是这两个人留下的保护机制。"
+    ],
+    "bestSeason": "5-6月与9-10月;雨天备徒步鞋",
+    "tags": ["世界遗产", "国家公园", "湖泊", "浪漫主义"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1422", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Lake District", "url": "https://en.wikipedia.org/wiki/Lake_District", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-tower-bridge",
+    "name": "伦敦塔桥",
+    "nameEn": "Tower Bridge",
+    "type": "landmark",
+    "countryId": "GB",
+    "cityId": "gb-london",
+    "longitude": -0.0754,
+    "latitude": 51.5055,
+    "summary": "1894年通车的开合桥:双塔之间的桥面像抽屉一样抬起,让万吨帆船通过。哥特外壳之下,是维多利亚时代的蒸汽与液压心脏。",
+    "story": [
+      "东伦敦码头需要通航,城西商人需要过河——十余年争执后,城市建筑师霍拉斯·琼斯给出答案:一座「可以打开的固定桥」。桥面由蒸汽驱动的液压机在90秒内抬起,至今仍为高桅船只开桥,只是动力换成了电。",
+      "设计要求「与伦敦塔风格协调」,于是桥身包上了花岗岩与波特兰石的哥特外衣——很多人以为它是老古董,其实它比埃菲尔铁塔只年轻五岁。1976年前,开桥全靠蒸汽:锅炉房里六名司炉日夜轮班。",
+      "42米高的上层步道1910年后因无人使用而关闭,1982年重新开放成为玻璃走廊。站在廊桥上,脚下是双层巴士穿行,眼前是泰晤士河从千年帝都流向金融城的两岸天际线。"
+    ],
+    "bestSeason": "全年;开桥时刻表见官网",
+    "tags": ["桥梁", "维多利亚", "工程", "伦敦"],
+    "sources": [
+      { "name": "Wikipedia: Tower Bridge", "url": "https://en.wikipedia.org/wiki/Tower_Bridge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-cotswolds",
+    "name": "科茨沃尔德",
+    "nameEn": "Cotswolds",
+    "type": "natural",
+    "countryId": "GB",
+    "longitude": -1.8433,
+    "latitude": 51.833,
+    "summary": "英格兰中部蜜色石灰岩丘陵,百余个「蜂蜜色村庄」散落在羊毛财富留下的坡地上。英国乡村审美的原型地。",
+    "story": [
+      "中世纪,科茨沃尔德羊背上驮着英格兰经济的半壁江山——「羊毛财富」建起了百座大教堂级的乡村教区教堂。羊毛贸易衰落后,村庄被时间遗忘,而遗忘恰好保存了石屋、集市拱廊与弯弯的溪桥。",
+      "当地蜜色石灰岩(Bath Stone 一脉)随阳光从金黄变到蜜糖色,冬季覆雪时又变成童话。拜伯里(Bibury)被威廉·莫里斯称为「英格兰最美的村庄」,阿灵顿排屋从1380年起就是同一副面孔。",
+      "Cotswold Way 步道贯穿102公里的山脊,经过罗马别墅、内战战场与史前长坟。它不是一处景点,而是一整片被精心保存的「英格兰性」:慢速、蜜色、带羊咩声。"
+    ],
+    "bestSeason": "5-7月与9月;自驾或徒步皆宜",
+    "tags": ["乡村", "羊毛之路", "石屋", "徒步"],
+    "sources": [
+      { "name": "Wikipedia: Cotswolds", "url": "https://en.wikipedia.org/wiki/Cotswolds", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "B",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "id": "us-grand-canyon",
+    "name": "科罗拉多大峡谷",
+    "nameEn": "Grand Canyon",
+    "type": "geology",
+    "countryId": "US",
+    "longitude": -112.1401,
+    "latitude": 36.0544,
+    "summary": "科罗拉多河用六百万年切出的446公里峡谷,最深1800米。站在南缘眺望,二十亿年的地质史像书页一样摊开在阳光下。",
+    "story": [
+      "峡谷的地层是一部自下而上的地球史:最底部的毗湿奴片岩约有18亿年历史,是北美最古老的岩石之一;而峡谷本身年轻得多——河水与高原隆升的赛跑,才刚刚切到一半。",
+      "1540年,西班牙探险者作为首批欧洲人抵达峡谷边缘,却因绝壁无法下行。1869年,独臂军人约翰·韦斯利·鲍威尔率九人乘木船顺科罗拉多河而下,完成史上首次峡谷漂流,三名队员中途退出后再未归来。",
+      "一天中的峡谷没有固定颜色:日出时紫红,正午土金,黄昏则燃烧成橘红。地质学家说这里「像打开了一部书」——对游客而言,那是一部需要用脚和光线的角度来阅读的书。"
+    ],
+    "bestSeason": "3-5月与9-11月;南缘冬季亦开放",
+    "tags": [
+      "自然奇观",
+      "地质",
+      "国家公园",
+      "美国"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Grand Canyon",
+        "url": "https://en.wikipedia.org/wiki/Grand_Canyon",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q118082",
+    "quality": "S",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/us-grand-canyon.jpg",
+      "author": "Michael Gäbler",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHazy_blue_hour_in_Grand_Canyon.JPG"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "us-yellowstone",
+    "name": "黄石国家公园",
+    "nameEn": "Yellowstone National Park",
+    "type": "natural",
+    "countryId": "US",
+    "longitude": -110.5885,
+    "latitude": 44.428,
+    "summary": "世界第一座国家公园(1872年),坐在一座超级火山之上。老忠实间歇泉每90分钟喷发一次,大棱镜温泉像大地的瞳孔。",
+    "story": [
+      "黄石高原之下是一座直径约70公里的巨型破火山口,地下岩浆房提供了全球最活跃的地热系统之一:全园超过一万个地热景观,占世界间歇泉的一半以上。",
+      "大棱镜温泉直径约110米,颜色由中心的深蓝向外渐变为橙红——那是不同温度带里嗜热微生物的调色盘。它不是滤镜,是活着的、靠化学梯度生活的生态系统。",
+      "1872年,尤利西斯·格兰特总统签署法案,将黄石「永远划归人民享用」。国家公园理念由此诞生,并被全世界效仿——这可能是美国输出的最伟大的想法之一。"
+    ],
+    "bestSeason": "6-9月(多数道路仅夏季开放)",
+    "tags": [
+      "世界遗产",
+      "国家公园",
+      "地热",
+      "超级火山"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/28",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Yellowstone National Park",
+        "url": "https://en.wikipedia.org/wiki/Yellowstone_National_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q171782",
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "us-statue-of-liberty",
+    "name": "自由女神像",
+    "nameEn": "Statue of Liberty",
+    "type": "landmark",
+    "countryId": "US",
+    "cityId": "us-new-york",
+    "longitude": -74.0445,
+    "latitude": 40.6892,
+    "summary": "纽约港入口的铜像「自由照耀世界」,高93米(含基座)。法国人民赠予美国的独立百年礼物,自1984年起被列为世界遗产。",
+    "story": [
+      "雕塑家巴托尔迪设计、居斯塔夫·埃菲尔设计内部钢构——是的,就是那位埃菲尔。铜板仅2.4毫米厚,像一张巨大的金属皮肤覆在骨架上,经年氧化成今天的铜绿色。",
+      "1886年10月28日落成那天,纽约全城汽笛齐鸣。此后一百多年,进入纽约港的移民船都会先经过她:约翰·F·肯尼迪机场之前,自由女神是数千万移民看到的第一个美国。",
+      "她左手捧着《独立宣言》,右臂火炬曾在1886年作为灯塔使用,但灯光太弱,航海者们抱怨看不清,十年后退役。今天火炬上的金箔是1986年百年庆典时重贴的。"
+    ],
+    "bestSeason": "4-10月;乘渡轮登岛需提前订票",
+    "tags": [
+      "世界遗产",
+      "纪念碑",
+      "纽约",
+      "雕塑"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/307",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Statue of Liberty",
+        "url": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q9200",
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "us-golden-gate",
+    "name": "金门大桥",
+    "nameEn": "Golden Gate Bridge",
+    "type": "landmark",
+    "countryId": "US",
+    "cityId": "us-san-francisco",
+    "longitude": -122.4783,
+    "latitude": 37.8199,
+    "summary": "1937年通车的悬索桥,主跨1280米,「国际橘」桥身在太平洋雾气中若隐若现。美国最上镜的工程结构,可能没有之一。",
+    "story": [
+      "金门海峡水流湍急、雾大地震频发,建成前工程师们称在此架桥「不可能」。总工程师约瑟夫·施特劳斯坚持了二十年,桥体设计最终由查尔斯·埃利斯与里昂·莫伊塞夫完成,但施特劳斯的名字写进了历史——他在桥上立了一尊自己的雕像。",
+      "「国际橘」不是随意的颜色:海军曾建议刷黑黄条纹以便航行识别,建筑师欧文·莫罗坚持用暖橘色,让桥在雾中既醒目又与环境相融。事实证明他是对的。",
+      "大桥投入使用时被称为「无法被摧毁的钢铁巨人」——但旧金山人知道,它真正的对手不是地震,而是海雾、锈蚀和每天数万辆车的重量。维护从未停止过。"
+    ],
+    "bestSeason": "9-10月(旧金山雾最少);清晨常有平流雾",
+    "tags": [
+      "桥梁",
+      "工程",
+      "旧金山",
+      "取景地"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Golden Gate Bridge",
+        "url": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "us-yosemite",
+    "name": "优胜美地国家公园",
+    "nameEn": "Yosemite National Park",
+    "type": "natural",
+    "countryId": "US",
+    "longitude": -119.5383,
+    "latitude": 37.8651,
+    "summary": "冰川雕刻的花岗岩峡谷:半穹顶、酋长岩、新娘面纱瀑布。1864年林肯签署赠地法案,被认为是国家公园思想的起点。",
+    "story": [
+      "约五百万年前,冰川在花岗岩体上犁出U形谷。冰川退去后,悬空的支流谷地变成瀑布——新娘面纱与优胜美地瀑布由此而生。酋长岩的整块花岗岩高约914米,是全球攀岩者的麦加,2017年Alex Honnold徒手独攀成功,改写了人类极限的定义。",
+      "苏格兰作家约翰·缪尔在这里度过半生,他的笔让整个国家第一次「看见」了荒野的价值:「山谷是大自然的圣殿。」1903年,缪尔陪同罗斯福总统露营三天,直接推动了联邦对国家公园体系的扩张。",
+      "月光彩虹(moonbow)是优胜美地的隐藏节目:每年5-6月满月的深夜,优胜美地瀑布的水雾会折射出一道夜空中的彩虹。"
+    ],
+    "bestSeason": "5-6月(瀑布最盛)与9-10月",
+    "tags": [
+      "世界遗产",
+      "国家公园",
+      "瀑布",
+      "攀岩"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/308",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Yosemite National Park",
+        "url": "https://en.wikipedia.org/wiki/Yosemite_National_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "us-monument-valley",
+    "name": "纪念碑谷",
+    "nameEn": "Monument Valley",
+    "type": "geology",
+    "countryId": "US",
+    "longitude": -110.0985,
+    "latitude": 36.998,
+    "summary": "纳瓦霍族保留地内的红色孤丘群,砂岩塔从荒漠平地拔地而起,高达300米。西部片的视觉故乡——「西部」长得像这里。",
+    "story": [
+      "两亿年前,这里埋着厚达300米的沉积砂岩;科罗拉多高原隆升后,风与水剥离了软岩,留下坚硬的红色孤峰。纳瓦霍人称其中最高的两座为「左与右的手指」。",
+      "1939年,约翰·福特在此拍摄《关山飞渡》,西部片从此有了标准布景。《阿甘正传》里阿甘奔跑的224号公路、《回到未来3》的荒漠、《末路狂花》的天空——纪念碑谷是好莱坞把地质时间变成文化符号的样品间。",
+      "这里不是国家公园,而是纳瓦霍族公园。谷内有纳瓦霍人社区,导览由族人经营——游览它的最佳方式,是听本族人讲述这些山丘的名字与故事。"
+    ],
+    "bestSeason": "4-6月与9-10月(避开沙漠酷暑)",
+    "tags": [
+      "自然奇观",
+      "纳瓦霍",
+      "取景地",
+      "西部片"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Monument Valley",
+        "url": "https://en.wikipedia.org/wiki/Monument_Valley",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]
