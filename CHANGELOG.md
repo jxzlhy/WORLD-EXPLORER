@@ -12,6 +12,8 @@ All notable changes to WORLD EXPLORER are documented here.
 - sunSubPoint 纯函数抽取 + 天文真值单测(分至点赤纬 ±0.3° 级)
 - 单测扩至 27 个(数据校验器 15/太阳位置 7/搜索别名 5)
 
+- **主题合集**:4 个策展合集(古文明的回声 14/地球的极限 10/冰与火之地 10/现代奇迹 10)+ 面板与发现栏入口
+
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)
 - 全量验证:E2E 12/12 · 单测 27/27 · lint 0 错误 · build ✓
