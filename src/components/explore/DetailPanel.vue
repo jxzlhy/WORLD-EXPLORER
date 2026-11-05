@@ -16,6 +16,10 @@ const myWorld = useMyWorldStore()
 
 const destination = computed(() => explore.selectedDestination)
 const country = computed(() => explore.selectedCountry)
+const city = computed(() => explore.selectedCity)
+const cityDestinations = computed(() =>
+  city.value ? explore.destinationsOfCity(city.value.id) : [],
+)
 
 /**
  * 内容交错入场(V0.3-D):档案内容切换时,子块依次浮现。
@@ -107,7 +111,7 @@ function fmtPopulation(p: number): string {
 <template>
   <Transition name="panel-slide">
     <GlassPanel
-      v-if="destination || country"
+      v-if="destination || country || city"
       strong
       class="detail-panel"
     >
@@ -246,6 +250,57 @@ function fmtPopulation(p: number): string {
               </li>
             </ul>
           </footer>
+        </div>
+      </template>
+
+      <!-- ==================== 城市档案(V1.5 前置) ==================== -->
+      <template v-else-if="city">
+        <div class="scroll-area" :key="city.id">
+          <header class="head">
+            <p class="we-caps-label gold">
+              城市
+              <template v-if="city.isCapital"> · 首都</template>
+            </p>
+            <h1 class="name">{{ city.name }}</h1>
+            <p class="en">{{ city.nameEn }}</p>
+            <div class="meta">
+              <span class="mono">
+                {{ fmtCoord(city.latitude, 'N', 'S') }}
+                {{ fmtCoord(city.longitude, 'E', 'W') }}
+              </span>
+              <span
+                v-if="explore.countryById[city.countryId]"
+                class="country-link"
+                @click="explore.selectCountry(city.countryId)"
+              >
+                {{ flagEmoji(city.countryId) }}
+                {{ explore.countryById[city.countryId]!.name }}
+              </span>
+            </div>
+          </header>
+
+          <p class="lead">{{ city.summary }}</p>
+
+          <div class="ornament" aria-hidden="true"><i /><span>✦</span><i /></div>
+
+          <section v-if="cityDestinations.length">
+            <p class="we-caps-label">此地目的地 · {{ cityDestinations.length }}</p>
+            <ul class="dest-list">
+              <li v-for="d in cityDestinations" :key="d.id">
+                <button class="dest-item" @click="explore.selectDestination(d.id)">
+                  <i :style="{ background: typeColor(d) }" />
+                  <span class="n">{{ d.name }}</span>
+                  <span class="t">{{ DESTINATION_TYPE_LABELS[d.type] }}</span>
+                </button>
+              </li>
+            </ul>
+          </section>
+
+          <WeEmpty
+            v-else
+            title="此地档案建设中"
+            hint="周边目的地正在扩充,详见 ROADMAP"
+          />
         </div>
       </template>
 

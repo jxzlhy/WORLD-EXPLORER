@@ -14,6 +14,17 @@ export const useUiStore = defineStore('ui', {
     dayNightMode: 'realtime' as DayNightMode,
     autoRotate: true,
     quality: 'high' as QualityMode,
+    /** 启用的目的地类型(分类筛选;V1.5) */
+    activeTypes: [
+      'heritage',
+      'natural',
+      'landmark',
+      'museum',
+      'city',
+      'island',
+      'geology',
+      'observatory',
+    ] as string[],
     showStats: false,
     fps: 0,
     cameraInfo: null as CameraInfo | null,
@@ -34,6 +45,24 @@ export const useUiStore = defineStore('ui', {
     },
     setQuality(mode: QualityMode) {
       this.quality = mode
+    },
+    toggleType(type: string) {
+      this.activeTypes = this.activeTypes.includes(type)
+        ? this.activeTypes.filter((t) => t !== type)
+        : [...this.activeTypes, type]
+    },
+    setAllTypes(active: boolean) {
+      const all = [
+        'heritage',
+        'natural',
+        'landmark',
+        'museum',
+        'city',
+        'island',
+        'geology',
+        'observatory',
+      ]
+      this.activeTypes = active ? all : []
     },
     setEngineReady() {
       this.engineReady = true

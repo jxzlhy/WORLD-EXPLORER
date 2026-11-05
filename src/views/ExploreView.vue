@@ -72,6 +72,8 @@ async function bootstrap(): Promise<void> {
   }
   setEngine(engine)
   ui.setEngineReady()
+  // 引擎就绪后补应用当前 UI 状态(immediate watcher 首跑时引擎尚不存在)
+  getEngine()?.setTypesFilter([...ui.activeTypes])
   loading.value = false
 
   if (prefersReducedMotion) ui.setAutoRotate(false)
@@ -134,6 +136,11 @@ async function bootstrap(): Promise<void> {
     watch(() => ui.dayNightMode, (mode) => getEngine()?.setDayNightMode(mode)),
     watch(() => ui.autoRotate, (on) => getEngine()?.setAutoRotate(on)),
     watch(() => ui.quality, (mode) => getEngine()?.setQuality(mode)),
+    watch(
+      () => [...ui.activeTypes],
+      (types) => getEngine()?.setTypesFilter(types),
+      { immediate: true },
+    ),
   )
 
   // 5. 开场序列(GSAP)——尊重 prefers-reduced-motion

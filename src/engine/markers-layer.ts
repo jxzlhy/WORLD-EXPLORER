@@ -34,11 +34,12 @@ export function labelPriority(d: Destination): number {
  */
 export class MarkersLayer {
   private dataSource: Cesium.CustomDataSource | null = null
-  private meta = new Map<string, { priority: number }>()
+  private meta = new Map<string, { priority: number; type: string }>()
   private selectedId: string | null = null
   private hoveredId: string | null = null
   private pulseEnabled = true
   private labelsVisible = true
+  private activeTypes: Set<string> | null = null
   private lastCollisionUpdate = 0
   private removePreRender: (() => void) | null = null
 
@@ -53,7 +54,7 @@ export class MarkersLayer {
 
     for (const d of destinations) {
       const color = destinationColor(d.type)
-      this.meta.set(d.id, { priority: labelPriority(d) })
+      this.meta.set(d.id, { priority: labelPriority(d), type: d.type })
       const id = d.id
       // 选中呼吸脉冲 / 悬停放大 / 常态,由单一 CallbackProperty 统一驱动
       const pixelSize = new Cesium.CallbackProperty(() => {
@@ -150,6 +151,7 @@ export class MarkersLayer {
     }
     for (const e of this.dataSource.entities.values) {
       if (!e.label || !e.position) continue
+      if (e.show === false) continue // 被类型过滤隐藏的实体不参与标签碰撞
       const raw = e.id as string
       const id = raw.startsWith('dest:') ? raw.slice(5) : null
       if (!id || this.selectedId === id) continue // 选中标签始终显示
@@ -192,6 +194,23 @@ export class MarkersLayer {
   /** 悬停高亮(由引擎 MOUSE_MOVE 驱动) */
   setHover(destinationId: string | null): void {
     this.hoveredId = destinationId
+  }
+
+  /** 类型过滤:仅显示启用类型;选中项始终显示。null 表示不过滤 */
+  setTypesFilter(activeTypes: string[] | null): void {
+    this.activeTypes = activeTypes ? new Set(activeTypes) : null
+    if (!this.dataSource) return
+    for (const e of this.dataSource.entities.values) {
+      const raw = e.id as string
+      const id = raw.startsWith('dest:') ? raw.slice(5) : null
+      if (!id) continue
+      if (this.selectedId === id || !this.activeTypes) {
+        e.show = true
+        continue
+      }
+      const type = this.meta.get(id)?.type
+      e.show = type !== undefined && this.activeTypes.has(type)
+    }
   }
 
   highlight(destinationId: string | null): void {

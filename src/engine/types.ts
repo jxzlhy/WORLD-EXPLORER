@@ -19,6 +19,9 @@ export type LayerId = 'countries' | 'markers' | 'labels'
 
 export type DayNightMode = 'realtime' | 'always-day' | 'always-night'
 
+/** 目的地类型(与领域模型一致;引擎侧仅作字符串透传) */
+export type TypeFilter = string
+
 /** 渲染质量档位(见 docs/05-ENGINEERING/PERFORMANCE-RULES.md) */
 export type QualityMode = 'high' | 'balanced' | 'low'
 
@@ -54,6 +57,8 @@ export interface IWorldEngine {
   highlightMarker(destinationId: string | null): void
   /** 高亮指定国家边界 */
   highlightCountry(countryId: string | null): void
+  /** 按目的地类型过滤标记(传入全部启用类型;选中项不受过滤影响) */
+  setTypesFilter(activeTypes: string[]): void
 
   setLayerVisible(layer: LayerId, visible: boolean): void
   setAutoRotate(enabled: boolean): void

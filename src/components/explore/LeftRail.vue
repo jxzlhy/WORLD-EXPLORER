@@ -16,6 +16,17 @@ const qualityOptions: Array<{ value: QualityMode; label: string; hint: string }>
   { value: 'balanced', label: '均衡', hint: '0.85x 渲染分辨率 + FXAA' },
   { value: 'low', label: '低', hint: '0.7x 分辨率,关闭 FXAA(弱设备)' },
 ]
+
+const typeChips: Array<{ value: string; label: string; color: string }> = [
+  { value: 'heritage', label: '遗产', color: 'var(--we-type-heritage)' },
+  { value: 'natural', label: '自然', color: 'var(--we-type-natural)' },
+  { value: 'landmark', label: '地标', color: 'var(--we-type-landmark)' },
+  { value: 'museum', label: '博物', color: 'var(--we-text-dim)' },
+  { value: 'city', label: '城市', color: 'var(--we-type-city)' },
+  { value: 'island', label: '海岛', color: 'var(--we-type-island)' },
+  { value: 'geology', label: '地质', color: 'var(--we-type-geology)' },
+  { value: 'observatory', label: '天文', color: 'var(--we-warning)' },
+]
 </script>
 
 <template>
@@ -72,6 +83,29 @@ const qualityOptions: Array<{ value: QualityMode; label: string; hint: string }>
           @click="ui.setDayNightMode(opt.value)"
         >
           <span aria-hidden="true">{{ opt.icon }}</span>{{ opt.label }}
+        </button>
+      </div>
+    </div>
+
+    <div class="divider" />
+
+    <div class="section">
+      <p class="we-caps-label">
+        类型筛选
+        <button class="mini-toggle" @click="ui.setAllTypes(ui.activeTypes.length === 0)">
+          {{ ui.activeTypes.length === 0 ? '全选' : '清空' }}
+        </button>
+      </p>
+      <div class="type-chips" role="group" aria-label="目的地类型筛选">
+        <button
+          v-for="t in typeChips"
+          :key="t.value"
+          class="type-chip"
+          :class="{ off: !ui.activeTypes.includes(t.value) }"
+          :title="ui.activeTypes.includes(t.value) ? '点击隐藏' : '点击显示'"
+          @click="ui.toggleType(t.value)"
+        >
+          <i :style="{ background: t.color }" />{{ t.label }}
         </button>
       </div>
     </div>
@@ -165,6 +199,55 @@ const qualityOptions: Array<{ value: QualityMode; label: string; hint: string }>
   border: 1px solid var(--we-glass-border);
   border-radius: var(--we-r-full);
   padding: 3px;
+}
+
+/* —— 类型筛选(V1.5)—— */
+.we-caps-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mini-toggle {
+  appearance: none;
+  border: none;
+  background: none;
+  color: var(--we-cyan);
+  font-size: 10px;
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 0.08em;
+}
+.type-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.type-chip {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--we-glass-border);
+  background: var(--we-well);
+  color: var(--we-text);
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: var(--we-r-full);
+  padding: 3px 9px;
+  cursor: pointer;
+  transition: all var(--we-dur-1) var(--we-ease-out);
+}
+.type-chip i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.type-chip.off {
+  opacity: 0.38;
+  filter: grayscale(0.8);
+}
+.type-chip:hover {
+  border-color: rgba(111, 195, 255, 0.4);
 }
 .seg {
   flex: 1;

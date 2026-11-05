@@ -229,6 +229,10 @@ export class WorldEngine implements IWorldEngine {
     this.countries.highlight(countryId ? [countryId] : null)
   }
 
+  setTypesFilter(activeTypes: string[]): void {
+    this.markers.setTypesFilter(activeTypes)
+  }
+
   setLayerVisible(layer: LayerId, visible: boolean): void {
     if (layer === 'countries') this.countries.setVisible(visible)
     if (layer === 'markers') this.markers.setVisible(visible)

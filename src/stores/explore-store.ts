@@ -8,6 +8,7 @@ import { loadJson, saveJson } from '../services/storage-service'
 export type SelectionPanel =
   | { kind: 'none' }
   | { kind: 'country'; countryId: string }
+  | { kind: 'city'; cityId: string }
   | { kind: 'destination'; destinationId: string }
 
 export interface SearchHit {
@@ -51,6 +52,20 @@ export const useExploreStore = defineStore('explore', {
       return state.panel.kind === 'destination'
         ? (this.destinationById.get(state.panel.destinationId) ?? null)
         : null
+    },
+    cityById(state): Map<string, City> {
+      return new Map(state.cities.map((c) => [c.id, c]))
+    },
+    selectedCity(state): City | null {
+      return state.panel.kind === 'city'
+        ? (this.cityById.get(state.panel.cityId) ?? null)
+        : null
+    },
+    destinationsOfCity(state): (cityId: string) => Destination[] {
+      return (cityId: string) =>
+        state.destinations
+          .filter((d) => d.cityId === cityId)
+          .sort((a, b) => a.name.localeCompare(b.name, 'zh-Hans-CN'))
     },
     destinationsOfCountry(state): (countryId: string) => Destination[] {
       return (countryId: string) =>
@@ -116,11 +131,11 @@ export const useExploreStore = defineStore('explore', {
       this.pendingFlight = { longitude: 105, latitude: 30, height: 20_800_000 }
     },
 
-    /** 仅飞行至城市上空(城市暂无独立档案,详见 ROADMAP V1.5) */
+    /** 选中城市:飞往城市上空并打开城市档案(V1.5 前置) */
     flyToCity(cityId: string) {
-      const c = this.cities.find((x) => x.id === cityId)
+      const c = this.cityById.get(cityId)
       if (!c) return
-      this.panel = { kind: 'none' }
+      this.panel = { kind: 'city', cityId }
       this.pendingFlight = { longitude: c.longitude, latitude: c.latitude, height: 1_200_000 }
     },
 
