@@ -271,7 +271,7 @@ section h2::before {
   border: 1px solid var(--we-glass-border);
   border-radius: var(--we-r-sm);
   overflow: hidden;
-  background: rgba(6, 11, 20, 0.4);
+  background: var(--we-well);
 }
 .swatch i {
   height: 44px;

@@ -254,7 +254,7 @@ function cancelImport(): void {
 .close {
   appearance: none;
   border: 1px solid var(--we-glass-border);
-  background: rgba(6, 11, 20, 0.6);
+  background: var(--we-well-strong);
   color: var(--we-text-dim);
   width: 28px;
   height: 28px;
@@ -270,7 +270,7 @@ function cancelImport(): void {
   display: flex;
   gap: 4px;
   margin: var(--we-sp-3) var(--we-sp-4) 0;
-  background: rgba(6, 11, 20, 0.5);
+  background: var(--we-well);
   border: 1px solid var(--we-glass-border);
   border-radius: var(--we-r-full);
   padding: 3px;

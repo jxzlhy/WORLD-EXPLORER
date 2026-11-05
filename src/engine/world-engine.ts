@@ -242,11 +242,12 @@ export class WorldEngine implements IWorldEngine {
     this.imagery?.setMode(mode)
   }
 
-  setQuality(mode: 'high' | 'low'): void {
+  setQuality(mode: QualityMode): void {
     if (!this.viewer || this.viewer.isDestroyed()) return
-    this.viewer.resolutionScale = mode === 'low' ? 0.7 : 1.0
+    const scale = mode === 'high' ? 1.0 : mode === 'balanced' ? 0.85 : 0.7
+    this.viewer.resolutionScale = scale
     try {
-      this.viewer.scene.postProcessStages.fxaa.enabled = mode === 'high'
+      this.viewer.scene.postProcessStages.fxaa.enabled = mode !== 'low'
     } catch {
       /* fxaa 不可用时忽略 */
     }

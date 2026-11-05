@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type { CameraInfo, DayNightMode, LayerId } from '../engine/types'
+import type { CameraInfo, DayNightMode, LayerId, QualityMode } from '../engine/types'
 
 /** 全局 UI 状态:图层开关、昼夜模式、自动旋转、引擎状态、性能面板 */
 export const useUiStore = defineStore('ui', {
@@ -13,7 +13,7 @@ export const useUiStore = defineStore('ui', {
     } as Record<LayerId, boolean>,
     dayNightMode: 'realtime' as DayNightMode,
     autoRotate: true,
-    lowPerf: false,
+    quality: 'high' as QualityMode,
     showStats: false,
     fps: 0,
     cameraInfo: null as CameraInfo | null,
@@ -32,8 +32,8 @@ export const useUiStore = defineStore('ui', {
     setAutoRotate(enabled: boolean) {
       this.autoRotate = enabled
     },
-    setLowPerf(on: boolean) {
-      this.lowPerf = on
+    setQuality(mode: QualityMode) {
+      this.quality = mode
     },
     setEngineReady() {
       this.engineReady = true

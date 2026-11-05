@@ -133,7 +133,7 @@ async function bootstrap(): Promise<void> {
     ),
     watch(() => ui.dayNightMode, (mode) => getEngine()?.setDayNightMode(mode)),
     watch(() => ui.autoRotate, (on) => getEngine()?.setAutoRotate(on)),
-    watch(() => ui.lowPerf, (on) => getEngine()?.setQuality(on ? 'low' : 'high')),
+    watch(() => ui.quality, (mode) => getEngine()?.setQuality(mode)),
   )
 
   // 5. 开场序列(GSAP)——尊重 prefers-reduced-motion
@@ -268,7 +268,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(ellipse at center, rgba(6, 11, 20, 0.6), var(--we-void));
+  background: radial-gradient(ellipse at center, var(--we-well-strong), var(--we-void));
 }
 .fade-enter-active,
 .fade-leave-active {

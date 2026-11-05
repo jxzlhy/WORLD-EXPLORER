@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, nextTick, onUnmounted, watch } from 'vue'
+import gsap from 'gsap'
 import { useExploreStore } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
 import { DESTINATION_TYPE_LABELS } from '../../domain/types'
@@ -15,6 +16,43 @@ const myWorld = useMyWorldStore()
 
 const destination = computed(() => explore.selectedDestination)
 const country = computed(() => explore.selectedCountry)
+
+/**
+ * 内容交错入场(V0.3-D):档案内容切换时,子块依次浮现。
+ * 尊重 prefers-reduced-motion;timeline 在切换/卸载时 kill,不留悬挂动画。
+ */
+const prefersReducedMotion =
+  typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
+let contentTimeline: gsap.core.Timeline | null = null
+
+watch(
+  () => explore.panel,
+  async (panel) => {
+    if (panel.kind === 'none' || prefersReducedMotion) return
+    await nextTick()
+    contentTimeline?.kill()
+    const el = document.querySelector('.detail-panel .scroll-area')
+    if (!el) return
+    contentTimeline = gsap.timeline()
+    contentTimeline.fromTo(
+      el.children,
+      { opacity: 0, y: 10 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.42,
+        ease: 'power2.out',
+        stagger: 0.045,
+        clearProps: 'transform',
+      },
+    )
+  },
+)
+
+onUnmounted(() => {
+  contentTimeline?.kill()
+  contentTimeline = null
+})
 
 const typeColorMap: Record<string, string> = {
   heritage: 'var(--we-type-heritage)',
@@ -288,7 +326,7 @@ function fmtCoord(v: number, pos: string, neg: string): string {
   z-index: 5;
   appearance: none;
   border: 1px solid var(--we-glass-border);
-  background: rgba(6, 11, 20, 0.6);
+  background: var(--we-well-strong);
   color: var(--we-text-dim);
   width: 30px;
   height: 30px;
@@ -461,7 +499,7 @@ function fmtCoord(v: number, pos: string, neg: string): string {
 .chip {
   appearance: none;
   border: 1px solid var(--we-glass-border);
-  background: rgba(6, 11, 20, 0.4);
+  background: var(--we-well);
   color: var(--we-text);
   border-radius: var(--we-r-full);
   padding: 5px 12px;

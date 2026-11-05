@@ -57,7 +57,7 @@ const dotColor = computed(() => {
   padding: 3px 10px;
   border: 1px solid var(--we-glass-border);
   border-radius: var(--we-r-full);
-  background: rgba(6, 11, 20, 0.4);
+  background: var(--we-well);
   white-space: nowrap;
 }
 .we-tag i {

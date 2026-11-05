@@ -90,13 +90,13 @@ const cls = computed(() => [`v-${props.variant}`, `s-${props.size}`])
 }
 
 .v-glass {
-  background: rgba(148, 180, 226, 0.09);
+  background: var(--we-glass-tint);
   border-color: var(--we-glass-border);
   backdrop-filter: blur(var(--we-blur-soft));
   -webkit-backdrop-filter: blur(var(--we-blur-soft));
 }
 .v-glass:hover:not(:disabled) {
-  background: rgba(148, 180, 226, 0.16);
+  background: var(--we-glass-tint-hover);
 }
 
 .v-ghost {
@@ -104,7 +104,7 @@ const cls = computed(() => [`v-${props.variant}`, `s-${props.size}`])
 }
 .v-ghost:hover:not(:disabled) {
   color: var(--we-text-hi);
-  background: rgba(148, 180, 226, 0.08);
+  background: var(--we-glass-tint);
 }
 
 .v-danger {

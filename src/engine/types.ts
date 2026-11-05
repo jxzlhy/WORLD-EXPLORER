@@ -19,6 +19,9 @@ export type LayerId = 'countries' | 'markers' | 'labels'
 
 export type DayNightMode = 'realtime' | 'always-day' | 'always-night'
 
+/** 渲染质量档位(见 docs/05-ENGINEERING/PERFORMANCE-RULES.md) */
+export type QualityMode = 'high' | 'balanced' | 'low'
+
 export type PickPayload =
   | { kind: 'destination'; destinationId: string }
   | { kind: 'country'; countryId: string }
@@ -55,8 +58,8 @@ export interface IWorldEngine {
   setLayerVisible(layer: LayerId, visible: boolean): void
   setAutoRotate(enabled: boolean): void
   setDayNightMode(mode: DayNightMode): void
-  /** 低性能模式:降低渲染分辨率 */
-  setQuality(mode: 'high' | 'low'): void
+  /** 渲染质量档位:high=原生+FXAA / balanced=0.85x+FXAA / low=0.7x 无 FXAA */
+  setQuality(mode: QualityMode): void
 
   onPick(listener: (payload: PickPayload) => void): () => void
   /** 渲染循环异常(用于友好降级提示) */

@@ -134,7 +134,7 @@ const plannedModules = 'DESTINATIONS · STORIES · JOURNEYS · CINEMA · WONDERS
 }
 .nav-item:hover:not(:disabled) {
   color: var(--we-text-hi);
-  background: rgba(148, 180, 226, 0.1);
+  background: var(--we-glass-tint);
 }
 .nav-item.active {
   color: var(--we-gold-strong);
@@ -156,7 +156,7 @@ const plannedModules = 'DESTINATIONS · STORIES · JOURNEYS · CINEMA · WONDERS
   gap: 8px;
   appearance: none;
   border: 1px solid var(--we-glass-border);
-  background: rgba(6, 11, 20, 0.5);
+  background: var(--we-well);
   color: var(--we-text-dim);
   border-radius: var(--we-r-full);
   padding: 6px 12px;

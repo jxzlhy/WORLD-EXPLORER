@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useUiStore } from '../../stores/ui-store'
-import type { DayNightMode } from '../../engine/types'
+import type { DayNightMode, QualityMode } from '../../engine/types'
 import WeSwitch from '../../design-system/WeSwitch.vue'
 
 const ui = useUiStore()
@@ -9,6 +9,12 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
   { value: 'realtime', label: '实时', icon: '◐' },
   { value: 'always-day', label: '永昼', icon: '☀' },
   { value: 'always-night', label: '永夜', icon: '☾' },
+]
+
+const qualityOptions: Array<{ value: QualityMode; label: string; hint: string }> = [
+  { value: 'high', label: '高', hint: '原生分辨率 + FXAA' },
+  { value: 'balanced', label: '均衡', hint: '0.85x 渲染分辨率 + FXAA' },
+  { value: 'low', label: '低', hint: '0.7x 分辨率,关闭 FXAA(弱设备)' },
 ]
 </script>
 
@@ -73,13 +79,22 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
     <div class="divider" />
 
     <div class="section">
+      <p class="we-caps-label">画质</p>
+      <div class="segmented" role="radiogroup" aria-label="渲染画质">
+        <button
+          v-for="opt in qualityOptions"
+          :key="opt.value"
+          class="seg"
+          :class="{ active: ui.quality === opt.value }"
+          :title="opt.hint"
+          @click="ui.setQuality(opt.value)"
+        >
+          {{ opt.label }}
+        </button>
+      </div>
       <label class="row">
         <span>自动旋转</span>
         <WeSwitch v-model="ui.autoRotate" />
-      </label>
-      <label class="row">
-        <span>低性能模式</span>
-        <WeSwitch v-model="ui.lowPerf" />
       </label>
       <label class="row">
         <span>性能面板</span>
@@ -146,7 +161,7 @@ const dayNightOptions: Array<{ value: DayNightMode; label: string; icon: string 
 .segmented {
   display: flex;
   gap: 4px;
-  background: rgba(6, 11, 20, 0.5);
+  background: var(--we-well);
   border: 1px solid var(--we-glass-border);
   border-radius: var(--we-r-full);
   padding: 3px;

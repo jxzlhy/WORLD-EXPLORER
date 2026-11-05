@@ -21,7 +21,7 @@ const model = defineModel<boolean>({ required: true })
   height: 20px;
   border-radius: var(--we-r-full);
   border: 1px solid var(--we-glass-border);
-  background: rgba(6, 11, 20, 0.55);
+  background: var(--we-well-strong);
   position: relative;
   cursor: pointer;
   padding: 0;
