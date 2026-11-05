@@ -131,12 +131,34 @@
     "wikidataId": "Q191775",
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-uluru.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APetermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru_--_2019_--_3679-83.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
       "艾尔斯岩",
       "Ayers Rock"
+    ],
+    "timeline": [
+      {
+        "year": "1873年",
+        "text": "探险家戈斯以南澳总督之名命名「艾尔斯岩」"
+      },
+      {
+        "year": "1985年",
+        "text": "所有权正式归还阿南古人,以 99 年租约共同管理"
+      },
+      {
+        "year": "1987年",
+        "text": "列入世界遗产(1994 年补入文化价值成双重遗产)"
+      },
+      {
+        "year": "2019年",
+        "text": "登山步道永久关闭:「请用手看,不要用脚」"
+      }
     ]
   },
   {

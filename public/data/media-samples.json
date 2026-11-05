@@ -65,11 +65,11 @@
   {
     "id": "pe-machu-picchu",
     "file": "/media/destinations/pe-machu-picchu.jpg",
-    "author": "PIERRE ANDRE LECLERCQ",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMachu_Picchu_with_Huayna_Picchu_P%C3%A9rou_%283%29.jpg",
-    "bytes": 379806,
-    "title": "File:Machu Picchu with Huayna Picchu Pérou (3).jpg"
+    "author": "Yoann Supertramp",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMachu_Picchu_%28172664497%29.jpeg",
+    "bytes": 385928,
+    "title": "File:Machu Picchu (172664497).jpeg"
   },
   {
     "id": "au-sydney-opera-house",
@@ -88,5 +88,176 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGullfoss%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_119.JPG",
     "bytes": 432677,
     "title": "File:Gullfoss, Suðurland, Islandia, 2014-08-16, DD 119.JPG"
+  },
+  {
+    "id": "cn-terracotta-army",
+    "file": "/media/destinations/cn-terracotta-army.jpg",
+    "author": "User:airunp",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AXian_guerreros_terracota_detalle.JPG",
+    "bytes": 304166,
+    "title": "File:Xian guerreros terracota detalle.JPG"
+  },
+  {
+    "id": "cn-mogao-caves",
+    "file": "/media/destinations/cn-mogao-caves.jpg",
+    "author": "Unknown painter,  Mid-Tang Dynasty, 618 to 907 AD",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMogao_Caves%2C_cave_159_musicians.jpg",
+    "bytes": 1038839,
+    "title": "File:Mogao Caves, cave 159 musicians.jpg"
+  },
+  {
+    "id": "cn-west-lake",
+    "file": "/media/destinations/cn-west-lake.jpg",
+    "author": "Circa24",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHangzhou_China_West_Lake_4.jpg",
+    "bytes": 237847,
+    "title": "File:Hangzhou China West Lake 4.jpg"
+  },
+  {
+    "id": "jp-kinkaku-ji",
+    "file": "/media/destinations/jp-kinkaku-ji.jpg",
+    "author": "Martin Falbisoner",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKinkaku-ji_in_November_2016_-02.jpg",
+    "bytes": 828010,
+    "title": "File:Kinkaku-ji in November 2016 -02.jpg"
+  },
+  {
+    "id": "jp-todaiji",
+    "file": "/media/destinations/jp-todaiji.jpg",
+    "author": "Martin Falbisoner",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Great_Buddha_Hall_of_T%C5%8Ddai-ji%2C_Nara%2C_November_2016.jpg",
+    "bytes": 373567,
+    "title": "File:The Great Buddha Hall of Tōdai-ji, Nara, November 2016.jpg"
+  },
+  {
+    "id": "jp-itsukushima-shrine",
+    "file": "/media/destinations/jp-itsukushima-shrine.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AItsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg",
+    "bytes": 331183,
+    "title": "File:Itsukushima-jinja torii at sunset, Miyajima, Japan, 20240816 1812 4144.jpg"
+  },
+  {
+    "id": "jp-fushimi-inari",
+    "file": "/media/destinations/jp-fushimi-inari.jpg",
+    "author": "Chris Gladis, Flickr user MShades",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFushimi_Inari_-_Torii_Tunnel_04.jpg",
+    "bytes": 61338,
+    "title": "File:Fushimi Inari - Torii Tunnel 04.jpg"
+  },
+  {
+    "id": "us-monument-valley",
+    "file": "/media/destinations/us-monument-valley.jpg",
+    "author": "Moritz Zimmermann",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMonumentvalley.jpg",
+    "bytes": 135203,
+    "title": "File:Monumentvalley.jpg"
+  },
+  {
+    "id": "fr-mont-saint-michel",
+    "file": "/media/destinations/fr-mont-saint-michel.jpg",
+    "author": "Velvet",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMont_st_michel_vue_baie_tombelaine.jpg",
+    "bytes": 70987,
+    "title": "File:Mont st michel vue baie tombelaine.jpg"
+  },
+  {
+    "id": "fr-louvre",
+    "file": "/media/destinations/fr-louvre.jpg",
+    "author": "Benh LIEU SONG (Flickr)",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALouvre_Courtyard%2C_Looking_West.jpg",
+    "bytes": 143478,
+    "title": "File:Louvre Courtyard, Looking West.jpg"
+  },
+  {
+    "id": "fr-versailles",
+    "file": "/media/destinations/fr-versailles.jpg",
+    "author": "Myrabella",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChateau_Versailles_Galerie_des_Glaces.jpg",
+    "bytes": 434929,
+    "title": "File:Chateau Versailles Galerie des Glaces.jpg"
+  },
+  {
+    "id": "it-leaning-tower-pisa",
+    "file": "/media/destinations/it-leaning-tower-pisa.jpg",
+    "author": "MHoser",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Duomo_and_Tower_of_Pisa_at_sunrise.jpg",
+    "bytes": 333409,
+    "title": "File:The Duomo and Tower of Pisa at sunrise.jpg"
+  },
+  {
+    "id": "it-venice",
+    "file": "/media/destinations/it-venice.jpg",
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APonte_di_Rialto_Venice_1.jpg",
+    "bytes": 346535,
+    "title": "File:Ponte di Rialto Venice 1.jpg"
+  },
+  {
+    "id": "gb-westminster",
+    "file": "/media/destinations/gb-westminster.jpg",
+    "author": "Colin",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABig_Ben_at_sunset_-_2014-10-27_17-30.jpg",
+    "bytes": 176240,
+    "title": "File:Big Ben at sunset - 2014-10-27 17-30.jpg"
+  },
+  {
+    "id": "gb-stonehenge",
+    "file": "/media/destinations/gb-stonehenge.jpg",
+    "author": "DeFacto",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AStonehenge_Heel_Stone.jpg",
+    "bytes": 990339,
+    "title": "File:Stonehenge Heel Stone.jpg"
+  },
+  {
+    "id": "eg-abu-simbel",
+    "file": "/media/destinations/eg-abu-simbel.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATemplo_de_Nefertari%2C_Abu_Simbel%2C_Egipto%2C_2022-04-02%2C_DD_153.jpg",
+    "bytes": 376618,
+    "title": "File:Templo de Nefertari, Abu Simbel, Egipto, 2022-04-02, DD 153.jpg"
+  },
+  {
+    "id": "eg-luxor-temple",
+    "file": "/media/destinations/eg-luxor-temple.jpg",
+    "author": "Tim Adams",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AColumns_at_Hypostyle_hall_of_Karnak_Temple_in_Luxor_Egypt.jpg",
+    "bytes": 813487,
+    "title": "File:Columns at Hypostyle hall of Karnak Temple in Luxor Egypt.jpg"
+  },
+  {
+    "id": "au-uluru",
+    "file": "/media/destinations/au-uluru.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APetermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru_--_2019_--_3679-83.jpg",
+    "bytes": 136129,
+    "title": "File:Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru -- 2019 -- 3679-83.jpg"
+  },
+  {
+    "id": "is-jokulsarlon",
+    "file": "/media/destinations/is-jokulsarlon.jpg",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A021_Wild_smiling_harbor_seal_at_J%C3%B6kuls%C3%A1rl%C3%B3n_%28Iceland%29_Photo_by_Giles_Laurent.jpg",
+    "bytes": 57619,
+    "title": "File:021 Wild smiling harbor seal at Jökulsárlón (Iceland) Photo by Giles Laurent.jpg"
   }
 ]

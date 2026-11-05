@@ -38,7 +38,11 @@
     "wikidataId": "Q348737",
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-west-lake.jpg",
+      "author": "Circa24",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHangzhou_China_West_Lake_4.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
@@ -239,7 +243,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-todaiji.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Great_Buddha_Hall_of_T%C5%8Ddai-ji%2C_Nara%2C_November_2016.jpg"
     },
     "updatedAt": "2026-11-05"
   },

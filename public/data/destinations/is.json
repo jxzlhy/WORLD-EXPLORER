@@ -114,7 +114,11 @@
     ],
     "quality": "A",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-jokulsarlon.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A021_Wild_smiling_harbor_seal_at_J%C3%B6kuls%C3%A1rl%C3%B3n_%28Iceland%29_Photo_by_Giles_Laurent.jpg"
     },
     "updatedAt": "2026-11-05"
   },

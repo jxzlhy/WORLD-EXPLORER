@@ -47,6 +47,24 @@
     "updatedAt": "2026-11-05",
     "aliases": [
       "长城"
+    ],
+    "timeline": [
+      {
+        "year": "前7世纪",
+        "text": "楚国方城开筑,列国互防的边墙时代开始"
+      },
+      {
+        "year": "前221年",
+        "text": "秦将燕赵齐边墙连缀,「万里长城」初成"
+      },
+      {
+        "year": "明代",
+        "text": "砖石重修八达岭、慕田峪段——今天看到的长城几乎都是明代手笔"
+      },
+      {
+        "year": "1987年",
+        "text": "列入首批世界文化遗产"
+      }
     ]
   },
   {
@@ -99,6 +117,24 @@
       "紫禁城",
       "故宫",
       "故宫博物院"
+    ],
+    "timeline": [
+      {
+        "year": "1406年",
+        "text": "永乐帝下诏营建北京宫殿"
+      },
+      {
+        "year": "1420年",
+        "text": "紫禁城落成,明清二十四位皇帝在此执政"
+      },
+      {
+        "year": "1925年",
+        "text": "故宫博物院成立,禁区成为公共博物馆"
+      },
+      {
+        "year": "1987年",
+        "text": "列入世界文化遗产"
+      }
     ]
   },
   {
@@ -140,7 +176,11 @@
     "wikidataId": "Q163698",
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-terracotta-army.jpg",
+      "author": "User:airunp",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AXian_guerreros_terracota_detalle.JPG"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
@@ -187,7 +227,11 @@
     "wikidataId": "Q345729",
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-mogao-caves.jpg",
+      "author": "Unknown painter,  Mid-Tang Dynasty, 618 to 907 AD",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMogao_Caves%2C_cave_159_musicians.jpg"
     },
     "updatedAt": "2026-11-05"
   },

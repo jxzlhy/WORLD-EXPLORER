@@ -37,7 +37,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-westminster.jpg",
+      "author": "Colin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABig_Ben_at_sunset_-_2014-10-27_17-30.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
@@ -120,11 +124,33 @@
     "wikidataId": "Q105013",
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-stonehenge.jpg",
+      "author": "DeFacto",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AStonehenge_Heel_Stone.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
       "索尔兹伯里石环"
+    ],
+    "timeline": [
+      {
+        "year": "约前3000年",
+        "text": "早期环形沟与木柱阶段开始"
+      },
+      {
+        "year": "约前2500年",
+        "text": "巨型砂岩漂砾竖立,今日轮廓成形"
+      },
+      {
+        "year": "1136年",
+        "text": "杰弗里·蒙茅斯写下梅林巨人运石传说,谜团叙事开始"
+      },
+      {
+        "year": "1986年",
+        "text": "列入世界文化遗产"
+      }
     ]
   },
   {

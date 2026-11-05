@@ -43,6 +43,24 @@
       "艾菲尔铁塔",
       "巴黎铁塔",
       "La Tour Eiffel"
+    ],
+    "timeline": [
+      {
+        "year": "1889年",
+        "text": "为大革命百年世博会落成,「临时建筑」设计寿命20年"
+      },
+      {
+        "year": "1909年",
+        "text": "因军事无线电价值免于拆除"
+      },
+      {
+        "year": "1944年",
+        "text": "巴黎解放前夕,希特勒下令炸塔,肖尔蒂茨将军抗命"
+      },
+      {
+        "year": "2014年",
+        "text": "125周年,累计迎客超 3 亿人次"
+      }
     ]
   },
   {
@@ -77,7 +95,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-louvre.jpg",
+      "author": "Benh LIEU SONG (Flickr)",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALouvre_Courtyard%2C_Looking_West.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
@@ -122,7 +144,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-versailles.jpg",
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChateau_Versailles_Galerie_des_Glaces.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -163,7 +189,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-mont-saint-michel.jpg",
+      "author": "Velvet",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMont_st_michel_vue_baie_tombelaine.jpg"
     },
     "updatedAt": "2026-11-05"
   },

@@ -49,6 +49,24 @@
       "斗兽场",
       "罗马竞技场",
       "Coliseum"
+    ],
+    "timeline": [
+      {
+        "year": "72-80年",
+        "text": "韦帕芗与提图斯两代皇帝建成,开幕百日庆典"
+      },
+      {
+        "year": "中世纪",
+        "text": "被当采石场,大理石拆去建圣彼得大教堂"
+      },
+      {
+        "year": "1749年",
+        "text": "教皇本笃十四世宣布其为圣地,禁止继续取石"
+      },
+      {
+        "year": "1980年",
+        "text": "随罗马历史中心列入世界遗产"
+      }
     ]
   },
   {
@@ -89,7 +107,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-venice.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APonte_di_Rialto_Venice_1.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -172,7 +194,11 @@
     ],
     "quality": "A",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-leaning-tower-pisa.jpg",
+      "author": "MHoser",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Duomo_and_Tower_of_Pisa_at_sunrise.jpg"
     },
     "updatedAt": "2026-11-05"
   },

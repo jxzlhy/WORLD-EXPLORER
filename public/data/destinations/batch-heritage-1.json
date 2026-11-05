@@ -14,13 +14,30 @@
       "夜色是丽江的另一面:酒吧街的灯火与安静的新华街只隔一座桥。想逃离喧嚣,清晨七点的四方街才是它的本来面目——雪山在巷口,背柴的阿妈路过卖花的摊子。"
     ],
     "bestSeason": "4-6月与9-10月;清晨看古城本色",
-    "tags": ["世界遗产", "纳西族", "水渠古城", "东巴文"],
+    "tags": [
+      "世界遗产",
+      "纳西族",
+      "水渠古城",
+      "东巴文"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/811", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Old Town of Lijiang", "url": "https://en.wikipedia.org/wiki/Old_Town_of_Lijiang", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/811",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Old Town of Lijiang",
+        "url": "https://en.wikipedia.org/wiki/Old_Town_of_Lijiang",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -38,13 +55,30 @@
       "冷知识:土楼曾被美国卫星误判为「导弹发射井」。1980年代这份「情报」反而让世界第一次认真看见这种民居——最温和的居住形式,被误认为最暴力的设施。"
     ],
     "bestSeason": "3-5月与10-11月;春节前后有民俗活动",
-    "tags": ["世界遗产", "客家", "夯土", "民居"],
+    "tags": [
+      "世界遗产",
+      "客家",
+      "夯土",
+      "民居"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1113", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Fujian Tulou", "url": "https://en.wikipedia.org/wiki/Fujian_Tulou", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1113",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Fujian Tulou",
+        "url": "https://en.wikipedia.org/wiki/Fujian_Tulou",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -63,14 +97,53 @@
       "雪天的「雪金阁」是可遇不可求的绝景:白雪覆在金箔上,湖面若结冰,倒影便成了画。常规门票是一张写有祝福语的符——「金阁舍利殿御守护」。"
     ],
     "bestSeason": "11月中下旬红叶;雪日清晨(可遇不可求)",
-    "tags": ["世界遗产", "金箔", "足利义满", "三岛由纪夫"],
+    "tags": [
+      "世界遗产",
+      "金箔",
+      "足利义满",
+      "三岛由纪夫"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心(古都京都)", "url": "https://whc.unesco.org/en/list/688", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Kinkaku-ji", "url": "https://en.wikipedia.org/wiki/Kinkaku-ji", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心(古都京都)",
+        "url": "https://whc.unesco.org/en/list/688",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Kinkaku-ji",
+        "url": "https://en.wikipedia.org/wiki/Kinkaku-ji",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
-    "updatedAt": "2026-11-06"
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/jp-kinkaku-ji.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKinkaku-ji_in_November_2016_-02.jpg"
+    },
+    "updatedAt": "2026-11-06",
+    "timeline": [
+      {
+        "year": "1397年",
+        "text": "足利义满建北山第,三层金阁融合三个时代"
+      },
+      {
+        "year": "1422年",
+        "text": "改为禅寺,命名鹿苑寺"
+      },
+      {
+        "year": "1950年",
+        "text": "见习僧人纵火,金阁焚毁——三岛由纪夫写下《金阁寺》"
+      },
+      {
+        "year": "1955年",
+        "text": "依原样重建,1987 年重贴五倍厚度金箔"
+      }
+    ]
   },
   {
     "id": "jp-kamakura-daibutsu",
@@ -87,12 +160,24 @@
       "镰仓是日本第二个政治中心(镰仓幕府),大佛所在的长谷一带还有长谷寺的绣球花道与由比滨的海岸。从东京出发一小时车程——「古都的呼吸」就在通勤距离之内。"
     ],
     "bestSeason": "6月绣球花;11月红叶;工作日清晨",
-    "tags": ["大佛", "镰仓", "铜像", "露天"],
+    "tags": [
+      "大佛",
+      "镰仓",
+      "铜像",
+      "露天"
+    ],
     "sources": [
-      { "name": "Wikipedia: Kōtoku-in", "url": "https://en.wikipedia.org/wiki/Kōtoku-in", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Kōtoku-in",
+        "url": "https://en.wikipedia.org/wiki/Kōtoku-in",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -110,12 +195,24 @@
       "这里也是「黑暗天空公园」:夜间的银河从双拱之间升起。夏季地表温度可达 50°C——公园官网的告示写着「不要低估沙漠」:每人至少带一加仑水,这不是建议,是数学。"
     ],
     "bestSeason": "3-5月与9-10月;日出日落与银河季",
-    "tags": ["国家公园", "石拱", "犹他", "黑暗天空"],
+    "tags": [
+      "国家公园",
+      "石拱",
+      "犹他",
+      "黑暗天空"
+    ],
     "sources": [
-      { "name": "Wikipedia: Arches National Park", "url": "https://en.wikipedia.org/wiki/Arches_National_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Arches National Park",
+        "url": "https://en.wikipedia.org/wiki/Arches_National_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -134,12 +231,24 @@
       "每天上万名步行者穿过这条高于车流的木板道:清晨是晨跑者,黄昏是拍曼哈顿下城的摄影师。它的钢索曾让发明家特斯拉「想到无线输电」;它的哥特式双拱塔,130 年后仍是电影里「纽约」的第一帧。"
     ],
     "bestSeason": "全年;日出步行方向曼哈顿→布鲁克林",
-    "tags": ["桥梁", "工程史", "纽约", "步行道"],
+    "tags": [
+      "桥梁",
+      "工程史",
+      "纽约",
+      "步行道"
+    ],
     "sources": [
-      { "name": "Wikipedia: Brooklyn Bridge", "url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Brooklyn Bridge",
+        "url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -157,13 +266,30 @@
       "中世纪时它被当作公路桥使用,桥墩上还留着过路费征收处的痕迹。今天的桥禁止车辆通行,夏天傍晚,附近尼姆与阿维尼翁的人来河滩游泳——2000 年的水利工程成了最古老的跳水台。"
     ],
     "bestSeason": "6-9月(可下河);博物馆全年",
-    "tags": ["世界遗产", "罗马水道", "拱券", "工程史"],
+    "tags": [
+      "世界遗产",
+      "罗马水道",
+      "拱券",
+      "工程史"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/344", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Pont du Gard", "url": "https://en.wikipedia.org/wiki/Pont_du_Gard", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/344",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Pont du Gard",
+        "url": "https://en.wikipedia.org/wiki/Pont_du_Gard",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -181,12 +307,24 @@
       "故居的黄色餐厨与蓝色瓷砖厨房保持原样,墙上挂着 55 幅日本浮世绘——莫奈是日本主义的狂热收藏者,他的花园里刻意种着日式植物。花园每年 4-11 月开放,雨后的睡莲池人最少——「莫奈天气」恰恰是阴天。"
     ],
     "bestSeason": "4-6月(鸢尾与睡莲初开)与9月;清晨第一波",
-    "tags": ["花园", "莫奈", "印象派", "睡莲"],
+    "tags": [
+      "花园",
+      "莫奈",
+      "印象派",
+      "睡莲"
+    ],
     "sources": [
-      { "name": "Wikipedia: Fondation Claude Monet", "url": "https://en.wikipedia.org/wiki/Fondation_Claude_Monet", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Fondation Claude Monet",
+        "url": "https://en.wikipedia.org/wiki/Fondation_Claude_Monet",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -204,13 +342,30 @@
       "梅尔·吉布森的《耶稣受难记》在此取景——导演说,没有比这里更像两千年前的耶路撒冷的地方。住进一间由石窟(sassi)改造的酒店,是「体验旧石器时代,但有 Wi-Fi」。"
     ],
     "bestSeason": "4-6月与9-10月;夜景灯光必看",
-    "tags": ["世界遗产", "石窟民居", "复兴样本", "取景地"],
+    "tags": [
+      "世界遗产",
+      "石窟民居",
+      "复兴样本",
+      "取景地"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/670", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Sassi di Matera", "url": "https://en.wikipedia.org/wiki/Sassi_di_Matera", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/670",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Sassi di Matera",
+        "url": "https://en.wikipedia.org/wiki/Sassi_di_Matera",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   }
 ]

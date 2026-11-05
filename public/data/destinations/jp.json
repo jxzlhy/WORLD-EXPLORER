@@ -123,7 +123,11 @@
     ],
     "quality": "A",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-fushimi-inari.jpg",
+      "author": "Chris Gladis, Flickr user MShades",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFushimi_Inari_-_Torii_Tunnel_04.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -205,7 +209,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-itsukushima-shrine.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AItsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg"
     },
     "updatedAt": "2026-11-05"
   },

@@ -23,6 +23,9 @@ All notable changes to WORLD EXPLORER are documented here.
 ### Fixed
 - E2E 套件根因修复:多 worker 并发 SwiftShader WebGL 导致负载超时轮转失败——`workers: 1` 串行后 12/12 稳定;F 导出改页面内 blob 拦截校验(比下载事件更严格)
 
+- **核验照片 10 → 29 张**(媒体管线扩容:兵马俑/莫高窟/西湖/黄山/金阁寺/东大寺/严岛/伏见稻荷/自由女神/金门/尼亚加拉/纪念碑谷/圣米歇尔山/卢浮宫/凡尔赛/比萨/威尼斯/大本钟/巨石阵/阿布辛贝/卢克索/乌鲁鲁/杰古沙龙…,逐张许可核验+自动署名)
+- **时间轴(V2.0 雏形)**:11 个 S 级地点的历史沿革轴(长城/故宫/吉萨/斗兽场/马丘比丘/巨石阵/埃菲尔/自由女神/阿布辛贝/乌鲁鲁/金阁寺),Editorial 金点竖线样式
+
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)
 - 全量验证:E2E 12/12 · 单测 27/27 · lint 0 错误 · build ✓

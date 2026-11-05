@@ -50,6 +50,24 @@
       "胡夫金字塔",
       "大金字塔",
       "Pyramids"
+    ],
+    "timeline": [
+      {
+        "year": "约前2560年",
+        "text": "胡夫金字塔落成,此后保持世界最高建筑纪录近四千年"
+      },
+      {
+        "year": "约前447年",
+        "text": "被列入「古代世界七大奇迹」,今日唯一存留"
+      },
+      {
+        "year": "1798年",
+        "text": "拿破仑远征随行学者的测绘,掀起埃及学热潮"
+      },
+      {
+        "year": "1979年",
+        "text": "孟菲斯及其墓地(含吉萨)列入世界遗产"
+      }
     ]
   },
   {
@@ -90,7 +108,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-luxor-temple.jpg",
+      "author": "Tim Adams",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AColumns_at_Hypostyle_hall_of_Karnak_Temple_in_Luxor_Egypt.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
@@ -177,12 +199,34 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-abu-simbel.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATemplo_de_Nefertari%2C_Abu_Simbel%2C_Egipto%2C_2022-04-02%2C_DD_153.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
       "阿布辛贝勒",
       "拉美西斯二世神庙"
+    ],
+    "timeline": [
+      {
+        "year": "约前1264年",
+        "text": "拉美西斯二世凿崖建庙,太阳节对齐落成"
+      },
+      {
+        "year": "1813年",
+        "text": "瑞士东方学家布尔克哈特再度发现被沙埋的巨像"
+      },
+      {
+        "year": "1964-1968年",
+        "text": "联合国大搬迁:切块 2000 余块原样上移 65 米"
+      },
+      {
+        "year": "1979年",
+        "text": "随努比亚遗址列入世界遗产"
+      }
     ]
   },
   {

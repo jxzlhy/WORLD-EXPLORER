@@ -126,6 +126,24 @@
     "aliases": [
       "自由女神",
       "Liberty Statue"
+    ],
+    "timeline": [
+      {
+        "year": "1875年",
+        "text": "巴托尔迪与埃菲尔开始合作建造"
+      },
+      {
+        "year": "1886年",
+        "text": "落成揭幕,纽约全城汽笛齐鸣"
+      },
+      {
+        "year": "1903年",
+        "text": "「新巨人」诗铭刻于基座:「把疲乏困倦交给我」"
+      },
+      {
+        "year": "1984年",
+        "text": "列入世界遗产;1986年百年重贴金箔火炬"
+      }
     ]
   },
   {
@@ -236,7 +254,11 @@
     ],
     "quality": "A",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-monument-valley.jpg",
+      "author": "Moritz Zimmermann",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMonumentvalley.jpg"
     },
     "updatedAt": "2026-11-05"
   }

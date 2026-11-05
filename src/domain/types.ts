@@ -68,6 +68,8 @@ export interface Destination {
   story: string[]
   bestSeason?: string
   tags: string[]
+  /** 时间轴(V2.0 雏形):关键年份与事件,按时间正序 */
+  timeline?: Array<{ year: string; text: string }>
   /** 搜索别名:常见通称/异译(如 艾菲尔铁塔/金字塔/紫禁城) */
   aliases?: string[]
   sources: SourceRef[]

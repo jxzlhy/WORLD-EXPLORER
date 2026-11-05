@@ -231,6 +231,17 @@ function fmtPopulation(p: number): string {
             <p>{{ destination.bestSeason }}</p>
           </div>
 
+          <!-- 时间轴(V2.0 雏形) -->
+          <div v-if="destination.timeline?.length" class="timeline">
+            <span class="we-caps-label">时间轴</span>
+            <ol class="tl-list">
+              <li v-for="(t, i) in destination.timeline" :key="i">
+                <span class="tl-year">{{ t.year }}</span>
+                <p class="tl-text">{{ t.text }}</p>
+              </li>
+            </ol>
+          </div>
+
           <!-- 我的笔记(本地,自动保存) -->
           <div class="my-note">
             <span class="we-caps-label">我的笔记</span>
@@ -715,6 +726,51 @@ function fmtPopulation(p: number): string {
   border: 1px solid rgba(232, 200, 150, 0.35);
   border-radius: var(--we-r-full);
   padding: 1px 5px;
+}
+
+.timeline {
+  border-left: 2px solid rgba(232, 200, 150, 0.35);
+  padding-left: var(--we-sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--we-sp-2);
+}
+.tl-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tl-list li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.tl-list li::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--we-sp-4) - 5px);
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--we-gold);
+  box-shadow: 0 0 0 3px rgba(232, 200, 150, 0.15);
+}
+.tl-year {
+  font-family: var(--we-mono);
+  font-size: var(--we-fs-micro);
+  letter-spacing: 0.08em;
+  color: var(--we-gold-strong);
+}
+.tl-text {
+  margin: 0;
+  font-size: var(--we-fs-small);
+  line-height: var(--we-lh-normal);
+  color: var(--we-text);
 }
 
 .my-note {

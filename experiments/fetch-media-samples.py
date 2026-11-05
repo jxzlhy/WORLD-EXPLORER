@@ -22,7 +22,7 @@ ALLOWED_HOSTS = {"commons.wikimedia.org", "upload.wikimedia.org", "thumb.wikimed
 API = f"https://{API_HOST}/w/api.php"
 UA = {"User-Agent": "WorldExplorer-dev/0.1 (asset pipeline sample; contact: local)"}
 
-# 目的地 id -> Commons 检索词
+# 目的地 id -> Commons 检索词(首批 10 + V1.0 扩容 20)
 TARGETS = {
     "cn-great-wall": "Great Wall of China Mutianyu",
     "cn-forbidden-city": "Forbidden City Hall of Supreme Harmony",
@@ -34,6 +34,29 @@ TARGETS = {
     "pe-machu-picchu": "Machu Picchu classic view",
     "au-sydney-opera-house": "Sydney Opera House",
     "is-gullfoss": "Gullfoss waterfall Iceland",
+    "cn-terracotta-army": "Terracotta Army pit 1 Xian",
+    "cn-mogao-caves": "Mogao Caves Dunhuang",
+    "cn-west-lake": "West Lake Hangzhou Su causeway",
+    "cn-huangshan": "Huangshan granite peaks pines",
+    "jp-kinkaku-ji": "Kinkaku-ji golden pavilion Kyoto",
+    "jp-todaiji": "Todai-ji Great Buddha Nara",
+    "jp-itsukushima-shrine": "Itsukushima shrine torii Miyajima",
+    "jp-fushimi-inari": "Fushimi Inari torii tunnel",
+    "us-statue-of-liberty": "Statue of Liberty",
+    "us-golden-gate": "Golden Gate Bridge fog",
+    "us-niagara-falls": "Niagara Falls Horseshoe",
+    "us-monument-valley": "Monument Valley Merrick Butte",
+    "fr-mont-saint-michel": "Mont Saint Michel bay",
+    "fr-louvre": "Louvre pyramid courtyard",
+    "fr-versailles": "Palace of Versailles Hall of Mirrors",
+    "it-leaning-tower-pisa": "Leaning Tower of Pisa",
+    "it-venice": "Grand Canal Venice Rialto",
+    "gb-westminster": "Big Ben Elizabeth Tower",
+    "gb-stonehenge": "Stonehenge",
+    "eg-abu-simbel": "Abu Simbel temple facade",
+    "eg-luxor-temple": "Luxor Temple columns",
+    "au-uluru": "Uluru sunset",
+    "is-jokulsarlon": "Jokulsarlon glacier lagoon",
 }
 
 ALLOWED_LICENSE = ("cc0", "public domain", "cc by", "cc by-sa")
