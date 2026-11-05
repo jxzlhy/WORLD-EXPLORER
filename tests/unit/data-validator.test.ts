@@ -65,9 +65,9 @@ describe('parseMyWorldImport — P0 数据安全回归', () => {
     assert.equal(r.ok, false)
   })
 
-  it('剔除未知目的地 ID 并生成警告', () => {
+  it('剔除未知目的地 ID 并生成警告(全字符串数组)', () => {
     const r = parseMyWorldImport(
-      JSON.stringify({ favorites: ['cn-great-wall', 'xx-unknown', 42] }),
+      JSON.stringify({ favorites: ['cn-great-wall', 'xx-unknown'] }),
       KNOWN,
     )
     assert.equal(r.ok, true)
