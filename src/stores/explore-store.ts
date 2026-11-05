@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import Fuse from 'fuse.js'
-import type { City, Country, Destination } from '../domain/types'
+import type { City, Collection, Country, Destination } from '../domain/types'
 import type { WorldData } from '../services/data-service'
 import { loadJson, saveJson } from '../services/storage-service.ts'
 
@@ -10,6 +10,7 @@ export type SelectionPanel =
   | { kind: 'country'; countryId: string }
   | { kind: 'city'; cityId: string }
   | { kind: 'destination'; destinationId: string }
+  | { kind: 'collection'; collectionId: string }
 
 export interface SearchHit {
   id: string
@@ -31,6 +32,7 @@ export const useExploreStore = defineStore('explore', {
     countries: [] as Country[],
     cities: [] as City[],
     destinations: [] as Destination[],
+    collections: [] as Collection[],
     panel: { kind: 'none' } as SelectionPanel,
     /** 选中流的镜头意图:面板打开前引擎先飞往该目标 */
     pendingFlight: null as { longitude: number; latitude: number; height: number } | null,
@@ -69,6 +71,21 @@ export const useExploreStore = defineStore('explore', {
           .filter((d) => d.cityId === cityId)
           .sort((a, b) => a.name.localeCompare(b.name, 'zh-Hans-CN'))
     },
+    collectionById(state): Map<string, Collection> {
+      return new Map(state.collections.map((c) => [c.id, c]))
+    },
+    selectedCollection(state): Collection | null {
+      return state.panel.kind === 'collection'
+        ? (this.collectionById.get(state.panel.collectionId) ?? null)
+        : null
+    },
+    /** 合集目的地(按数据顺序,剔除失效引用) */
+    collectionDestinations(): (collection: Collection) => Destination[] {
+      return (collection: Collection) =>
+        collection.destinationIds
+          .map((id) => this.destinationById.get(id))
+          .filter((d): d is Destination => !!d)
+    },
     destinationsOfCountry(state): (countryId: string) => Destination[] {
       return (countryId: string) =>
         state.destinations
@@ -85,7 +102,14 @@ export const useExploreStore = defineStore('explore', {
       this.countries = data.countries
       this.cities = data.cities
       this.destinations = data.destinations
+      this.collections = data.collections ?? []
       this.loaded = true
+    },
+
+    /** 打开合集面板(不飞行,由用户从列表选择目的地) */
+    openCollection(collectionId: string) {
+      if (!this.collectionById.has(collectionId)) return
+      this.panel = { kind: 'collection', collectionId }
     },
 
     /** 选中国家:飞往国家中心(环绕校正的地理均值),打开国家面板 */

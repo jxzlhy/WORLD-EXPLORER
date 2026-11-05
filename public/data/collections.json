@@ -1,0 +1,78 @@
+[
+  {
+    "id": "ancient-echoes",
+    "name": "古文明的回声",
+    "nameEn": "Ancient Echoes",
+    "curatorNote": "从尼罗河到安第斯,从长安到罗马——人类最早的城市、陵墓与天文台。这些石头比任何史书都固执,它们站着,就是证据。",
+    "destinationIds": [
+      "eg-giza-pyramids",
+      "eg-saqqara",
+      "eg-luxor-temple",
+      "eg-abu-simbel",
+      "pe-machu-picchu",
+      "pe-kuelap",
+      "pe-nazca-lines",
+      "cn-great-wall",
+      "cn-terracotta-army",
+      "cn-mogao-caves",
+      "it-colosseum",
+      "it-pompeii",
+      "gb-stonehenge",
+      "jp-todaiji"
+    ]
+  },
+  {
+    "id": "earths-extremes",
+    "name": "地球的极限",
+    "nameEn": "Earth's Extremes",
+    "curatorNote": "最深的峡谷、最干的时间、最不可思议的石头。这组地方提醒你:地球不需要人类参与,也足够震撼。",
+    "destinationIds": [
+      "us-grand-canyon",
+      "pe-colca-canyon",
+      "cn-zhangjiajie",
+      "cn-crescent-spring",
+      "au-bungle-bungles",
+      "au-uluru",
+      "eg-white-desert",
+      "pe-huacachina",
+      "is-dettifoss",
+      "us-niagara-falls"
+    ]
+  },
+  {
+    "id": "fire-and-ice",
+    "name": "冰与火之地",
+    "nameEn": "Fire & Ice",
+    "curatorNote": "大洋中脊的裂缝、未冷却的岩浆、千年压缩的蓝冰。冰岛是主角,夏威夷与西西里是和声——看大地如何被制造出来。",
+    "destinationIds": [
+      "is-thingvellir",
+      "is-vatnajokull",
+      "is-jokulsarlon",
+      "is-mvatn",
+      "is-landmannalaugar",
+      "is-skogafoss",
+      "is-reynisfjara",
+      "us-kilauea",
+      "it-mount-etna",
+      "jp-mount-fuji"
+    ]
+  },
+  {
+    "id": "modern-marvels",
+    "name": "现代奇迹",
+    "nameEn": "Modern Marvels",
+    "curatorNote": "钢铁、玻璃与野心的一百年:从埃菲尔的铆钉到悉尼的白帆。它们证明「不可能」只是一个预算问题。",
+    "destinationIds": [
+      "au-sydney-opera-house",
+      "us-golden-gate",
+      "fr-eiffel-tower",
+      "us-statue-of-liberty",
+      "gb-tower-bridge",
+      "us-chicago-bean",
+      "us-space-needle",
+      "it-milano-duomo",
+      "fr-louvre",
+      "cn-the-bund"
+    ]
+  }
+]

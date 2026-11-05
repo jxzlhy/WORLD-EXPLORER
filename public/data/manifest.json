@@ -18,5 +18,6 @@
     "/data/destinations/batch-americas.json",
     "/data/destinations/batch-europe.json",
     "/data/destinations/batch-africa-oceania.json"
-  ]
+  ],
+  "collectionsFile": "/data/collections.json"
 }

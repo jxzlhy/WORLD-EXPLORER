@@ -20,6 +20,10 @@ const city = computed(() => explore.selectedCity)
 const cityDestinations = computed(() =>
   city.value ? explore.destinationsOfCity(city.value.id) : [],
 )
+const collection = computed(() => explore.selectedCollection)
+const collectionDests = computed(() =>
+  collection.value ? explore.collectionDestinations(collection.value) : [],
+)
 
 /**
  * 内容交错入场(V0.3-D):档案内容切换时,子块依次浮现。
@@ -111,7 +115,7 @@ function fmtPopulation(p: number): string {
 <template>
   <Transition name="panel-slide">
     <GlassPanel
-      v-if="destination || country || city"
+      v-if="destination || country || city || collection"
       strong
       class="detail-panel"
     >
@@ -301,6 +305,34 @@ function fmtPopulation(p: number): string {
             title="此地档案建设中"
             hint="周边目的地正在扩充,详见 ROADMAP"
           />
+        </div>
+      </template>
+
+      <!-- ==================== 主题合集(V1.5) ==================== -->
+      <template v-else-if="collection">
+        <div class="scroll-area" :key="collection.id">
+          <header class="head">
+            <p class="we-caps-label gold">主题合集</p>
+            <h1 class="name">{{ collection.name }}</h1>
+            <p class="en">{{ collection.nameEn }}</p>
+          </header>
+
+          <p class="lead">{{ collection.curatorNote }}</p>
+
+          <div class="ornament" aria-hidden="true"><i /><span>✦</span><i /></div>
+
+          <section>
+            <p class="we-caps-label">收录地点 · {{ collectionDests.length }}</p>
+            <ul class="dest-list">
+              <li v-for="d in collectionDests" :key="d.id">
+                <button class="dest-item" @click="explore.selectDestination(d.id)">
+                  <i :style="{ background: typeColor(d) }" />
+                  <span class="n">{{ d.name }}</span>
+                  <span class="t">{{ DESTINATION_TYPE_LABELS[d.type] }}</span>
+                </button>
+              </li>
+            </ul>
+          </section>
         </div>
       </template>
 

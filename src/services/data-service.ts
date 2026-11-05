@@ -1,4 +1,4 @@
-import type { City, Country, DataManifest, Destination } from '../domain/types'
+import type { City, Collection, Country, DataManifest, Destination } from '../domain/types'
 import { isStringArray } from './data-validator'
 
 /**
@@ -10,6 +10,7 @@ export interface WorldData {
   countries: Country[]
   cities: City[]
   destinations: Destination[]
+  collections?: Collection[]
   /** 校验报告(开发态 console.warn + 调试钩子可见) */
   issues: string[]
 }
@@ -145,6 +146,29 @@ export async function loadWorldData(): Promise<WorldData> {
     }
   }
 
+  // 主题合集(可选文件):剔除失效引用并报告
+  let collections: Collection[] | undefined
+  if (manifest.collectionsFile) {
+    try {
+      const raw = await fetchJson<Collection[]>(manifest.collectionsFile)
+      const destIds = new Set(destinations.map((d) => d.id))
+      collections = (Array.isArray(raw) ? raw : []).filter((c) => {
+        if (typeof c?.id !== 'string' || !Array.isArray(c?.destinationIds)) {
+          issues.push(`collections:结构不合法被跳过`)
+          return false
+        }
+        const before = c.destinationIds.length
+        c.destinationIds = c.destinationIds.filter((id) => destIds.has(id))
+        if (c.destinationIds.length < before) {
+          issues.push(`collections(${c.id}):剔除 ${before - c.destinationIds.length} 个未知目的地`)
+        }
+        return c.destinationIds.length > 0
+      })
+    } catch (err) {
+      issues.push(`collections 加载失败:${String(err)}`)
+    }
+  }
+
   if (issues.length) {
     console.warn(`[WorldExplorer] 数据校验发现 ${issues.length} 个问题:`, issues)
   }
@@ -152,6 +176,6 @@ export async function loadWorldData(): Promise<WorldData> {
     ;(window as unknown as Record<string, unknown>).__WE_DATA_ISSUES__ = issues
   }
 
-  cachedData = { countries: countryList, cities, destinations, issues }
+  cachedData = { countries: countryList, cities, destinations, collections, issues }
   return cachedData
 }

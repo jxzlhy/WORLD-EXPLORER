@@ -115,4 +115,15 @@ export interface DataManifest {
   countriesFile: string
   citiesFiles: string[]
   destinationFiles: string[]
+  collectionsFile?: string
+}
+
+/** 主题合集(策展式;V1.5) */
+export interface Collection {
+  id: string
+  name: string
+  nameEn: string
+  /** 策展语(2-3 句) */
+  curatorNote: string
+  destinationIds: string[]
 }
