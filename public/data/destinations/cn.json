@@ -44,7 +44,10 @@
       "license": "CC0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat_Wall_of_China_July_2006.JPG"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "长城"
+    ]
   },
   {
     "id": "cn-forbidden-city",
@@ -91,7 +94,12 @@
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHall_of_Supreme_Harmony_2010.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "紫禁城",
+      "故宫",
+      "故宫博物院"
+    ]
   },
   {
     "id": "cn-terracotta-army",
@@ -134,7 +142,11 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "兵马俑",
+      "秦俑"
+    ]
   },
   {
     "id": "cn-mogao-caves",

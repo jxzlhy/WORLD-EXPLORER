@@ -38,7 +38,12 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATour_Eiffel_Wikimedia_Commons.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "艾菲尔铁塔",
+      "巴黎铁塔",
+      "La Tour Eiffel"
+    ]
   },
   {
     "id": "fr-louvre",
@@ -74,7 +79,10 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "罗浮宫"
+    ]
   },
   {
     "id": "fr-versailles",

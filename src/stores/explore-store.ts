@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import Fuse from 'fuse.js'
 import type { City, Country, Destination } from '../domain/types'
 import type { WorldData } from '../services/data-service'
-import { loadJson, saveJson } from '../services/storage-service'
+import { loadJson, saveJson } from '../services/storage-service.ts'
 
 export type SelectionPanel =
   | { kind: 'none' }
@@ -16,6 +16,8 @@ export interface SearchHit {
   kind: 'country' | 'destination' | 'city'
   name: string
   nameEn: string
+  /** 目的地别名(供 Fuse 匹配,不直接展示) */
+  aliases?: string[]
   detail: string
 }
 
@@ -188,6 +190,7 @@ export function useSearchIndex(getSrc: () => {
         kind: 'destination' as const,
         name: d.name,
         nameEn: d.nameEn,
+        aliases: d.aliases ?? [],
         detail: d.tags.slice(0, 2).join(' · '),
       })),
       ...cities.map((c) => ({
@@ -201,9 +204,10 @@ export function useSearchIndex(getSrc: () => {
   })
   const fuse = new Fuse(items.value, {
     keys: [
-      { name: 'name', weight: 0.5 },
-      { name: 'nameEn', weight: 0.35 },
-      { name: 'detail', weight: 0.15 },
+      { name: 'name', weight: 0.42 },
+      { name: 'nameEn', weight: 0.3 },
+      { name: 'aliases', weight: 0.23 },
+      { name: 'detail', weight: 0.05 },
     ],
     threshold: 0.38,
     ignoreLocation: true,

@@ -122,7 +122,11 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "自由女神",
+      "Liberty Statue"
+    ]
   },
   {
     "id": "us-golden-gate",

@@ -15,14 +15,36 @@
       "议会开幕时,国王不能进入下议院——那是1642年查理一世闯入逮捕五名议员未遂之后定下的规矩。建筑本身就是一部立宪史:每一道门槛都对应一次王权与议会的谈判。"
     ],
     "bestSeason": "全年;黄昏河岸灯光最上镜",
-    "tags": ["世界遗产", "议会", "哥特复兴", "伦敦"],
+    "tags": [
+      "世界遗产",
+      "议会",
+      "哥特复兴",
+      "伦敦"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/426", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Palace of Westminster", "url": "https://en.wikipedia.org/wiki/Palace_of_Westminster", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/426",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Palace of Westminster",
+        "url": "https://en.wikipedia.org/wiki/Palace_of_Westminster",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
-    "updatedAt": "2026-11-05"
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "大本钟",
+      "Big Ben",
+      "国会大厦"
+    ]
   },
   {
     "id": "gb-british-museum",
@@ -40,12 +62,24 @@
       "诺曼·福斯特设计的大中庭(2000年)是欧洲最大有顶广场,3312块玻璃自圆心螺旋铺开。在这里抬头,能同时看到19世纪的石柱与21世纪的天光——文明的时间线在头顶交汇。"
     ],
     "bestSeason": "全年;周五夜场至20:30",
-    "tags": ["博物馆", "人类文明", "伦敦", "免费"],
+    "tags": [
+      "博物馆",
+      "人类文明",
+      "伦敦",
+      "免费"
+    ],
     "sources": [
-      { "name": "Wikipedia: British Museum", "url": "https://en.wikipedia.org/wiki/British_Museum", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "Wikipedia: British Museum",
+        "url": "https://en.wikipedia.org/wiki/British_Museum",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -63,15 +97,35 @@
       "附近的杜灵顿垣墙(巨木阵)与巨石阵遥遥相对:一木一石,一「生者之城」一「逝者之所」。新石器时代的建筑师,或许早就规划好了整套生死仪式的地理。"
     ],
     "bestSeason": "6月21日夏至(免费开放日)或春秋晴日清晨",
-    "tags": ["世界遗产", "史前", "谜团", "天文"],
+    "tags": [
+      "世界遗产",
+      "史前",
+      "谜团",
+      "天文"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/373", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Stonehenge", "url": "https://en.wikipedia.org/wiki/Stonehenge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/373",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Stonehenge",
+        "url": "https://en.wikipedia.org/wiki/Stonehenge",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "wikidataId": "Q105013",
     "quality": "S",
-    "media": { "status": "placeholder" },
-    "updatedAt": "2026-11-05"
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "索尔兹伯里石环"
+    ]
   },
   {
     "id": "gb-edinburgh-castle",
@@ -89,13 +143,30 @@
       "每天13:00(周日除外)的 One O'Clock Gun 准时鸣响,这是1856年给福斯湾船只对时的传统。八月军乐节时,城堡前广场的看台像一座临时歌剧院,风笛声在城市上空回荡。"
     ],
     "bestSeason": "8月(军乐节)与5-6月;风大,备外套",
-    "tags": ["城堡", "苏格兰", "火山岩", "军乐节"],
+    "tags": [
+      "城堡",
+      "苏格兰",
+      "火山岩",
+      "军乐节"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心(爱丁堡老城与新城)", "url": "https://whc.unesco.org/en/list/728", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Edinburgh Castle", "url": "https://en.wikipedia.org/wiki/Edinburgh_Castle", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心(爱丁堡老城与新城)",
+        "url": "https://whc.unesco.org/en/list/728",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Edinburgh Castle",
+        "url": "https://en.wikipedia.org/wiki/Edinburgh_Castle",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -113,13 +184,30 @@
       "1905年,波特小姐在温德米尔写下《彼得兔的故事》,并用版税买下山庄农场,身后把四千英亩土地捐给国民信托。今天的湖区,一半是风景,一半是这两个人留下的保护机制。"
     ],
     "bestSeason": "5-6月与9-10月;雨天备徒步鞋",
-    "tags": ["世界遗产", "国家公园", "湖泊", "浪漫主义"],
+    "tags": [
+      "世界遗产",
+      "国家公园",
+      "湖泊",
+      "浪漫主义"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1422", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Lake District", "url": "https://en.wikipedia.org/wiki/Lake_District", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1422",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Lake District",
+        "url": "https://en.wikipedia.org/wiki/Lake_District",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -138,12 +226,24 @@
       "42米高的上层步道1910年后因无人使用而关闭,1982年重新开放成为玻璃走廊。站在廊桥上,脚下是双层巴士穿行,眼前是泰晤士河从千年帝都流向金融城的两岸天际线。"
     ],
     "bestSeason": "全年;开桥时刻表见官网",
-    "tags": ["桥梁", "维多利亚", "工程", "伦敦"],
+    "tags": [
+      "桥梁",
+      "维多利亚",
+      "工程",
+      "伦敦"
+    ],
     "sources": [
-      { "name": "Wikipedia: Tower Bridge", "url": "https://en.wikipedia.org/wiki/Tower_Bridge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "Wikipedia: Tower Bridge",
+        "url": "https://en.wikipedia.org/wiki/Tower_Bridge",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -161,12 +261,24 @@
       "Cotswold Way 步道贯穿102公里的山脊,经过罗马别墅、内战战场与史前长坟。它不是一处景点,而是一整片被精心保存的「英格兰性」:慢速、蜜色、带羊咩声。"
     ],
     "bestSeason": "5-7月与9月;自驾或徒步皆宜",
-    "tags": ["乡村", "羊毛之路", "石屋", "徒步"],
+    "tags": [
+      "乡村",
+      "羊毛之路",
+      "石屋",
+      "徒步"
+    ],
     "sources": [
-      { "name": "Wikipedia: Cotswolds", "url": "https://en.wikipedia.org/wiki/Cotswolds", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "Wikipedia: Cotswolds",
+        "url": "https://en.wikipedia.org/wiki/Cotswolds",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "B",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   }
 ]

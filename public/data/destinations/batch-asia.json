@@ -40,7 +40,10 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "西子湖"
+    ]
   },
   {
     "id": "cn-zhangjiajie",

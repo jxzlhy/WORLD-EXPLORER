@@ -44,7 +44,10 @@
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMachu_Picchu_with_Huayna_Picchu_P%C3%A9rou_%283%29.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "玛丘比丘"
+    ]
   },
   {
     "id": "pe-cusco-historic",
@@ -127,7 +130,10 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "纳斯卡地画"
+    ]
   },
   {
     "id": "pe-lake-titicaca",

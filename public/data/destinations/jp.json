@@ -43,7 +43,11 @@
       "license": "CC BY 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "Fuji",
+      "富嶽三十六景"
+    ]
   },
   {
     "id": "jp-kiyomizu-dera",
@@ -281,6 +285,10 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "渋谷",
+      "Scramble Crossing"
+    ]
   }
 ]

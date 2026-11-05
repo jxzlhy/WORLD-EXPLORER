@@ -44,7 +44,13 @@
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat_Sphinx_of_Giza_%28%D8%A3%D8%A8%D9%88_%D8%A7%D9%84%D9%87%D9%88%D9%84%29.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "金字塔",
+      "胡夫金字塔",
+      "大金字塔",
+      "Pyramids"
+    ]
   },
   {
     "id": "eg-luxor-temple",
@@ -86,7 +92,10 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "卢克索神殿"
+    ]
   },
   {
     "id": "eg-valley-of-kings",
@@ -170,7 +179,11 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "阿布辛贝勒",
+      "拉美西斯二世神庙"
+    ]
   },
   {
     "id": "eg-karnak",

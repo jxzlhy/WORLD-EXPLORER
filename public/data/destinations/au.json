@@ -87,7 +87,11 @@
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASydney_Opera_House_-_Dec_2008.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "悉尼歌剧院",
+      "Opera House"
+    ]
   },
   {
     "id": "au-uluru",
@@ -129,7 +133,11 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "艾尔斯岩",
+      "Ayers Rock"
+    ]
   },
   {
     "id": "au-twelve-apostles",

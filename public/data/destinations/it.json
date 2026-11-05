@@ -44,7 +44,12 @@
       "license": "CC0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AColosseum_of_Rome_and_Roman_forum.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "aliases": [
+      "斗兽场",
+      "罗马竞技场",
+      "Coliseum"
+    ]
   },
   {
     "id": "it-venice",
