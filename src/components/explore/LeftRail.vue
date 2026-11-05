@@ -127,6 +127,10 @@ const typeChips: Array<{ value: string; label: string; color: string }> = [
         </button>
       </div>
       <label class="row">
+        <span>云层</span>
+        <WeSwitch v-model="ui.cloudsOn" />
+      </label>
+      <label class="row">
         <span>自动旋转</span>
         <WeSwitch v-model="ui.autoRotate" />
       </label>

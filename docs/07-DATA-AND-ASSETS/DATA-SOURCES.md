@@ -38,7 +38,14 @@
 - 服务限制:API 礼貌用量;本项目仅构建期抓取一次,运行时零请求
 - 抓取脚本:`experiments/fetch-media-samples.py`(HTTPS+域名白名单+私网阻断)
 
-### 5. 内容参考(Wikipedia / UNESCO)
+### 5. 云层贴图(V1.0,2026-11-06 接入)
+- 来源:Wikimedia Commons「Transparent Fair Weather Clouds Map」,作者 GabrielGGD
+- 许可:**CC0**(无需署名;文档仍保留作者记录)
+- 链路说明:NASA eoimages 直连不可达,turban/webgl-earth 中转链无 LICENSE 文件 → 按红线弃用,改用 Commons CC0 归档版本
+- 本地化:`public/textures/earth-clouds.png`(2048×1024,1.7MB,gray+alpha)
+- 运行时:独立球壳 Primitive(+12km),缓慢西移,默认关闭
+
+### 6. 内容参考(Wikipedia / UNESCO)
 - 用途:目的地摘要与故事的事实参考;**所有文本为原创改写**,不逐字复制
 - 许可:CC BY-SA 4.0(参考)· UNESCO 官网(事实参考)
 - 记录:每条目的 `sources[]` 字段

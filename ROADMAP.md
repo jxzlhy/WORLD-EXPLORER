@@ -32,7 +32,7 @@
 - [x] 画质三档(高/均衡/低)替换布尔开关
 - [x] DetailPanel 档案内容 GSAP 交错入场
 - [x] **目的地扩容 67→100**(+33 原创内容,47 城,全量校验 0 问题)
-- [ ] 云层(许可链核验;贴图 CDN 探测持续失败,待网络恢复)
+- [x] 云层(CC0 许可链闭环:Commons/GabrielGGD,球壳 Primitive + 开关)
 - [ ] Mimosa 完整安全审计(两次上限截断,待重跑)
 
 ## V1.0 — THE LIVING EARTH

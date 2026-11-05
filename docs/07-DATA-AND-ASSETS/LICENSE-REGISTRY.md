@@ -20,6 +20,7 @@
 | 地形起伏图 | NASA/NOAA(经 three-globe 分发) | Public Domain | `public/textures/earth-topology.png` |
 | 星空背景 | Cesium 内置 Assets | Apache-2.0 | `node_modules/cesium/Build/Cesium/Assets` |
 | 国家边界 110m | Natural Earth | Public Domain | `public/data/ne_110m_countries.geojson` |
+| 云图(公平天气云) | GabrielGGD @ Wikimedia Commons([页面](https://commons.wikimedia.org/wiki/File:Transparent_Fair_Weather_Clouds_Map.png)) | **CC0**(3840px 下采样至 2048) | `public/textures/earth-clouds.png` |
 
 ## C. NASA GIBS 瓦片(运行时)
 

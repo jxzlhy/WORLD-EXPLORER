@@ -61,6 +61,8 @@ export interface IWorldEngine {
   setTypesFilter(activeTypes: string[]): void
 
   setLayerVisible(layer: LayerId, visible: boolean): void
+  /** 云层开关(懒加载,默认关闭) */
+  setCloudsVisible(visible: boolean): Promise<void>
   setAutoRotate(enabled: boolean): void
   setDayNightMode(mode: DayNightMode): void
   /** 渲染质量档位:high=原生+FXAA / balanced=0.85x+FXAA / low=0.7x 无 FXAA */

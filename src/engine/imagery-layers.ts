@@ -1,6 +1,7 @@
 import * as Cesium from 'cesium'
 import type { DayNightMode } from './types'
 import { DayNightCompositor } from './day-night-composite'
+import { CloudLayer } from './cloud-layer'
 
 /**
  * 地球影像层控制器(V0.2 重构)
@@ -17,6 +18,8 @@ export class ImageryLayersController {
   private compositor = new DayNightCompositor()
   private baseLayer: Cesium.ImageryLayer | null = null
   private gibsLayer: Cesium.ImageryLayer | null = null
+  private clouds = new CloudLayer()
+  private cloudsLoaded = false
   private mode: DayNightMode = 'realtime'
   private refreshTimer: number | null = null
   /** 模式切换令牌:丢弃迟到的异步结果 */
@@ -30,6 +33,15 @@ export class ImageryLayersController {
     globe.enableLighting = false
     globe.dynamicAtmosphereLighting = false
     globe.baseColor = Cesium.Color.fromCssColorString('#0a1220')
+  }
+
+  /** 云层开关(懒加载:首次开启才创建 Primitive) */
+  async setCloudsVisible(visible: boolean, viewer: Cesium.Viewer): Promise<void> {
+    if (visible && !this.cloudsLoaded) {
+      await this.clouds.load(viewer)
+      this.cloudsLoaded = true
+    }
+    this.clouds.setVisible(visible)
   }
 
   setMode(mode: DayNightMode): void {
@@ -137,6 +149,7 @@ export class ImageryLayersController {
   destroy(): void {
     this.stopRefreshTimer()
     this.applySeq++
+    this.clouds.destroy()
     this.baseLayer = null
     this.gibsLayer = null
   }

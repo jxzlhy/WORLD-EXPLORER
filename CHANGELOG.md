@@ -14,6 +14,8 @@ All notable changes to WORLD EXPLORER are documented here.
 
 - **主题合集**:4 个策展合集(古文明的回声 14/地球的极限 10/冰与火之地 10/现代奇迹 10)+ 面板与发现栏入口
 
+- **云层(V0.3-E 闭环)**:CC0 云图(Commons/GabrielGGD)+ 独立球壳 Primitive(+12km,西向缓移,懒加载默认关);NASA 直连与 turban 中转链均不可用,按红线改走 Commons CC0
+
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)
 - 全量验证:E2E 12/12 · 单测 27/27 · lint 0 错误 · build ✓

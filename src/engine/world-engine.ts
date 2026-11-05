@@ -239,6 +239,11 @@ export class WorldEngine implements IWorldEngine {
     if (layer === 'labels') this.markers.setLabelsVisible(visible)
   }
 
+  setCloudsVisible(visible: boolean): Promise<void> {
+    if (!this.viewer || !this.imagery) return Promise.resolve()
+    return this.imagery.setCloudsVisible(visible, this.viewer)
+  }
+
   setAutoRotate(enabled: boolean): void {
     this.camera?.setAutoRotate(enabled)
   }

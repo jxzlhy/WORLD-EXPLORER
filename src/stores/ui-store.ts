@@ -25,6 +25,8 @@ export const useUiStore = defineStore('ui', {
       'geology',
       'observatory',
     ] as string[],
+    /** 云层(懒加载,默认关闭——性能优先) */
+    cloudsOn: false,
     showStats: false,
     fps: 0,
     cameraInfo: null as CameraInfo | null,
@@ -45,6 +47,9 @@ export const useUiStore = defineStore('ui', {
     },
     setQuality(mode: QualityMode) {
       this.quality = mode
+    },
+    setClouds(on: boolean) {
+      this.cloudsOn = on
     },
     toggleType(type: string) {
       this.activeTypes = this.activeTypes.includes(type)

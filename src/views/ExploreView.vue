@@ -136,6 +136,7 @@ async function bootstrap(): Promise<void> {
     watch(() => ui.dayNightMode, (mode) => getEngine()?.setDayNightMode(mode)),
     watch(() => ui.autoRotate, (on) => getEngine()?.setAutoRotate(on)),
     watch(() => ui.quality, (mode) => getEngine()?.setQuality(mode)),
+    watch(() => ui.cloudsOn, (on) => void getEngine()?.setCloudsVisible(on)),
     watch(
       () => [...ui.activeTypes],
       (types) => getEngine()?.setTypesFilter(types),
