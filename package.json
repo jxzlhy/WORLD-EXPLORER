@@ -14,7 +14,8 @@
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:unit": "node --test tests/unit/"
   },
   "dependencies": {
     "cesium": "^1.135.0",
