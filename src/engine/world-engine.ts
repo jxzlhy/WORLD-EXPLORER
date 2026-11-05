@@ -14,6 +14,7 @@ import type {
   IWorldEngine,
   LayerId,
   PickPayload,
+  QualityMode,
 } from './types'
 
 export interface WorldEngineOptions {

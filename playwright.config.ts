@@ -7,8 +7,9 @@ import { defineConfig } from '@playwright/test'
  */
 export default defineConfig({
   testDir: 'tests/e2e',
-  timeout: 90_000,
-  expect: { timeout: 20_000 },
+  // SwiftShader 软渲染下单用例可达 50s(如内存用例),整页链路在套件并发负载下更长
+  timeout: 180_000,
+  expect: { timeout: 30_000 },
   fullyParallel: false,
   retries: 0,
   use: {
