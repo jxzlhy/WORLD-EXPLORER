@@ -79,6 +79,29 @@ function flagEmoji(iso2: string): string {
 function fmtCoord(v: number, pos: string, neg: string): string {
   return `${Math.abs(v).toFixed(2)}°${v >= 0 ? pos : neg}`
 }
+
+/** 国情速览:任一事实字段存在即渲染区块 */
+const hasCountryFacts = computed(
+  () =>
+    !!country.value &&
+    (!!country.value.areaKm2 ||
+      !!country.value.population ||
+      !!country.value.languages?.length ||
+      !!country.value.currency),
+)
+
+/** 面积:万 km² 表述(中文语境习惯) */
+function fmtArea(km2: number): string {
+  if (km2 >= 10000) return `约 ${(km2 / 10000).toFixed(km2 % 10000 === 0 ? 0 : 1)} 万 km²`
+  return `约 ${km2.toLocaleString('zh-Hans-CN')} km²`
+}
+
+/** 人口:亿/万 两级表述 */
+function fmtPopulation(p: number): string {
+  if (p >= 100_000_000) return `约 ${(p / 100_000_000).toFixed(1)} 亿`
+  if (p >= 10_000) return `约 ${(p / 10_000).toFixed(0)} 万`
+  return `约 ${p.toLocaleString('zh-Hans-CN')}`
+}
 </script>
 
 <template>
@@ -253,6 +276,30 @@ function fmtCoord(v: number, pos: string, neg: string): string {
           <p class="lead">
             {{ country.summary }}
           </p>
+
+          <!-- 国情速览(V1.0 国家档案充实) -->
+          <dl v-if="hasCountryFacts" class="country-facts">
+            <div v-if="country!.capital" class="fact">
+              <dt>首都</dt>
+              <dd>{{ country!.capital }}</dd>
+            </div>
+            <div v-if="country!.areaKm2" class="fact">
+              <dt>面积</dt>
+              <dd>{{ fmtArea(country!.areaKm2) }}</dd>
+            </div>
+            <div v-if="country!.population" class="fact">
+              <dt>人口</dt>
+              <dd>{{ fmtPopulation(country!.population) }}</dd>
+            </div>
+            <div v-if="country!.languages?.length" class="fact">
+              <dt>语言</dt>
+              <dd>{{ country!.languages!.join(' · ') }}</dd>
+            </div>
+            <div v-if="country!.currency" class="fact">
+              <dt>货币</dt>
+              <dd>{{ country!.currency }}</dd>
+            </div>
+          </dl>
 
           <div
             class="ornament"
@@ -521,6 +568,29 @@ function fmtCoord(v: number, pos: string, neg: string): string {
   border: 1px solid rgba(232, 200, 150, 0.35);
   border-radius: var(--we-r-full);
   padding: 1px 5px;
+}
+
+.country-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px var(--we-sp-4);
+  margin: 0;
+  padding: var(--we-sp-3) var(--we-sp-4);
+  border: 1px solid var(--we-glass-border);
+  border-radius: var(--we-r-md);
+  background: var(--we-well);
+}
+.country-facts .fact dt {
+  font-size: var(--we-fs-micro);
+  letter-spacing: 0.14em;
+  color: var(--we-text-dim);
+  margin-bottom: 2px;
+}
+.country-facts .fact dd {
+  margin: 0;
+  font-size: var(--we-fs-small);
+  color: var(--we-text-hi);
+  font-weight: 600;
 }
 
 .dest-list {

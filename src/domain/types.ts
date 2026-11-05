@@ -95,6 +95,14 @@ export interface Country {
   continent: string
   capital: string
   summary: string
+  /** 面积(平方公里,约值) */
+  areaKm2?: number
+  /** 人口(约值) */
+  population?: number
+  /** 官方/主要语言 */
+  languages?: string[]
+  /** 货币(中文名 + ISO 代码) */
+  currency?: string
   wikidataId?: string
   updatedAt: string
 }

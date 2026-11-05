@@ -9,6 +9,7 @@
  *
  * 数据:NASA Blue/Black Marble(Public Domain),与 V0.1 相同的本地贴图。
  */
+import { sunSubPoint } from './sun-position'
 
 const DAY_URL = '/textures/earth-blue-marble.jpg'
 const NIGHT_URL = '/textures/earth-night.jpg'
@@ -65,19 +66,9 @@ export class DayNightCompositor {
     const dpx = dayData.data
     const npx = nightData.data
 
-    // —— 太阳位置(低精度天文算法,视误差 <0.01°) ——
-    const jd = date.getTime() / 86_400_000 + 2440587.5
-    const n = jd - 2451545.0 // J2000 起的天数
-    const L = (280.46 + 0.9856474 * n) % 360
-    const g = ((357.528 + 0.9856003 * n) % 360) * (Math.PI / 180)
-    const lambda = (L + 1.915 * Math.sin(g) + 0.02 * Math.sin(2 * g)) * (Math.PI / 180)
-    const eps = (23.439 - 0.0000004 * n) * (Math.PI / 180)
-    const dec = Math.asin(Math.sin(eps) * Math.sin(lambda)) // 太阳赤纬 δ
-    const ra = Math.atan2(Math.cos(eps) * Math.sin(lambda), Math.cos(lambda)) // 赤经 α
-    const gmst = (280.46061837 + 360.98564736629 * n) % 360
-    let subLon = ((ra * 180) / Math.PI - gmst) % 360 // 日下点经度
-    if (subLon > 180) subLon -= 360
-    if (subLon < -180) subLon += 360
+    // —— 太阳位置(纯函数,经天文真值单测校验) ——
+    const { subLon, subLat } = sunSubPoint(date)
+    const dec = (subLat * Math.PI) / 180
 
     const sinDec = Math.sin(dec)
     const cosDec = Math.cos(dec)
