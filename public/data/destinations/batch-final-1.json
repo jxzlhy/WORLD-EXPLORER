@@ -1,0 +1,239 @@
+[
+  {
+    "id": "cn-yuanyang-terraces",
+    "name": "元阳哈尼梯田",
+    "nameEn": "Honghe Hani Rice Terraces",
+    "type": "heritage",
+    "countryId": "CN",
+    "longitude": 102.79,
+    "latitude": 23.1,
+    "summary": "红河南岸的「大地的雕刻」:哈尼人 1300 年间在 15-75 度的坡地上开出 3700 级梯田,森林在上、村寨居中、梯田在下、水系贯穿——活的农业生态系统。",
+    "story": [
+      "哈尼梯田的精妙在「四素同构」:山顶森林涵养水源,山腰村寨生活,山下数千级梯田种植红米,沟渠把水从林到田串成一整套循环——2013年列入世界遗产时,评审特别强调它是「森林-村寨-梯田-水系」四素同构的活态典范。",
+      "多依树观景台的日出是摄影者的朝圣:云海在脚下翻涌,梯田像几千面镜子同时点亮——灌水期(11月-3月)的每个晴天清晨,阳光把水面染成金色与玫瑰色,「大地的调色盘」名副其实。",
+      "梯田养的不只是稻:鱼在田里游,鸭在田间走,「稻鱼鸭」共生的传统农业模式被联合国粮农组织列为全球重要农业文化遗产——一千三百年过去,这套系统仍在产出粮食与风景。"
+    ],
+    "bestSeason": "11月-3月灌水期(镜面梯田);6-9月绿浪",
+    "tags": ["世界遗产", "梯田", "哈尼族", "农业遗产"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1111", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Honghe Hani Rice Terraces", "url": "https://en.wikipedia.org/wiki/Honghe_Hani_Rice_Terraces", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "cn-chengdu-panda-base",
+    "name": "成都大熊猫繁育研究基地",
+    "nameEn": "Chengdu Research Base of Giant Panda Breeding",
+    "type": "natural",
+    "countryId": "CN",
+    "cityId": "cn-chengdu",
+    "longitude": 104.1441,
+    "latitude": 30.7375,
+    "summary": "全球最成功的大熊猫迁地保护机构:从 6 只病饿个体起步,如今 240 余只大熊猫在此繁衍生息——「滚滚经济学」与硬核繁殖科学并存。",
+    "story": [
+      "1987年建园时只有 6 只抢救回来的病饿大熊猫;今天这里生活着超过 240 只,是全球最大的圈养大熊猫种群之一。繁育的核心难题是「发情难、配种难、育幼难」——基地用激素监测、冻精技术与「代孕母猫」体系逐个攻克,幼崽存活率从个位数飙升到九成以上。",
+      "看熊猫要赶早:上午九点前的进食时段最活跃,午后它们基本集体「躺平」。月亮产房里新生幼崽只有巴掌大、粉红半透明——你能在这里直观看到「从 100 克到 100 公斤」的生命奇迹。",
+      "基地也是城市生态的注脚:成都平原曾是大熊猫栖息地的南缘。大熊猫野化培训放归项目正把圈养后代送回岷山与邛崃山——「动物园的终点,是让它不再需要动物园」。"
+    ],
+    "bestSeason": "全年;清晨 8:30-10:00 最活跃",
+    "tags": ["大熊猫", "保护繁育", "成都", "亲子"],
+    "sources": [
+      { "name": "Wikipedia: Chengdu Research Base of Giant Panda Breeding", "url": "https://en.wikipedia.org/wiki/Chengdu_Research_Base_of_Giant_Panda_Breeding", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "jp-nikko-toshogu",
+    "name": "日光东照宫",
+    "nameEn": "Nikkō Tōshō-gū",
+    "type": "heritage",
+    "countryId": "JP",
+    "longitude": 139.6011,
+    "latitude": 36.7578,
+    "summary": "德川家康的灵庙:50 余栋建筑贴金雕彩,「三猿」与「眠猫」雕刻藏在梁柱间——江户工匠把权力与幽默刻进了同一座山。",
+    "story": [
+      "1616年德川家康去世,遗愿葬于日光;其孙家光在 1636 年动用 454 万工匠把东照宫扩建为今日规模——以江户的技术极限,向初代将军致意。与素净的伊势神宫相反,东照宫极尽奢华:金箔、螺钿、彩色雕刻铺满梁柱,1999年列入世界遗产(日光社寺)。",
+      "最有名的「三猿」雕刻(非礼勿视、勿听、勿言)其实是马厩的护马雕饰;「眠猫」藏在奥宫走廊,传说是左甚五郎的手笔——猫睡着,门口的麻雀才能活。权力圣殿里的幽默感,是江户雕刻师的签名。",
+      "阳明门「日暮门」的名号来自:看它太入迷,一天就过去了。2017 年大修完成后,白底贴金的原色重现——江户的「炫技」,在修旧如旧的原则下重新发光。"
+    ],
+    "bestSeason": "11月上中旬红叶(日光红叶在日本名列前茅)",
+    "tags": ["世界遗产", "德川家康", "雕刻", "日光"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心(日光社寺)", "url": "https://whc.unesco.org/en/list/913", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Nikkō Tōshō-gū", "url": "https://en.wikipedia.org/wiki/Nikkō_Tōshō-gū", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "jp-arashiyama-bamboo",
+    "name": "岚山竹林小径",
+    "nameEn": "Arashiyama Bamboo Grove",
+    "type": "natural",
+    "countryId": "JP",
+    "cityId": "jp-kyoto",
+    "longitude": 135.6696,
+    "latitude": 35.0176,
+    "summary": "五百米长的绿荫隧道:高竹在头顶合拢成拱,风过时竹叶互击——日本环境省把这里的「竹声」列为「日本百大声音遗产」。",
+    "story": [
+      "竹林小径的妙处在于「听」:风穿过数万株高竹,竹竿互相碰撞、竹叶沙沙摩擦,环境省认证的「保存到未来的日本音风景」——多数游客忙着拍照,本地人建议:站在小径中央,闭眼听一分钟。",
+      "清晨六点的竹林属于晨跑者与猫:光线从竹隙间斜切下来,地面泛着青苔的绿——「渡月桥看山,竹林听风,常寂光寺看落叶」是岚山的正确打开顺序。天龙寺的世界遗产庭园(曹源池)就在小径口,顺路即可入画。",
+      "嵯峨野小火车沿保津峡行驶,赏枫季一票难求;大河内山庄的庭园是眺望岚山全景的最佳机位——别忘了竹径尽头的野宫神社:求学业与良缘的黑木鸟居,用树皮盖成,是《源氏物语》里出现过的「贤木」。"
+    ],
+    "bestSeason": "全年;清晨六点(人少光斜)最佳",
+    "tags": ["竹林", "岚山", "声音遗产", "京都"],
+    "sources": [
+      { "name": "Wikipedia: Sagano Bamboo forest", "url": "https://en.wikipedia.org/wiki/Sagano_Bamboo_forest", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "us-death-valley",
+    "name": "死亡谷",
+    "nameEn": "Death Valley National Park",
+    "type": "geology",
+    "countryId": "US",
+    "longitude": -117.09,
+    "latitude": 36.51,
+    "summary": "北美最热、最干、海拔最低的国家公园:1913年 56.7°C 的世界纪录仍挂在炉溪;恶水盆地低于海平面 86 米——「地球的烤箱与镜子」。",
+    "story": [
+      "死亡谷的温度不是传说:1913 年 7 月 10 日 Furnace Creek 记录下 56.7°C,至今是全球公认最高气温纪录的有力候选。夏季公园告示直白:正午后徒步可能致死——但冬季与早春,这里是野花与色彩的天堂。",
+      "恶水盆地(Badwater Basin)低于海平面 86 米,是北美大陆的最低点:盐壳在干涸湖床上裂成六边形蜂窝,行走其上像踩在另一颗星球;「调色板山」(Artist’s Palette)(调色板山)的岩层被金属氧化物染成粉紫绿黄——地质学把颜料直接挤在了山上。",
+      "「会走路的石头」之谜:赛马场干湖(Racetrack Playa)的石块会自己滑行留下长痕——2020 年科学界终于抓到「现行」:薄冰在低温时形成,微风吹动大石与冰壳一起漂移。谜题解开,浪漫减半,科学加满。"
+    ],
+    "bestSeason": "11-3月(夏季严禁徒步);4月野花年景",
+    "tags": ["国家公园", "极热极干", "盐壳", "会走路的石头"],
+    "sources": [
+      { "name": "Wikipedia: Death Valley National Park", "url": "https://en.wikipedia.org/wiki/Death_Valley_National_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "us-lincoln-memorial",
+    "name": "林肯纪念堂",
+    "nameEn": "Lincoln Memorial",
+    "type": "landmark",
+    "countryId": "US",
+    "longitude": -77.0504,
+    "latitude": 38.8893,
+    "summary": "倒影池尽头的白色希腊神殿:587 级台阶、36 根多立克柱(代表 36 州),林肯坐像凝望华盛顿纪念碑——美国公民运动的「讲坛」。",
+    "story": [
+      "1922年落成的纪念堂内,19 英尺高的林肯坐像由 28 块科罗拉多大理石拼成——设计者 Bacon 与雕刻家 French 刻意让他的双手一紧一松:一面握住「联邦的坚定」,一面写下「解放的宽容」。",
+      "这座神殿是美国公民权利的舞台:1939 年玛丽安·安德森在台阶上为 7.5 万人歌唱(因肤色被禁入音乐厅之后);1963 年马丁·路德·金在此说出「I Have a Dream」——台阶上至今嵌着那枚「我站过的地方」纪念牌。",
+      "夜晚的纪念堂亮灯后,倒影池里的方尖碑与神殿同框——从国会山沿国家广场走到这里(约 3 公里),是美国宪法精神的一次「步行复习」。免费开放,全年无休。"
+    ],
+    "bestSeason": "全年;4月樱花季与 7月4日国庆夜最盛",
+    "tags": ["纪念地", "公民运动", "华盛顿", "免费"],
+    "sources": [
+      { "name": "Wikipedia: Lincoln Memorial", "url": "https://en.wikipedia.org/wiki/Lincoln_Memorial", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "fr-verdon-gorge",
+    "name": "韦尔东峡谷",
+    "nameEn": "Gorges du Verdon",
+    "type": "natural",
+    "countryId": "FR",
+    "longitude": 6.3833,
+    "latitude": 43.7833,
+    "summary": "欧洲最美丽的峡谷:石灰岩崖壁深达 700 米,翡翠绿的韦尔东河在谷底蜿蜒——「欧洲的大峡谷」,南法普罗旺斯的隐藏王牌。",
+    "story": [
+      "韦尔东河用数百万年在石灰岩高原上切出深达 700 米的峡谷,最窄处崖壁相距仅 6 米——「走廊式」的峡段让皮划艇与岩壁 几乎擦肩。绿松石色的河水来自阿尔卑斯融雪与石灰岩的过滤——「Verdon」之名即源于 viridis(绿)。",
+      "「悬崖之路」(Corniche Sublime)与北岸环路串起十几处观景台:导师岩(L'Imbut)、教堂岬(La Cathédrale)的岩柱像倒挂的管风琴。高空滑索与 200 米崖降是极限玩家的乐园——欧洲最大的「崖降训练场」就在这里。",
+      "1970 年代,圣十字湖大坝在峡谷出口蓄水,形成那颗著名的「翡翠之心」——从空中看,湖与峡谷构成一只发光的绿眼睛。顺便:凡尔登战役与这里无关,别把名字搞混。"
+    ],
+    "bestSeason": "5-9月(水上活动);10月崖壁红叶",
+    "tags": ["峡谷", "翡翠绿", "皮划艇", "普罗旺斯"],
+    "sources": [
+      { "name": "Wikipedia: Verdon Gorge", "url": "https://en.wikipedia.org/wiki/Verdon_Gorge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "it-lake-como",
+    "name": "科莫湖",
+    "nameEn": "Lake Como",
+    "type": "natural",
+    "countryId": "IT",
+    "longitude": 9.2833,
+    "latitude": 45.85,
+    "summary": "阿尔卑斯山脚的「Y」形深湖(最深 410 米):文艺复兴别墅与悬崖花园沿湖排开,罗马时代起就是贵族的度假地——「米兰的后花园」。",
+    "story": [
+      "科莫湖的湖盆是冰川刨出来的:阿尔卑斯的雪水让湖水冷冽清澈,山体直插湖面——贝拉焦、瓦伦纳、梅纳焦三镇构成「金三角」。凯撒时代起罗马贵族就在此建别墅,普林尼的书信里满是湖畔生活的自夸。",
+      "湖畔别墅是文艺复兴与浪漫主义的接力:巴尔比亚内罗别墅(《星球大战》纳布星湖景取景地)、德尔巴比亚内罗的意式台地园、Villa Monastero 的「一键地中海」长廊——每栋别墅都是一部建筑史切片。",
+      "科莫还是「丝绸之湖」:科莫市的丝绸工业自 15 世纪延续至今,爱马仕与香奈儿的丝巾很多在此织造。乘 19 世纪蒸汽游船穿过「Y」字湖臂,看雪山倒影——乔治·卢卡斯说这里「像另一个星球的布景」,他说对了。"
+    ],
+    "bestSeason": "5-9月;4月与10月游客少",
+    "tags": ["湖泊", "别墅", "阿尔卑斯", "取景地"],
+    "sources": [
+      { "name": "Wikipedia: Lake Como", "url": "https://en.wikipedia.org/wiki/Lake_Como", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "gb-royal-greenwich",
+    "name": "格林尼治",
+    "nameEn": "Maritime Greenwich",
+    "type": "heritage",
+    "countryId": "GB",
+    "cityId": "gb-london",
+    "longitude": -0.0015,
+    "latitude": 51.4779,
+    "summary": "本初子午线的家:皇家天文台、国家海事博物馆与「世界最美建筑」旧皇家海军学院——全世界的时间与经度,从这里起算。",
+    "story": [
+      "1884年,25 国在华盛顿开会把「0° 经线」定在格林尼治天文台——从此世界的「东西」由这枚铜线划分。站在子午线庭院,一只脚东半球、一只脚西半球,是最经典的「时间游客」打卡;GPS 时代,子午线因板块漂移与坐标系统更迭实际偏移了约百米,但铜线不动——「传统」比「精确」更有人情味。",
+      "旧皇家海军学院由克里斯托弗·雷恩设计,彩绘大厅(Painted Hall)被称为「欧洲西斯廷」:4000 平方米的顶画颂扬航海与贸易,3900 万次笔触。2019 年修葺后开放,可以在大厅里过夜——「睡在画作下」的体验全球独一份。",
+      "卡蒂萨克号(Cutty Sark)是现存最老的运茶快船(1869),玻璃罩下的船体像一只悬停的银鱼。从伦敦塔桥乘船 30 分钟即达——泰晤士河的下游,收藏着大英帝国海洋时代的光荣与争议。1997年列入世界遗产。"
+    ],
+    "bestSeason": "全年;6月格林尼治+多克兰节",
+    "tags": ["世界遗产", "本初子午线", "航海", "伦敦"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/795", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Maritime Greenwich", "url": "https://en.wikipedia.org/wiki/Maritime_Greenwich", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "eg-wadi-el-hitan",
+    "name": "鲸鱼峡谷",
+    "nameEn": "Wadi Al-Hitan (Whale Valley)",
+    "type": "heritage",
+    "countryId": "EG",
+    "longitude": 29.2333,
+    "latitude": 29.2833,
+    "summary": "沙漠腹地的「鲸鱼坟场」:数千万年前的原始鲸化石仍带着后肢残迹——「鲸从陆地走向海洋」的证据,整整齐齐躺在黄沙里。",
+    "story": [
+      "4000 万年前,这里是一片浅海(古特提斯洋的南缘);龙王鲸(Basilosaurus)与矛齿鲸在这里游弋、死去、沉积。它们的化石保存了罕见的后肢与脚趾——演化论的「缺失环节」在这里排成一排:鲸的祖先,是从陆地下海的哺乳动物。2005年列入世界遗产。",
+      "开放区的化石就「躺」在沙面上,多数没有玻璃罩——你与 4000 万年的演化证据之间只隔一米。博物馆内一具完整龙王鲸骨架悬在头顶,「走路鲸」(Ambulocetus)的复原模型让人瞬间理解「下海」这个动词的重量。",
+      "峡谷在法尤姆绿洲以西的保护区深处,与Magic Lake(魔术湖)、水晶山组成法尤姆一日环线。日落时分,沙丘与鲸骨同色——「大漠孤烟」与「沧海桑田」在这里同时成立。"
+    ],
+    "bestSeason": "10-4月;需四驱车+向导",
+    "tags": ["世界遗产", "鲸化石", "演化论", "法尤姆"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1186", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Wadi El-Hitan", "url": "https://en.wikipedia.org/wiki/Wadi_El-Hitan", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  }
+]

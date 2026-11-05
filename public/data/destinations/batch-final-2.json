@@ -1,0 +1,239 @@
+[
+  {
+    "id": "pe-chan-chan",
+    "name": "昌昌城",
+    "nameEn": "Chan Chan",
+    "type": "heritage",
+    "countryId": "PE",
+    "longitude": -79.075,
+    "latitude": -8.1061,
+    "summary": "奇穆帝国的泥土之都:20 平方公里的夯土之城,曾是南美最大城市(公元 900-1470)——「整座城市是一块雕刻出来的泥塑」。",
+    "story": [
+      "昌昌完全用泥土建成:数亿块土坯砖垒出高墙、宫殿与蓄水池,墙面饰有海鸟、鱼群与波浪的浮雕——奇穆人把海洋「搬」进了沙漠。鼎盛时期人口约 6 万,是哥伦布抵达前南美最大的城市。1986年列入世界遗产(同年列入濒危名录)。",
+      "十座被称为「 Ciudadela(城堡)」的王家宫殿群各自独立:宫墙高达 12 米,入口如迷宫,先王死后宫殿即封为陵墓,新王另建——「宫殿即坟墓」的制度,让城市像年轮一样向外扩张。",
+      "厄尔尼诺的降雨与地下水盐渍化正在溶解这些土墙——它是世界遗产里最「怕水」的一座。保护团队用传统工艺与防水棚与时间赛跑;参观时踩过那些正在消融的浮雕,会真切理解「脆弱遗产」四个字的重量。"
+    ],
+    "bestSeason": "12-4月(不淋雨的「夏天」);清晨光线最柔",
+    "tags": ["世界遗产", "奇穆", "夯土", "濒危遗产"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/366", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Chan Chan", "url": "https://en.wikipedia.org/wiki/Chan_Chan", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "au-wineglass-bay",
+    "name": "酒杯湾",
+    "nameEn": "Wineglass Bay",
+    "type": "natural",
+    "countryId": "AU",
+    "longitude": 148.3,
+    "latitude": -42.1542,
+    "summary": "菲欣纳半岛上的「完美弧线」:一月牙形白沙嵌在粉色花岗岩与碧蓝海水之间——从观景台俯瞰,就是一只盛满海水的酒杯。",
+    "story": [
+      "酒杯湾的弧线是两种力的合谋:花岗岩岬角挡住涌浪,细沙在湾内按粒径精确分级——中央最白最细,被《Frommer's》评为「世界十佳海滩」之一。名字的来由有点残酷:19 世纪捕鲸者在湾内处理鲸鱼,海水曾泛红如酒。",
+      "观景台徒步(Mt Amos 侧)往返约 2.5 公里,爬升 200 米——大多数人在第一个观景台就「缴械」:那道蓝白弧线,是塔斯马尼亚旅游的绝对封面。想独享沙滩,可再下切 1.5 小时到湾内——「景色与人数成反比」在这里特别成立。",
+      "半岛上的粉红花岗岩(与酒杯湾同款岩石)在日落时呈现玫瑰色;岩石间常出没袋熊与沙袋鼠。菲欣纳生蚝与塔州冷气候葡萄酒,是下山后的标准犒赏——「把酒杯湾装进酒杯里」。"
+    ],
+    "bestSeason": "12-4月(南半球夏);日出观景台人最少",
+    "tags": ["海湾", "塔斯马尼亚", "徒步", "花岗岩"],
+    "sources": [
+      { "name": "Wikipedia: Wineglass Bay", "url": "https://en.wikipedia.org/wiki/Wineglass_Bay", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "is-hekla",
+    "name": "赫克拉火山",
+    "nameEn": "Hekla",
+    "type": "geology",
+    "countryId": "IS",
+    "longitude": -19.7,
+    "latitude": 63.9833,
+    "summary": "中世纪欧洲人眼中的「地狱之门」:1104 年起至少 20 次大喷发,「Hekla 爆发」在古挪威语里就是大祸临头的代名词——冰岛最危险的活火山之一。",
+    "story": [
+      "1104 年的大喷发是冰岛有史以来最著名的火山事件之一:浮石落满北部,湖泊被灰烬填平。此后赫克拉平均每 10-50 年喷发一次,中世纪的欧洲人把它当成地狱入口——1666 年,连挪威的传说都说「赫克拉咆哮了」。",
+      "1970 年的喷发把火山灰撒到芬兰;2000 年 2 月的喷发从首震到岩浆出露只有 90 分钟——「预警时间极短」是赫克拉的危险签名。登山者至今把它列为「必须查实时地震数据再出发」的山。",
+      "山体是一道 1491 米长、形似倒扣龙舟的山脊,顶部有多条平行裂缝。与卡特拉、艾雅法拉相比,赫克拉的名气更多来自「传说浓度」——中世纪地图上,它的位置画着火蛇与受罚的灵魂。"
+    ],
+    "bestSeason": "6-9月登山季;务必查冰岛气象局实时预警",
+    "tags": ["活火山", "中世纪传说", "冰岛高地", "裂缝山脊"],
+    "sources": [
+      { "name": "Wikipedia: Hekla", "url": "https://en.wikipedia.org/wiki/Hekla", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "jp-naoshima",
+    "name": "直岛",
+    "nameEn": "Naoshima",
+    "type": "museum",
+    "countryId": "JP",
+    "longitude": 133.9986,
+    "latitude": 34.4633,
+    "summary": "濑户内海的「艺术之岛」:草间弥生的大南瓜守着码头,安藤忠雄的地中美术馆把美术馆「埋」进山体——废弃工业岛到艺术圣地的教科书级改造。",
+    "story": [
+      "直岛曾是铜冶炼与化工的重污染岛。1987 年起,倍乐生财团邀请安藤忠雄以「让建筑消失于自然」的理念陆续建成贝乐生之家、地中美术馆与李禹焕美术馆——混凝土、光与海在岛上半隐半现。2010 年起每三年一届的「濑户内国际艺术祭」让它成为全球艺术客的朝圣地。",
+      "地中美术馆的「镇馆三件套」:莫奈的《睡莲》挂在自然采光的白墙上(需要脱鞋,像进入神社);James Turrell 的「Open Field」让人分不清天空是真是假;Walter De Maria 的花岗岩石球静卧大厅——美术馆本身,是最大的那件展品。",
+      "黄南瓜在海边,红南瓜在码头(「穿过红南瓜」可以走进去);岛屿各处的老宅被改造成艺术屋(「家プロジェクト」),神社的玻璃阶梯直通地下——整座岛 8 平方公里,全是策展。租一辆单车,留两天。"
+    ],
+    "bestSeason": "3-5月与9-11月;艺术祭年份(2025 是下一届)最盛",
+    "tags": ["艺术之岛", "安藤忠雄", "草间弥生", "濑户内海"],
+    "sources": [
+      { "name": "Wikipedia: Naoshima, Kagawa", "url": "https://en.wikipedia.org/wiki/Naoshima,_Kagawa", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "jp-yakushima",
+    "name": "屋久岛",
+    "nameEn": "Yakushima",
+    "type": "natural",
+    "countryId": "JP",
+    "longitude": 130.5,
+    "latitude": 30.3333,
+    "summary": "「一个月下 35 天雨」的秘境岛:7200 年树龄的绳文杉、宫崎骏《幽灵公主》的森林原型,从海岸红树林到海拔 1900 米的冷杉——垂直分布的植物学教科书。",
+    "story": [
+      "屋久岛的雨是传说:当地谚语「一月下三十五天雨,一月再下五天雾」。充沛降水养出 1900 米级的高山(九州最高)与原始杉林——1993 年首批列入日本世界自然遗产。屋久杉(Sugi)木质致密含脂,「树龄过千才叫屋久杉」是本地共识。",
+      "绳文杉(Jomon Sugi)树龄估测从 2100 年到 7200 年不等——之所以叫「绳文」,是因为它可能见证过整个绳文时代。往返 10 小时的徒步线穿越苔藓森林:白谷云水峡的每一块石头都裹着厚苔,宫崎骏团队在此取材,《幽灵公主》的森林就是这里。",
+      "岛上的猴子与鹿是「同域邻居」:它们在屋久岛独立演化了上万年,猴子会挖红薯、鹿会等猴子丢下的皮——「屋久猕猴与屋久鹿」的共栖镜头是 BBC 的经典素材。温泉(平内海中温泉,退潮时才出现)是徒步后的犒赏。"
+    ],
+    "bestSeason": "3-5月新绿与9-10月;绳文杉徒步需提前预约巴士",
+    "tags": ["世界遗产", "绳文杉", "幽灵公主", "苔藓森林"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/662", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Yakushima", "url": "https://en.wikipedia.org/wiki/Yakushima", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "it-assisi",
+    "name": "阿西西圣方济各圣殿",
+    "nameEn": "Assisi (Basilica of San Francesco)",
+    "type": "heritage",
+    "countryId": "IT",
+    "longitude": 12.6053,
+    "latitude": 43.0733,
+    "summary": "翁布里亚山坡上的双重教堂:乔托的圣方济各生平壁画在此铺开 28 个画格——「文艺复兴的前夜」在这里提前点亮。圣徒的「贫穷之约」与壁画的金碧辉煌,构成一场有趣的辩证。",
+    "story": [
+      "圣方济各(1181-1226)脱下富商之子的华服,选择「与贫穷结婚」——他向鸟讲道、与狼立约,创立了以清贫为核心的方济各会。圣殿 1228 年动工,上下两层教堂 1253 年完成,2000 年随阿西西整体列入世界遗产。",
+      "上殿的 28 幅圣方济各生平壁画,传统归于乔托——「能不能算乔托亲笔」是艺术史最大的悬案之一,但无论作者为何,这套壁画把「人的情感」请回了宗教画:圣徒拥抱麻风病人的那格,是西方绘画史上第一次以「怜悯」为主角。",
+      "1997 年地震震塌了上殿穹顶,壁画碎成十几万片——团队用十年时间像拼图一样复原(「碎片复位率 98%」)。今天抬头看穹顶,你看到的其实是艺术修复史本身。小镇的其他细节:圣基娅拉教堂、马焦雷城堡的日落、翁布里亚的松露与橄榄油。"
+    ],
+    "bestSeason": "5-6月与9-10月;10月4日圣方济各节",
+    "tags": ["世界遗产", "乔托", "圣方济各", "翁布里亚"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/990", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Basilica of San Francesco d'Assisi", "url": "https://en.wikipedia.org/wiki/Basilica_of_San_Francesco_d'Assisi", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "gb-tower-of-london",
+    "name": "伦敦塔",
+    "nameEn": "Tower of London",
+    "type": "heritage",
+    "countryId": "GB",
+    "cityId": "gb-london",
+    "longitude": -0.0754,
+    "latitude": 51.5081,
+    "summary": "征服者威廉的白塔(1078年)起的千年要塞:王冠珠宝库、皇家铸币厂、动物园与刑场——「英格兰的历史,一半发生在这座塔里」。",
+    "story": [
+      "白塔是诺曼征服的纪念碑:乳白色凯恩石从法国空运而来,向伦敦人宣示新王权的密度。此后千年,伦敦塔的身份不断叠加:王宫、珠宝库(Imperial State Crown 与全球最大钻石「非洲之星」在此值守)、铸币厂、军械库、皇家动物园(北极熊曾拴在河边捕鱼)——「塔」字装不下它的履历。",
+      "它最著名的叙事是「血腥塔」:爱德华四世的两位小王子在此失踪(理查三世的最大嫌疑)、安妮·博林与简·格雷在此走上断头台——六个王后级「住户」在此丧命。乌鸦传说称「乌鸦离开,塔与王国将倾」:园方为六只「编制内」乌鸦剪羽,还备有备用乌鸦。",
+      "御用侍从卫士(Beefeaters)既是导游也是活文物;每晚 22 点的「钥匙仪式」(Ceremony of the Keys)连续进行 700 年从未取消——唯一一次延误,是二战闪电战的一枚炸弹。1988年列入世界遗产。"
+    ],
+    "bestSeason": "全年;钥匙仪式需预约;皇冠珠宝少排队技巧:开门直奔",
+    "tags": ["世界遗产", "千年要塞", "王冠珠宝", "伦敦"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/488", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Tower of London", "url": "https://en.wikipedia.org/wiki/Tower_of_London", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "eg-alexandria-citadel",
+    "name": "卡特巴城堡",
+    "nameEn": "Citadel of Qaitbay",
+    "type": "landmark",
+    "countryId": "EG",
+    "longitude": 29.8833,
+    "latitude": 31.2133,
+    "summary": "地中海东岸的军事堡垒(1477年),建在古代世界七大奇迹「亚历山大灯塔」的残基之上——灯塔的石块,至今砌在堡墙里。",
+    "story": [
+      "亚历山大灯塔(Pharos)高约 100 米,服务航运 1500 余年,毁于 14 世纪地震。1480 年,马穆鲁克苏丹卡特巴在灯塔废墟上筑堡——今日堡墙的石灰岩柱与花岗岩块,很多就是灯塔的「遗骨」。用奇迹的地基守卫奇迹的港口,是历史最擅长的幽默。",
+      "城堡的军事履历扎实:1798 年拿破仑舰队曾炮击未克;1882 年英军炮轰亚历山大时堡体损毁后修复。三层结构:炮台、兵营与苏丹觐见厅,窗框里全是地中海的蓝。",
+      "最佳体验是黄昏登堡:渔船归港、灯塔旧址的海风、远眺亚历山大图书馆的圆盘——两千年的港口史在一眼之内完成交接。城堡外的滨海路(Corniche)适合骑行,「亚历山大最好的下午」标配是海风 + 街头烤玉米。"
+    ],
+    "bestSeason": "6-9月(亚历山大是埃及的避暑地);黄昏登堡",
+    "tags": ["堡垒", "古代奇迹遗址", "地中海", "亚历山大"],
+    "sources": [
+      { "name": "Wikipedia: Citadel of Qaitbay", "url": "https://en.wikipedia.org/wiki/Citadel_of_Qaitbay", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "us-central-park",
+    "name": "中央公园",
+    "nameEn": "Central Park",
+    "type": "natural",
+    "countryId": "US",
+    "cityId": "us-new-york",
+    "longitude": -73.9655,
+    "latitude": 40.7825,
+    "summary": "曼哈顿中央的 341 公顷「人工自然」:1858 年设计时全美国的公园加起来都没有它大——每一年,4000 万人在此完成与城市的和解。",
+    "story": [
+      "中央公园是完全的人造物:奥姆斯特德与沃克斯把沼泽、屠宰场与棚户区改造成起伏的草坪、湖泊与林地——移植了 27 万株树,搬走 500 万立方码的土石。「景观设计」作为一门职业,由这座公园定义。",
+      "它的天才在「分离系统」:四条下穿隧道把车流藏到公园之下,步行者、骑马者与马车的道路互不交叉——1858 年的方案,写下了现代城市交通分层的最早草稿。大草坪(Great Lawn)、绵羊草原、斯特劳贝里园地(约翰·列侬纪念区)各有性格。",
+      "公园是纽约的「民主客厅」:免费莎士比亚戏剧节、大都会歌剧院露天演出、马拉松终点线都在此。电影里它出场过 300+ 次;现实里,它每年接待人次超过整个法国。时代广场是纽约的橱窗,中央公园才是纽约的心脏。"
+    ],
+    "bestSeason": "四季各有性格;10月秋色与4月樱花",
+    "tags": ["城市公园", "景观设计", "纽约", "免费"],
+    "sources": [
+      { "name": "Wikipedia: Central Park", "url": "https://en.wikipedia.org/wiki/Central_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "fr-carcassonne",
+    "name": "卡尔卡松城堡",
+    "nameEn": "Cité de Carcassonne",
+    "type": "heritage",
+    "countryId": "FR",
+    "longitude": 2.3639,
+    "latitude": 43.2063,
+    "summary": "欧洲最大保存最完整的中世纪要塞城:双重城墙 3 公里、52 座塔楼——从 A61 高速公路开车经过的人,都会以为自己看到了海市蜃楼。",
+    "story": [
+      "卡尔卡松的城墙是一部编年史:罗马壁垒、西哥特塔楼、卡佩王朝的外墙——「同一堵墙里住着四代人」。1209 年清剿卡特里派的十字军围城、「特雷坝姆」传说(被围五年靠猪投喂吓退敌军的市民)、1240 年后王家驻军的重建……1997年列入世界遗产。",
+      "19 世纪,这座「废墟」差点被拆掉;历史学家梅里美力保,维奥莱-勒-杜克主持了激进的修复——他补的塔尖(石板瓦如独角兽角)被批「不像历史」,却成了今天「中世纪」的标准想象。迪士尼城堡的尖塔,论血统得叫它一声祖师。",
+      "进城先过「纳博讷门」,主街的鹅卵石巷通往圣纳泽尔大教堂(彩窗保存着哥特蓝);7 月 14 日国庆焰火在城墙外炸开时,「中世纪城市 + 现代烟花」的同框是法国人心中的浪漫顶点。城中的图卢兹香肠与什锦砂锅(cassoulet),是攻城后犒军的标准菜单。"
+    ],
+    "bestSeason": "5-6月与9月(避开盛夏热浪);7月14日焰火",
+    "tags": ["世界遗产", "中世纪要塞", "修复史", "朗格多克"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/345", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Historic fortified city of Carcassonne", "url": "https://en.wikipedia.org/wiki/Historic_fortified_city_of_Carcassonne", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  }
+]

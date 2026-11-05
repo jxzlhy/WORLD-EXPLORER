@@ -23,7 +23,9 @@
     "/data/destinations/batch-africa-oceania.json",
     "/data/destinations/batch-global-2.json",
     "/data/destinations/batch-heritage-1.json",
-    "/data/destinations/batch-heritage-2.json"
+    "/data/destinations/batch-heritage-2.json",
+    "/data/destinations/batch-final-1.json",
+    "/data/destinations/batch-final-2.json"
   ],
   "collectionsFile": "/data/collections.json"
 }
