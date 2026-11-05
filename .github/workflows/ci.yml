@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Unit tests
+        run: node --test tests/unit/*.test.ts
+
+      - name: Build
+        run: pnpm exec vite build
+
+      - name: Size budget check
+        run: |
+          APP=$(ls dist/assets/ExploreView-*.js | head -1)
+          SIZE=$(stat -c%s "$APP" 2>/dev/null || stat -f%z "$APP")
+          echo "应用代码 chunk: $SIZE bytes"
+          if [ "$SIZE" -gt 500000 ]; then
+            echo "❌ 应用代码 chunk 超过 500KB 预算(正常约 143KB)"
+            exit 1
+          fi
