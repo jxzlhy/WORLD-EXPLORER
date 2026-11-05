@@ -1,0 +1,21 @@
+[
+  { "id": "cn-hangzhou", "name": "杭州", "nameEn": "Hangzhou", "countryId": "CN", "longitude": 120.1551, "latitude": 30.2741, "summary": "人间天堂,西湖与运河滋养的南宋故都。" },
+  { "id": "cn-zhangjiajie", "name": "张家界", "nameEn": "Zhangjiajie", "countryId": "CN", "longitude": 110.479, "latitude": 29.127, "summary": "石英砂岩峰林峡谷,「阿凡达悬浮山」原型地。" },
+  { "id": "cn-chengdu", "name": "成都", "nameEn": "Chengdu", "countryId": "CN", "longitude": 104.0665, "latitude": 30.5723, "summary": "天府之国,大熊猫与茶馆生活之都。" },
+  { "id": "jp-osaka", "name": "大阪", "nameEn": "Osaka", "countryId": "JP", "longitude": 135.5023, "latitude": 34.6937, "summary": "天下厨房,水都大阪。" },
+  { "id": "jp-nara", "name": "奈良", "nameEn": "Nara", "countryId": "JP", "longitude": 135.805, "latitude": 34.6851, "summary": "日本第一个固定首都。" },
+  { "id": "jp-okinawa", "name": "那霸", "nameEn": "Naha", "countryId": "JP", "longitude": 127.6809, "latitude": 26.2124, "summary": "琉球王国的中心。" },
+  { "id": "us-chicago", "name": "芝加哥", "nameEn": "Chicago", "countryId": "US", "longitude": -87.6298, "latitude": 41.8781, "summary": "摩天大楼的故乡。" },
+  { "id": "us-seattle", "name": "西雅图", "nameEn": "Seattle", "countryId": "US", "longitude": -122.3321, "latitude": 47.6062, "summary": "翡翠之城。" },
+  { "id": "us-honolulu", "name": "檀香山", "nameEn": "Honolulu", "countryId": "US", "longitude": -157.8583, "latitude": 21.3069, "summary": "夏威夷王国的故都。" },
+  { "id": "fr-nice", "name": "尼斯", "nameEn": "Nice", "countryId": "FR", "longitude": 7.262, "latitude": 43.7102, "summary": "天使湾畔的蔚蓝海岸之都。" },
+  { "id": "fr-bordeaux", "name": "波尔多", "nameEn": "Bordeaux", "countryId": "FR", "longitude": -0.5792, "latitude": 44.8378, "summary": "月亮港,葡萄酒之都。" },
+  { "id": "fr-lyon", "name": "里昂", "nameEn": "Lyon", "countryId": "FR", "longitude": 4.8357, "latitude": 45.764, "summary": "美食之都。" },
+  { "id": "it-milano", "name": "米兰", "nameEn": "Milan", "countryId": "IT", "longitude": 9.19, "latitude": 45.4642, "summary": "时尚之都,《最后的晚餐》所在。" },
+  { "id": "it-verona", "name": "维罗纳", "nameEn": "Verona", "countryId": "IT", "longitude": 10.9916, "latitude": 45.4384, "summary": "罗密欧与朱丽叶之城。" },
+  { "id": "it-catania", "name": "卡塔尼亚", "nameEn": "Catania", "countryId": "IT", "longitude": 15.0873, "latitude": 37.5079, "summary": "埃特纳火山脚下的巴洛克之城。" },
+  { "id": "gb-bath", "name": "巴斯", "nameEn": "Bath", "countryId": "GB", "longitude": -2.3617, "latitude": 51.3811, "summary": "罗马浴场与乔治亚建筑之城。" },
+  { "id": "gb-oxford", "name": "牛津", "nameEn": "Oxford", "countryId": "GB", "longitude": -1.2577, "latitude": 51.752, "summary": "梦想尖塔之城。" },
+  { "id": "gb-belfast", "name": "贝尔法斯特", "nameEn": "Belfast", "countryId": "GB", "longitude": -5.9301, "latitude": 54.5973, "summary": "泰坦尼克号的诞生地。" },
+  { "id": "pe-arequipa", "name": "阿雷基帕", "nameEn": "Arequipa", "countryId": "PE", "longitude": -71.537, "latitude": -16.409, "summary": "白色之城,火山环抱的殖民老城。" }
+]

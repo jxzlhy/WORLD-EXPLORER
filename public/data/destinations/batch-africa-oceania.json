@@ -1,0 +1,216 @@
+[
+  {
+    "id": "eg-saqqara",
+    "name": "萨卡拉墓地",
+    "nameEn": "Saqqara Necropolis",
+    "type": "heritage",
+    "countryId": "EG",
+    "cityId": "eg-cairo",
+    "longitude": 31.2168,
+    "latitude": 29.877,
+    "summary": "埃及最古老的皇家墓地:左塞尔阶梯金字塔(约公元前2670年)是人类第一座大型石造建筑,此后三千年的墓葬在此层层叠压。",
+    "story": [
+      "阶梯金字塔的设计师伊姆霍特普是史上留名的第一位建筑师——他给法老左塞尔把「马斯塔巴」(平顶墓)一层层叠上去,造出六级的通天之梯。这是人类第一次用切割石块(而非泥砖)建造巨型建筑,比吉萨大金字塔早约一个世纪。",
+      "萨卡拉是一部埋在地下的文明档案:贵族墓里的壁画记录着古埃及的日常生活——捕鸟、造船、酿酒、舞蹈;乌纳斯金字塔内壁刻着「金字塔文」,是人类最古老的宗教文献之一。2020年这里新发现数十具2500年前的彩绘木棺,颜色鲜艳如昨,全球轰动。",
+      "2019年起,「萨卡拉探险队」的发现接连登上《国家地理》:动物木乃伊作坊、新年庆典壁画、防腐车间……这座沙漠下方,可能还埋着几千年未醒的故事。它属于孟菲斯墓地世界遗产的一部分(1979)。"
+    ],
+    "bestSeason": "11-2月;与孟菲斯、代赫舒尔串线一日游",
+    "tags": ["世界遗产", "阶梯金字塔", "考古", "古埃及"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心(孟菲斯及墓地)", "url": "https://whc.unesco.org/en/list/86", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Saqqara", "url": "https://en.wikipedia.org/wiki/Saqqara", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "eg-philae-temple",
+    "name": "菲莱神庙",
+    "nameEn": "Philae Temple",
+    "type": "heritage",
+    "countryId": "EG",
+    "cityId": "eg-aswan",
+    "longitude": 32.8784,
+    "latitude": 24.0246,
+    "summary": "献给伊西斯女神的「珍珠」:建在阿斯旺小岛上的托勒密神庙,必须乘船抵达。两次搬家后,它成了文物保护史上的「水上奇迹」。",
+    "story": [
+      "菲莱神庙群自公元前7世纪起营建,供奉伊西斯——她收集奥西里斯的碎片使其复活的神话,使这里成为古埃及信仰的「复活圣地」,朝圣一直延续到公元6世纪,是最后一批刻有圣书体铭文的神庙(公元394年)。",
+      "阿斯旺旧坝(1902)建成后,神庙每年大半时间泡在水里。1972年起,联合国教科文组织启动「第二次努比亚救援」:把三座岛上的建筑拆成四万余块,搬到300米外地势更高的阿吉勒基亚岛,按原方位重新拼装——1980年完成。今天你乘船看到的「漂浮神庙」,是一次彻底搬家的原样复现。",
+      "「未完成的方尖碑」留在阿斯旺采石场:长41米,若立起将是古埃及最大的方尖碑,但顶部出现裂纹而被遗弃——它像一本打开的教科书,泄露了古埃及人开采花岗岩的全部工艺。"
+    ],
+    "bestSeason": "11-2月;黄昏声光秀",
+    "tags": ["世界遗产", "伊西斯", "搬迁保护", "努比亚"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心(努比亚遗址)", "url": "https://whc.unesco.org/en/list/88", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Philae temple complex", "url": "https://en.wikipedia.org/wiki/Philae_temple_complex", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "eg-white-desert",
+    "name": "白沙漠",
+    "nameEn": "White Desert",
+    "type": "geology",
+    "countryId": "EG",
+    "longitude": 28.3,
+    "latitude": 27.2,
+    "summary": "法拉夫拉沙漠中的「雪原」:白垩岩被风雕成蘑菇、狮身人面与鸡群的形状,撒在金黄沙海之上。埃及最超现实的国家公园。",
+    "story": [
+      "数千万年前这里是一片浅海,白垩沉积层在海水退去后暴露于风沙。亿万年的定向侵蚀把软岩雕成了千姿百态的「雕塑」:巨型蘑菇、卧狮、母鸡与蛋——当地人给每一座都起了名字。白岩与金黄沙漠的撞色,让它像地球上的外星布景。",
+      "这里是国家公园(2002年设立),过夜是唯一正确的打开方式:贝都因向导带骆驼队或越野车进沙漠,晚餐在篝火边现做;夜里躺在白色岩阵之间,银河横贯头顶,月光下整片「雪原」泛着蓝光。",
+      "附近的水晶山(Crystal Mountain)有天然石英晶脉横跨谷底;黑沙漠的黑色玄武岩丘与白沙漠同日可达——「一天看三种颜色的沙漠」,是开罗以西最经典的探险线。"
+    ],
+    "bestSeason": "10-4月;夜宿看银河,夏季酷热勿行",
+    "tags": ["国家公园", "风蚀地貌", "露营", "贝都因"],
+    "sources": [
+      { "name": "Wikipedia: White Desert National Park", "url": "https://en.wikipedia.org/wiki/White_Desert_National_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "au-blue-mountains",
+    "name": "蓝山国家公园",
+    "nameEn": "Blue Mountains National Park",
+    "type": "natural",
+    "countryId": "AU",
+    "cityId": "au-sydney",
+    "longitude": 150.3865,
+    "latitude": -33.7155,
+    "summary": "悉尼以西的桉树高原:桉油雾气让整片山脉泛着蓝霾,三姐妹峰的传说与世界最陡缆车藏在千万公顷的峡谷里。",
+    "story": [
+      "「蓝山之蓝」是光的把戏:桉树叶挥发油雾散射短波蓝光,晴天时整条山脉像蒙上蓝纱。公园面积超过一百万公顷,峡谷、瀑布与崖顶高原组成了大分水岭最上镜的一段,2000年列入世界遗产区(大蓝山地区)。",
+      "「三姐妹峰」是原住民神话的三姐妹化石:为躲避战争,巫医把她们变成石头,自己却在战中丧生,无人能再将她们变回——崖顶的回声角(Echo Point)因此总带着一点传奇的忧郁。崖底 Stairway 的铁梯近乎垂直地扎进峡谷。",
+      "1932年的景观世界(Scenic World)拥有世界最陡的客运缆车(52度)与南半球最高的 Skyway;6月的「蓝山冬日魔法节」让整个卡通巴小镇变成灯海。这里也是「半日逃离悉尼」的经典:火车 2 小时直达山谷中心。"
+    ],
+    "bestSeason": "全年;6月冬灯节;清晨蓝霾最盛",
+    "tags": ["世界遗产", "桉树林", "峡谷", "三姐妹峰"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心(大蓝山地区)", "url": "https://whc.unesco.org/en/list/917", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Blue Mountains (New South Wales)", "url": "https://en.wikipedia.org/wiki/Blue_Mountains_(New_South_Wales)", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "au-kangaroo-island",
+    "name": "袋鼠岛",
+    "nameEn": "Kangaroo Island",
+    "type": "island",
+    "countryId": "AU",
+    "longitude": 137.4833,
+    "latitude": -35.7833,
+    "summary": "南澳的「没有围栏的动物园」:袋鼠、考拉、海狮与针鼹在原生灌木丛里自在生活,旗舰拱门的海狮群与神奇岩石是南澳的封面。",
+    "story": [
+      "与大陆隔离约九千年的袋鼠岛保存着一批「原版」物种:岛袋鼠(Kangaroo Island kangaroo)、矮袋鼠与考拉种群在无天敌环境里自成一系。2019-20年山火烧掉全岛近一半面积,此后生态恢复成为世界级样本——袋鼠与考拉的数量在补植与保护下显著回升。",
+      "旗舰拱门(Admirals Arch)下,新西兰毛皮海狮常年栖息,浪从拱门穿过时水雾轰鸣;神奇岩石(Remarkable Rocks)是亿年风化雕出的花岗岩巨阵,日落时橘红色的岩体悬在海平线上——两处都在弗林德斯蔡斯国家公园内。",
+      "岛上也以「纯净食源」闻名:利古里亚蜂蜜(1850年代意大利移民带来的蜂种被隔离保护至今)、海鲜与桉树蒸馏精油。从杰维斯角乘渡轮 45 分钟即达——「没有围栏的动物园」名副其实:开车环岛,傍晚路上袋鼠比车多。"
+    ],
+    "bestSeason": "3-5月与9-11月;傍晚 wildlife 最活跃",
+    "tags": ["海岛", "野生动物", "国家公园", "南澳"],
+    "sources": [
+      { "name": "Wikipedia: Kangaroo Island", "url": "https://en.wikipedia.org/wiki/Kangaroo_Island", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "au-bungle-bungles",
+    "name": "邦格尔邦格尔山脉",
+    "nameEn": "Bungle Bungle Range (Purnululu)",
+    "type": "geology",
+    "countryId": "AU",
+    "longitude": 127.8333,
+    "latitude": -17.5,
+    "summary": "金伯利腹地的「蜂巢山脉」:橙黑条纹的圆顶石丘成群排列,1983年才被外界发现,2003年列入世界遗产。",
+    "story": [
+      "这些带条纹的「蜂巢」由泥盆纪砂岩层叠而成:橙色条带是氧化铁的外壳,深灰条带则是蓝藻在地表岩石上留下的生物膜——「地质与生物共同作画」。圆顶丘高可达250米,从空中看像一整片凝固的沙丘海。",
+      "它的「发现史」令人咋舌:尽管原住民(Gija 与 Jaru 族)在此生活数万年,直到1983年一部纪录片摄制组乘直升机掠过,外界才第一次「看见」它——此前只有牧民与传教士隐约提及。2003年 Purnululu 国家公园列入世界遗产,Purnululu 是原住民语「砂岩」之意。",
+      "徒步线通向「大教堂峡」(Cathedral Gorge):走进去是一整片天然音乐厅,回声清亮;Echidna Chasm 的窄缝谷两壁夹天,正午有一线光柱。观光主要靠直升机与四驱车——雨季(12-3月)完全封闭,每年只开放旱季数月。"
+    ],
+    "bestSeason": "4-10月旱季开放;直升机视角不可替代",
+    "tags": ["世界遗产", "蜂巢地貌", "砂岩", "金伯利"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1094", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Purnululu National Park", "url": "https://en.wikipedia.org/wiki/Purnululu_National_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-dettifoss",
+    "name": "黛提瀑布",
+    "nameEn": "Dettifoss",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -16.3844,
+    "latitude": 65.8149,
+    "summary": "欧洲水量最大的瀑布之一:冰川融水以每秒近两百立方米的流量从44米高的崖边砸入峡谷,声如大地轰鸣。「普罗米修斯」开场在此取景。",
+    "story": [
+      "黛提瀑布的水来自瓦特纳冰盖北缘的乔库尔萨冰川河(Jökulsá á Fjöllum),灰蓝色的融水裹着冰川研磨的岩粉,把整个峡谷染成矿物色。站在东侧观景台,水雾扑面、大地震颤——「欧洲最有力量的瀑布」名不虚传。",
+      "电影《普罗米修斯》(2012)把这里当作外星开场:巨瀑布之上飞过造物主的飞船。导演斯科特要的正是这种「不属于地球」的力量感——冰岛的瀑布总有一种史前的气质。",
+      "与它一河相连的还有 selfoss(上游的扇形跌水)与 hafragilsfoss(下游的巨幅水帘),三点连成一条「瀑布走廊」。东岸新铺装的 862 公路全年可达西岸 864 卵石路则更野——风大的日子,水雾会逆着重力向上飞。"
+    ],
+    "bestSeason": "6-9月全线可达;冬季东岸道路仍开放",
+    "tags": ["瀑布", "冰川融水", "取景地", "北岸"],
+    "sources": [
+      { "name": "Wikipedia: Dettifoss", "url": "https://en.wikipedia.org/wiki/Dettifoss", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-landmannalaugar",
+    "name": "兰德曼纳劳卡",
+    "nameEn": "Landmannalaugar",
+    "type": "geology",
+    "countryId": "IS",
+    "longitude": -19.0622,
+    "latitude": 63.9831,
+    "summary": "内陆高地的「彩色火山」:流纹岩山体染成赭红、金与蓝紫,地热温泉就泡在山谷营地旁。Laugavegur 徒步线的南起点。",
+    "story": [
+      "兰德曼纳劳卡的颜色来自流纹岩(rhyolite):不同矿物的火山岩在阳光下呈现赭红、姜黄、青灰与淡紫——「彩虹山」在冰岛内陆高地连绵成片。这里是 Laugavegur(55公里,世界顶级多日徒步线)的起点,四天走到索斯莫克山谷。",
+      "「Laugar」在冰岛语里就是温泉:山谷营地的天然热水池全年免费开放——徒步者背着全部装备翻山,傍晚泡在约36°C的溪泉里看山色变化,是冰岛式「苦尽甘来」的标准配方。",
+      "高地公路(F 路)只允许越野车、仅夏季开放,涉水过河是路线的一部分。冬天这里完全被雪封印——夏季的短短几周里,营地帐篷像彩色蘑菇一样长满谷底,清晨的地热蒸汽与晨雾混在一起,分不清哪是地气哪是天光。"
+    ],
+    "bestSeason": "6月底-9月中(F 路开放期);温泉全年体验限于可达期",
+    "tags": ["高地", "流纹岩", "地热温泉", "徒步线起点"],
+    "sources": [
+      { "name": "Wikipedia: Landmannalaugar", "url": "https://en.wikipedia.org/wiki/Landmannalaugar", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "is-mvatn",
+    "name": "米湖",
+    "nameEn": "Mývatn",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -16.85,
+    "latitude": 65.6333,
+    "summary": "北岸的地质盲盒:假火山口群、地热泥浆池、熔岩迷宫与「蚊蚋湖」的鸟群天堂挤在几十公里内。冰岛北部最密集的地质走廊。",
+    "story": [
+      "米湖(Mývatn,意为「蚊蚋湖」)形成于约2300年前的玄武岩喷发:湖中五十多个伪火山口(pseudocraters)是熔岩流过湿地时蒸汽爆炸「吹」出来的碗状丘——斯库图斯塔济(Skútustaðir)的伪火山口草原像巨型高尔夫球场。",
+      "湖的名字来自每年夏天铺天盖地的蚊蚋(不咬人的摇蚊)——它们撑起了整个食物链:米湖是欧洲最重要的水鸟栖息地之一,十余种鸭类在此繁殖,巴罗氏金眼鸭的世界种群一半聚居于此。观鸟者与地质学家在同一片湖岸各得其乐。",
+      "湖东的地热区 Namafjall 冒着泥浆锅与硫磺喷气(「地狱之门」Hverir),硫磺味浓到可以「闻到地球内部」;隔壁的米湖天然浴池(Myvatn Nature Baths)是蓝湖的北部平替——人少水暖,夕阳把蒸汽染成金色。"
+    ],
+    "bestSeason": "6-8月(观鸟与午夜阳光);冬季冰封异景",
+    "tags": ["湖泊", "伪火山口", "地热", "观鸟"],
+    "sources": [
+      { "name": "Wikipedia: Mývatn", "url": "https://en.wikipedia.org/wiki/Mývatn", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  }
+]

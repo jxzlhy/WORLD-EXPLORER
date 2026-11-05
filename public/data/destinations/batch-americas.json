@@ -1,0 +1,191 @@
+[
+  {
+    "id": "us-niagara-falls",
+    "name": "尼亚加拉瀑布",
+    "nameEn": "Niagara Falls",
+    "type": "natural",
+    "countryId": "US",
+    "longitude": -79.0849,
+    "latitude": 43.0799,
+    "summary": "横跨美加边境的三座瀑布群,每分钟约16.8万立方米的水从马蹄型崖边倾泻。世界流量最大的瀑布,夜景灯光与「雾中少女」号的故乡。",
+    "story": [
+      "尼亚加拉由马蹄瀑布(加拿大侧)、美国瀑布与新娘面纱瀑布组成,是伊利湖水流向安大略湖的必经之路。瀑布每年缓慢「后退」约30厘米——侵蚀在持续重新雕刻它的轮廓,地质学家估算再过约5万年,瀑布将退到伊利湖边消失。",
+      "19世纪起它就是蜜月圣地与「工业奇迹」背景板:尼科拉·特斯拉在此建成世界第一座大型水电站(1895),阿迪朗达克的交流电从这里点亮布法罗——瀑布既是奇观,也是现代电气文明的发源地之一。",
+      "「雾中少女」(Maid of the Mist)游船自1846年运营至今,穿过瀑雾的时刻人人尖叫又人人大笑;冬季极寒时,崖边凝成巨型冰雕,水量不减——零下的尼亚加拉依然在咆哮。"
+    ],
+    "bestSeason": "6-8月水量最盛;12-2月冰瀑奇景",
+    "tags": ["瀑布", "边境", "水力发电", "蜜月圣地"],
+    "sources": [
+      { "name": "Wikipedia: Niagara Falls", "url": "https://en.wikipedia.org/wiki/Niagara_Falls", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "us-chicago-bean",
+    "name": "芝加哥千禧公园",
+    "nameEn": "Millennium Park",
+    "type": "landmark",
+    "countryId": "US",
+    "cityId": "us-chicago",
+    "longitude": -87.6226,
+    "latitude": 41.8826,
+    "summary": "云门(Cloud Gate,俗称「豆子」)的不锈钢镜面把天际线揉进地面;皇冠喷泉的视频脸与露天音乐厅构成城市客厅三部曲。",
+    "story": [
+      "千禧公园建在旧铁轨与停车场之上,2004年开放——它被称为「美国最重要的世纪之交公共空间实验」。安尼什·卡普尔的「云门」由168块抛光不锈钢板无缝焊接,重达110吨,人们绕着它走一圈,城市的天际线就在镜面上流动一次。",
+      "皇冠喷泉的两座玻璃砖塔轮流播放上千张芝加哥市民的脸,水从「嘴」里喷出——艺术家普拉达(安尼施·卡普尔之外的另一件公共艺术)让市民成了喷泉的主角。夏夜的露天音乐厅(弗兰克·盖里设计)格莱美级的音效散落在草坪上。",
+      "芝加哥是摩天楼的故乡(世界第一座钢框架高楼在此拔起),1871年大火后整城重建,「风城」因此成了现代建筑的试验场——千禧公园是这场持续150年的实验最新的客厅。"
+    ],
+    "bestSeason": "5-9月(喷泉开放,草坪演出季)",
+    "tags": ["城市地标", "公共艺术", "建筑", "芝加哥"],
+    "sources": [
+      { "name": "Wikipedia: Millennium Park", "url": "https://en.wikipedia.org/wiki/Millennium_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "us-space-needle",
+    "name": "太空针塔",
+    "nameEn": "Space Needle",
+    "type": "landmark",
+    "countryId": "US",
+    "cityId": "us-seattle",
+    "longitude": -122.3486,
+    "latitude": 47.6205,
+    "summary": "1962年世博会留下的「飞碟」,184米高的西雅图图腾。塔顶旋转玻璃地板与开阔的雷尼尔雪山视野,让它仍是美国最具辨识度的塔。",
+    "story": [
+      "太空针塔为1962年世纪二十一博览会而建,传说其造型源自酒店餐巾纸上的「飞碟」速写——从画草图到落成仅约400天,被称为「太空时代的大教堂」。它经受住了多次强震,2001年6.8级地震时塔顶摆动近一米而结构无损。",
+      "2018年翻新把护栏换成整圈玻璃墙,并加装世界唯一的旋转玻璃地板「The Loupe」:脚下的地面缓缓转动,一边是城市与普吉特湾,一边是雪顶的雷尼尔火山——「悬浮在两万英尺雪山与海之间」是本地人骄傲的日常。",
+      "塔顶曾是世界最高的餐厅旋转台之一。每年跨年夜,西雅图人在塔下集结看塔顶烟花;雨天时塔身灯亮成翡翠绿——那是「翡翠之城」的别名来源。"
+    ],
+    "bestSeason": "7-9月晴天;晴日可见雷尼尔雪山",
+    "tags": ["观景塔", "世博会", "西雅图", "现代主义"],
+    "sources": [
+      { "name": "Wikipedia: Space Needle", "url": "https://en.wikipedia.org/wiki/Space_Needle", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "us-kilauea",
+    "name": "基拉韦厄火山",
+    "nameEn": "Kīlauea Volcano",
+    "type": "geology",
+    "countryId": "US",
+    "cityId": "us-honolulu",
+    "longitude": -155.2869,
+    "latitude": 19.4207,
+    "summary": "世界最活跃的火山之一,夏威夷群岛东南端的「火山女神佩蕾之家」。熔岩入海的蒸汽柱与 夜间火光,是地球内部最直白的呼吸。",
+    "story": [
+      "夏威夷群岛由太平洋板块滑过热点火山链形成:西北最老的岛屿已被侵蚀成环礁,而东南端的基拉韦厄仍在大岛(夏威夷岛)上持续喷发——在这里你能站在「群岛的时间线」上,看大地如何被制造出来。",
+      "1983-2018年,Puʻuʻōʻō 火口连续喷发35年,熔岩摧毁村庄、切断公路,又造出近2平方公里的新陆地。对夏威夷原住民而言,这不是「灾难」而是佩蕾女神的行走——她的领地规则与人类的产权概念不同。",
+      "2018年大喷发后火山口崩塌出深达数百米的巨坑。如今火山国家公园重新开放,夜间的哈勒茂火山口泛着橘红辉光;熔岩隧道(Thurston Lava Tube)让人走进被岩浆「掏空」的管道——安全地站在昨天的河流里。"
+    ],
+    "bestSeason": "全年;黄昏后观火山口辉光最佳",
+    "tags": ["活火山", "熔岩", "夏威夷", "国家公园"],
+    "sources": [
+      { "name": "Wikipedia: Kīlauea", "url": "https://en.wikipedia.org/wiki/Kīlauea", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-huacachina",
+    "name": "瓦卡奇纳绿洲",
+    "nameEn": "Huacachina",
+    "type": "natural",
+    "countryId": "PE",
+    "longitude": -75.1289,
+    "latitude": -14.0876,
+    "summary": "伊卡沙漠环抱的天然潟湖绿洲,棕榈树、沙丘与温泉传说构成南美最上镜的「沙漠明信片」。滑沙与沙丘越野车的大本营。",
+    "story": [
+      "绿洲因地下潜水涌出而成,传说中是一位名叫瓦卡奇纳的少女——她化为泉水,回望时身后的披风化作沙丘。1940年代这里曾是秘鲁上流社会的温泉疗养地,如今旅馆与棕榈树环绕着那汪翡翠色的小湖。",
+      "沙丘高达数百米,滑沙(sandboarding)与越野车(dune buggy)是这里的两大仪式:司机专挑近乎垂直的陡坡俯冲,尖叫与沙尘一起飞起;滑到谷底的人躺在沙上看沙漠日落,天黑后银河直接压在沙脊上。",
+      "绿洲水量近年靠人工补给维持,湖水曾一度干涸又被重新注水——它和月牙泉一样,是人类与沙漠谈判的脆弱样本。附近就是皮斯科酒乡与纳斯卡线条的门户。"
+    ],
+    "bestSeason": "12-3月南半球夏季;避开正午酷热",
+    "tags": ["绿洲", "沙漠", "滑沙", "伊卡"],
+    "sources": [
+      { "name": "Wikipedia: Huacachina", "url": "https://en.wikipedia.org/wiki/Huacachina", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-arequipa-historic",
+    "name": "阿雷基帕历史中心",
+    "nameEn": "Historic Centre of Arequipa",
+    "type": "heritage",
+    "countryId": "PE",
+    "cityId": "pe-arequipa",
+    "longitude": -71.5367,
+    "latitude": -16.3988,
+    "summary": "「白色之城」:用白色火山凝灰岩(sillar)砌成的殖民老城,三座火山环抱。米斯蒂雪峰下,南美最精致的巴洛克广场之一。",
+    "story": [
+      "阿雷基帕的建筑统一使用附近火山的白色凝灰岩——整座城像用同一块石头雕刻出来的。2000年历史中心列入世界遗产,评审特别提到它是「欧洲与原住民建造技术的融合典范」:厚重的火山岩墙体抗震,拱廊与庭院则是安达卢西亚的血统。",
+      "圣卡塔莉娜修道院(Santa Catalina)是一座「城中之城」:20亩的高墙内染成赭红与宝蓝,400年间修女们在此过着与世隔绝的生活,1970年才向公众开放——迷宫般的巷子以西班牙城市命名,走进去像跌入另一个世纪。",
+      "城市上空悬着米斯蒂火山(5822米)的对称雪顶,本地人把它当城市纹章。阿雷基帕也是秘鲁的「美食首都」之一,辣椒酿肉 Rocoto Relleno 与烤羊驼的香气混在广场的石板路上。"
+    ],
+    "bestSeason": "全年(海拔2328米,气候温和);8月建城庆典",
+    "tags": ["世界遗产", "殖民建筑", "火山岩", "修道院"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1016", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Arequipa", "url": "https://en.wikipedia.org/wiki/Arequipa", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-colca-canyon",
+    "name": "科尔卡峡谷",
+    "nameEn": "Colca Canyon",
+    "type": "geology",
+    "countryId": "PE",
+    "longitude": -71.9167,
+    "latitude": -15.6,
+    "summary": "深达3270米的峡谷(两倍于大峡谷深度),安第斯神鹰在十字观景台的热流上盘旋。梯田与殖民小镇缀满谷壁。",
+    "story": [
+      "科尔卡是世界上最深的峡谷之一,却因道路偏远而比大峡谷安静得多。谷壁上的前印加梯田仍在耕种——科尔卡人(Pueblo del Colca)把陡坡变成了延续六百年的农田系统。",
+      "清晨的「十字观景台」(Cruz del Cóndor)是神鹰的剧场:体长超过一米的安第斯神鹰乘着上升热流从谷底缓缓升起,几乎与游客视线平齐。神鹰是安第斯宇宙观里的信使,能在此看到它们「巡航」,被当地人视为吉兆。",
+      "峡谷深处有火山温泉(La Calera)、悬挂墓穴(前印加人在岩壁上的墓葬)和驼羊群。骑行与多日徒步路线穿越海拔4900米的山口——高原反应在此是真实的,敬畏也是。"
+    ],
+    "bestSeason": "5-10月旱季;清晨观鹰必到",
+    "tags": ["峡谷", "神鹰", "安第斯", "徒步"],
+    "sources": [
+      { "name": "Wikipedia: Colca Canyon", "url": "https://en.wikipedia.org/wiki/Colca_Canyon", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "pe-kuelap",
+    "name": "库拉普要塞",
+    "nameEn": "Kuelap Fortress",
+    "type": "heritage",
+    "countryId": "PE",
+    "longitude": -77.9281,
+    "latitude": -6.4197,
+    "summary": "查查波亚人建在海拔3000米山脊上的巨型石城,20米高的城墙围起600座圆形石屋,比马丘比丘早约600年,被称为「云中堡垒」。",
+    "story": [
+      "库拉普由「云武士」查查波亚人(Chachapoya,意为「云林之人」)建造,约公元600年动工。要塞全长近600米,石墙最高处19-20米,墙内石屋多达四百余座——这需要数以亿计的石块,而当时没有轮子与驮兽。",
+      "入口是一道逐渐收窄的漏斗形通道:守卫只需一人在高处,进攻者必须侧身而入。城中立着几座「倒锥形塔」,是祭祀用的太阳观测台;墙缝里长满兰花与蕨类,废墟像从云雾里长出来。",
+      "1536年西班牙人到来时,查查波亚文明已因内战与瘟疫式微。库拉普长期被丛林掩盖,1843年才被重新记录。2022年缆车开通后,这座「北方的马丘比丘」才开始被世界看见——去年到访者仍只有马丘比丘的十分之一。"
+    ],
+    "bestSeason": "5-9月旱季;缆车+徒步双路线",
+    "tags": ["考古", "查查波亚", "要塞", "云雾林"],
+    "sources": [
+      { "name": "Wikipedia: Kuelap", "url": "https://en.wikipedia.org/wiki/Kuelap", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  }
+]

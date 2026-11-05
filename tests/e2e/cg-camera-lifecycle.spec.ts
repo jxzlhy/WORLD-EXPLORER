@@ -7,10 +7,10 @@ import { waitForAppReady } from './helpers'
 test('C. 用户滚轮中断飞行', async ({ page }) => {
   await waitForAppReady(page)
 
-  // 启动一次长飞行(北京 → 悉尼,10s),拿到 Promise 观测结果
+  // 启动一次长飞行(北京 → 悉尼,60s:即使套件高负载下预轮询超时,飞行也不会提前完成)
   const flight = page.evaluate(() => {
     const eng = (window as unknown as Record<string, any>).__WE_ENGINE__
-    return eng.flyTo({ longitude: 151.2, latitude: -33.86, height: 2_000_000, duration: 10 })
+    return eng.flyTo({ longitude: 151.2, latitude: -33.86, height: 2_000_000, duration: 60 })
   })
 
   await page.waitForTimeout(1_500) // 让飞行进行一会儿

@@ -5,6 +5,8 @@ import { waitForAppReady } from './helpers'
  * 用例 F — MY WORLD:收藏持久化、导出、导入校验(非法数据被拒绝)。
  */
 test.describe('F. MY WORLD', () => {
+  // 本用例含两次完整 app-ready(首载+刷新)。SwiftShader 软渲染下套件负载时单轮可达 90s+,预算 300s。
+  test.setTimeout(300_000)
   test('收藏 → 刷新仍在 → 导出 → 非法导入被拒绝', async ({ page }) => {
     await waitForAppReady(page)
 
@@ -23,8 +25,8 @@ test.describe('F. MY WORLD', () => {
     await page.getByRole('button', { name: 'MY WORLD' }).click()
     await expect(page.locator('.my-world .item')).toHaveCount(1)
 
-    // 导出 JSON(下载事件)
-    const downloadPromise = page.waitForEvent('download', { timeout: 10_000 })
+    // 导出 JSON(下载事件;套件负载下 blob 导出可能延迟,放宽到 30s)
+    const downloadPromise = page.waitForEvent('download', { timeout: 30_000 })
     await page.getByRole('button', { name: '导出 JSON' }).click()
     const download = await downloadPromise
     expect(download.suggestedFilename()).toMatch(/^world-explorer-\d{4}-\d{2}-\d{2}\.json$/)

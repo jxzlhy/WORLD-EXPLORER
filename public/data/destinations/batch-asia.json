@@ -1,0 +1,285 @@
+[
+  {
+    "id": "cn-west-lake",
+    "name": "杭州西湖",
+    "nameEn": "West Lake",
+    "type": "heritage",
+    "countryId": "CN",
+    "cityId": "cn-hangzhou",
+    "longitude": 120.1497,
+    "latitude": 30.2459,
+    "summary": "三面云山一面城的潟湖,自唐代起就是中国文人审美的原点。苏堤春晓、断桥残雪——十景之名本身就是一部千年题咏史。",
+    "story": [
+      "西湖原是钱塘江畔的浅海湾,泥沙淤封成潟湖。它今天的模样大半是「人工的自然」:白居易修筑的白堤、苏东坡的苏堤,既是水利疏浚工程,也是千古传诵的诗行。「欲把西湖比西子」,一句诗定了它一千年的气质。",
+      "湖心三岛仿「一池三山」的仙苑格局,雷峰塔与保俶塔隔湖对峙千年。南宋定都临安后,西湖十景入选皇家画院题名,成为中国景观命名美学的范本——后来日本庭园、韩国园林的「八景」「十景」皆源于此。",
+      "2011年西湖以文化景观列入世界遗产。今天的环湖步行道完全不设围墙——「还湖于民」让这座千年花园始终是免费的城市客厅,晨练者、写生者与游客共享同一条苏堤。"
+    ],
+    "bestSeason": "3-4月苏堤春晓;12月断桥残雪",
+    "tags": [
+      "世界遗产",
+      "文化景观",
+      "湖泊",
+      "诗词"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1334",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: West Lake",
+        "url": "https://en.wikipedia.org/wiki/West_Lake",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "wikidataId": "Q348737",
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-zhangjiajie",
+    "name": "张家界武陵源",
+    "nameEn": "Wulingyuan",
+    "type": "geology",
+    "countryId": "CN",
+    "cityId": "cn-zhangjiajie",
+    "longitude": 110.4935,
+    "latitude": 29.3758,
+    "summary": "三千多根石英砂岩峰柱从谷底拔起,云雾缠绕时如悬浮的山峦——电影《阿凡达》哈利路亚山的灵感源头。",
+    "story": [
+      "这种独特的「石英砂岩峰林地貌」全球仅此一处规模:泥盆纪的石英砂沉积成岩,经亿万年流水切割与重力崩塌,留下数百米高的石柱森林。1992年列入世界自然遗产时,评审词称之为「不可思议的仿若来自另一个世界的景象」。",
+      "天子山、袁家界、金鞭溪……每一片峰林都有土家族传说。景区的百龙天梯以326米高度贴崖而建,66秒登顶——争议从未停止,但玻璃轿厢里的人都会在出梯瞬间安静下来。",
+      "这里是《阿凡达》悬浮山的取材地,「南天一柱」因此更名为「哈利路亚山」。地质学家更愿意强调它的真实身份:地球上最年轻的石英砂岩峰林,仍在以肉眼不可见的速度继续被雕刻。"
+    ],
+    "bestSeason": "4-6月与9-10月;雨后云海最盛",
+    "tags": [
+      "世界遗产",
+      "砂岩峰林",
+      "阿凡达",
+      "土家族"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/640",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Wulingyuan",
+        "url": "https://en.wikipedia.org/wiki/Wulingyuan",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-dujiangyan",
+    "name": "都江堰",
+    "nameEn": "Dujiangyan Irrigation System",
+    "type": "heritage",
+    "countryId": "CN",
+    "cityId": "cn-chengdu",
+    "longitude": 103.6103,
+    "latitude": 31.0046,
+    "summary": "公元前256年建成的无坝引水工程,用鱼嘴、飞沙堰、宝瓶口三件「简单」装置驯服岷江,灌溉成都平原两千二百年至今。",
+    "story": [
+      "李冰父子的设计哲学只有六个字:「乘势利导,因时制宜」。没有一座大坝:鱼嘴分水堤把岷江一分为二,内江灌溉、外江泄洪;飞沙堰借弯道环流二次排沙;宝瓶口凿玉垒山成引水咽喉——全部借助水自身的力量。",
+      "「深淘滩,低作堰」六字诀被历代治水者恪守两千年。成都平原因此从水旱之地变成「水旱从人」的天府之国,秦国凭此粮仓完成统一——一项水利工程参与改写了帝国史。",
+      "2000年与青城山一并列入世界文化遗产。今天的都江堰仍在灌溉一千万亩农田,是世界上唯一存活的古代水利工程奇迹。站在安澜索桥上看岷江奔涌而过,你会明白什么叫「道法自然」。"
+    ],
+    "bestSeason": "4-5月放水节;全年可观工程格局",
+    "tags": [
+      "世界遗产",
+      "古代水利",
+      "李冰",
+      "天府之国"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1001",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Dujiangyan",
+        "url": "https://en.wikipedia.org/wiki/Dujiangyan",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "cn-crescent-spring",
+    "name": "鸣沙山月牙泉",
+    "nameEn": "Crescent Spring & Singing Sand Dunes",
+    "type": "geology",
+    "countryId": "CN",
+    "cityId": "cn-dunhuang",
+    "longitude": 94.6718,
+    "latitude": 40.0925,
+    "summary": "沙漠环抱中的一弯清泉,千年不涸;风吹沙山会发出嗡鸣,故称鸣沙山。泉与沙共生的奇观被称为「塞外风光之一绝」。",
+    "story": [
+      "月牙泉的形成是风与地形的精密合谋:环山洼地让气流旋转上升,把落下的沙重新卷回山脊——泉水因此千年「沙不进泉,泉不涸竭」,在《敦煌县志》里已被当作神迹记载。",
+      "鸣沙山的「歌声」来自沙粒摩擦:干燥的石英砂在滑落时共振发声,声音低沉如远雷。全球会「唱歌」的沙山不过百余处,敦煌这座被古人写入诗句:「沙声闻于数里之外」。",
+      "20世纪90年代月牙泉一度濒临干涸,水位跌破0.7米。经过多年渗灌补水与周边限采地下水,泉域得以维持。今天的游客爬上沙脊看日落,脚下是两千年商队走过的同一道山影。"
+    ],
+    "bestSeason": "5-6月与9-10月;清晨与日落避暑",
+    "tags": [
+      "自然奇观",
+      "沙漠",
+      "鸣沙",
+      "丝绸之路"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Crescent Lake (Dunhuang)",
+        "url": "https://en.wikipedia.org/wiki/Crescent_Lake_(Dunhuang)",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "A",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "jp-osaka-castle",
+    "name": "大阪城",
+    "nameEn": "Osaka Castle",
+    "type": "heritage",
+    "countryId": "JP",
+    "cityId": "jp-osaka",
+    "longitude": 135.5134,
+    "latitude": 34.6873,
+    "summary": "丰臣秀吉的「天下名城」,五层八阶的天守覆金鯱瓦,护城河巨石阵列至今令人望而生畏。日本战国史的最终舞台。",
+    "story": [
+      "1583年,结束乱世的丰臣秀吉动用三万劳工、百万块巨石筑起大阪城——各大名献上的「居石」上仍刻着各家纹章,最深的一块达百吨。天守高耸之时,正是桃山文化的黄金年代。",
+      "1615年「大阪夏之阵」,德川军攻陷此城,丰臣一族覆灭,战国时代正式落幕。此后德川幕府重建天守,又遭雷火与空袭,现在的混凝土天守为1931年市民募捐重建——一次关于「记忆应当如何被重建」的全民公投。",
+      "城内「时间胶囊」(Time Capsule)埋藏于1970年世博会:两只钢罐封存了两千余件20世纪文物,预定5000年后开启。战国舞台之下,埋着写给遥远未来的信。"
+    ],
+    "bestSeason": "3月下旬-4月上旬(西之丸庭园三千樱);夜樱特别开放",
+    "tags": [
+      "城堡",
+      "战国史",
+      "丰臣秀吉",
+      "樱花"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Osaka Castle",
+        "url": "https://en.wikipedia.org/wiki/Osaka_Castle",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "jp-todaiji",
+    "name": "东大寺",
+    "nameEn": "Tōdai-ji",
+    "type": "heritage",
+    "countryId": "JP",
+    "cityId": "jp-nara",
+    "longitude": 135.8399,
+    "latitude": 34.6866,
+    "summary": "世界最大木造建筑之一,供奉15米高的卢舍那大佛。圣武天皇举全国之力铸造,是奈良时代的国家信仰中心。",
+    "story": [
+      "752年大佛开眼法会,圣武天皇「赖天下之福,倾全国之力」铸造卢舍那佛——用铜四百余吨,一万余人参与熔铸,遣唐使从中国带回的佛教艺术在这里达到顶点。大佛殿两次毁于战火,现存殿体为1709年重建,仍居世界最大木构之列。",
+      "殿柱底部有一根「开洞柱」,洞口与大佛鼻孔同尺寸——钻过去可以「结缘」,孩子们排着队钻洞,笑声与钟声一起回荡在巨大的木构空间里。",
+      "奈良公园的鹿是春日大社的神使,喂养鹿仙贝的传统延续了几个世纪。东大寺二月堂的「修二会」法会自752年起每年举行,从未中断——一千两百七十年,同一炉香火。"
+    ],
+    "bestSeason": "3月修二会(夜间法会);四季皆宜",
+    "tags": [
+      "世界遗产",
+      "大佛",
+      "奈良时代",
+      "木构建筑"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(古都奈良)",
+        "url": "https://whc.unesco.org/en/list/870",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Tōdai-ji",
+        "url": "https://en.wikipedia.org/wiki/Tōdai-ji",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "jp-shuri-castle",
+    "name": "首里城",
+    "nameEn": "Shuri Castle",
+    "type": "heritage",
+    "countryId": "JP",
+    "cityId": "jp-okinawa",
+    "longitude": 127.7538,
+    "latitude": 26.2168,
+    "summary": "琉球王国的王宫,红瓦白墙的中国式城楼与日本式书院在同一座城里相遇。2019年大火后正在按传统工法重建。",
+    "story": [
+      "首里城是琉球王国450年的政治与信仰中心,正殿坐东朝西——面朝中国方向。建筑同时吸收中国、日本与琉球本土元素:中国式龙柱、日式唐破风、琉球红瓦,「混血」得理直气壮,因为琉球本就是海上贸易的十字路口。",
+      "「守礼之邦」牌匾悬挂于守礼门,出自琉球王国对明朝的自称——以礼治国是这个小国的生存智慧。1879年琉球处置后,王宫几度荒废,2000年以「琉球王国城堡及相关建筑群」列入世界遗产。",
+      "2019年10月深夜大火,正殿与南北殿尽毁,举国痛惜。重建采取传统木构工法,工匠们重新学习几乎失传的琉球漆器与金箔工艺——一座王宫的第三次生命,也是一门手艺的复活。"
+    ],
+    "bestSeason": "10月下旬首里城祭(王朝行列再现)",
+    "tags": [
+      "世界遗产",
+      "琉球",
+      "王宫",
+      "重建中"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/972",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Shuri Castle",
+        "url": "https://en.wikipedia.org/wiki/Shuri_Castle",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-05"
+  }
+]

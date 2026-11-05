@@ -1,0 +1,224 @@
+[
+  {
+    "id": "fr-nice-promenade",
+    "name": "尼斯天使湾与英国人步行道",
+    "nameEn": "Promenade des Anglais & Baie des Anges",
+    "type": "natural",
+    "countryId": "FR",
+    "cityId": "fr-nice",
+    "longitude": 7.2578,
+    "latitude": 43.6938,
+    "summary": "七公里弧形海湾,地中海蓝与鹅卵石滩的经典组合。「蔚蓝海岸」这个名字本身,就是从这条步行道开始的。",
+    "story": [
+      "18世纪英国贵族来尼斯过冬,自发出钱修了一条沿海散步道——「英国人步行道」由此得名,如今是尼斯的脊梁:棕榈树、蓝椅子(当地标志性的蓝色座椅)与整条海湾的天际线。老城的赭黄立面和新艺术派的豪华酒店同框并存。",
+      "尼斯老城(Vieux Nice)的萨莱亚广场早晨是花的海洋,市集的 socca(鹰嘴豆煎饼)与冰淇淋老店 Fenocchio 排着长队。城堡山俯瞰整个天使湾——「天使」之名据说来自一条常坠入海湾的白翼海鸟河。",
+      "马蒂斯与夏加尔都在尼斯度过半生,「尼斯光线」是印象派之后画家的集体执念。2月的尼斯狂欢节是法国最大规模,花车大战(batailles de fleurs)把整条步行道变成花的海。"
+    ],
+    "bestSeason": "5-6月与9-10月;2月狂欢节",
+    "tags": ["海岸", "蔚蓝海岸", "步行道", "狂欢节"],
+    "sources": [
+      { "name": "Wikipedia: Promenade des Anglais", "url": "https://en.wikipedia.org/wiki/Promenade_des_Anglais", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "fr-saint-emilion",
+    "name": "圣埃美隆",
+    "nameEn": "Saint-Émilion",
+    "type": "heritage",
+    "countryId": "FR",
+    "cityId": "fr-bordeaux",
+    "longitude": -0.157,
+    "latitude": 44.8938,
+    "summary": "波尔多右岸的中世纪葡萄酒村庄,整座小镇(含地下巨石教堂)被列入世界遗产。梅洛葡萄园从山坡一直铺到城墙下。",
+    "story": [
+      "传说8世纪隐修士埃美隆(Émilion)在此的岩穴中隐居,小镇因此得名。镇中心的独石教堂(monolithic church)是从整块石灰岩里向下凿出来的,地下的巨石墓与教堂相连——法国最大的整体岩石教堂群。",
+      "这里的葡萄种植史可追溯到罗马时代;12世纪阿基坦的埃莉诺与英王联姻后,波尔多酒随「克拉雷」(claret)之名进入英国宫廷。1999年圣埃美隆以「文化景观」整体列入世界遗产——葡萄园、村庄、教堂与石灰岩采石场是一个不可拆的整体。",
+      "大酒商 château 的地窖深达数层,古堡钟楼(共196级台阶)可以俯瞰成片的梅洛园。当地的 macaron 修女饼配方自1620年沿用至今,配一杯右岸红酒是本地人推荐的下午茶。"
+    ],
+    "bestSeason": "9-10月采收季;春夏的葡萄园绿浪",
+    "tags": ["世界遗产", "葡萄酒", "中世纪", "石灰岩"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/932", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Saint-Émilion", "url": "https://en.wikipedia.org/wiki/Saint-Émilion", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "fr-lyon-fourviere",
+    "name": "里昂老城与富维耶山",
+    "nameEn": "Vieux Lyon & Fourvière",
+    "type": "heritage",
+    "countryId": "FR",
+    "cityId": "fr-lyon",
+    "longitude": 4.8246,
+    "latitude": 45.7622,
+    "summary": "欧洲最大的文艺复兴街区之一,丝绸工人的秘密通道(traboules)穿墙而过;山顶的白色圣母大教堂俯瞰两河交汇。",
+    "story": [
+      "里昂建城于罗马时代(卢格杜努姆,高卢行省首府),富维耶山的古罗马剧场至今仍在夏天演出。老城的玫瑰色立面与回廊在15-16世纪金融与丝绸贸易中拔地而起,1998年整体列入世界遗产。",
+      "「traboule」是里昂独有的穿宅通道:丝绸工人为了运货避雨,把巷子从一栋楼的院子穿过另一栋楼——全城现存四百余条,多数不设标识,推门而入常能撞见中庭里的文艺复兴螺旋梯。这种「城市背后的城市」,是里昂给世界城市规划的一份独特样本。",
+      "富维耶圣母大教堂(1872-1884)是全法国最上镜的新拜占庭建筑之一;每年12月8日的灯光节(Fête des Lumières)源于市民在窗台点蜡烛感恩圣母——如今演变成四天四夜的全世界灯光艺术大展。"
+    ],
+    "bestSeason": "12月上旬灯光节;全年老城皆宜",
+    "tags": ["世界遗产", "文艺复兴", "丝绸之路", "灯光节"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/872", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Vieux Lyon", "url": "https://en.wikipedia.org/wiki/Vieux_Lyon", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-milano-duomo",
+    "name": "米兰大教堂",
+    "nameEn": "Duomo di Milano",
+    "type": "heritage",
+    "countryId": "IT",
+    "cityId": "it-milano",
+    "longitude": 9.19,
+    "latitude": 45.4642,
+    "summary": "世界上最大的哥特式教堂之一:135座尖塔、3400余尊雕像构成的「大理石森林」,屋顶步道可以走在尖塔之间。",
+    "story": [
+      "米兰大教堂始建于1386年,横跨六个世纪才最终完工——拿破仑1805年在此加冕意大利国王时,外立面尚未完成。整座教堂用 Candoglia 大理石从马焦雷湖畔经水路运来,「大理石的钢铁森林」是它最著名的比喻。",
+      "屋顶步道是最值得的体验:电梯或步行登上屋脊,在尖塔与飞扶壁之间穿行,晴天能望见阿尔卑斯雪线。正立面最高处立着金色的「Madonnina」圣母像(1774年),她比米兰所有建筑都高——这一传统如今以法规延续。",
+      "教堂旁的埃马努埃莱二世长廊是「世界最老的购物中心」之一,与教堂同时代落成;地板上的公牛镶嵌画有一个传统:用脚跟在牛的关键部位转三圈会带来好运——大理石已被磨出一个浅坑。"
+    ],
+    "bestSeason": "全年;清晨第一批登顶避开人流",
+    "tags": ["教堂", "哥特", "大理石", "米兰"],
+    "sources": [
+      { "name": "Wikipedia: Duomo di Milano", "url": "https://en.wikipedia.org/wiki/Duomo_di_Milano", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-verona-arena",
+    "name": "维罗纳圆形剧场",
+    "nameEn": "Arena di Verona",
+    "type": "heritage",
+    "countryId": "IT",
+    "cityId": "it-verona",
+    "longitude": 10.9938,
+    "latitude": 45.4399,
+    "summary": "公元1世纪的罗马竞技场,至今仍在使用——夏季歌剧节有两万人的露天声场,《阿依达》在这里首演于1913年。",
+    "story": [
+      "维罗纳竞技场建于公元30年前后,是现存罗马圆形剧场中保存第三完好的。中世纪它被当过采石场与市集,1913年为纪念威尔第百年诞辰上演《阿依达》,从此成为世界顶级歌剧圣地——帕瓦罗蒂、卡雷拉斯都曾在此开嗓。",
+      "剧场声学是奇迹:最上层的石座也能听清台上不插电的人声。夏季夜晚,两万支蜡烛曾同时在座位间点亮(汶川地震赈灾义演时),星空就是幕布。",
+      "维罗纳本身是「朱丽叶之家」的所在地——阳台与铜像其实是20世纪的浪漫发明,但没有人愿意拆穿:每年数百万人在朱丽叶雕像旁摸右胸许愿,信件由「朱丽叶俱乐部」的志愿者逐一回信,这项服务已经持续了八十年。"
+    ],
+    "bestSeason": "6-9月歌剧节;建议提前订座",
+    "tags": ["古罗马", "歌剧", "竞技场", "朱丽叶"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心(维罗纳城)", "url": "https://whc.unesco.org/en/list/797", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Verona Arena", "url": "https://en.wikipedia.org/wiki/Verona_Arena", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "it-mount-etna",
+    "name": "埃特纳火山",
+    "nameEn": "Mount Etna",
+    "type": "geology",
+    "countryId": "IT",
+    "cityId": "it-catania",
+    "longitude": 14.9955,
+    "latitude": 37.751,
+    "summary": "欧洲最高最活跃的活火山(现海拔约3357米,随喷发变化),2013年列入世界遗产。西西里岛的黑色海滩与火山葡萄酒都来自它。",
+    "story": [
+      "埃特纳是地球上记录最完整的火山之一:从公元前1500年起的喷发记录从未中断。希腊人认为这里是锻造之神赫菲斯托斯的工坊,宙斯把巨人堤丰压在山下——火山的每一次呼吸都是巨人的挣扎。",
+      "1669年大喷发,熔岩流摧毁卡塔尼亚的城墙,至今卡塔尼亚老城仍用黑色火山岩建造,「黑与白的巴洛克」是这座城市的签名。火山灰滋养了山麓葡萄园——Etna DOC 产区的矿物质感白酒与红酒是意大利当下最热的产区之一。",
+      "2013年埃特纳以「世界最活跃且记录最久的火山」列入世界遗产。缆车与越野车可上到约2900米,喷发期(常在冬季)火山口夜间的「喷灯」景观让山下小镇的居民和游客彻夜围观——地质学家称之为「可以安全围观的活地质学」。"
+    ],
+    "bestSeason": "5-6月与9-10月登山;冬季山顶滑雪",
+    "tags": ["世界遗产", "活火山", "西西里", "火山酒"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1427", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Mount Etna", "url": "https://en.wikipedia.org/wiki/Mount_Etna", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-roman-baths",
+    "name": "巴斯罗马浴场",
+    "nameEn": "Roman Baths (Bath)",
+    "type": "heritage",
+    "countryId": "GB",
+    "cityId": "gb-bath",
+    "longitude": -2.3599,
+    "latitude": 51.3809,
+    "summary": "公元1世纪罗马人在天然温泉上建起的浴场圣所,绿色的温泉水两千年恒温46°C。整座乔治亚小城因它而成为世界遗产。",
+    "story": [
+      "巴斯温泉是英国唯一的天然热水泉,每天涌出百万升46°C的泉水——罗马人公元60年前后在此建造「苏利斯·米涅娃神庙与浴场」,把凯尔特女神与罗马女神合并崇拜。大浴池露天的绿水之所以「发光」,是温泉藻类与阳光的合谋。",
+      "18世纪,巴斯因温泉疗养成为英国上流社会的社交首都:简·奥斯汀在《劝导》与《诺桑觉寺》里反复描写这里的舞会与八卦。皇家新月楼(Royal Crescent)的30栋联排别墅以完美弧线展开,是乔治亚建筑美学的巅峰。",
+      "古浴场禁止入水(水体内有历史管网的铜锈与细菌),但两百年蒸汽浴传统由旁邻的 Thermae 浴场延续——在屋顶温泉池里泡着,眼前就是巴斯修道院的尖顶与整片乔治亚天际线。1987年巴斯城整体列入世界遗产,2021年「温泉之城」跨欧洲七国联合申遗再次入选。"
+    ],
+    "bestSeason": "全年;屋顶浴场黄昏最佳",
+    "tags": ["世界遗产", "罗马遗迹", "温泉", "乔治亚建筑"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/428", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Roman Baths (Bath)", "url": "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-oxford-university",
+    "name": "牛津大学城",
+    "nameEn": "University of Oxford",
+    "type": "heritage",
+    "countryId": "GB",
+    "cityId": "gb-oxford",
+    "longitude": -1.2578,
+    "latitude": 51.7548,
+    "summary": "英语世界最古老的大学(1096年有教学记录),39个学院的尖塔与庭院铺满小城,「梦想尖塔之城」是诗人霍普金斯的著名比喻。",
+    "story": [
+      "1167年,英格兰学生被巴黎大学驱逐回国,牛津由此迅速崛起——这所大学比任何单一王朝都长寿。博德利图书馆(1602年)是欧洲最老的公共图书馆之一,密径连接的学院庭院里走过牛顿、霍金、王尔德与十四位英国首相。",
+      "基督教堂学院的食堂是《哈利·波特》霍格沃茨大食堂的原型;博德利图书馆的汉弗莱公爵图书馆成了图书馆场景的取景地。牛津与剑桥的「牛剑对抗赛」自1829年起每年在泰晤士河上划船决胜负——一场持续近两百年的校级恩怨。",
+      "莫德林学院的鹿园、新学院的中庭与「叹息桥」(赫特福德桥)都印在明信片上,但牛津最动人的是细节:学院草坪只允许院士行走;考试季学生必须佩戴 subfusc(黑色长袍与白花/红花),255道仪式规矩延续至今。"
+    ],
+    "bestSeason": "5-6月考试季长袍风情;9月新生入学周",
+    "tags": ["大学城", "哥特学院", "哈利波特", "牛津"],
+    "sources": [
+      { "name": "Wikipedia: University of Oxford", "url": "https://en.wikipedia.org/wiki/University_of_Oxford", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  },
+  {
+    "id": "gb-giants-causeway",
+    "name": "巨人之路",
+    "nameEn": "Giant's Causeway",
+    "type": "geology",
+    "countryId": "GB",
+    "cityId": "gb-belfast",
+    "longitude": -6.5116,
+    "latitude": 55.2408,
+    "summary": "四万根六边形玄武岩柱整齐插入北大西洋,世界第四大地质谜题的答案写在岩层里。北爱尔兰唯一的世界自然遗产。",
+    "story": [
+      "约6000万年前,熔岩高原冷却收缩——均匀的玄武岩在收缩中裂成六边形(偶有四、五、八边)石柱,像巨人铺路的石板延伸入海。这种「柱状节理」在全球并不罕见,但四万根石柱挤在一段海岸上的密度,全球仅此一处。",
+      "盖尔神话给了它更好的解释:巨人芬·麦库尔(Fionn mac Cumhaill)为了挑战苏格兰对手,把石柱铺成跨海之路;对手伪装成巨婴,芬·麦库尔吓得逃回家让妻子把他裹进襁褓——「婴儿」都这么大,谁还敢应战?今天你仍能看到「巨人的靴子」和「巨人的眼睛」。",
+      "1693年一位主教向皇家学会提交论文后,争论在神创论与地质成因间持续了一个多世纪,被称为「巨人之路论战」——它是地质学作为科学诞生的标志性现场之一。1986年列入世界遗产,悬崖步道串起「风琴管」「骆驼石」等四十余处奇岩。"
+    ],
+    "bestSeason": "5-9月;风暴后的浪花最壮观(注意安全)",
+    "tags": ["世界遗产", "柱状节理", "玄武岩", "神话"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/369", "license": "事实参考", "checkedAt": "2026-11-05" },
+      { "name": "Wikipedia: Giant's Causeway", "url": "https://en.wikipedia.org/wiki/Giant's_Causeway", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-05"
+  }
+]
