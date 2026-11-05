@@ -2,6 +2,20 @@
 
 All notable changes to WORLD EXPLORER are documented here.
 
+## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
+
+### Added
+- 目的地扩容 **67 → 100**(原创中文内容 33 篇:西湖/武陵源/都江堰/首里城/库拉普/巨人之路/萨卡拉/白沙漠/邦格尔邦格尔/兰德曼纳劳卡…),城市底座 47 个
+- Heap 内存回归 E2E 用例 I(CDP 强制 GC,5 轮引擎生命周期增长 <1.8x)
+- 数据校验器单元测试(node:test 零依赖,15/15,P0 导入安全回归位)
+- 渲染质量三档(高/均衡/低):高=原生+FXAA,均衡=0.85x+FXAA,低=0.7x
+- DetailPanel 档案内容 GSAP 交错入场(reduced-motion 跳过,timeline 及时释放)
+- tokens 新增交互玻璃/暗井四族,14 处硬编码 rgba 收敛归零
+
+### Changed
+- 测试超时按 SwiftShader 实测成本调整(全局 180s,F 用例 300s,下载等待 30s)
+- E2E 套件 12/12 全绿;单测 15/15;vue-tsc/ESLint/build 全绿
+
 ## [0.2.0] — 2026-11-05(V0.2 QUALITY · IMMERSION · EXPERIENCE)
 
 ### Added
