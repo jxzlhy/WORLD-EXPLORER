@@ -3,7 +3,7 @@
 > **Explore the World. Discover Its Stories.**
 > 3D 交互式全球探索平台 — 从太空到国家、城市、景点,再到地点背后的故事。
 
-![status](https://img.shields.io/badge/version-0.1.0-blue) ![engine](https://img.shields.io/badge/globe-CesiumJS%201.147-informational) ![license-mixed](https://img.shields.io/badge/assets-license--audited-success)
+![CI](https://github.com/jxzlhy/WORLD-EXPLORER/actions/workflows/ci.yml/badge.svg) ![status](https://img.shields.io/badge/version-0.3.0-blue) ![engine](https://img.shields.io/badge/globe-CesiumJS%201.147-informational) ![license-mixed](https://img.shields.io/badge/assets-license--audited-success)
 
 ## 这是什么
 
