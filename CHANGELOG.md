@@ -16,6 +16,8 @@ All notable changes to WORLD EXPLORER are documented here.
 
 - **云层(V0.3-E 闭环)**:CC0 云图(Commons/GabrielGGD)+ 独立球壳 Primitive(+12km,西向缓移,懒加载默认关);NASA 直连与 turban 中转链均不可用,按红线改走 Commons CC0
 
+- 目的地扩容 **100 → 112**:补齐博物馆薄弱类型(埃及博物馆/大都会/伦敦自然史/东京国立)+ 自然与岛屿(羚羊峡谷/鲨鱼湾/黄山/颐和园/巴列斯塔斯/恶魔岛/道顿堀/红海)
+
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)
 - 全量验证:E2E 12/12 · 单测 27/27 · lint 0 错误 · build ✓
