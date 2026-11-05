@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onUnmounted, watch } from 'vue'
+import { computed, nextTick, onUnmounted, ref, watch } from 'vue'
 import gsap from 'gsap'
 import { useExploreStore } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
@@ -24,6 +24,11 @@ const collection = computed(() => explore.selectedCollection)
 const collectionDests = computed(() =>
   collection.value ? explore.collectionDestinations(collection.value) : [],
 )
+/** 合集头图:优先取收录中已有已核验照片的目的地 */
+const collectionHero = computed(() => {
+  if (!collection.value) return null
+  return collectionDests.value.find((d) => d.media?.status === 'verified') ?? null
+})
 
 /**
  * 内容交错入场(V0.3-D):档案内容切换时,子块依次浮现。
@@ -102,6 +107,35 @@ const hasCountryFacts = computed(
 function fmtArea(km2: number): string {
   if (km2 >= 10000) return `约 ${(km2 / 10000).toFixed(km2 % 10000 === 0 ? 0 : 1)} 万 km²`
   return `约 ${km2.toLocaleString('zh-Hans-CN')} km²`
+}
+
+/**
+ * 我的笔记:草稿跟随选中目的地切换;失焦时落盘(V0.3 已有 store 能力,本版补 UI)。
+ */
+const noteDraft = ref('')
+const noteSaved = ref(false)
+let noteSavedTimer: number | null = null
+
+watch(
+  () => explore.panel,
+  () => {
+    noteDraft.value =
+      explore.panel.kind === 'destination'
+        ? (myWorld.notes[explore.panel.destinationId] ?? '')
+        : ''
+    noteSaved.value = false
+  },
+  { immediate: true },
+)
+
+function saveNote(): void {
+  if (explore.panel.kind !== 'destination') return
+  myWorld.setNote(explore.panel.destinationId, noteDraft.value)
+  noteSaved.value = true
+  if (noteSavedTimer !== null) window.clearTimeout(noteSavedTimer)
+  noteSavedTimer = window.setTimeout(() => {
+    noteSaved.value = false
+  }, 1600)
 }
 
 /** 人口:亿/万 两级表述 */
@@ -195,6 +229,20 @@ function fmtPopulation(p: number): string {
           >
             <span class="we-caps-label">推荐探索时间</span>
             <p>{{ destination.bestSeason }}</p>
+          </div>
+
+          <!-- 我的笔记(本地,自动保存) -->
+          <div class="my-note">
+            <span class="we-caps-label">我的笔记</span>
+            <textarea
+              v-model="noteDraft"
+              class="note-input"
+              rows="3"
+              maxlength="500"
+              placeholder="写下你的旅行计划、回忆或心愿…(自动保存,仅存本地)"
+              @blur="saveNote"
+            />
+            <span v-if="noteSaved" class="note-saved">已保存 ✓</span>
           </div>
 
           <div
@@ -311,6 +359,18 @@ function fmtPopulation(p: number): string {
       <!-- ==================== 主题合集(V1.5) ==================== -->
       <template v-else-if="collection">
         <div class="scroll-area" :key="collection.id">
+          <div v-if="collectionHero" class="collection-hero">
+            <DestinationMedia
+              :id="collection.id"
+              :name="collectionHero.name"
+              :type-color="'var(--we-type-landmark)'"
+              :media="collectionHero.media"
+            />
+            <figcaption class="hero-caption">
+              图:{{ collectionHero.name }}(收录地点)·
+              {{ collectionHero.media?.author }}
+            </figcaption>
+          </div>
           <header class="head">
             <p class="we-caps-label gold">主题合集</p>
             <h1 class="name">{{ collection.name }}</h1>
@@ -657,6 +717,41 @@ function fmtPopulation(p: number): string {
   padding: 1px 5px;
 }
 
+.my-note {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.my-note .we-caps-label {
+  margin: 0;
+}
+.note-input {
+  width: 100%;
+  resize: vertical;
+  min-height: 60px;
+  background: var(--we-well);
+  border: 1px solid var(--we-glass-border);
+  border-radius: var(--we-r-sm);
+  color: var(--we-text);
+  font-family: var(--we-sans);
+  font-size: var(--we-fs-small);
+  line-height: var(--we-lh-normal);
+  padding: var(--we-sp-2) var(--we-sp-3);
+  outline: none;
+  transition: border-color var(--we-dur-1) var(--we-ease-out);
+}
+.note-input:focus {
+  border-color: rgba(111, 195, 255, 0.45);
+}
+.note-input::placeholder {
+  color: var(--we-text-faint);
+}
+.note-saved {
+  font-size: var(--we-fs-micro);
+  color: var(--we-success);
+  letter-spacing: 0.08em;
+}
+
 .country-facts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -678,6 +773,17 @@ function fmtPopulation(p: number): string {
   font-size: var(--we-fs-small);
   color: var(--we-text-hi);
   font-weight: 600;
+}
+
+.collection-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.hero-caption {
+  font-size: var(--we-fs-micro);
+  color: var(--we-text-faint);
+  letter-spacing: 0.04em;
 }
 
 .dest-list {
