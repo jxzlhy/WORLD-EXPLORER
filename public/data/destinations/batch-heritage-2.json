@@ -1,0 +1,217 @@
+[
+  {
+    "id": "gb-hadrians-wall",
+    "name": "哈德良长城",
+    "nameEn": "Hadrian's Wall",
+    "type": "heritage",
+    "countryId": "GB",
+    "longitude": -2.4,
+    "latitude": 55.02,
+    "summary": "罗马帝国的西北边界:公元 122 年起,士兵用 6 年时间在英格兰北部砌起 117 公里的石墙——帝国「到此为止」的石质宣言。",
+    "story": [
+      "哈德良长城不是「防线」而是「海关与哨所」:墙上每罗马英里一座碉堡(milecastle),两座之间还有哨塔。士兵在墙头巡查商旅、课税、传递军报——帝国边境的日常,更多是文书工作而不是战争。1987年连同周边军事遗迹列入世界遗产。",
+      "墙的大部分石块在中世纪被村民搬去修教堂与农舍——今天看到的遗迹只占当年的一部分。豪斯戴德(Housesteads)要塞保存最完整:兵营、厕所(有冲水系统!)、医院与谷仓的轮廓清晰可辨,「罗马军团的买房样板间」。",
+      "徒步哈德良长城步道(Hadrian's Wall Path)全程 134 公里,需 6-7 天:从西海岸走到东海岸,羊群、泥炭沼泽与起伏的玄武岩崖(sillin)——英国最北的「长距离史诗」,夏季白天长达 17 小时,徒步者的天堂。"
+    ],
+    "bestSeason": "5-9月徒步季;全程 6-7 天或选段一日",
+    "tags": ["世界遗产", "罗马边境", "徒步", "英格兰"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/430", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Hadrian's Wall", "url": "https://en.wikipedia.org/wiki/Hadrian's_Wall", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "gb-ironbridge",
+    "name": "铁桥峡谷",
+    "nameEn": "Ironbridge Gorge",
+    "type": "heritage",
+    "countryId": "GB",
+    "longitude": -2.4853,
+    "latitude": 52.6266,
+    "summary": "世界第一座铸铁大桥(1779年)横跨塞文河峡谷——工业革命的「零公里处」。一座桥的跨度,是从农耕世界跨进钢铁世界的一步。",
+    "story": [
+      "1779年,铁匠亚伯拉罕·达比三世用附近的焦炭炼铁,铸成这座 30.6 米的单跨铁桥——人类第一次用金属建造大跨度桥梁。桥上 378 个铸铁构件的接缝设计故意模仿木工榫卯(当时的工匠只会木结构的语言),1986年列入世界遗产(首批)。",
+      "峡谷当时是工业特区:焦炭炼铁、瓷器、管道与蒸汽机的试验场都在方圆几公里内。 铁桥的「成功」反而让塞文河两岸的森林被砍伐殆尽——工业革命的第一课,就是环境代价。",
+      "今天的峡谷有十座博物馆(钢铁、瓷器、瓷砖、烟斗…)组成的「博物馆村」,可以体验维多利亚时代的烛光课与铁艺工坊。桥身漆成标志性的深红色——它曾是「未来」的颜色。"
+    ],
+    "bestSeason": "全年;博物馆村冬季有圣诞市集",
+    "tags": ["世界遗产", "工业革命", "铸铁", "博物馆群"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/371", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: The Iron Bridge", "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "eg-khan-el-khalili",
+    "name": "汗·哈利利集市",
+    "nameEn": "Khan el-Khalili",
+    "type": "landmark",
+    "countryId": "EG",
+    "cityId": "eg-cairo",
+    "longitude": 31.2622,
+    "latitude": 30.0477,
+    "summary": "开罗 600 年的巴扎:1382 年建起的商队客栈街区,铜灯、香料、纸草画与金饰至今堆满巷道——「一千零一夜」的现场版。",
+    "story": [
+      "汗·哈利利由马穆鲁克苏丹建于1382年,是当时世界最重要的商队枢纽之一:印度的香料、也门的咖啡、中国的瓷器在此中转。今天的巷道里,铜器匠人还在用锤子敲出灯罩的花纹,叮叮声与五百年前无异。",
+      "El Fishawi 咖啡馆开了两百多年,被称为「镜子咖啡馆」——马哈福兹的《开罗三部曲》让它不朽,咖啡馆的墙上挂着世代烟客的照片。点一杯薄荷茶,坐在巷口看人间:头巾与西装、游客与鸽群,在这里达成了永久的和解。",
+      "集市深处的侯赛因清真寺收藏着先知穆罕默德的圣物(部分),每年斋月的夜晚,整个街区变成灯光与祈祷的海洋——「巴扎」在这里不只是购物,是开罗人的公共客厅。"
+    ],
+    "bestSeason": "10-4月(开罗凉爽季);斋月夜晚最特别",
+    "tags": ["巴扎", "开罗", "手工艺", "六百年"],
+    "sources": [
+      { "name": "Wikipedia: Khan el-Khalili", "url": "https://en.wikipedia.org/wiki/Khan_el-Khalili", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "eg-saint-catherine",
+    "name": "圣凯瑟琳修道院",
+    "nameEn": "Saint Catherine's Monastery",
+    "type": "heritage",
+    "countryId": "EG",
+    "longitude": 33.9758,
+    "latitude": 28.5562,
+    "summary": "西奈山脚下的修道院,公元 565 年落成,连续使用近 1500 年——世界最古老的仍在使用的基督教修道院之一,藏着仅次于梵蒂冈的抄本收藏。",
+    "story": [
+      "查士丁尼一世下令修建,围墙上「钉」着摩西领受十诫的圣山(西奈山/何烈山)。修道院同时供奉基督与先知——一千多年里,伊斯兰法老的护敕与基督教修士的烛火在这里和平共处,是「边境地带共存」的活标本。2002年列入世界遗产。",
+      "圣凯瑟琳图书馆收藏 3000 余卷抄本,地位仅次于梵蒂冈:1844 年德国学者在此发现《西奈抄本》(Codex Sinaiticus,现存最早完整新约抄本之一)——世界圣经学的一半故事发生在这间高原图书馆里。",
+      "凌晨两点从山下出发,3750 级台阶登西奈山看日出——「摩西之路」要走 2-3 小时,山顶的寒风与金色日出一起抵达。山下的「燃烧灌木」(鲁布拉 Rubus sanctus)据说就是那丛「焚而不毁」的荆棘——它还活着。"
+    ],
+    "bestSeason": "3-5月与9-11月;登山看日出需防寒",
+    "tags": ["世界遗产", "修道院", "西奈山", "抄本"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/954", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Saint Catherine's Monastery", "url": "https://en.wikipedia.org/wiki/Saint_Catherine's_Monastery", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "pe-lima-historic",
+    "name": "利马历史中心",
+    "nameEn": "Historic Centre of Lima",
+    "type": "heritage",
+    "countryId": "PE",
+    "cityId": "pe-lima",
+    "longitude": -77.0283,
+    "latitude": -12.0461,
+    "summary": "太平洋悬崖上的「国王之城」:1535 年皮萨罗建城,木雕阳台与巴洛克教堂保留着西班牙总督时代的华彩——南美最精致的殖民市中心之一。",
+    "story": [
+      "利马建城于1535年,曾是西班牙南美总督区的首都,「诸王的城」(Ciudad de los Reyes)。武器广场四周的总督府与大教堂以精雕细刻的封闭式木阳台闻名——摩尔式木工在安第斯的重生。1991年历史中心列入世界遗产。",
+      "圣弗朗西斯科修道院的地下墓穴(Catacumbas)陈列着按几何图案排列的人骨——殖民时代的「万人井」,参观动线在圆井骨阵上方盘旋,是南美最震撼的「黑暗观光」之一;图书馆里藏有两万五千册羊皮古籍。",
+      "利马是「世界美食之都」:Central 与 Maido 常年位居全球餐厅榜前十。历史中心的老咖啡馆(Confectionery)与唐人街(美洲最老)在同一街区——总督、移民与资本,都留在了这城市的一餐一饭里。"
+    ],
+    "bestSeason": "12-4月(夏季);全年多雾(「灰色的利马」是常态)",
+    "tags": ["世界遗产", "殖民建筑", "木阳台", "美食之都"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/500", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Historic Centre of Lima", "url": "https://en.wikipedia.org/wiki/Historic_Centre_of_Lima", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "au-ningaloo-reef",
+    "name": "宁格罗礁",
+    "nameEn": "Ningaloo Reef",
+    "type": "natural",
+    "countryId": "AU",
+    "longitude": 113.5,
+    "latitude": -22.0,
+    "summary": "世界最大的岸礁:珊瑚从沙滩几步之外就开始,鲸鲨每年 3-8 月准时造访——「游在大鱼旁边」的许可,全世界只有这里这么容易。",
+    "story": [
+      "宁格罗长 300 公里,最妙的是「近」:从埃克斯茅斯的海滩下水,游几米就是珊瑚墙——大堡礁需要坐船数小时,这里「浮潜像下饺子一样方便」。2011年列入世界遗产。",
+      "每年 3-8 月,鲸鲨(世界最大的鱼,可达 12 米)沿礁巡游滤食——埃克斯茅斯是全球最稳定的鲸鲨观测点,生态运营方严格限制人数与距离:每条鲸鲨同水人数不超过 10 人。6-8 月还有驼背鲸洄游,「一季两鲸」。",
+      "礁湖内的海龟全年可见,冬季(澳冬)的梭鱼漩涡(bait ball)是纪录片级场面。西澳的珊瑚比大堡礁更「白净」——因为游客密度只有后者的零头。「宁格罗是十年前的大堡礁」,潜客们这么说。"
+    ],
+    "bestSeason": "3-8月鲸鲨季;全年浮潜皆宜",
+    "tags": ["世界遗产", "岸礁", "鲸鲨", "浮潜"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1369", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Ningaloo Reef", "url": "https://en.wikipedia.org/wiki/Ningaloo_Reef", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "is-kirkjufell",
+    "name": "教会山(草帽山)",
+    "nameEn": "Kirkjufell",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -22.3071,
+    "latitude": 64.9417,
+    "summary": "斯奈山半岛的锥形孤峰,463 米,三叠瀑布(Kirkjufellsfoss)在前景——冰岛被拍摄最多的山,《权力的游戏》「箭头山」的原型。",
+    "story": [
+      "教会山的形状是冰川的签名:末次冰期的冰盖从两侧削磨山体,留下这枚几乎对称的「草帽」。山名直白——「教堂山」(Kirkjufell),因为渔村人觉得它像钟楼。它与山前的三叠瀑布组成了「一步一机位」的黄金构图。",
+      "《权力的游戏》第六季在此取景(「箭头山」与「长子之家」),从此全球剧组与游客接踵而至。冬季,极光会从山脊后升起——Kirkjufell + 北极光,是冰岛明信片工业的「圣杯」。",
+      "登山路线存在但陡峭(需专业装备,每年都有救援);对大多数访客,正确的打开方式是:绕到瀑布对岸的机位,等一次日落或一场极光——山顶属于攀登者,山影属于所有人。"
+    ],
+    "bestSeason": "9-3月极光季;6-7月午夜阳光",
+    "tags": ["孤峰", "瀑布", "极光", "取景地"],
+    "sources": [
+      { "name": "Wikipedia: Kirkjufell", "url": "https://en.wikipedia.org/wiki/Kirkjufell", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "jp-koyasan",
+    "name": "高野山",
+    "nameEn": "Kōyasan",
+    "type": "heritage",
+    "countryId": "JP",
+    "longitude": 135.5933,
+    "latitude": 34.2111,
+    "summary": "海拔 900 米的山中寺院之城:弘法大师空海 1200 年前开创的真言宗总本山,117 座寺院中 50 余座提供宿坊——在寺院里过夜,听晨钟做早课。",
+    "story": [
+      "816年,空海获准在纪伊山地建立真言宗道场。传说他掷出金刚杵,落在这片盆地,「高野」由此成为密教的圣山。2004年「纪伊山地灵场与参诣道」整体列入世界遗产——参道本身就是朝圣的一部分。",
+      "奥之院是空海入定的圣地:2 公里长的参道两侧,二十万座墓碑与供养塔在杉林里绵延——织田信长、丰臣秀吉家的墓、以及大企业(包括一家香水公司的「慰灵碑」)排队占据风水宝地,「日本最具权力的墓地」名不虚传。暮色里穿过石像群,灯笼在雾中浮动——日本美学的终极现场。",
+      "宿坊(寺院住宿)提供精进料理(素斋)与晨间早课:盘腿听经、抄经、火供(护摩)仪式。「在一座 1200 年的寺院里醒来」,是关西深度游的压轴体验——记得遵守安静与合掌的礼仪。"
+    ],
+    "bestSeason": "11月中下旬红叶;冬季雪中奥之院",
+    "tags": ["世界遗产", "真言宗", "宿坊", "奥之院"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心(纪伊山地灵场与参诣道)", "url": "https://whc.unesco.org/en/list/1142", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Kōyasan", "url": "https://en.wikipedia.org/wiki/Kōyasan", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "fr-dune-pilat",
+    "name": "皮拉沙丘",
+    "nameEn": "Dune du Pilat",
+    "type": "natural",
+    "countryId": "FR",
+    "longitude": -1.2069,
+    "latitude": 44.5933,
+    "summary": "欧洲最高的沙丘:110 米高、近 3 公里长,一侧是碧蓝的阿卡雄湾,一侧是连绵的松林——「爬一座沙山,看两种风景」。",
+    "story": [
+      "皮拉沙丘是风与海流的工程:西风把沙从滩涂卷上崖顶,沙丘以每年数米的速度向东「爬行」,吞没过公路、房屋与一段二战德军雷达站——如今松树只露出树冠,像被沙埋到下巴的人。",
+      "爬沙丘是「两步进两步退」的物理课:木楼梯旺季搭着,徒手攀更纯粹。登顶的奖励是 360°的对比构图——向西是大西洋与费尔角灯塔,向东是绿到发暗的 Landes 松林;滑沙下坡 110 米,尖叫是标配。",
+      "沙丘在涨潮日会「吃」掉一段海滩;风把沙脊吹出刀锋般的棱线(s将这些棱线叫「沙的皱纹」)。黄昏时分,滑翔风筝与滑翔伞在沙脊上空盘旋——欧洲最上镜的沙丘,没有之一。"
+    ],
+    "bestSeason": "5-9月;日落时段最盛,带防沙鞋或赤脚",
+    "tags": ["沙丘", "海岸", "阿卡雄", "滑沙"],
+    "sources": [
+      { "name": "Wikipedia: Dune du Pilat", "url": "https://en.wikipedia.org/wiki/Dune_du_Pilat", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  }
+]

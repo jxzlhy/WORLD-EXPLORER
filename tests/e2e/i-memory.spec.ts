@@ -25,6 +25,8 @@ function pageSleep(ms: number): Promise<void> {
 }
 
 test('I. 反复初始化引擎,堆内存无线性增长', async ({ page }) => {
+  // 5 轮完整 app 周期(SwiftShader + 套件负载下单轮可达 60s+)
+  test.setTimeout(400_000)
   const samples: number[] = []
   const ROUNDS = 5
 

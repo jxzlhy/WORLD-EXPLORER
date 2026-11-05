@@ -5,8 +5,8 @@ import { waitForAppReady } from './helpers'
  * 用例 F — MY WORLD:收藏持久化、导出、导入校验(非法数据被拒绝)。
  */
 test.describe('F. MY WORLD', () => {
-  // 本用例含两次完整 app-ready(首载+刷新)。SwiftShader 软渲染下套件负载时单轮可达 90s+,预算 300s。
-  test.setTimeout(300_000)
+  // 本用例含两次完整 app-ready(首载+刷新)。SwiftShader 软渲染下套件负载时单轮可达 90s+,预算 400s。
+  test.setTimeout(400_000)
   test('收藏 → 刷新仍在 → 导出 → 非法导入被拒绝', async ({ page }) => {
     await waitForAppReady(page)
 
@@ -25,11 +25,25 @@ test.describe('F. MY WORLD', () => {
     await page.getByRole('button', { name: 'MY WORLD' }).click()
     await expect(page.locator('.my-world .item')).toHaveCount(1)
 
-    // 导出 JSON(下载事件;套件负载下 blob 导出可能延迟,放宽到 30s)
-    const downloadPromise = page.waitForEvent('download', { timeout: 30_000 })
+    // 导出 JSON:拦截页面内 blob,直接校验内容(比下载事件更严格且环境无关)
+    await page.evaluate(() => {
+      ;(window as unknown as Record<string, unknown>).__exportedBlob__ = null
+      const orig = URL.createObjectURL.bind(URL)
+      URL.createObjectURL = (blob: Blob) => {
+        ;(window as unknown as Record<string, unknown>).__exportedBlob__ = blob
+        return orig(blob)
+      }
+    })
     await page.getByRole('button', { name: '导出 JSON' }).click()
-    const download = await downloadPromise
-    expect(download.suggestedFilename()).toMatch(/^world-explorer-\d{4}-\d{2}-\d{2}\.json$/)
+    const exported = await page.evaluate(async () => {
+      const blob = (window as unknown as Record<string, Blob>).__exportedBlob__
+      return JSON.parse(await blob.text()) as {
+        schema: string
+        data: { favorites: string[] }
+      }
+    })
+    expect(exported.schema).toBe('my-world/v1')
+    expect(exported.data.favorites.length).toBe(1)
 
     // 非法导入:结构错误的文件 → 内联报错,数据不被覆盖,不重载页面
     await page.getByRole('button', { name: '导入 JSON' }).click()

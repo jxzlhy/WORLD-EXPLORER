@@ -1,0 +1,216 @@
+[
+  {
+    "id": "cn-lijiang-ancient-town",
+    "name": "丽江古城",
+    "nameEn": "Old Town of Lijiang",
+    "type": "heritage",
+    "countryId": "CN",
+    "longitude": 100.2343,
+    "latitude": 26.8721,
+    "summary": "玉龙雪山下的纳西古城,没有城墙——传说因统治者为木姓,筑墙如「木」困「口」。四方街的水渠系统至今仍在运转。",
+    "story": [
+      "丽江古城的骨架是水:玉河水在双石桥分成三股,入城后化为纵横的明渠——「家家流水,户户垂杨」。居民至今沿渠取水洗菜,三眼井的用法(饮用/洗菜/洗衣)是活的用水公约,1997年列入世界遗产。",
+      "纳西族东巴文字是世界上仍在使用的少数象形文字之一,东巴经的纸页上,图画般的文字讲着创世与神战。古城的木府曾是纳西土司的「小故宫」,徐霞客当年入府,留下「宫室之丽,拟于王者」的记录。",
+      "夜色是丽江的另一面:酒吧街的灯火与安静的新华街只隔一座桥。想逃离喧嚣,清晨七点的四方街才是它的本来面目——雪山在巷口,背柴的阿妈路过卖花的摊子。"
+    ],
+    "bestSeason": "4-6月与9-10月;清晨看古城本色",
+    "tags": ["世界遗产", "纳西族", "水渠古城", "东巴文"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/811", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Old Town of Lijiang", "url": "https://en.wikipedia.org/wiki/Old_Town_of_Lijiang", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "cn-fujian-tulou",
+    "name": "福建土楼",
+    "nameEn": "Fujian Tulou",
+    "type": "heritage",
+    "countryId": "CN",
+    "longitude": 117.0,
+    "latitude": 24.66,
+    "summary": "客家人用夯土筑起的圆形堡垒,一座楼就是一个氏族——三四百人同住一个屋檐下,土墙厚近两米,卫得下几代人的悲欢。",
+    "story": [
+      "土楼的圆不是审美而是算术:同样的夯土量,圆形围墙周长最长、无死角、抗风抗震。外墙一二层不开窗,底层为厨房(防火),二层粮仓,三四层住人——一座楼就是一套生存系统。2008年46座土楼列入世界遗产。",
+      "承启楼被称为「土楼王」:四圈同心圆,400 个房间,鼎盛时住着 600 多人。「高四层,楼四圈,上上下下四百间;圆中圆,圈套圈,历经沧桑三百年」——当地民谣就是它的说明书。",
+      "冷知识:土楼曾被美国卫星误判为「导弹发射井」。1980年代这份「情报」反而让世界第一次认真看见这种民居——最温和的居住形式,被误认为最暴力的设施。"
+    ],
+    "bestSeason": "3-5月与10-11月;春节前后有民俗活动",
+    "tags": ["世界遗产", "客家", "夯土", "民居"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1113", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Fujian Tulou", "url": "https://en.wikipedia.org/wiki/Fujian_Tulou", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "jp-kinkaku-ji",
+    "name": "金阁寺",
+    "nameEn": "Kinkaku-ji (Golden Pavilion)",
+    "type": "heritage",
+    "countryId": "JP",
+    "cityId": "jp-kyoto",
+    "longitude": 135.7292,
+    "latitude": 35.0394,
+    "summary": "三层楼阁贴满金箔,倒影落进镜湖池——「金阁」本是足利义满的北山别墅,如今是京都的封面。1950年的纵火案让它成为小说的主角。",
+    "story": [
+      "1397年,室町幕府三代将军足利义满在北山建造金阁作为隐居之所,死后改为禅寺。三层各有风格:下层寝殿造、中层武家造、上层禅宗造——一座楼里住着三个时代。金色在湖面的倒影随时间变化,清晨最素,黄昏最浓。",
+      "1950年,见习僧人林养贤纵火烧毁了整座金阁——三岛由纪夫以这一事件写成《金阁寺》:「美是怨敌」。1955年金阁依原样重建,1987年重贴金箔,厚度是原来的五倍。今天的金光,是复仇之火后的重生。",
+      "雪天的「雪金阁」是可遇不可求的绝景:白雪覆在金箔上,湖面若结冰,倒影便成了画。常规门票是一张写有祝福语的符——「金阁舍利殿御守护」。"
+    ],
+    "bestSeason": "11月中下旬红叶;雪日清晨(可遇不可求)",
+    "tags": ["世界遗产", "金箔", "足利义满", "三岛由纪夫"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心(古都京都)", "url": "https://whc.unesco.org/en/list/688", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Kinkaku-ji", "url": "https://en.wikipedia.org/wiki/Kinkaku-ji", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "jp-kamakura-daibutsu",
+    "name": "镰仓大佛",
+    "nameEn": "Great Buddha of Kamakura",
+    "type": "heritage",
+    "countryId": "JP",
+    "longitude": 139.5364,
+    "latitude": 35.3189,
+    "summary": "露天端坐七百年的阿弥陀佛铜像,高13.35米。像内可以进入——从大佛「身体内部」看世界,是别处没有的体验。",
+    "story": [
+      "大佛铸造于1252年,最初供奉在木造大殿中;1498年的海啸冲毁殿宇,佛像从此露天端坐——「没有屋顶的寺」反而成就了它:青苔沿着铜绿蔓延,四季光影直接落在佛面上。室町时代的诗人称「木殿已随波涛去,大佛常在青天下」。",
+      "铜像是分三十余次浇铸而成,重量约121吨。像体背部有两扇窗户——花 20 日元即可从佛「体内」拾级而上,内壁还能看到当年修补的铆钉与「兴国」铭文,一次力学与信仰的双重阅读。",
+      "镰仓是日本第二个政治中心(镰仓幕府),大佛所在的长谷一带还有长谷寺的绣球花道与由比滨的海岸。从东京出发一小时车程——「古都的呼吸」就在通勤距离之内。"
+    ],
+    "bestSeason": "6月绣球花;11月红叶;工作日清晨",
+    "tags": ["大佛", "镰仓", "铜像", "露天"],
+    "sources": [
+      { "name": "Wikipedia: Kōtoku-in", "url": "https://en.wikipedia.org/wiki/Kōtoku-in", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "us-arches-np",
+    "name": "拱门国家公园",
+    "nameEn": "Arches National Park",
+    "type": "geology",
+    "countryId": "US",
+    "longitude": -109.7489,
+    "latitude": 38.7331,
+    "summary": "世界上天然砂岩拱门最密集的地方:超过 2000 座石拱散落在红色荒原上,精致的拱门(Precise)是犹他州车牌上的那张脸。",
+    "story": [
+      "拱门的成因是一场「组合拳」:亿万年盐层流动把岩层顶出穹丘,风蚀揭顶,再由冰与水在裂缝里精确雕刻——留下跨越数十米的石桥。全世界已知天然拱门的大部分都集中在这 300 平方公里内,而且还在变化:1991年「天空之眼拱门」在游客眼前坍塌,再也不会回来。",
+      "「精致的拱门」(Delicate Arch)独立于崖边,是犹他的精神图腾——徒步 4.8 公里去看它的日落,是公园的标准仪式:夕阳把石拱染成火焰色,人群会安静下来,像在看一场谢幕。",
+      "这里也是「黑暗天空公园」:夜间的银河从双拱之间升起。夏季地表温度可达 50°C——公园官网的告示写着「不要低估沙漠」:每人至少带一加仑水,这不是建议,是数学。"
+    ],
+    "bestSeason": "3-5月与9-10月;日出日落与银河季",
+    "tags": ["国家公园", "石拱", "犹他", "黑暗天空"],
+    "sources": [
+      { "name": "Wikipedia: Arches National Park", "url": "https://en.wikipedia.org/wiki/Arches_National_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "us-brooklyn-bridge",
+    "name": "布鲁克林大桥",
+    "nameEn": "Brooklyn Bridge",
+    "type": "landmark",
+    "countryId": "US",
+    "cityId": "us-new-york",
+    "longitude": -73.9969,
+    "latitude": 40.7061,
+    "summary": "1883年通车的世界首座钢悬索桥,主跨 486 米——当时世界上最长的人造跨度。步行道悬于车流之上,曼哈顿天际线在钢索间流动。",
+    "story": [
+      "设计者约翰·罗布林因事故在动工前去世,儿子华盛顿·罗布林接任后患上减压病,瘫痪在床——此后十一年,他躺在布鲁克林的窗边,由妻子艾米莉亚每天到工地传达指令。大桥落成时,她第一个走过桥面(手持一只公鸡)——美国第一座由女性工程师参与主导的桥。",
+      "当年桥下集装箱着火,桥塔里堆着点燃的煤气灯;通车六天后,人群传言大桥将塌,12 人被踩死——为平息恐慌,演出商 P.T.巴纳姆带着 21 头大象上桥走了一遭,包括那只著名的明星大象「金宝」。工程学的恐惧,最终靠马戏团治愈。",
+      "每天上万名步行者穿过这条高于车流的木板道:清晨是晨跑者,黄昏是拍曼哈顿下城的摄影师。它的钢索曾让发明家特斯拉「想到无线输电」;它的哥特式双拱塔,130 年后仍是电影里「纽约」的第一帧。"
+    ],
+    "bestSeason": "全年;日出步行方向曼哈顿→布鲁克林",
+    "tags": ["桥梁", "工程史", "纽约", "步行道"],
+    "sources": [
+      { "name": "Wikipedia: Brooklyn Bridge", "url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "fr-pont-du-gard",
+    "name": "加尔桥",
+    "nameEn": "Pont du Gard",
+    "type": "heritage",
+    "countryId": "FR",
+    "longitude": 4.535,
+    "latitude": 43.9481,
+    "summary": "公元1世纪的三层罗马水道桥,50 米高、275 米长,把水从 50 公里外的泉水送到尼姆城——水力坡度只有万分之 2.5,全靠精密的坡度计算。",
+    "story": [
+      "加尔桥是尼姆水道(Aqueduc de Nîmes)的「最高光一段」:上层输水、中层过路、底层可以步涉。27000 吨石灰岩不用砂浆,全靠精准切割的拱券互相咬合——每块石头最重 6 吨,由人力与骡马吊装到位。1985年列入世界遗产。",
+      "万分之 2.5 的坡度意味着:水每走 500 米才下降 1 米。罗马工程师用一种名为「水准仪」(chorobates)的仪器完成放线,穿过山丘时还挖了隧道——这份「看不见的精度」,比桥本身的壮观更令人敬畏。",
+      "中世纪时它被当作公路桥使用,桥墩上还留着过路费征收处的痕迹。今天的桥禁止车辆通行,夏天傍晚,附近尼姆与阿维尼翁的人来河滩游泳——2000 年的水利工程成了最古老的跳水台。"
+    ],
+    "bestSeason": "6-9月(可下河);博物馆全年",
+    "tags": ["世界遗产", "罗马水道", "拱券", "工程史"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/344", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Pont du Gard", "url": "https://en.wikipedia.org/wiki/Pont_du_Gard", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "fr-giverny-monet",
+    "name": "吉维尼莫奈花园",
+    "nameEn": "Monet's Garden at Giverny",
+    "type": "landmark",
+    "countryId": "FR",
+    "longitude": 1.5278,
+    "latitude": 49.0733,
+    "summary": "印象派的「露天画室」:莫奈在这里住了 43 年,亲手种出了《睡莲》——你画的不是眼前的池塘,而是池溏里看见的整个现代绘画史。",
+    "story": [
+      "1883年,43岁的莫奈坐火车路过吉维尼,从此再未离开。他先造花园(诺曼底式的花径),后买下铁路旁的水塘挖成睡莲池,种上垂柳与紫藤——「我需要花与水,才能画」。今天看到的每一丛睡莲,都还是他当年分株繁衍的后代。",
+      "日本桥被紫藤覆盖,是《睡莲》系列的取景框:莫奈晚年画了 250 余幅睡莲,晚期的巨幅「大装饰画」如今环绕在巴黎橘园美术馆的两个椭圆展厅里——那是印象派走向抽象的临界点。",
+      "故居的黄色餐厨与蓝色瓷砖厨房保持原样,墙上挂着 55 幅日本浮世绘——莫奈是日本主义的狂热收藏者,他的花园里刻意种着日式植物。花园每年 4-11 月开放,雨后的睡莲池人最少——「莫奈天气」恰恰是阴天。"
+    ],
+    "bestSeason": "4-6月(鸢尾与睡莲初开)与9月;清晨第一波",
+    "tags": ["花园", "莫奈", "印象派", "睡莲"],
+    "sources": [
+      { "name": "Wikipedia: Fondation Claude Monet", "url": "https://en.wikipedia.org/wiki/Fondation_Claude_Monet", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "A",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  },
+  {
+    "id": "it-sassi-matera",
+    "name": "马泰拉石窟民居",
+    "nameEn": "Sassi di Matera",
+    "type": "heritage",
+    "countryId": "IT",
+    "longitude": 16.6103,
+    "latitude": 40.6664,
+    "summary": "「从石头里凿出来的城市」:人类在石灰岩高原上连续居住约九千年,可能是世界最古老的人居地之一。1950年代它是「国家耻辱」,如今是欧洲文化之都。",
+    "story": [
+      "Sassi(意为「石头」)是凿进凝灰岩的洞穴居所:最早的定居可追溯到旧石器时代——人类在这里的居住史,几乎与农业史同长。城市顺着峡谷两侧层层叠落,教堂的钟楼立在最高处,屋顶就是邻居的街道。",
+      "20世纪中叶,马泰拉因极端贫困与疟疾成为「意大利的羞耻」——1.5 万居民与牲畜同住洞穴,儿童死亡率惊人。1952年政府强制搬迁,石窟城被遗弃三十年;1980 年代起艺术家与旅店业者陆续「复兴」石屋,1993 年列入世界遗产,2019 年成为欧洲文化之都——从「耻辱」到「顶流」,只用了四十年。",
+      "梅尔·吉布森的《耶稣受难记》在此取景——导演说,没有比这里更像两千年前的耶路撒冷的地方。住进一间由石窟(sassi)改造的酒店,是「体验旧石器时代,但有 Wi-Fi」。"
+    ],
+    "bestSeason": "4-6月与9-10月;夜景灯光必看",
+    "tags": ["世界遗产", "石窟民居", "复兴样本", "取景地"],
+    "sources": [
+      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/670", "license": "事实参考", "checkedAt": "2026-11-06" },
+      { "name": "Wikipedia: Sassi di Matera", "url": "https://en.wikipedia.org/wiki/Sassi_di_Matera", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    ],
+    "quality": "S",
+    "media": { "status": "placeholder" },
+    "updatedAt": "2026-11-06"
+  }
+]

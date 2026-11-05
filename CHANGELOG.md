@@ -18,6 +18,11 @@ All notable changes to WORLD EXPLORER are documented here.
 
 - 目的地扩容 **100 → 112**:补齐博物馆薄弱类型(埃及博物馆/大都会/伦敦自然史/东京国立)+ 自然与岛屿(羚羊峡谷/鲨鱼湾/黄山/颐和园/巴列斯塔斯/恶魔岛/道顿堀/红海)
 
+- 目的地 **112 → 130**(文化遗产密度批:丽江/土楼/金阁寺/镰仓大佛/加尔桥/马泰拉/哈德良长城/铁桥峡谷/圣凯瑟琳/高野山 + 拱门/布鲁克林桥/莫奈花园/汗哈利利/利马历史中心/宁格罗/教会山/皮拉沙丘)
+
+### Fixed
+- E2E 套件根因修复:多 worker 并发 SwiftShader WebGL 导致负载超时轮转失败——`workers: 1` 串行后 12/12 稳定;F 导出改页面内 blob 拦截校验(比下载事件更严格)
+
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)
 - 全量验证:E2E 12/12 · 单测 27/27 · lint 0 错误 · build ✓

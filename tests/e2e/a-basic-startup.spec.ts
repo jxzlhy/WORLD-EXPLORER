@@ -19,7 +19,7 @@ test.describe('A. 基础启动', () => {
     await expect(page.locator('.topbar')).toBeVisible()
     await expect(page.locator('.left-rail')).toBeVisible()
     await expect(page.locator('.discover-bar')).toBeVisible()
-    await expect(page.locator('.status-bar')).toContainText('112 DESTINATIONS')
+    await expect(page.locator('.status-bar')).toContainText('130 DESTINATIONS')
     await expectNoErrorVeil(page)
 
     // 过滤掉外部资源类噪声(GIBS 离线等),不允许应用自身的严重错误
