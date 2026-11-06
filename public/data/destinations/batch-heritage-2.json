@@ -14,13 +14,30 @@
       "徒步哈德良长城步道(Hadrian's Wall Path)全程 134 公里,需 6-7 天:从西海岸走到东海岸,羊群、泥炭沼泽与起伏的玄武岩崖(sillin)——英国最北的「长距离史诗」,夏季白天长达 17 小时,徒步者的天堂。"
     ],
     "bestSeason": "5-9月徒步季;全程 6-7 天或选段一日",
-    "tags": ["世界遗产", "罗马边境", "徒步", "英格兰"],
+    "tags": [
+      "世界遗产",
+      "罗马边境",
+      "徒步",
+      "英格兰"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/430", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Hadrian's Wall", "url": "https://en.wikipedia.org/wiki/Hadrian's_Wall", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/430",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Hadrian's Wall",
+        "url": "https://en.wikipedia.org/wiki/Hadrian's_Wall",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -38,14 +55,49 @@
       "今天的峡谷有十座博物馆(钢铁、瓷器、瓷砖、烟斗…)组成的「博物馆村」,可以体验维多利亚时代的烛光课与铁艺工坊。桥身漆成标志性的深红色——它曾是「未来」的颜色。"
     ],
     "bestSeason": "全年;博物馆村冬季有圣诞市集",
-    "tags": ["世界遗产", "工业革命", "铸铁", "博物馆群"],
+    "tags": [
+      "世界遗产",
+      "工业革命",
+      "铸铁",
+      "博物馆群"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/371", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: The Iron Bridge", "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/371",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: The Iron Bridge",
+        "url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
-    "updatedAt": "2026-11-06"
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-06",
+    "timeline": [
+      {
+        "year": "1709年",
+        "text": "达比二世用焦炭成功炼铁,燃料革命悄然开始"
+      },
+      {
+        "year": "1779年",
+        "text": "世界第一座铸铁桥通车,桥构件沿用木工榫卯语言"
+      },
+      {
+        "year": "1934年",
+        "text": "机动车禁行,老桥转为步行纪念"
+      },
+      {
+        "year": "1986年",
+        "text": "首批世界文化遗产"
+      }
+    ]
   },
   {
     "id": "eg-khan-el-khalili",
@@ -63,12 +115,24 @@
       "集市深处的侯赛因清真寺收藏着先知穆罕默德的圣物(部分),每年斋月的夜晚,整个街区变成灯光与祈祷的海洋——「巴扎」在这里不只是购物,是开罗人的公共客厅。"
     ],
     "bestSeason": "10-4月(开罗凉爽季);斋月夜晚最特别",
-    "tags": ["巴扎", "开罗", "手工艺", "六百年"],
+    "tags": [
+      "巴扎",
+      "开罗",
+      "手工艺",
+      "六百年"
+    ],
     "sources": [
-      { "name": "Wikipedia: Khan el-Khalili", "url": "https://en.wikipedia.org/wiki/Khan_el-Khalili", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Khan el-Khalili",
+        "url": "https://en.wikipedia.org/wiki/Khan_el-Khalili",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -86,13 +150,30 @@
       "凌晨两点从山下出发,3750 级台阶登西奈山看日出——「摩西之路」要走 2-3 小时,山顶的寒风与金色日出一起抵达。山下的「燃烧灌木」(鲁布拉 Rubus sanctus)据说就是那丛「焚而不毁」的荆棘——它还活着。"
     ],
     "bestSeason": "3-5月与9-11月;登山看日出需防寒",
-    "tags": ["世界遗产", "修道院", "西奈山", "抄本"],
+    "tags": [
+      "世界遗产",
+      "修道院",
+      "西奈山",
+      "抄本"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/954", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Saint Catherine's Monastery", "url": "https://en.wikipedia.org/wiki/Saint_Catherine's_Monastery", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/954",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Saint Catherine's Monastery",
+        "url": "https://en.wikipedia.org/wiki/Saint_Catherine's_Monastery",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -111,13 +192,30 @@
       "利马是「世界美食之都」:Central 与 Maido 常年位居全球餐厅榜前十。历史中心的老咖啡馆(Confectionery)与唐人街(美洲最老)在同一街区——总督、移民与资本,都留在了这城市的一餐一饭里。"
     ],
     "bestSeason": "12-4月(夏季);全年多雾(「灰色的利马」是常态)",
-    "tags": ["世界遗产", "殖民建筑", "木阳台", "美食之都"],
+    "tags": [
+      "世界遗产",
+      "殖民建筑",
+      "木阳台",
+      "美食之都"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/500", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Historic Centre of Lima", "url": "https://en.wikipedia.org/wiki/Historic_Centre_of_Lima", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/500",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Historic Centre of Lima",
+        "url": "https://en.wikipedia.org/wiki/Historic_Centre_of_Lima",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -135,13 +233,30 @@
       "礁湖内的海龟全年可见,冬季(澳冬)的梭鱼漩涡(bait ball)是纪录片级场面。西澳的珊瑚比大堡礁更「白净」——因为游客密度只有后者的零头。「宁格罗是十年前的大堡礁」,潜客们这么说。"
     ],
     "bestSeason": "3-8月鲸鲨季;全年浮潜皆宜",
-    "tags": ["世界遗产", "岸礁", "鲸鲨", "浮潜"],
+    "tags": [
+      "世界遗产",
+      "岸礁",
+      "鲸鲨",
+      "浮潜"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1369", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Ningaloo Reef", "url": "https://en.wikipedia.org/wiki/Ningaloo_Reef", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1369",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Ningaloo Reef",
+        "url": "https://en.wikipedia.org/wiki/Ningaloo_Reef",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -159,12 +274,24 @@
       "登山路线存在但陡峭(需专业装备,每年都有救援);对大多数访客,正确的打开方式是:绕到瀑布对岸的机位,等一次日落或一场极光——山顶属于攀登者,山影属于所有人。"
     ],
     "bestSeason": "9-3月极光季;6-7月午夜阳光",
-    "tags": ["孤峰", "瀑布", "极光", "取景地"],
+    "tags": [
+      "孤峰",
+      "瀑布",
+      "极光",
+      "取景地"
+    ],
     "sources": [
-      { "name": "Wikipedia: Kirkjufell", "url": "https://en.wikipedia.org/wiki/Kirkjufell", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Kirkjufell",
+        "url": "https://en.wikipedia.org/wiki/Kirkjufell",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -182,13 +309,30 @@
       "宿坊(寺院住宿)提供精进料理(素斋)与晨间早课:盘腿听经、抄经、火供(护摩)仪式。「在一座 1200 年的寺院里醒来」,是关西深度游的压轴体验——记得遵守安静与合掌的礼仪。"
     ],
     "bestSeason": "11月中下旬红叶;冬季雪中奥之院",
-    "tags": ["世界遗产", "真言宗", "宿坊", "奥之院"],
+    "tags": [
+      "世界遗产",
+      "真言宗",
+      "宿坊",
+      "奥之院"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心(纪伊山地灵场与参诣道)", "url": "https://whc.unesco.org/en/list/1142", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Kōyasan", "url": "https://en.wikipedia.org/wiki/Kōyasan", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心(纪伊山地灵场与参诣道)",
+        "url": "https://whc.unesco.org/en/list/1142",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Kōyasan",
+        "url": "https://en.wikipedia.org/wiki/Kōyasan",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -206,12 +350,24 @@
       "沙丘在涨潮日会「吃」掉一段海滩;风把沙脊吹出刀锋般的棱线(s将这些棱线叫「沙的皱纹」)。黄昏时分,滑翔风筝与滑翔伞在沙脊上空盘旋——欧洲最上镜的沙丘,没有之一。"
     ],
     "bestSeason": "5-9月;日落时段最盛,带防沙鞋或赤脚",
-    "tags": ["沙丘", "海岸", "阿卡雄", "滑沙"],
+    "tags": [
+      "沙丘",
+      "海岸",
+      "阿卡雄",
+      "滑沙"
+    ],
     "sources": [
-      { "name": "Wikipedia: Dune du Pilat", "url": "https://en.wikipedia.org/wiki/Dune_du_Pilat", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Dune du Pilat",
+        "url": "https://en.wikipedia.org/wiki/Dune_du_Pilat",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   }
 ]

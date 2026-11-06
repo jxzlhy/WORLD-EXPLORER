@@ -47,6 +47,24 @@
     "updatedAt": "2026-11-05",
     "aliases": [
       "西子湖"
+    ],
+    "timeline": [
+      {
+        "year": "唐代",
+        "text": "白居易任杭州刺史,修堤灌田——白堤得名由来"
+      },
+      {
+        "year": "南宋",
+        "text": "定都临安,西湖十景入选皇家画院题名"
+      },
+      {
+        "year": "北宋",
+        "text": "苏东坡疏浚西湖筑苏堤,「欲把西湖比西子」定调千年"
+      },
+      {
+        "year": "2011年",
+        "text": "以文化景观列入世界遗产"
+      }
     ]
   },
   {
@@ -131,7 +149,25 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "timeline": [
+      {
+        "year": "约前256年",
+        "text": "李冰父子主持修建,天府之国自此「水旱从人」"
+      },
+      {
+        "year": "宋代",
+        "text": "「深淘滩,低作堰」六字诀刻碑传世"
+      },
+      {
+        "year": "1936年",
+        "text": "改用混凝土加固鱼嘴,古法与新材料并行"
+      },
+      {
+        "year": "2000年",
+        "text": "与青城山一并列入世界文化遗产"
+      }
+    ]
   },
   {
     "id": "cn-crescent-spring",
@@ -249,7 +285,25 @@
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Great_Buddha_Hall_of_T%C5%8Ddai-ji%2C_Nara%2C_November_2016.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "timeline": [
+      {
+        "year": "752年",
+        "text": "大佛开眼法会,一万余人参与熔铸"
+      },
+      {
+        "year": "1180与1567年",
+        "text": "两度毁于战火,大佛殿两度重建"
+      },
+      {
+        "year": "1709年",
+        "text": "现大佛殿落成,仍居世界最大木构之列"
+      },
+      {
+        "year": "1998年",
+        "text": "随「古都奈良文化财」列入世界遗产"
+      }
+    ]
   },
   {
     "id": "jp-shuri-castle",

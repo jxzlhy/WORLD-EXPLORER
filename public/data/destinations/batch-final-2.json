@@ -14,13 +14,30 @@
       "厄尔尼诺的降雨与地下水盐渍化正在溶解这些土墙——它是世界遗产里最「怕水」的一座。保护团队用传统工艺与防水棚与时间赛跑;参观时踩过那些正在消融的浮雕,会真切理解「脆弱遗产」四个字的重量。"
     ],
     "bestSeason": "12-4月(不淋雨的「夏天」);清晨光线最柔",
-    "tags": ["世界遗产", "奇穆", "夯土", "濒危遗产"],
+    "tags": [
+      "世界遗产",
+      "奇穆",
+      "夯土",
+      "濒危遗产"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/366", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Chan Chan", "url": "https://en.wikipedia.org/wiki/Chan_Chan", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/366",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Chan Chan",
+        "url": "https://en.wikipedia.org/wiki/Chan_Chan",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -38,12 +55,24 @@
       "半岛上的粉红花岗岩(与酒杯湾同款岩石)在日落时呈现玫瑰色;岩石间常出没袋熊与沙袋鼠。菲欣纳生蚝与塔州冷气候葡萄酒,是下山后的标准犒赏——「把酒杯湾装进酒杯里」。"
     ],
     "bestSeason": "12-4月(南半球夏);日出观景台人最少",
-    "tags": ["海湾", "塔斯马尼亚", "徒步", "花岗岩"],
+    "tags": [
+      "海湾",
+      "塔斯马尼亚",
+      "徒步",
+      "花岗岩"
+    ],
     "sources": [
-      { "name": "Wikipedia: Wineglass Bay", "url": "https://en.wikipedia.org/wiki/Wineglass_Bay", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Wineglass Bay",
+        "url": "https://en.wikipedia.org/wiki/Wineglass_Bay",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -61,12 +90,24 @@
       "山体是一道 1491 米长、形似倒扣龙舟的山脊,顶部有多条平行裂缝。与卡特拉、艾雅法拉相比,赫克拉的名气更多来自「传说浓度」——中世纪地图上,它的位置画着火蛇与受罚的灵魂。"
     ],
     "bestSeason": "6-9月登山季;务必查冰岛气象局实时预警",
-    "tags": ["活火山", "中世纪传说", "冰岛高地", "裂缝山脊"],
+    "tags": [
+      "活火山",
+      "中世纪传说",
+      "冰岛高地",
+      "裂缝山脊"
+    ],
     "sources": [
-      { "name": "Wikipedia: Hekla", "url": "https://en.wikipedia.org/wiki/Hekla", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Hekla",
+        "url": "https://en.wikipedia.org/wiki/Hekla",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -84,12 +125,24 @@
       "黄南瓜在海边,红南瓜在码头(「穿过红南瓜」可以走进去);岛屿各处的老宅被改造成艺术屋(「家プロジェクト」),神社的玻璃阶梯直通地下——整座岛 8 平方公里,全是策展。租一辆单车,留两天。"
     ],
     "bestSeason": "3-5月与9-11月;艺术祭年份(2025 是下一届)最盛",
-    "tags": ["艺术之岛", "安藤忠雄", "草间弥生", "濑户内海"],
+    "tags": [
+      "艺术之岛",
+      "安藤忠雄",
+      "草间弥生",
+      "濑户内海"
+    ],
     "sources": [
-      { "name": "Wikipedia: Naoshima, Kagawa", "url": "https://en.wikipedia.org/wiki/Naoshima,_Kagawa", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Naoshima, Kagawa",
+        "url": "https://en.wikipedia.org/wiki/Naoshima,_Kagawa",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -107,13 +160,30 @@
       "岛上的猴子与鹿是「同域邻居」:它们在屋久岛独立演化了上万年,猴子会挖红薯、鹿会等猴子丢下的皮——「屋久猕猴与屋久鹿」的共栖镜头是 BBC 的经典素材。温泉(平内海中温泉,退潮时才出现)是徒步后的犒赏。"
     ],
     "bestSeason": "3-5月新绿与9-10月;绳文杉徒步需提前预约巴士",
-    "tags": ["世界遗产", "绳文杉", "幽灵公主", "苔藓森林"],
+    "tags": [
+      "世界遗产",
+      "绳文杉",
+      "幽灵公主",
+      "苔藓森林"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/662", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Yakushima", "url": "https://en.wikipedia.org/wiki/Yakushima", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/662",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Yakushima",
+        "url": "https://en.wikipedia.org/wiki/Yakushima",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -131,13 +201,30 @@
       "1997 年地震震塌了上殿穹顶,壁画碎成十几万片——团队用十年时间像拼图一样复原(「碎片复位率 98%」)。今天抬头看穹顶,你看到的其实是艺术修复史本身。小镇的其他细节:圣基娅拉教堂、马焦雷城堡的日落、翁布里亚的松露与橄榄油。"
     ],
     "bestSeason": "5-6月与9-10月;10月4日圣方济各节",
-    "tags": ["世界遗产", "乔托", "圣方济各", "翁布里亚"],
+    "tags": [
+      "世界遗产",
+      "乔托",
+      "圣方济各",
+      "翁布里亚"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/990", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Basilica of San Francesco d'Assisi", "url": "https://en.wikipedia.org/wiki/Basilica_of_San_Francesco_d'Assisi", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/990",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Basilica of San Francesco d'Assisi",
+        "url": "https://en.wikipedia.org/wiki/Basilica_of_San_Francesco_d'Assisi",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -156,14 +243,49 @@
       "御用侍从卫士(Beefeaters)既是导游也是活文物;每晚 22 点的「钥匙仪式」(Ceremony of the Keys)连续进行 700 年从未取消——唯一一次延误,是二战闪电战的一枚炸弹。1988年列入世界遗产。"
     ],
     "bestSeason": "全年;钥匙仪式需预约;皇冠珠宝少排队技巧:开门直奔",
-    "tags": ["世界遗产", "千年要塞", "王冠珠宝", "伦敦"],
+    "tags": [
+      "世界遗产",
+      "千年要塞",
+      "王冠珠宝",
+      "伦敦"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/488", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Tower of London", "url": "https://en.wikipedia.org/wiki/Tower_of_London", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/488",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Tower of London",
+        "url": "https://en.wikipedia.org/wiki/Tower_of_London",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
-    "updatedAt": "2026-11-06"
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-06",
+    "timeline": [
+      {
+        "year": "1078年",
+        "text": "征服者威廉动工建白塔,诺曼权力压进伦敦"
+      },
+      {
+        "year": "1483年",
+        "text": "「塔中王子」神秘失踪,理查三世骂名千古"
+      },
+      {
+        "year": "1851年",
+        "text": "皇家动物园迁出,动物们「搬家」去新建的伦敦动物园"
+      },
+      {
+        "year": "1988年",
+        "text": "列入世界文化遗产"
+      }
+    ]
   },
   {
     "id": "eg-alexandria-citadel",
@@ -180,12 +302,24 @@
       "最佳体验是黄昏登堡:渔船归港、灯塔旧址的海风、远眺亚历山大图书馆的圆盘——两千年的港口史在一眼之内完成交接。城堡外的滨海路(Corniche)适合骑行,「亚历山大最好的下午」标配是海风 + 街头烤玉米。"
     ],
     "bestSeason": "6-9月(亚历山大是埃及的避暑地);黄昏登堡",
-    "tags": ["堡垒", "古代奇迹遗址", "地中海", "亚历山大"],
+    "tags": [
+      "堡垒",
+      "古代奇迹遗址",
+      "地中海",
+      "亚历山大"
+    ],
     "sources": [
-      { "name": "Wikipedia: Citadel of Qaitbay", "url": "https://en.wikipedia.org/wiki/Citadel_of_Qaitbay", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Citadel of Qaitbay",
+        "url": "https://en.wikipedia.org/wiki/Citadel_of_Qaitbay",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -204,12 +338,24 @@
       "公园是纽约的「民主客厅」:免费莎士比亚戏剧节、大都会歌剧院露天演出、马拉松终点线都在此。电影里它出场过 300+ 次;现实里,它每年接待人次超过整个法国。时代广场是纽约的橱窗,中央公园才是纽约的心脏。"
     ],
     "bestSeason": "四季各有性格;10月秋色与4月樱花",
-    "tags": ["城市公园", "景观设计", "纽约", "免费"],
+    "tags": [
+      "城市公园",
+      "景观设计",
+      "纽约",
+      "免费"
+    ],
     "sources": [
-      { "name": "Wikipedia: Central Park", "url": "https://en.wikipedia.org/wiki/Central_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Central Park",
+        "url": "https://en.wikipedia.org/wiki/Central_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -227,13 +373,30 @@
       "进城先过「纳博讷门」,主街的鹅卵石巷通往圣纳泽尔大教堂(彩窗保存着哥特蓝);7 月 14 日国庆焰火在城墙外炸开时,「中世纪城市 + 现代烟花」的同框是法国人心中的浪漫顶点。城中的图卢兹香肠与什锦砂锅(cassoulet),是攻城后犒军的标准菜单。"
     ],
     "bestSeason": "5-6月与9月(避开盛夏热浪);7月14日焰火",
-    "tags": ["世界遗产", "中世纪要塞", "修复史", "朗格多克"],
+    "tags": [
+      "世界遗产",
+      "中世纪要塞",
+      "修复史",
+      "朗格多克"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/345", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Historic fortified city of Carcassonne", "url": "https://en.wikipedia.org/wiki/Historic_fortified_city_of_Carcassonne", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/345",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Historic fortified city of Carcassonne",
+        "url": "https://en.wikipedia.org/wiki/Historic_fortified_city_of_Carcassonne",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   }
 ]

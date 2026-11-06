@@ -113,7 +113,25 @@
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APonte_di_Rialto_Venice_1.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "timeline": [
+      {
+        "year": "5世纪",
+        "text": "难民逃入潟湖,在木桩上打下城市地基"
+      },
+      {
+        "year": "1204年",
+        "text": "第四次十字军洗劫君士坦丁堡,威尼斯攫取地中海霸权"
+      },
+      {
+        "year": "1600-1700年代",
+        "text": "「共和国的黄昏」:贸易霸权旁落,艺术黄金期反至"
+      },
+      {
+        "year": "2020年",
+        "text": "MOSE 闸门首次在大潮中升起,与海的谈判进入新章"
+      }
+    ]
   },
   {
     "id": "it-florence-duomo",

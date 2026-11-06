@@ -186,6 +186,24 @@
     "aliases": [
       "兵马俑",
       "秦俑"
+    ],
+    "timeline": [
+      {
+        "year": "前246年",
+        "text": "13 岁的嬴政即位秦王,同年开始营建陵墓"
+      },
+      {
+        "year": "前210年前后",
+        "text": "兵马俑坑封藏,七十万人四十年的工程收尾"
+      },
+      {
+        "year": "1974年",
+        "text": "临潼农民打井锄头触到陶俑头颅,军团重见天日"
+      },
+      {
+        "year": "1987年",
+        "text": "随秦始皇陵列入世界文化遗产"
+      }
     ]
   },
   {
@@ -233,7 +251,25 @@
       "license": "Public domain",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMogao_Caves%2C_cave_159_musicians.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "timeline": [
+      {
+        "year": "366年",
+        "text": "僧人乐尊见三危山金光,凿下第一个洞窟"
+      },
+      {
+        "year": "唐代",
+        "text": "窟数过千,北大像与经变壁画达到艺术巅峰"
+      },
+      {
+        "year": "1900年",
+        "text": "藏经洞现世,五万余件文书随后流散海外"
+      },
+      {
+        "year": "1987年",
+        "text": "首批世界文化遗产;数字化档案随后启动"
+      }
+    ]
   },
   {
     "id": "cn-potala-palace",

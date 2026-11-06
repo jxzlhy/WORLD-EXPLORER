@@ -170,7 +170,25 @@
     "media": {
       "status": "placeholder"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "timeline": [
+      {
+        "year": "1609年",
+        "text": "池田辉政九年扩建,连立式天守群成形"
+      },
+      {
+        "year": "1945年",
+        "text": "燃烧弹直落天守顶层却未爆炸,白鹭幸存"
+      },
+      {
+        "year": "1993年",
+        "text": "首批日本世界遗产(与姬路城同时入选的还有法隆寺)"
+      },
+      {
+        "year": "2015年",
+        "text": "「平成大修理」完成,白灰墙重新夺目"
+      }
+    ]
   },
   {
     "id": "jp-itsukushima-shrine",
@@ -215,7 +233,25 @@
       "license": "CC BY 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AItsukushima-jinja_torii_at_sunset%2C_Miyajima%2C_Japan%2C_20240816_1812_4144.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "timeline": [
+      {
+        "year": "593年",
+        "text": "传说初建;811 年见诸史载"
+      },
+      {
+        "year": "1168年",
+        "text": "平清盛重建为今日规模,海上回廊成形"
+      },
+      {
+        "year": "1875年",
+        "text": "现存大鸟居重建,高 16 米整樟木主柱"
+      },
+      {
+        "year": "1996年",
+        "text": "列入世界文化遗产"
+      }
+    ]
   },
   {
     "id": "jp-shirakawa-go",

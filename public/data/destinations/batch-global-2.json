@@ -15,12 +15,24 @@
       "馆内的「木乃伊厅」单独售票,陈列着拉美西斯二世等新王国法老本尊。站在他们面前,「历史」这个词第一次有了体温。"
     ],
     "bestSeason": "全年;上午人较少,拍照禁用闪光灯",
-    "tags": ["博物馆", "图坦卡蒙", "开罗", "法老"],
+    "tags": [
+      "博物馆",
+      "图坦卡蒙",
+      "开罗",
+      "法老"
+    ],
     "sources": [
-      { "name": "Wikipedia: Egyptian Museum", "url": "https://en.wikipedia.org/wiki/Egyptian_Museum", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Egyptian Museum",
+        "url": "https://en.wikipedia.org/wiki/Egyptian_Museum",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -39,12 +51,24 @@
       "屋顶花园每年夏天更换当代艺术装置,可俯瞰公园天际线;冬季的圣诞树与巴洛克天使展则是纽约人的私藏传统。门票采用「建议票价」(纽约州居民随意付),这一点在 物价飞涨的年代近乎行为艺术。"
     ],
     "bestSeason": "全年;屋顶花园 5-10 月开放",
-    "tags": ["博物馆", "艺术", "纽约", "中央公园"],
+    "tags": [
+      "博物馆",
+      "艺术",
+      "纽约",
+      "中央公园"
+    ],
     "sources": [
-      { "name": "Wikipedia: Metropolitan Museum of Art", "url": "https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Metropolitan Museum of Art",
+        "url": "https://en.wikipedia.org/wiki/Metropolitan_Museum_of_Art",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -63,12 +87,24 @@
       "与相邻的维多利亚与阿尔伯特博物馆、科学博物馆同属「博物馆区」,三馆免费——维多利亚时代「知识属于公众」的理念延续至今。"
     ],
     "bestSeason": "全年免费;12 月溜冰场开放",
-    "tags": ["博物馆", "自然史", "伦敦", "免费"],
+    "tags": [
+      "博物馆",
+      "自然史",
+      "伦敦",
+      "免费"
+    ],
     "sources": [
-      { "name": "Wikipedia: Natural History Museum, London", "url": "https://en.wikipedia.org/wiki/Natural_History_Museum,_London", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Natural History Museum, London",
+        "url": "https://en.wikipedia.org/wiki/Natural_History_Museum,_London",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -87,12 +123,24 @@
       "上野公园是「博物馆森林」:国立西洋美术馆(柯布西耶)、国立科学博物馆与东京艺大环绕四周,春天两千株樱花开成隧道时,看展与赏花是同一件事。"
     ],
     "bestSeason": "3月底-4月初(上野樱花);夏季特别展密集",
-    "tags": ["博物馆", "国宝", "上野", "日本美术"],
+    "tags": [
+      "博物馆",
+      "国宝",
+      "上野",
+      "日本美术"
+    ],
     "sources": [
-      { "name": "Wikipedia: Tokyo National Museum", "url": "https://en.wikipedia.org/wiki/Tokyo_National_Museum", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Tokyo National Museum",
+        "url": "https://en.wikipedia.org/wiki/Tokyo_National_Museum",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -110,12 +158,24 @@
       "峡谷完全位于纳瓦霍族保留地,必须由族人经营的旅行社带队进入。2022 年起实行分时段预约制——「错误的时间进谷可能致命」,山洪是真实威胁;1987 年的洪水曾在此夺走 11 条生命。敬畏,是这里的门票。"
     ],
     "bestSeason": "4-9月正午光柱;3月与10月人少光柔",
-    "tags": ["狭缝峡谷", "纳瓦霍", "摄影圣地", "光柱"],
+    "tags": [
+      "狭缝峡谷",
+      "纳瓦霍",
+      "摄影圣地",
+      "光柱"
+    ],
     "sources": [
-      { "name": "Wikipedia: Antelope Canyon", "url": "https://en.wikipedia.org/wiki/Antelope_Canyon", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Antelope Canyon",
+        "url": "https://en.wikipedia.org/wiki/Antelope_Canyon",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -133,13 +193,30 @@
       "湾内海草床覆盖 4800 平方公里(世界最大),支撑着儒艮与海龟种群;贝壳海滩(Shell Beach)由数米深的白贝壳堆成,海岸线干脆是「贝壳做的」。从珀珀斯出发自驾约 800 公里,或飞抵 Monkey Mia 机场——西澳的荒野从不辜负长途。"
     ],
     "bestSeason": "4-10月;海豚互动全年清晨",
-    "tags": ["世界遗产", "叠层石", "海豚", "西澳"],
+    "tags": [
+      "世界遗产",
+      "叠层石",
+      "海豚",
+      "西澳"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/498", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Shark Bay", "url": "https://en.wikipedia.org/wiki/Shark_Bay", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/498",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Shark Bay",
+        "url": "https://en.wikipedia.org/wiki/Shark_Bay",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -157,13 +234,30 @@
       "云海是黄山的「第四季」:雨后初晴,群峰在云涛中只露尖顶,光明顶与莲花峰(1864米)成为云中之岛。冬季雾凇与雪景让台阶结冰封山——但封山前的黄山雪景,是摄影师一年一度的朝圣。"
     ],
     "bestSeason": "雨后云海概率高;10月-次年2月人少景奇",
-    "tags": ["世界遗产", "花岗岩", "云海", "迎客松"],
+    "tags": [
+      "世界遗产",
+      "花岗岩",
+      "云海",
+      "迎客松"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/539", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Huangshan", "url": "https://en.wikipedia.org/wiki/Huangshan", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/539",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Huangshan",
+        "url": "https://en.wikipedia.org/wiki/Huangshan",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -182,14 +276,49 @@
       "冬季的昆明湖结冰成天然冰场,夏季的西堤荷花接天连叶。1998年列入世界遗产,评审词称其为「中国风景园林设计艺术的杰作」——而北京大爷们只知道:这儿的冰场是全城最大。"
     ],
     "bestSeason": "四季皆宜;6-8月荷花,12-2月冰场",
-    "tags": ["世界遗产", "皇家园林", "长廊", "昆明湖"],
+    "tags": [
+      "世界遗产",
+      "皇家园林",
+      "长廊",
+      "昆明湖"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/880", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Summer Palace", "url": "https://en.wikipedia.org/wiki/Summer_Palace", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/880",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Summer Palace",
+        "url": "https://en.wikipedia.org/wiki/Summer_Palace",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
-    "updatedAt": "2026-11-06"
+    "media": {
+      "status": "placeholder"
+    },
+    "updatedAt": "2026-11-06",
+    "timeline": [
+      {
+        "year": "1750年",
+        "text": "乾隆建清漪园,拓昆明湖为水操演武之所"
+      },
+      {
+        "year": "1860年",
+        "text": "英法联军焚毁,园中珍宝流散"
+      },
+      {
+        "year": "1888年",
+        "text": "慈禧挪海军经费重建,更名颐和园"
+      },
+      {
+        "year": "1998年",
+        "text": "列入世界文化遗产"
+      }
+    ]
   },
   {
     "id": "pe-ballestas-islands",
@@ -207,12 +336,24 @@
       "群岛属帕拉卡斯国家保护区,船只不得登岛、不得靠近 200 米以内。回程时海豚常伴船首浪——在秘鲁海岸,「顺便」遇到鲸鱼也不算稀奇。"
     ],
     "bestSeason": "全年;清晨出海风浪最小",
-    "tags": ["海岛", "野生动物", "海狮", "帕拉卡斯"],
+    "tags": [
+      "海岛",
+      "野生动物",
+      "海狮",
+      "帕拉卡斯"
+    ],
     "sources": [
-      { "name": "Wikipedia: Ballestas Islands", "url": "https://en.wikipedia.org/wiki/Ballestas_Islands", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Ballestas Islands",
+        "url": "https://en.wikipedia.org/wiki/Ballestas_Islands",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -231,12 +372,24 @@
       "夜游是本地人的推荐:渡轮驶离灯火通明的市区,岛上的黑暗与寂静还原了监狱的孤绝。耳机导览由前狱警与囚犯亲自讲述——「12 次看到自由女神像却到不了」的绝望,在声音里比在展板上真实得多。岛上还有全美最古老的运作中的灯塔(1854)。"
     ],
     "bestSeason": "全年;夜游票需提前数周预订",
-    "tags": ["监狱", "历史", "旧金山", "夜游"],
+    "tags": [
+      "监狱",
+      "历史",
+      "旧金山",
+      "夜游"
+    ],
     "sources": [
-      { "name": "Wikipedia: Alcatraz Federal Penitentiary", "url": "https://en.wikipedia.org/wiki/Alcatraz_Federal_Penitentiary", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Alcatraz Federal Penitentiary",
+        "url": "https://en.wikipedia.org/wiki/Alcatraz_Federal_Penitentiary",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -255,12 +408,24 @@
       "最好的体验是黄昏沿河南岸散步:一边是 400 年的食肆灯火,一边是法善寺横丁的石板小巷(水挂不动尊,浇水的参拜方式很治愈)。吃章鱼烧的正确姿势:站在店前,烫着嘴,喊一声「あつい!」"
     ],
     "bestSeason": "全年;黄昏至夜灯最盛",
-    "tags": ["美食街", "霓虹", "大阪", "运河"],
+    "tags": [
+      "美食街",
+      "霓虹",
+      "大阪",
+      "运河"
+    ],
     "sources": [
-      { "name": "Wikipedia: Dōtonbori", "url": "https://en.wikipedia.org/wiki/Dōtonbori", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Dōtonbori",
+        "url": "https://en.wikipedia.org/wiki/Dōtonbori",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -278,12 +443,24 @@
       "红海珊瑚也在经历全球白化压力,埃及在近海设立了多个保护区(Hurghada Environmental Protection 与 海洋公园)。潜水的黄金法则在这里被反复强调:不要碰任何东西——「拿走的只有照片,留下的只有气泡」。"
     ],
     "bestSeason": "全年可潜;6-9月水温最高(28°C)",
-    "tags": ["珊瑚礁", "潜水", "红海", "沉船"],
+    "tags": [
+      "珊瑚礁",
+      "潜水",
+      "红海",
+      "沉船"
+    ],
     "sources": [
-      { "name": "Wikipedia: Hurghada", "url": "https://en.wikipedia.org/wiki/Hurghada", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "Wikipedia: Hurghada",
+        "url": "https://en.wikipedia.org/wiki/Hurghada",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "A",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   }
 ]

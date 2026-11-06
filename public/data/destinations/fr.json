@@ -104,6 +104,24 @@
     "updatedAt": "2026-11-05",
     "aliases": [
       "罗浮宫"
+    ],
+    "timeline": [
+      {
+        "year": "1190年",
+        "text": "腓力二世建防御城堡,今日地下还看得到地基"
+      },
+      {
+        "year": "1793年",
+        "text": "王宫变国家博物馆,贵族收藏首次向全民开放"
+      },
+      {
+        "year": "1989年",
+        "text": "贝聿铭玻璃金字塔落成,争议与经典一步之遥"
+      },
+      {
+        "year": "2019年",
+        "text": "年访客 960 万,居全球博物馆之首"
+      }
     ]
   },
   {
@@ -150,7 +168,25 @@
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChateau_Versailles_Galerie_des_Glaces.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "timeline": [
+      {
+        "year": "1623年",
+        "text": "路易十三的狩猎行馆——一切开始于一座小庄"
+      },
+      {
+        "year": "1682年",
+        "text": "路易十四定都凡尔赛,镜厅的烛光舞会照亮绝对王权"
+      },
+      {
+        "year": "1789年",
+        "text": "巴黎妇女进军凡尔赛,王室被「押」回巴黎"
+      },
+      {
+        "year": "1919年",
+        "text": "《凡尔赛条约》在镜厅签署,历史完成辛辣回环"
+      }
+    ]
   },
   {
     "id": "fr-mont-saint-michel",
@@ -195,7 +231,25 @@
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMont_st_michel_vue_baie_tombelaine.jpg"
     },
-    "updatedAt": "2026-11-05"
+    "updatedAt": "2026-11-05",
+    "timeline": [
+      {
+        "year": "708年",
+        "text": "奥贝尔主教遵天使梦中嘱托,在礁石上建第一座圣堂"
+      },
+      {
+        "year": "11-16世纪",
+        "text": "修道院层层加盖,「洋葱头」尖顶最终成形"
+      },
+      {
+        "year": "1874年",
+        "text": "列为法国历史建筑,修复工程自此绵延"
+      },
+      {
+        "year": "1979年",
+        "text": "列入世界文化遗产;2014 年新栈桥让海水重新环岛"
+      }
+    ]
   },
   {
     "id": "fr-valensole-lavender",
