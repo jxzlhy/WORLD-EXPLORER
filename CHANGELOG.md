@@ -28,8 +28,10 @@ All notable changes to WORLD EXPLORER are documented here.
 
 - **目的地 130 → 150(V1.0 达成)**:元阳梯田/熊猫基地/日光东照宫/岚山竹林/死亡谷/林肯纪念堂/韦尔东峡谷/科莫湖/格林尼治/鲸鱼峡谷/昌昌城/酒杯湾/赫克拉/直岛/屋久岛/阿西西/伦敦塔/卡特巴城堡/中央公园/卡尔卡松;B 级档案全部升级清零(S 68/A 82)
 
+- **人物档案(V2.0 雏形)**:10 位与地点强关联的历史人物(李冰/伊姆霍特普/帕查库提/霍华德·卡特/足利义满/空海/莫奈/乌松/艾米莉·罗布林/贝聿铭);目的地面板「相关人物」chips → 人物面板(生卒/身份/故事/关联地点)→ 搜索直达;单测 28/28
+
 ### Changed
-- storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)
+- storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
 - 全量验证:E2E 12/12 · 单测 27/27 · lint 0 错误 · build ✓
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)

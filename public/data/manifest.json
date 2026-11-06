@@ -27,5 +27,6 @@
     "/data/destinations/batch-final-1.json",
     "/data/destinations/batch-final-2.json"
   ],
-  "collectionsFile": "/data/collections.json"
+  "collectionsFile": "/data/collections.json",
+  "peopleFile": "/data/people.json"
 }

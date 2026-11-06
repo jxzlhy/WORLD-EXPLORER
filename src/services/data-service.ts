@@ -1,4 +1,4 @@
-import type { City, Collection, Country, DataManifest, Destination } from '../domain/types'
+import type { City, Collection, Country, DataManifest, Destination, Person } from '../domain/types'
 import { isStringArray } from './data-validator'
 
 /**
@@ -11,6 +11,7 @@ export interface WorldData {
   cities: City[]
   destinations: Destination[]
   collections?: Collection[]
+  people?: Person[]
   /** 校验报告(开发态 console.warn + 调试钩子可见) */
   issues: string[]
 }
@@ -169,6 +170,25 @@ export async function loadWorldData(): Promise<WorldData> {
     }
   }
 
+  // 人物档案(可选文件):剔除失效关联并报告
+  let people: Person[] | undefined
+  if (manifest.peopleFile) {
+    try {
+      const raw = await fetchJson<Person[]>(manifest.peopleFile)
+      const destIds = new Set(destinations.map((d) => d.id))
+      people = (Array.isArray(raw) ? raw : []).filter((p) => {
+        if (typeof p?.id !== 'string' || !Array.isArray(p?.story)) {
+          issues.push(`people:结构不合法被跳过`)
+          return false
+        }
+        p.relatedDestinationIds = (p.relatedDestinationIds ?? []).filter((id) => destIds.has(id))
+        return true
+      })
+    } catch (err) {
+      issues.push(`people 加载失败:${String(err)}`)
+    }
+  }
+
   if (issues.length) {
     console.warn(`[WorldExplorer] 数据校验发现 ${issues.length} 个问题:`, issues)
   }
@@ -176,6 +196,6 @@ export async function loadWorldData(): Promise<WorldData> {
     ;(window as unknown as Record<string, unknown>).__WE_DATA_ISSUES__ = issues
   }
 
-  cachedData = { countries: countryList, cities, destinations, collections, issues }
+  cachedData = { countries: countryList, cities, destinations, collections, people, issues }
   return cachedData
 }

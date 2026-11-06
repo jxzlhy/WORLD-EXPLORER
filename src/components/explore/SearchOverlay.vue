@@ -14,6 +14,7 @@ const { query, results } = useSearchIndex(() => ({
   countries: explore.countries,
   cities: explore.cities,
   destinations: explore.destinations,
+  people: explore.people,
 }))
 
 // 结果集变化时重置键盘索引(空结果回车越界修复,I-13)
@@ -37,12 +38,14 @@ const kindLabel: Record<SearchHit['kind'], string> = {
   country: '国家',
   destination: '地点',
   city: '城市',
+  person: '人物',
 }
 
 function select(hit: SearchHit) {
   ui.toggleSearch(false)
   if (hit.kind === 'country') explore.selectCountry(hit.id.split(':')[1]!)
   else if (hit.kind === 'destination') explore.selectDestination(hit.id.split(':')[1]!)
+  else if (hit.kind === 'person') explore.openPerson(hit.id.split(':')[1]!)
   else explore.flyToCity(hit.id.split(':')[1]!)
 }
 

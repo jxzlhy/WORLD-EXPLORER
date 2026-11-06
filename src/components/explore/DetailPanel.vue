@@ -24,6 +24,14 @@ const collection = computed(() => explore.selectedCollection)
 const collectionDests = computed(() =>
   collection.value ? explore.collectionDestinations(collection.value) : [],
 )
+const person = computed(() => explore.selectedPerson)
+const personDests = computed(() =>
+  person.value ? explore.destinationsOfPerson(person.value) : [],
+)
+/** 目的地相关人物(V2.0) */
+const destPeople = computed(() =>
+  destination.value ? explore.peopleOfDestination(destination.value.id) : [],
+)
 /** 合集头图:优先取收录中已有已核验照片的目的地 */
 const collectionHero = computed(() => {
   if (!collection.value) return null
@@ -149,7 +157,7 @@ function fmtPopulation(p: number): string {
 <template>
   <Transition name="panel-slide">
     <GlassPanel
-      v-if="destination || country || city || collection"
+      v-if="destination || country || city || collection || person"
       strong
       class="detail-panel"
     >
@@ -240,6 +248,23 @@ function fmtPopulation(p: number): string {
                 <p class="tl-text">{{ t.text }}</p>
               </li>
             </ol>
+          </div>
+
+          <!-- 相关人物(V2.0 人物档案) -->
+          <div v-if="destPeople.length" class="dest-people">
+            <span class="we-caps-label">相关人物</span>
+            <div class="people-chips">
+              <button
+                v-for="p in destPeople"
+                :key="p.id"
+                class="person-chip"
+                :title="p.roles.join(' · ')"
+                @click="explore.openPerson(p.id)"
+              >
+                <span class="n">{{ p.name }}</span>
+                <span class="r">{{ p.roles[0] }}</span>
+              </button>
+            </div>
           </div>
 
           <!-- 我的笔记(本地,自动保存) -->
@@ -404,6 +429,56 @@ function fmtPopulation(p: number): string {
               </li>
             </ul>
           </section>
+        </div>
+      </template>
+
+      <!-- ==================== 人物档案(V2.0) ==================== -->
+      <template v-else-if="person">
+        <div class="scroll-area" :key="person.id">
+          <header class="head">
+            <p class="we-caps-label gold">人物档案</p>
+            <h1 class="name person-name">{{ person.name }}</h1>
+            <p class="en">{{ person.nameEn }}</p>
+            <div class="meta">
+              <span v-if="person.birthYear || person.deathYear" class="mono">
+                {{ person.birthYear ?? '?' }} — {{ person.deathYear ?? '?' }}
+              </span>
+            </div>
+            <div class="roles">
+              <WeTag v-for="r in person.roles" :key="r">{{ r }}</WeTag>
+            </div>
+          </header>
+
+          <p class="lead">{{ person.summary }}</p>
+
+          <div class="ornament" aria-hidden="true"><i /><span>✦</span><i /></div>
+
+          <section class="story">
+            <p v-for="(para, i) in person.story" :key="i">{{ para }}</p>
+          </section>
+
+          <section v-if="personDests.length">
+            <p class="we-caps-label">与此人相关的目的地</p>
+            <ul class="dest-list">
+              <li v-for="d in personDests" :key="d.id">
+                <button class="dest-item" @click="explore.selectDestination(d.id)">
+                  <i :style="{ background: typeColor(d) }" />
+                  <span class="n">{{ d.name }}</span>
+                  <span class="t">{{ DESTINATION_TYPE_LABELS[d.type] }}</span>
+                </button>
+              </li>
+            </ul>
+          </section>
+
+          <footer class="sources">
+            <p class="we-caps-label">资料来源</p>
+            <ul>
+              <li v-for="s in person.sources" :key="s.url">
+                <a :href="s.url" target="_blank" rel="noopener noreferrer">{{ s.name }}</a>
+                <span class="license">{{ s.license }}</span>
+              </li>
+            </ul>
+          </footer>
         </div>
       </template>
 
@@ -806,6 +881,50 @@ function fmtPopulation(p: number): string {
   font-size: var(--we-fs-micro);
   color: var(--we-success);
   letter-spacing: 0.08em;
+}
+
+.person-name {
+  font-size: var(--we-fs-title);
+}
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--we-sp-2);
+}
+.dest-people {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.people-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--we-sp-2);
+}
+.person-chip {
+  appearance: none;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  border: 1px solid var(--we-glass-border);
+  background: var(--we-well);
+  border-radius: var(--we-r-full);
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all var(--we-dur-1) var(--we-ease-out);
+}
+.person-chip .n {
+  color: var(--we-text-hi);
+  font-weight: 600;
+  font-size: var(--we-fs-small);
+}
+.person-chip .r {
+  color: var(--we-text-faint);
+  font-size: var(--we-fs-micro);
+  letter-spacing: 0.06em;
+}
+.person-chip:hover {
+  border-color: rgba(232, 200, 150, 0.5);
 }
 
 .country-facts {

@@ -118,6 +118,7 @@ export interface DataManifest {
   citiesFiles: string[]
   destinationFiles: string[]
   collectionsFile?: string
+  peopleFile?: string
 }
 
 /** 主题合集(策展式;V1.5) */
@@ -128,4 +129,21 @@ export interface Collection {
   /** 策展语(2-3 句) */
   curatorNote: string
   destinationIds: string[]
+}
+
+/** 人物档案(V2.0 雏形):与地点/时间轴强关联的历史人物 */
+export interface Person {
+  id: string
+  name: string
+  nameEn: string
+  /** 身份标签(建筑师/皇帝/艺术家…) */
+  roles: string[]
+  birthYear?: string
+  deathYear?: string
+  summary: string
+  story: string[]
+  /** 关联目的地(点击跳转档案) */
+  relatedDestinationIds: string[]
+  sources: SourceRef[]
+  quality: 'A' | 'S'
 }

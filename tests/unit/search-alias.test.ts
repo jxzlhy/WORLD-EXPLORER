@@ -65,4 +65,28 @@ describe('搜索别名匹配', () => {
     idx.query.value = '完全不存在的地点xyz'
     assert.deepEqual(idx.results.value, [])
   })
+
+  it('人物条目可被搜索(人物名命中)', () => {
+    const idx = useSearchIndex(() => ({
+      countries: [],
+      cities: [],
+      destinations: [],
+      people: [
+        {
+          id: 'person-li-bing',
+          name: '李冰',
+          nameEn: 'Li Bing',
+          roles: ['战国水利家'],
+          summary: '都江堰总设计师',
+          story: ['a'],
+          relatedDestinationIds: ['cn-dujiangyan'],
+          sources: [],
+          quality: 'A',
+        } as never,
+      ],
+    }))
+    idx.query.value = '李冰'
+    const ids = idx.results.value.map((r) => r.id)
+    assert.ok(ids.includes('person:person-li-bing'), `人物未命中: ${ids}`)
+  })
 })

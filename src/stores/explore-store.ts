@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import Fuse from 'fuse.js'
-import type { City, Collection, Country, Destination } from '../domain/types'
+import type { City, Collection, Country, Destination, Person } from '../domain/types'
 import type { WorldData } from '../services/data-service'
 import { loadJson, saveJson } from '../services/storage-service.ts'
 
@@ -11,10 +11,11 @@ export type SelectionPanel =
   | { kind: 'city'; cityId: string }
   | { kind: 'destination'; destinationId: string }
   | { kind: 'collection'; collectionId: string }
+  | { kind: 'person'; personId: string }
 
 export interface SearchHit {
   id: string
-  kind: 'country' | 'destination' | 'city'
+  kind: 'country' | 'destination' | 'city' | 'person'
   name: string
   nameEn: string
   /** 目的地别名(供 Fuse 匹配,不直接展示) */
@@ -33,6 +34,7 @@ export const useExploreStore = defineStore('explore', {
     cities: [] as City[],
     destinations: [] as Destination[],
     collections: [] as Collection[],
+    people: [] as Person[],
     panel: { kind: 'none' } as SelectionPanel,
     /** 选中流的镜头意图:面板打开前引擎先飞往该目标 */
     pendingFlight: null as { longitude: number; latitude: number; height: number } | null,
@@ -79,6 +81,26 @@ export const useExploreStore = defineStore('explore', {
         ? (this.collectionById.get(state.panel.collectionId) ?? null)
         : null
     },
+    personById(state): Map<string, Person> {
+      return new Map(state.people.map((p) => [p.id, p]))
+    },
+    selectedPerson(state): Person | null {
+      return state.panel.kind === 'person'
+        ? (this.personById.get(state.panel.personId) ?? null)
+        : null
+    },
+    /** 目的地相关人物 */
+    peopleOfDestination(state): (destinationId: string) => Person[] {
+      return (destinationId: string) =>
+        state.people.filter((p) => p.relatedDestinationIds.includes(destinationId))
+    },
+    /** 人物关联目的地(剔除失效引用) */
+    destinationsOfPerson(): (person: Person) => Destination[] {
+      return (person: Person) =>
+        person.relatedDestinationIds
+          .map((id) => this.destinationById.get(id))
+          .filter((d): d is Destination => !!d)
+    },
     /** 合集目的地(按数据顺序,剔除失效引用) */
     collectionDestinations(): (collection: Collection) => Destination[] {
       return (collection: Collection) =>
@@ -103,6 +125,7 @@ export const useExploreStore = defineStore('explore', {
       this.cities = data.cities
       this.destinations = data.destinations
       this.collections = data.collections ?? []
+      this.people = data.people ?? []
       this.loaded = true
     },
 
@@ -110,6 +133,12 @@ export const useExploreStore = defineStore('explore', {
     openCollection(collectionId: string) {
       if (!this.collectionById.has(collectionId)) return
       this.panel = { kind: 'collection', collectionId }
+    },
+
+    /** 打开人物档案(不飞行;关联目的地由面板内跳转) */
+    openPerson(personId: string) {
+      if (!this.personById.has(personId)) return
+      this.panel = { kind: 'person', personId }
     },
 
     /** 选中国家:飞往国家中心(环绕校正的地理均值),打开国家面板 */
@@ -198,9 +227,10 @@ export function useSearchIndex(getSrc: () => {
   countries: Country[]
   cities: City[]
   destinations: Destination[]
+  people?: Person[]
 }) {
   const items = computed<SearchHit[]>(() => {
-    const { countries, cities, destinations } = getSrc()
+    const { countries, cities, destinations, people = [] } = getSrc()
     return [
       ...countries.map((c) => ({
         id: `country:${c.id}`,
@@ -223,6 +253,13 @@ export function useSearchIndex(getSrc: () => {
         name: c.name,
         nameEn: c.nameEn,
         detail: c.isCapital ? '首都' : '城市',
+      })),
+      ...people.map((p) => ({
+        id: `person:${p.id}`,
+        kind: 'person' as const,
+        name: p.name,
+        nameEn: p.nameEn,
+        detail: p.roles[0] ?? '人物',
       })),
     ]
   })
