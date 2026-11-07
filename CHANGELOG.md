@@ -2,9 +2,10 @@
 
 All notable changes to WORLD EXPLORER are documented here.
 
-## [Unreleased] — V1.5 前置批次(2026-11-05/06)
+## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **合集镜头巡游(V4.5 雏形,2026-11-07)**:合集面板「✈ 镜头巡游」→ 沿收录顺序逐站飞行(复用目的地 450km 飞行管线,航段固定 6s 电影感匀速节奏,`pendingFlight.duration` 透传)+ 球面大圆航线虚线(新引擎接口 `setRouteLine`,80km 高度)+ 每站停留 8s 自动推进;拖动/滚轮打断航段自动暂停、可跳站/手动暂停/结束,末站自动收尾,Esc 优先退出巡游;巡游 HUD(底部居中:第 i/N 站 + 进度条 + 控制)随巡游状态挂载/释放
 - **城市档案面板**:搜索/点击城市 → 名称+坐标+首都徽标+摘要+此地目的地列表(京都→伏见稻荷/清水寺),补全「国家→城市→目的地」链路中间层
 - **类型筛选**:LeftRail 8 类彩色芯片 + 全选/清空;引擎层过滤(选中豁免、标签碰撞跳过隐藏实体);实测 67 显/33 隐
 - **搜索别名**:20 条异译/通称(艾菲尔铁塔/金字塔/紫禁城/大本钟/兵马俑/艾尔斯岩…),Fuse 键权重重分配;5 断言单测
@@ -32,7 +33,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证:E2E 12/12 · 单测 27/27 · lint 0 错误 · build ✓
+- 全量验证(2026-11-07):E2E 13/13 · 单测 28/28 · lint 0 错误 · typecheck ✓ · build ✓
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
 

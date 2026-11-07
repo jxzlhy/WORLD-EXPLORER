@@ -36,6 +36,12 @@ export interface CameraInfo {
   height: number
 }
 
+/** 航线节点(仅经纬度,绘制高度由引擎决定) */
+export interface RouteStopPoint {
+  longitude: number
+  latitude: number
+}
+
 export interface EngineStats {
   fps: number
 }
@@ -63,6 +69,8 @@ export interface IWorldEngine {
   setLayerVisible(layer: LayerId, visible: boolean): void
   /** 云层开关(懒加载,默认关闭) */
   setCloudsVisible(visible: boolean): Promise<void>
+  /** 设置/清除巡游航线(大圆虚线;传 null 清除) */
+  setRouteLine(stops: RouteStopPoint[] | null): void
   setAutoRotate(enabled: boolean): void
   setDayNightMode(mode: DayNightMode): void
   /** 渲染质量档位:high=原生+FXAA / balanced=0.85x+FXAA / low=0.7x 无 FXAA */

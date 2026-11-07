@@ -13,6 +13,27 @@ export type SelectionPanel =
   | { kind: 'collection'; collectionId: string }
   | { kind: 'person'; personId: string }
 
+/** 合集镜头巡游状态(V4.5 雏形):沿收录顺序逐站飞行;定时推进由 TourHud 负责 */
+export interface TourState {
+  collectionId: string
+  /** 当前站(0 起) */
+  index: number
+  /** 暂停:飞行被打断或用户手动暂停时置真,恢复时重飞当前航段 */
+  paused: boolean
+}
+
+/** 巡游航段固定时长(秒):电影感匀速节奏,不随距离跳动 */
+const TOUR_LEG_DURATION = 6
+
+/** 镜头意图(引擎 FlyTarget 的 store 侧形态) */
+export interface PendingFlight {
+  longitude: number
+  latitude: number
+  height: number
+  /** 航段时长(秒),缺省由引擎按距离决定 */
+  duration?: number
+}
+
 export interface SearchHit {
   id: string
   kind: 'country' | 'destination' | 'city' | 'person'
@@ -36,8 +57,10 @@ export const useExploreStore = defineStore('explore', {
     collections: [] as Collection[],
     people: [] as Person[],
     panel: { kind: 'none' } as SelectionPanel,
+    /** 进行中的镜头巡游(null = 未在巡游) */
+    tour: null as TourState | null,
     /** 选中流的镜头意图:面板打开前引擎先飞往该目标 */
-    pendingFlight: null as { longitude: number; latitude: number; height: number } | null,
+    pendingFlight: null as PendingFlight | null,
     /** 探索历史(最近 12 个目的地,本地持久化) */
     recentIds: sanitizeList(loadJson<unknown>('recent', [])),
   }),
@@ -108,6 +131,19 @@ export const useExploreStore = defineStore('explore', {
           .map((id) => this.destinationById.get(id))
           .filter((d): d is Destination => !!d)
     },
+    /** 巡游合集 */
+    tourCollection(): Collection | null {
+      return this.tour ? (this.collectionById.get(this.tour.collectionId) ?? null) : null
+    },
+    /** 巡游站点序列 */
+    tourStops(): Destination[] {
+      const c = this.tourCollection
+      return c ? this.collectionDestinations(c) : []
+    },
+    /** 巡游当前站 */
+    tourCurrent(): Destination | null {
+      return this.tour ? (this.tourStops[this.tour.index] ?? null) : null
+    },
     destinationsOfCountry(state): (countryId: string) => Destination[] {
       return (countryId: string) =>
         state.destinations
@@ -133,6 +169,74 @@ export const useExploreStore = defineStore('explore', {
     openCollection(collectionId: string) {
       if (!this.collectionById.has(collectionId)) return
       this.panel = { kind: 'collection', collectionId }
+    },
+
+    // ---- 合集镜头巡游(V4.5 雏形) ----
+
+    /** 开始巡游:从第一站起飞(复用 selectDestination 的飞行/面板/历史管线) */
+    startTour(collectionId: string) {
+      if (this.tour?.collectionId === collectionId) return
+      const collection = this.collectionById.get(collectionId)
+      if (!collection) return
+      const stops = this.collectionDestinations(collection)
+      if (stops.length < 2) return
+      this.tour = { collectionId, index: 0, paused: false }
+      const first = stops[0]
+      if (first) this.flyToTourStop(first)
+    },
+
+    /** 跳转指定站(显式导航会解除暂停) */
+    goToTourStop(index: number) {
+      const tour = this.tour
+      if (!tour) return
+      const stops = this.tourStops
+      const i = Math.max(0, Math.min(index, stops.length - 1))
+      const dest = stops[i]
+      if (!dest) return
+      tour.index = i
+      tour.paused = false
+      this.flyToTourStop(dest)
+    },
+
+    /** 下一站;末站之后自动结束巡游 */
+    nextTourStop() {
+      if (!this.tour) return
+      const next = this.tour.index + 1
+      if (next >= this.tourStops.length) {
+        this.stopTour()
+      } else {
+        this.goToTourStop(next)
+      }
+    },
+
+    /** 上一站(首站无动作) */
+    prevTourStop() {
+      if (!this.tour || this.tour.index <= 0) return
+      this.goToTourStop(this.tour.index - 1)
+    },
+
+    /** 暂停(用户打断飞行时由接线层调用) */
+    pauseTour() {
+      if (this.tour) this.tour.paused = true
+    },
+
+    /** 恢复:重飞当前航段,继续由 TourHud 倒计时推进 */
+    resumeTour() {
+      const tour = this.tour
+      if (!tour || !tour.paused) return
+      tour.paused = false
+      const dest = this.tourStops[tour.index]
+      if (dest) this.flyToTourStop(dest)
+    },
+
+    /** 结束巡游(航线由接线层随 tour 清空而移除) */
+    stopTour() {
+      this.tour = null
+    },
+
+    /** 巡游航段起飞:与手动选中同管线,仅采用固定电影感时长 */
+    flyToTourStop(dest: Destination) {
+      this.selectDestination(dest.id, { duration: TOUR_LEG_DURATION })
     },
 
     /** 打开人物档案(不飞行;关联目的地由面板内跳转) */
@@ -171,11 +275,16 @@ export const useExploreStore = defineStore('explore', {
     },
 
     /** 选中目的地:飞往目的地(近距离),打开档案面板,记录探索历史 */
-    selectDestination(destinationId: string) {
+    selectDestination(destinationId: string, options?: { duration?: number }) {
       const d = this.destinationById.get(destinationId)
       if (!d) return
       this.panel = { kind: 'destination', destinationId }
-      this.pendingFlight = { longitude: d.longitude, latitude: d.latitude, height: 450_000 }
+      this.pendingFlight = {
+        longitude: d.longitude,
+        latitude: d.latitude,
+        height: 450_000,
+        ...options,
+      }
       this.recentIds = [destinationId, ...this.recentIds.filter((x) => x !== destinationId)].slice(0, 12)
       saveJson('recent', this.recentIds)
     },

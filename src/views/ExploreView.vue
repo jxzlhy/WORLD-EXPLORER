@@ -10,6 +10,7 @@ import TopBar from '../components/explore/TopBar.vue'
 import SearchOverlay from '../components/explore/SearchOverlay.vue'
 import LeftRail from '../components/explore/LeftRail.vue'
 import DetailPanel from '../components/explore/DetailPanel.vue'
+import TourHud from '../components/explore/TourHud.vue'
 import DiscoverBar from '../components/explore/DiscoverBar.vue'
 import StatusBar from '../components/explore/StatusBar.vue'
 import MyWorldPanel from '../components/explore/MyWorldPanel.vue'
@@ -118,8 +119,24 @@ async function bootstrap(): Promise<void> {
       async (target) => {
         const eng = getEngine()
         if (!eng || !target) return
-        await eng.flyTo(target)
-        if (explore.pendingFlight === target) explore.pendingFlight = null
+        const result = await eng.flyTo(target)
+        if (explore.pendingFlight !== target) return // 已被新航段取代
+        explore.pendingFlight = null
+        // 巡游航段被用户拖动/滚轮打断 → 自动暂停(可从当前站继续)
+        if (result === 'interrupted' && explore.tour) explore.pauseTour()
+      },
+    ),
+    // 巡游航线随 tour 状态挂/摘(V4.5)
+    watch(
+      () => explore.tour,
+      (tour) => {
+        const eng = getEngine()
+        if (!eng) return
+        eng.setRouteLine(
+          tour
+            ? explore.tourStops.map((d) => ({ longitude: d.longitude, latitude: d.latitude }))
+            : null,
+        )
       },
     ),
     watch(
@@ -174,6 +191,7 @@ function onKeydown(e: KeyboardEvent): void {
   } else if (e.key === 'Escape') {
     if (ui.searchOpen) ui.toggleSearch(false)
     else if (ui.myWorldOpen) ui.toggleMyWorld(false)
+    else if (explore.tour) explore.stopTour()
     else explore.closePanel()
   }
 }
@@ -247,6 +265,7 @@ onUnmounted(() => {
       <TopBar class="intro-item" />
       <LeftRail />
       <DetailPanel />
+      <TourHud v-if="explore.tour" />
       <DiscoverBar />
       <StatusBar />
       <MyWorldPanel />

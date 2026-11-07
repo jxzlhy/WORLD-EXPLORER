@@ -12,10 +12,15 @@ interface IWorldEngine {
   isFlying(): boolean
   highlightMarker(destinationId: string | null): void
   highlightCountry(countryId: string | null): void
+  setTypesFilter(activeTypes: string[]): void
   setLayerVisible(layer: 'countries' | 'markers' | 'labels', visible: boolean): void
+  setCloudsVisible(visible: boolean): Promise<void>
+  setRouteLine(stops: RouteStopPoint[] | null): void      // V4.5 巡游航线(大圆虚线,null 清除)
   setAutoRotate(enabled: boolean): void
   setDayNightMode(mode: 'realtime' | 'always-day' | 'always-night'): void
+  setQuality(mode: 'high' | 'balanced' | 'low'): void
   onPick(cb: (p: PickPayload) => void): () => void        // 返回退订函数
+  onRenderError(cb: (e: Error) => void): () => void
   onUserInteract(cb: () => void): () => void
   onCameraChange(cb: (info: CameraInfo) => void): () => void
   onStats(cb: (s: { fps: number }) => void): () => void

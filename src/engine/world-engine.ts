@@ -5,6 +5,7 @@ import { CameraController } from './camera-controller'
 import { CountriesLayer } from './countries-layer'
 import { ImageryLayersController } from './imagery-layers'
 import { MarkersLayer } from './markers-layer'
+import { RouteLayer } from './route-layer'
 import type {
   CameraInfo,
   DayNightMode,
@@ -15,6 +16,7 @@ import type {
   LayerId,
   PickPayload,
   QualityMode,
+  RouteStopPoint,
 } from './types'
 
 export interface WorldEngineOptions {
@@ -41,6 +43,7 @@ export class WorldEngine implements IWorldEngine {
   private imagery: ImageryLayersController | null = null
   private countries = new CountriesLayer()
   private markers = new MarkersLayer()
+  private route = new RouteLayer()
   private pickHandler: Cesium.ScreenSpaceEventHandler | null = null
   private readonly unsubs: Array<() => void> = []
   private initPromise: Promise<void> | null = null
@@ -66,6 +69,7 @@ export class WorldEngine implements IWorldEngine {
     if (this.viewer && !this.viewer.isDestroyed()) {
       this.countries.destroy(this.viewer)
       this.markers.destroy(this.viewer)
+      this.route.destroy(this.viewer)
       this.viewer.destroy()
     }
     this.viewer = null
@@ -151,6 +155,8 @@ export class WorldEngine implements IWorldEngine {
       pulse: !this.options.reducedMotion,
     })
     if (this.aborted(seq)) return
+
+    this.route.load(this.viewer)
 
     this.camera = new CameraController(this.viewer)
 
@@ -242,6 +248,10 @@ export class WorldEngine implements IWorldEngine {
   setCloudsVisible(visible: boolean): Promise<void> {
     if (!this.viewer || !this.imagery) return Promise.resolve()
     return this.imagery.setCloudsVisible(visible, this.viewer)
+  }
+
+  setRouteLine(stops: RouteStopPoint[] | null): void {
+    this.route.setStops(stops)
   }
 
   setAutoRotate(enabled: boolean): void {
