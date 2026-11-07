@@ -122,9 +122,9 @@ export class ImageryLayersController {
   }
 
   private startRefreshTimer(viewer: Cesium.Viewer): void {
-    // 太阳位置每 5 分钟重合成一次(视觉上连续)
+    // 太阳位置每 5 分钟重合成一次(视觉上连续);按当前模式重应用,避免硬编码漂移
     this.refreshTimer = window.setInterval(() => {
-      void this.applyMode('realtime', viewer)
+      void this.applyMode(this.mode, viewer)
     }, 5 * 60_000)
   }
 

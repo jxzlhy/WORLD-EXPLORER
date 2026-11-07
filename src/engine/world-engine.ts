@@ -259,7 +259,10 @@ export class WorldEngine implements IWorldEngine {
   }
 
   setDayNightMode(mode: DayNightMode): void {
-    this.imagery?.setMode(mode)
+    if (!this.imagery || !this.viewer || this.viewer.isDestroyed()) return
+    this.imagery.setMode(mode)
+    // 立即重应用图层(此前仅存储模式,切换视觉上无变化——2026-11-07 修复)
+    void this.imagery.refresh(this.viewer)
   }
 
   setQuality(mode: QualityMode): void {
