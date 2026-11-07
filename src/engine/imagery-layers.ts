@@ -12,7 +12,8 @@ import { CloudLayer } from './cloud-layer'
  * - always-night:NASA Black Marble 夜间灯光。
  *
  * 着色策略:明暗已烘焙进底图(enableLighting=false),避免与逐像素结果二次叠加。
- * GIBS 仅在 always-day 模式保留——其日间瓦片会盖住夜灯,与 realtime 模式互斥(设计权衡,见 TECH-RESEARCH)。
+ * GIBS 静态层(永昼 BlueMarble ShadedRelief / 永夜 VIIRS Black Marble)为拉近后的清晰度增强,
+ * 与 realtime 互斥——其不透明瓦片会盖住逐像素合成的晨昏线(设计权衡,见 TECH-RESEARCH)。
  */
 export class ImageryLayersController {
   private compositor = new DayNightCompositor()
@@ -90,6 +91,7 @@ export class ImageryLayersController {
         )
         if (seq !== this.applySeq) return
         this.baseLayer = layers.addImageryProvider(nightProvider)
+        this.gibsLayer = await this.addGibsNight(viewer)
       }
     } catch (err) {
       // 合成或加载失败:回退到静态日间贴图,保证地球可用(P0 降级要求)
@@ -104,13 +106,33 @@ export class ImageryLayersController {
     }
   }
 
+  /** GIBS 日间瓦片(L8):拉近后补充本地 4K 底图的清晰度。URL 无时间槽(静态层),
+   *  2026-11-07 修正:此前 "500m" 占据了 TileMatrixSet 槽位,所有瓦片 400,该层从未真正渲染。 */
   private async addGibs(viewer: Cesium.Viewer): Promise<Cesium.ImageryLayer | null> {
     try {
       const gibsProvider = new Cesium.WebMapTileServiceImageryProvider({
-        url: 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief_Bathymetry/default/500m/{TileMatrix}/{TileRow}/{TileCol}.jpeg',
+        url: 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_ShadedRelief_Bathymetry/default/GoogleMapsCompatible_Level8/{TileMatrix}/{TileRow}/{TileCol}.jpeg',
         layer: 'BlueMarble_ShadedRelief_Bathymetry',
         style: 'default',
         format: 'image/jpeg',
+        maximumLevel: 8,
+        tileMatrixSetID: 'GoogleMapsCompatible_Level8',
+        credit: 'NASA EOSDIS GIBS',
+      })
+      return viewer.imageryLayers.addImageryProvider(gibsProvider, 1)
+    } catch {
+      return null // 离线降级:仅本地贴图
+    }
+  }
+
+  /** GIBS 夜灯瓦片(VIIRS Black Marble 2016 合成,L8,带时间维度 2016-01-01) */
+  private async addGibsNight(viewer: Cesium.Viewer): Promise<Cesium.ImageryLayer | null> {
+    try {
+      const gibsProvider = new Cesium.WebMapTileServiceImageryProvider({
+        url: 'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_Black_Marble/default/2016-01-01/GoogleMapsCompatible_Level8/{TileMatrix}/{TileRow}/{TileCol}.png',
+        layer: 'VIIRS_Black_Marble',
+        style: 'default',
+        format: 'image/png',
         maximumLevel: 8,
         tileMatrixSetID: 'GoogleMapsCompatible_Level8',
         credit: 'NASA EOSDIS GIBS',

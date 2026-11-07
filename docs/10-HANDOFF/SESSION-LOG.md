@@ -34,7 +34,7 @@
 
 ### 2026-11-07 追加:V4.5 批次推送被凭据阻塞
 
-- 提交 `d76de59`(合集镜头巡游雏形)与 `be33c33`(探索进度 + 合集搜索直达)已完成本地提交,但 `git push` 鉴权失败:osxkeychain 中 GitHub 令牌失效("Invalid username or token"),非交互环境无法重新输入;`gh` CLI 未安装。**需要项目所有者更新 GitHub 凭据(PAT)后执行 `git push origin main`**(两个提交一次推完),或将有效 PAT 提供给代理环境。
+- 提交 `d76de59` / `31e7ccf` / `76d2e38` / `debccdc`(巡游雏形、探索进度、昼夜修复、GIBS 修正)均已完成本地提交,但 `git push` 鉴权失败:osxkeychain 中 GitHub 令牌失效("Invalid username or token"),非交互环境无法重新输入;`gh` CLI 未安装。**需要项目所有者更新 GitHub 凭据(PAT)后执行 `git push origin main`**(4 个提交一次推完),或将有效 PAT 提供给代理环境。
 
 ## 关键教训(写给下一次会话)
 
@@ -50,6 +50,14 @@
 - 套件 12/12 + 单测 15/15;超时预算按 SwiftShader 实测调整 [V]
 - 推送:守望曾在恢复窗口推送至 9799c5c;6 提交待推,守望 v2 继续盯守 [V]
 - 混排乱码自检流程固化:python 脚本写入后立即校验,已捕获 7 处 [V]
+
+## 地球清晰度批次(2026-11-07)—— 用户报告「分辨率有点低」
+
+- 排查:本地贴图均为 4096×2048(450km 高度 ~11km/px);GIBS WMTS 实测可达,且**发现 always-day 的 URL 含错误段 "500m" 占据 TileMatrixSet 槽位——瓦片全 400,该层从未渲染**(依 Capabilities ResourceURL 模板确认静态层无时间槽) [V]
+- 修复:addGibs URL 修正;always-night 新增 VIIRS_Black_Marble(2016,L8,PNG)瓦片层(时间值 2016-01-01);K 用例增图层计数断言(昼/夜 2 层,实时 1 层) [V]
+- 网络实况:shell 下 NASA eoimages 与 Wikimedia Commons TLS 握手被拦(11/5-11/6 曾可用,代理规则已变),github/npm registry/GIBS 可达;npm/github 无可验证的 ≥5400 有源贴图 [V]
+- 决策:本地贴图升级**暂缓**(管线 `experiments/fetch-hd-textures.py` 就绪,许可链 NASA PD → Commons,源站可达时一键执行);默认「实时」模式拉近仍受 4K 源限制,已记入 CHANGELOG 已知限制 [O]
+- 文档:DATA-SOURCES.md(#3 重写)、LICENSE-REGISTRY.md(C 节两行) [V]
 
 ## 昼夜模式修复(2026-11-07)—— 用户报告「切换没有变化」
 

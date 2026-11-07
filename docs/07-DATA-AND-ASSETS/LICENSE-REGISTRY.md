@@ -26,7 +26,8 @@
 
 | 资源 | 许可 | 署名 | 降级策略 |
 | --- | --- | --- | --- |
-| BlueMarble_ShadedRelief_Bathymetry 500m | NASA 开放数据 | 建议署名 NASA EOSDIS GIBS | 请求失败仅显示本地贴图 |
+| BlueMarble_ShadedRelief_Bathymetry 500m(永昼增强,2026-11-07 修正 URL) | NASA 开放数据 | 建议署名 NASA EOSDIS GIBS | 请求失败仅显示本地贴图 |
+| VIIRS_Black_Marble 2016 合成(永夜增强,2026-11-07 接入) | NASA 开放数据 | 建议署名 NASA EOSDIS GIBS | 请求失败仅显示本地贴图 |
 
 ## D. 照片媒体(逐张,与 media-samples.json 同步)
 

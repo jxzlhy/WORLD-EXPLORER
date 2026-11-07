@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **永夜模式 GIBS 夜灯增强(2026-11-07)**:always-night 新增 `VIIRS_Black_Marble`(2016 合成,L8,PNG)瓦片层,与永昼的 GIBS 对称——拉近后夜灯清晰;网络不可达时自动仅用本地 4K 贴图;E2E 用例 K 增加图层计数断言(永昼/永夜 2 层,实时 1 层)
 - **探索进度概览(V4.5 批次二,2026-11-07)**:MyWorld 面板头部新增进度块——「已探索 X / 150 · Y%」+ 金色进度条;底座为被动足迹 `exploredIds`(访问过即单调累计,localStorage 持久化,`addExplored` 纯函数 4 断言单测);导出/导入自动纳入(`exportAll` 全 key 遍历),导入后内存同步(`reloadLocal`,连同 recent 一并修复导入后不刷新的存量缺口)
 - **合集搜索直达(V4.5 批次二,2026-11-07)**:全局搜索接入 4 个主题合集(中/英文名可命中,Fuse 同管线),金色「合集」徽标 + 「主题合集 · N 站」detail,回车直达合集面板;修掉「合集未入搜索索引」已知边界(2 断言单测)
 - **合集镜头巡游(V4.5 雏形,2026-11-07)**:合集面板「✈ 镜头巡游」→ 沿收录顺序逐站飞行(复用目的地 450km 飞行管线,航段固定 6s 电影感匀速节奏,`pendingFlight.duration` 透传)+ 球面大圆航线虚线(新引擎接口 `setRouteLine`,80km 高度)+ 每站停留 8s 自动推进;拖动/滚轮打断航段自动暂停、可跳站/手动暂停/结束,末站自动收尾,Esc 优先退出巡游;巡游 HUD(底部居中:第 i/N 站 + 进度条 + 控制)随巡游状态挂载/释放
@@ -24,6 +25,7 @@ All notable changes to WORLD EXPLORER are documented here.
 - 目的地 **112 → 130**(文化遗产密度批:丽江/土楼/金阁寺/镰仓大佛/加尔桥/马泰拉/哈德良长城/铁桥峡谷/圣凯瑟琳/高野山 + 拱门/布鲁克林桥/莫奈花园/汗哈利利/利马历史中心/宁格罗/教会山/皮拉沙丘)
 
 ### Fixed
+- **GIBS 日间瓦片从未渲染(2026-11-07,「地球分辨率低」排查中发现)**:always-day 的 WMTS URL 含错误段 "500m"(占据了 TileMatrixSet 槽位),所有瓦片 400——依 WMTS Capabilities 的 ResourceURL 模板修正为无时间槽格式;实测 L0/L6/L7 瓦片 200。**永昼拉近的清晰度增强自此才真正生效**
 - **昼夜模式切换失效(2026-11-07,用户报告)**:`ImageryLayersController.setMode` 仅存储模式从不重应用图层,全仓库无 `refresh()` 调用点——切 实时/永昼/永夜 影像层纹丝不动;引擎 `setDayNightMode` 现在立即重应用(`applyMode` 的 applySeq 令牌保证快速切换不串),定时刷新亦改为按当前模式;E2E 用例 K 三档断言 provider 真实切换,并在未修复代码上复验「必失败」(真回归测试)
 - E2E 套件根因修复:多 worker 并发 SwiftShader WebGL 导致负载超时轮转失败——`workers: 1` 串行后 12/12 稳定;F 导出改页面内 blob 拦截校验(比下载事件更严格)
 
@@ -36,7 +38,8 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-07):E2E 13/13 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-07):E2E 14/14 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
+- 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
 
