@@ -28,7 +28,7 @@
   - `VIIRS_Black_Marble`(2016 合成,时间值 `2016-01-01`,PNG):`.../VIIRS_Black_Marble/default/2016-01-01/GoogleMapsCompatible_Level8/{TileMatrix}/{TileRow}/{TileCol}.png`
   - 两者均为 GoogleMapsCompatible_Level8(最大 z8)
 - 许可:NASA 开放数据(免费公共服务,建议署名 "NASA EOSDIS GIBS")
-- 用途:永昼/永夜模式拉近后的影像细节增强(单张 4K 底图的运行时补充)
+- 用途:拉近后的影像细节增强——永昼/永夜为静态增强层;实时模式为日光感知双瓦片层(昼侧淡入 BlueMarble、夜侧淡入 Black Marble,α 随相机指向与高度变化,全球视角隐藏)
 - 服务限制:GIBS 使用政策要求合理用量、不得转售、要求缓存——本项目按浏览器默认缓存使用;**离线/失败自动降级本地贴图**
 - 核验:2026-11-07(瓦片端点 L0/L6/L7 实测 200;**此前 always-day 的 URL 含错误时间槽 "500m",所有瓦片 400,该层从未真正渲染,已修正**)
 - 运行时可达性:本机代理环境实测可达(shell curl 200);NASA eoimages / Wikimedia Commons 当前被拦,本地 4K 贴图升级暂缓——升级管线已就绪(`experiments/fetch-hd-textures.py`),源站可达时运行即可

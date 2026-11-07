@@ -34,8 +34,8 @@ test('K. 昼夜模式:永夜/永昼/实时 三档影像层真实切换', async (
     .toContain('earth-blue-marble')
   await expect.poll(layerCount, { timeout: 20_000, intervals: [500] }).toBe(2)
 
-  // 实时 → 重新合成为 blob URL,GIBS 增强层摘除
+  // 实时 → 重新合成为 blob URL + 日光感知昼/夜双增强层(共 3 层,全球视角 α≈0 隐藏)
   await page.getByRole('button', { name: '实时' }).click()
   await expect.poll(baseProviderUrl, { timeout: 20_000, intervals: [500] }).toMatch(/^blob:/)
-  await expect.poll(layerCount, { timeout: 20_000, intervals: [500] }).toBe(1)
+  await expect.poll(layerCount, { timeout: 20_000, intervals: [500] }).toBe(3)
 })
