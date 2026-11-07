@@ -15,6 +15,7 @@ const { query, results } = useSearchIndex(() => ({
   cities: explore.cities,
   destinations: explore.destinations,
   people: explore.people,
+  collections: explore.collections,
 }))
 
 // 结果集变化时重置键盘索引(空结果回车越界修复,I-13)
@@ -39,6 +40,7 @@ const kindLabel: Record<SearchHit['kind'], string> = {
   destination: '地点',
   city: '城市',
   person: '人物',
+  collection: '合集',
 }
 
 function select(hit: SearchHit) {
@@ -46,6 +48,7 @@ function select(hit: SearchHit) {
   if (hit.kind === 'country') explore.selectCountry(hit.id.split(':')[1]!)
   else if (hit.kind === 'destination') explore.selectDestination(hit.id.split(':')[1]!)
   else if (hit.kind === 'person') explore.openPerson(hit.id.split(':')[1]!)
+  else if (hit.kind === 'collection') explore.openCollection(hit.id.split(':')[1]!)
   else explore.flyToCity(hit.id.split(':')[1]!)
 }
 
@@ -219,6 +222,10 @@ function onKeydown(e: KeyboardEvent) {
 .kind[data-kind='destination'] {
   color: var(--we-cyan);
   border-color: rgba(111, 195, 255, 0.3);
+}
+.kind[data-kind='collection'] {
+  color: var(--we-gold-strong);
+  border-color: rgba(232, 200, 150, 0.45);
 }
 .name {
   font-weight: 600;

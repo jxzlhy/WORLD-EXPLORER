@@ -34,7 +34,7 @@
 
 ### 2026-11-07 追加:V4.5 批次推送被凭据阻塞
 
-- 提交 `2987f24`(合集镜头巡游 V4.5 雏形)已完成本地提交,但 `git push` 鉴权失败:osxkeychain 中 GitHub 令牌失效("Invalid username or token"),非交互环境无法重新输入;`gh` CLI 未安装。**需要项目所有者更新 GitHub 凭据(PAT)后执行 `git push origin main`**,或将有效 PAT 提供给代理环境。
+- 提交 `d76de59`(合集镜头巡游雏形)与 `be33c33`(探索进度 + 合集搜索直达)已完成本地提交,但 `git push` 鉴权失败:osxkeychain 中 GitHub 令牌失效("Invalid username or token"),非交互环境无法重新输入;`gh` CLI 未安装。**需要项目所有者更新 GitHub 凭据(PAT)后执行 `git push origin main`**(两个提交一次推完),或将有效 PAT 提供给代理环境。
 
 ## 关键教训(写给下一次会话)
 
@@ -51,12 +51,18 @@
 - 推送:守望曾在恢复窗口推送至 9799c5c;6 提交待推,守望 v2 继续盯守 [V]
 - 混排乱码自检流程固化:python 脚本写入后立即校验,已捕获 7 处 [V]
 
+## V4.5 批次二(2026-11-07)—— 探索进度 + 合集搜索直达
+
+- 探索进度:被动足迹 `exploredIds`(访问即单调累计,与手标「去过」区分)+ MyWorld 头部进度块(X/150 + Y% + 进度条);导入链路补 `reloadLocal`(顺带修复 recent 导入后内存不刷新的存量缺口) [V]
+- 合集搜索直达:SearchHit 增 `collection` kind,SearchOverlay 金徽标 + 直达合集面板;修掉批次一记录的「合集未入搜索索引」已知边界 [V]
+- 单测 34/34(新增 6:合集命中×2 + addExplored×4) [V]
+
 ## V4.5 雏形批次(2026-11-07)—— 合集镜头巡游
 
 - 设计定型:巡游 = 逐站复用目的地 450km flyTo 管线,航段固定 6s 电影感匀速(`pendingFlight.duration` 透传),不新增相机原语;站点推进定时器归 TourHud(组件生命周期)而非 store [O]
 - Store:`tour { collectionId, index, paused }` + start/goTo/next/prev/pause/resume/stop;巡游逐站走 `selectDestination(id, { duration })`(面板/飞行/探索历史全部复用) [V]
 - 引擎:新接口 `setRouteLine(stops | null)` + `route-layer.ts`(CustomDataSource 'route',大圆虚线 80km 金色);IWorldEngine 文档清单同步补齐(setTypesFilter/setQuality/onRenderError 等此前缺失项) [V]
 - UI:TourHud(底部居中,窄屏上移避让)+ 合集面板「✈ 镜头巡游」按钮 + ExploreView 接线(航段被打断→自动暂停;tour→航线挂/摘;Esc 先退巡游) [V]
-- 已知边界:巡游中点击球面其他目的地只切面板不并轨,停留后回到巡游序列(雏形行为,记录不修);合集未入搜索索引 [O]
+- 已知边界:巡游中点击球面其他目的地只切面板不并轨,停留后回到巡游序列(雏形行为,记录不修);~~合集未入搜索索引~~(批次二已修) [O]
 - 排障记录:巡游 E2E「拖拽打断→暂停」三态复现,五轮插桩定位——非应用 bug,而是 SwiftShader 软渲染下飞行期主线程饱和、Playwright 输入事件延迟数秒,拖拽落地时航段已正常结束;改用 `eng.cancelFlight()` 注入(与用户打断同走 flyTo→'interrupted'→pauseTour 路径)后 3/3 稳定,物理中断保留给用例 C(滚轮) [V]
 - 验证:typecheck ✓ · lint 0 错误 ✓ · build ✓ · 单测 28/28 ✓ · E2E 结果见 CHANGELOG 当次记录(Node v25 下 `node --test tests/unit/` 需去尾斜杠,环境差异非代码问题) [V]

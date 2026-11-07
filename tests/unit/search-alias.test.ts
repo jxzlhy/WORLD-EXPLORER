@@ -89,4 +89,45 @@ describe('搜索别名匹配', () => {
     const ids = idx.results.value.map((r) => r.id)
     assert.ok(ids.includes('person:person-li-bing'), `人物未命中: ${ids}`)
   })
+
+  it('合集条目可被搜索(中文名命中,含站点数 detail)', () => {
+    const idx = useSearchIndex(() => ({
+      countries: [],
+      cities: [],
+      destinations: [],
+      collections: [
+        {
+          id: 'ancient-echoes',
+          name: '古文明的回声',
+          nameEn: 'Ancient Echoes',
+          curatorNote: '…',
+          destinationIds: ['eg-giza-pyramids', 'cn-great-wall'],
+        },
+      ],
+    }))
+    idx.query.value = '古文明'
+    const hit = idx.results.value.find((r) => r.id === 'collection:ancient-echoes')
+    assert.ok(hit, '合集未命中')
+    assert.equal(hit.kind, 'collection')
+    assert.equal(hit.detail, '主题合集 · 2 站')
+  })
+
+  it('合集英文名命中(Ancient Echoes)', () => {
+    const idx = useSearchIndex(() => ({
+      countries: [],
+      cities: [],
+      destinations: [],
+      collections: [
+        {
+          id: 'ancient-echoes',
+          name: '古文明的回声',
+          nameEn: 'Ancient Echoes',
+          curatorNote: '…',
+          destinationIds: ['a', 'b', 'c'],
+        },
+      ],
+    }))
+    idx.query.value = 'echoes'
+    assert.ok(idx.results.value.some((r) => r.id === 'collection:ancient-echoes'))
+  })
 })

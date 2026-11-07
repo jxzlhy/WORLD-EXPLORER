@@ -37,6 +37,15 @@ const list = computed(() => {
     .filter((d): d is NonNullable<typeof d> => !!d)
 })
 
+/** 探索进度(V4.5):被动足迹(访问过即计)与全库之比,剔除失效引用 */
+const exploredCount = computed(
+  () => explore.exploredIds.filter((id) => explore.destinationById.has(id)).length,
+)
+const exploreTotal = computed(() => explore.destinations.length)
+const explorePct = computed(() =>
+  exploreTotal.value ? Math.round((exploredCount.value / exploreTotal.value) * 100) : 0,
+)
+
 function exportData(): void {
   const payload = {
     app: 'WORLD EXPLORER',
@@ -81,6 +90,7 @@ async function onImportFile(e: Event): Promise<void> {
 function confirmImport(): void {
   if (!importPreview.value) return
   myWorld.applyImport(importPreview.value.data)
+  explore.reloadLocal() // recent/explored 也在导出文件内,导入后同步内存
   importPreview.value = null
 }
 
@@ -113,6 +123,23 @@ function cancelImport(): void {
             ✕
           </button>
         </header>
+
+        <div class="progress-block">
+          <p class="we-caps-label">
+            探索进度
+          </p>
+          <p class="progress-line">
+            <span class="mono">{{ exploredCount }} / {{ exploreTotal }}</span>
+            已探索目的地
+            <span class="pct">{{ explorePct }}%</span>
+          </p>
+          <div
+            class="bar"
+            aria-hidden="true"
+          >
+            <i :style="{ width: `${explorePct}%` }" />
+          </div>
+        </div>
 
         <div
           class="tabs"
@@ -264,6 +291,42 @@ function cancelImport(): void {
 }
 .close:hover {
   color: var(--we-text-hi);
+}
+
+.progress-block {
+  margin: var(--we-sp-3) var(--we-sp-4) 0;
+}
+.progress-line {
+  display: flex;
+  align-items: baseline;
+  gap: var(--we-sp-2);
+  margin: 6px 0 8px;
+  font-size: var(--we-fs-small);
+  color: var(--we-text-dim);
+}
+.progress-line .mono {
+  color: var(--we-text-hi);
+  font-size: var(--we-fs-body);
+  font-weight: 600;
+}
+.progress-line .pct {
+  margin-left: auto;
+  color: var(--we-gold-strong);
+  font-size: var(--we-fs-small);
+  font-weight: 600;
+}
+.bar {
+  height: 3px;
+  border-radius: var(--we-r-full);
+  background: var(--we-glass-tint);
+  overflow: hidden;
+}
+.bar i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--we-gold);
+  transition: width var(--we-dur-3) var(--we-ease-out);
 }
 
 .tabs {

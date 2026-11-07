@@ -36,7 +36,7 @@ export interface PendingFlight {
 
 export interface SearchHit {
   id: string
-  kind: 'country' | 'destination' | 'city' | 'person'
+  kind: 'country' | 'destination' | 'city' | 'person' | 'collection'
   name: string
   nameEn: string
   /** 目的地别名(供 Fuse 匹配,不直接展示) */
@@ -63,6 +63,8 @@ export const useExploreStore = defineStore('explore', {
     pendingFlight: null as PendingFlight | null,
     /** 探索历史(最近 12 个目的地,本地持久化) */
     recentIds: sanitizeList(loadJson<unknown>('recent', [])),
+    /** 已探索足迹(单调累计的去重目的地,本地持久化;V4.5 探索进度) */
+    exploredIds: sanitizeList(loadJson<unknown>('explored', [])),
   }),
 
   getters: {
@@ -287,6 +289,8 @@ export const useExploreStore = defineStore('explore', {
       }
       this.recentIds = [destinationId, ...this.recentIds.filter((x) => x !== destinationId)].slice(0, 12)
       saveJson('recent', this.recentIds)
+      this.exploredIds = addExplored(this.exploredIds, destinationId)
+      saveJson('explored', this.exploredIds)
     },
 
     /** 回到全球视角(探索快捷操作) */
@@ -306,6 +310,12 @@ export const useExploreStore = defineStore('explore', {
     closePanel() {
       this.panel = { kind: 'none' }
       this.pendingFlight = null
+    },
+
+    /** 从 localStorage 重读本地态(MY WORLD 导入覆盖存储后同步内存,不整页重载) */
+    reloadLocal() {
+      this.recentIds = sanitizeList(loadJson<unknown>('recent', []))
+      this.exploredIds = sanitizeList(loadJson<unknown>('explored', []))
     },
 
     /** 随机发现一个目的地 */
@@ -331,15 +341,21 @@ function sanitizeList(v: unknown): string[] {
   return Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []
 }
 
+/** 已探索足迹追加(去重、单调不减;纯函数便于单测) */
+export function addExplored(list: string[], id: string): string[] {
+  return list.includes(id) ? list : [...list, id]
+}
+
 /** 全局搜索(Fuse.js 模糊匹配,中/英/别名) */
 export function useSearchIndex(getSrc: () => {
   countries: Country[]
   cities: City[]
   destinations: Destination[]
   people?: Person[]
+  collections?: Collection[]
 }) {
   const items = computed<SearchHit[]>(() => {
-    const { countries, cities, destinations, people = [] } = getSrc()
+    const { countries, cities, destinations, people = [], collections = [] } = getSrc()
     return [
       ...countries.map((c) => ({
         id: `country:${c.id}`,
@@ -369,6 +385,13 @@ export function useSearchIndex(getSrc: () => {
         name: p.name,
         nameEn: p.nameEn,
         detail: p.roles[0] ?? '人物',
+      })),
+      ...collections.map((c) => ({
+        id: `collection:${c.id}`,
+        kind: 'collection' as const,
+        name: c.name,
+        nameEn: c.nameEn,
+        detail: `主题合集 · ${c.destinationIds.length} 站`,
       })),
     ]
   })
