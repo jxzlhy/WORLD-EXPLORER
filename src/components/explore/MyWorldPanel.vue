@@ -173,6 +173,12 @@ function cancelImport(): void {
                 class="item"
                 @click="explore.selectDestination(d.id); ui.toggleMyWorld(false)"
               >
+                <img
+                  v-if="d.media?.status === 'verified' && d.media?.file"
+                  class="thumb"
+                  :src="d.media!.file"
+                  alt=""
+                >
                 <span class="name">{{ d.name }}</span>
                 <span class="country">{{ explore.countryById[d.countryId]?.name }}</span>
               </button>
@@ -385,6 +391,15 @@ function cancelImport(): void {
 }
 .item:hover {
   background: rgba(111, 195, 255, 0.08);
+}
+.item .thumb {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--we-glass-border);
+  align-self: center;
 }
 .item .name {
   font-weight: 600;

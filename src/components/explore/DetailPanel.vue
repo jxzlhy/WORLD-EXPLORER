@@ -10,6 +10,7 @@ import WeTag from '../../design-system/WeTag.vue'
 import WeButton from '../../design-system/WeButton.vue'
 import WeEmpty from '../../design-system/WeEmpty.vue'
 import DestinationMedia from '../../design-system/DestinationMedia.vue'
+import MediaStrip from './MediaStrip.vue'
 
 const explore = useExploreStore()
 const myWorld = useMyWorldStore()
@@ -37,6 +38,19 @@ const collectionHero = computed(() => {
   if (!collection.value) return null
   return collectionDests.value.find((d) => d.media?.status === 'verified') ?? null
 })
+/** 合集收录影像条带(仅已核验照片) */
+const collectionMediaStrip = computed(() =>
+  collectionDests.value.filter((d) => d.media?.status === 'verified' && !!d.media?.file),
+)
+
+/** 面板头图:优先已核验照片的目的地,否则取首个成员(其示意图由 DestinationMedia 诚实标注) */
+function heroMediaOf(dests: Destination[]): Destination | null {
+  return dests.find((d) => d.media?.status === 'verified') ?? dests[0] ?? null
+}
+const countryHero = computed(() =>
+  country.value ? heroMediaOf(explore.destinationsOfCountry(country.value.id)) : null,
+)
+const cityHero = computed(() => (city.value ? heroMediaOf(cityDestinations.value) : null))
 
 /**
  * 内容交错入场(V0.3-D):档案内容切换时,子块依次浮现。
@@ -367,6 +381,22 @@ function fmtPopulation(p: number): string {
             </div>
           </header>
 
+          <div v-if="cityHero" class="panel-hero">
+            <DestinationMedia
+              :id="cityHero.id"
+              :name="cityHero.name"
+              :type-color="'var(--we-type-city)'"
+              :media="cityHero.media"
+            />
+            <figcaption
+              v-if="cityHero.media?.status === 'verified'"
+              class="hero-caption"
+            >
+              图:{{ cityHero.name }}(此地目的地)·
+              {{ cityHero.media?.author }}
+            </figcaption>
+          </div>
+
           <p class="lead">{{ city.summary }}</p>
 
           <div class="ornament" aria-hidden="true"><i /><span>✦</span><i /></div>
@@ -376,7 +406,16 @@ function fmtPopulation(p: number): string {
             <ul class="dest-list">
               <li v-for="d in cityDestinations" :key="d.id">
                 <button class="dest-item" @click="explore.selectDestination(d.id)">
-                  <i :style="{ background: typeColor(d) }" />
+                  <img
+                    v-if="d.media?.status === 'verified' && d.media?.file"
+                    class="thumb"
+                    :src="d.media!.file"
+                    alt=""
+                  >
+                  <i
+                    v-else
+                    :style="{ background: typeColor(d) }"
+                  />
                   <span class="n">{{ d.name }}</span>
                   <span class="t">{{ DESTINATION_TYPE_LABELS[d.type] }}</span>
                 </button>
@@ -417,6 +456,14 @@ function fmtPopulation(p: number): string {
 
           <div class="ornament" aria-hidden="true"><i /><span>✦</span><i /></div>
 
+          <section v-if="collectionMediaStrip.length">
+            <p class="we-caps-label">收录影像 · {{ collectionMediaStrip.length }}</p>
+            <MediaStrip
+              :items="collectionMediaStrip"
+              @select="(id: string) => explore.selectDestination(id)"
+            />
+          </section>
+
           <section>
             <div class="tour-launch">
               <p class="we-caps-label">收录地点 · {{ collectionDests.length }}</p>
@@ -432,7 +479,16 @@ function fmtPopulation(p: number): string {
             <ul class="dest-list">
               <li v-for="d in collectionDests" :key="d.id">
                 <button class="dest-item" @click="explore.selectDestination(d.id)">
-                  <i :style="{ background: typeColor(d) }" />
+                  <img
+                    v-if="d.media?.status === 'verified' && d.media?.file"
+                    class="thumb"
+                    :src="d.media!.file"
+                    alt=""
+                  >
+                  <i
+                    v-else
+                    :style="{ background: typeColor(d) }"
+                  />
                   <span class="n">{{ d.name }}</span>
                   <span class="t">{{ DESTINATION_TYPE_LABELS[d.type] }}</span>
                 </button>
@@ -472,7 +528,16 @@ function fmtPopulation(p: number): string {
             <ul class="dest-list">
               <li v-for="d in personDests" :key="d.id">
                 <button class="dest-item" @click="explore.selectDestination(d.id)">
-                  <i :style="{ background: typeColor(d) }" />
+                  <img
+                    v-if="d.media?.status === 'verified' && d.media?.file"
+                    class="thumb"
+                    :src="d.media!.file"
+                    alt=""
+                  >
+                  <i
+                    v-else
+                    :style="{ background: typeColor(d) }"
+                  />
                   <span class="n">{{ d.name }}</span>
                   <span class="t">{{ DESTINATION_TYPE_LABELS[d.type] }}</span>
                 </button>
@@ -515,6 +580,25 @@ function fmtPopulation(p: number): string {
               {{ country.nameEn }}
             </p>
           </header>
+
+          <div
+            v-if="countryHero"
+            class="panel-hero"
+          >
+            <DestinationMedia
+              :id="countryHero.id"
+              :name="countryHero.name"
+              :type-color="'var(--we-type-landmark)'"
+              :media="countryHero.media"
+            />
+            <figcaption
+              v-if="countryHero.media?.status === 'verified'"
+              class="hero-caption"
+            >
+              图:{{ countryHero.name }}(收录地点)·
+              {{ countryHero.media?.author }}
+            </figcaption>
+          </div>
 
           <p class="lead">
             {{ country.summary }}
@@ -580,7 +664,16 @@ function fmtPopulation(p: number): string {
                   class="dest-item"
                   @click="explore.selectDestination(d.id)"
                 >
-                  <i :style="{ background: typeColor(d) }" />
+                  <img
+                    v-if="d.media?.status === 'verified' && d.media?.file"
+                    class="thumb"
+                    :src="d.media!.file"
+                    alt=""
+                  >
+                  <i
+                    v-else
+                    :style="{ background: typeColor(d) }"
+                  />
                   <span class="n">{{ d.name }}</span>
                   <span class="t">{{ DESTINATION_TYPE_LABELS[d.type] }}</span>
                 </button>
@@ -960,7 +1053,8 @@ function fmtPopulation(p: number): string {
   font-weight: 600;
 }
 
-.collection-hero {
+.collection-hero,
+.panel-hero {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -1012,6 +1106,14 @@ function fmtPopulation(p: number): string {
 }
 .dest-item:hover {
   background: rgba(111, 195, 255, 0.08);
+}
+.dest-item .thumb {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--we-glass-border);
 }
 .dest-item i {
   width: 7px;

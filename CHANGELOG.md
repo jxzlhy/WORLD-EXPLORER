@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **照片展示面扩容(2026-11-08,「信息不够丰富」反馈)**:现有 29 张已核验照片最大化利用——①国家/城市面板新增照片头图(优先已核验,否则诚实示意图);②合集面板新增「收录影像」横向条带(MediaStrip,点击直达,仅真实照片);③全部目的地列表行 + MyWorld 列表加圆形缩略图(有照片显照片,无照片保留类型色点);④覆盖扩容管线就绪 `experiments/expand-media-coverage.py`(目的地驱动、断点续跑、许可白名单同既有管线;Commons 当前被代理拦截,29→150 待网络恢复);E2E 用例 L 全链路断言
 - **永夜模式 GIBS 夜灯增强(2026-11-07)**:always-night 新增 `VIIRS_Black_Marble`(2016 合成,L8,PNG)瓦片层,与永昼的 GIBS 对称——拉近后夜灯清晰;网络不可达时自动仅用本地 4K 贴图;E2E 用例 K 增加图层计数断言(永昼/永夜 2 层,实时 1 层)
 - **探索进度概览(V4.5 批次二,2026-11-07)**:MyWorld 面板头部新增进度块——「已探索 X / 150 · Y%」+ 金色进度条;底座为被动足迹 `exploredIds`(访问过即单调累计,localStorage 持久化,`addExplored` 纯函数 4 断言单测);导出/导入自动纳入(`exportAll` 全 key 遍历),导入后内存同步(`reloadLocal`,连同 recent 一并修复导入后不刷新的存量缺口)
 - **合集搜索直达(V4.5 批次二,2026-11-07)**:全局搜索接入 4 个主题合集(中/英文名可命中,Fuse 同管线),金色「合集」徽标 + 「主题合集 · N 站」detail,回车直达合集面板;修掉「合集未入搜索索引」已知边界(2 断言单测)
@@ -38,7 +39,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-07):E2E 14/14 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-08):E2E 15/15 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
