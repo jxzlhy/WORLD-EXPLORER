@@ -16,6 +16,7 @@ import type {
   LayerId,
   PickPayload,
   QualityMode,
+  RouteLineOptions,
   RouteStopPoint,
 } from './types'
 
@@ -250,8 +251,8 @@ export class WorldEngine implements IWorldEngine {
     return this.imagery.setCloudsVisible(visible, this.viewer)
   }
 
-  setRouteLine(stops: RouteStopPoint[] | null): void {
-    this.route.setStops(stops)
+  setRouteLine(stops: RouteStopPoint[] | null, options?: RouteLineOptions): void {
+    this.route.setStops(stops, options)
   }
 
   setAutoRotate(enabled: boolean): void {

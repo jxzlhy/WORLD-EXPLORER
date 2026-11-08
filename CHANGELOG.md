@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **巡游航线进度化(2026-11-08 迭代二)**:`setRouteLine` 增 `RouteLineOptions.current`——全程淡虚线不变,已飞航段变实线(足迹感)、当前航段 PolylineGlow 发光高亮;ExploreView 接线改为 index 感知(顺带修复:原 watch 依赖 tour 对象引用,进度变化不触发);J 用例加航线实体数断言(启动 2 → 推进后 3 → 结束 0)
 - **V4.5 收官(2026-11-08,自主迭代批)**:①巡游每站停留时长三档可调(快 5s/标准 8s/从容 15s,持久化 localStorage,立即生效);②旅行笔记首次 E2E 验收(用例 M:失焦自动保存 → localStorage → 刷新回显 → 导出 JSON 含 notes——功能 V0.3 已有 UI,此前零测试覆盖);③MyWorld 列表行「✎ 有笔记」标记;至此 V4.5 清单:路线飞行 ✓ 收藏 ✓ 足迹 ✓ 探索进度 ✓ 旅行笔记 ✓,余项仅正式版扩展
 - **实时模式日光感知高清增强(2026-11-08,「分辨率低」二次反馈)**:合成底图之上叠 GIBS 昼/夜双瓦片层,α 由「相机所指地表的太阳照射角 + 相机高度」驱动(preRender 250ms 节流 + 缓动,α≈0 时 `show=false` 零请求)——全球视角保留合成晨昏线与夜灯;拉近后昼侧淡入 BlueMarble 瓦片、夜侧淡入 Black Marble 瓦片(≈611m/px,较 4K 单图清晰一个量级);网络不可达时瓦片静默失败、合成兜底;E2E 用例 K 同步(realtime 3 层断言)
 - **照片展示面扩容(2026-11-08,「信息不够丰富」反馈)**:现有 29 张已核验照片最大化利用——①国家/城市面板新增照片头图(优先已核验,否则诚实示意图);②合集面板新增「收录影像」横向条带(MediaStrip,点击直达,仅真实照片);③全部目的地列表行 + MyWorld 列表加圆形缩略图(有照片显照片,无照片保留类型色点);④覆盖扩容管线就绪 `experiments/expand-media-coverage.py`(目的地驱动、断点续跑、许可白名单同既有管线;Commons 当前被代理拦截,29→150 待网络恢复);E2E 用例 L 全链路断言
@@ -41,7 +42,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-08,V4.5 收官批):E2E 16/16 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-08,航线进度批):E2E 16/16 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)

@@ -126,16 +126,24 @@ async function bootstrap(): Promise<void> {
         if (result === 'interrupted' && explore.tour) explore.pauseTour()
       },
     ),
-    // 巡游航线随 tour 状态挂/摘(V4.5)
+    // 巡游航线随 tour 挂/摘并反映进度(index 感知:已飞实线、当前发光;V4.5)
     watch(
-      () => explore.tour,
-      (tour) => {
+      () =>
+        explore.tour
+          ? {
+              id: explore.tour.collectionId,
+              index: explore.tour.index,
+              n: explore.tourStops.length,
+            }
+          : null,
+      (v) => {
         const eng = getEngine()
         if (!eng) return
         eng.setRouteLine(
-          tour
+          v
             ? explore.tourStops.map((d) => ({ longitude: d.longitude, latitude: d.latitude }))
             : null,
+          v ? { current: v.index } : undefined,
         )
       },
     ),

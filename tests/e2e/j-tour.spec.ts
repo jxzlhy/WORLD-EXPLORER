@@ -1,5 +1,20 @@
-import { expect, test } from '@playwright/test'
+import { expect, test, type Page } from '@playwright/test'
 import { readAltKm, waitForAppReady } from './helpers'
+
+/** 读取航线层实体数:全程虚线 1 + 已飞段(index>0 时 1)+ 当前段(index<末站时 1) */
+async function routeEntityCount(page: Page): Promise<number> {
+  return page.evaluate(() => {
+    const v = (window as unknown as Record<string, any>).__WE_VIEWER__
+    if (!v) return 0
+    const layers = v.dataSources
+    let count = 0
+    for (let i = 0; i < layers.length; i++) {
+      const ds = layers.get(i)
+      if (ds.name === 'route') count = ds.entities.values.length
+    }
+    return count
+  })
+}
 
 /**
  * 用例 J — 合集镜头巡游(V4.5 雏形):
@@ -25,6 +40,8 @@ test('J. 合集镜头巡游:启动/打断暂停/恢复/自动推进/结束', asy
   await expect(page.locator('.tour-hud')).toBeVisible()
   await expect(page.locator('.tour-hud .counter')).toHaveText('第 1 / 14 站')
   await expect(page.locator('.detail-panel .name')).toHaveText('吉萨金字塔群')
+  // 航线挂载:全程虚线 + 当前段发光(第 1 站无已飞段)= 2 实体
+  await expect.poll(() => routeEntityCount(page), { timeout: 10_000, intervals: [500] }).toBe(2)
 
   // 航段中打断飞行 → 巡游自动暂停(出现「继续」)
   await page.waitForFunction(
@@ -48,10 +65,13 @@ test('J. 合集镜头巡游:启动/打断暂停/恢复/自动推进/结束', asy
     timeout: 20_000,
   })
   await expect(page.locator('.detail-panel .name')).toHaveText('萨卡拉墓地')
+  // 进度反映到航线:已飞段实线出现(全程 + 已飞 + 当前 = 3 实体)
+  await expect.poll(() => routeEntityCount(page), { timeout: 10_000, intervals: [500] }).toBe(3)
 
-  // 手动暂停 → 结束:HUD 消失
+  // 手动暂停 → 结束:HUD 消失,航线摘除
   await page.getByRole('button', { name: '暂停' }).click()
   await expect(page.getByRole('button', { name: '继续' })).toBeVisible()
   await page.getByRole('button', { name: '结束巡游' }).click()
   await expect(page.locator('.tour-hud')).toHaveCount(0)
+  await expect.poll(() => routeEntityCount(page), { timeout: 10_000, intervals: [500] }).toBe(0)
 })

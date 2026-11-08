@@ -15,7 +15,8 @@ interface IWorldEngine {
   setTypesFilter(activeTypes: string[]): void
   setLayerVisible(layer: 'countries' | 'markers' | 'labels', visible: boolean): void
   setCloudsVisible(visible: boolean): Promise<void>
-  setRouteLine(stops: RouteStopPoint[] | null): void      // V4.5 巡游航线(大圆虚线,null 清除)
+  setRouteLine(stops: RouteStopPoint[] | null, options?: RouteLineOptions): void
+                                                          // V4.5 巡游航线(大圆线;current=已飞进度:已飞实线、当前发光,null 清除)
   setAutoRotate(enabled: boolean): void
   setDayNightMode(mode: 'realtime' | 'always-day' | 'always-night'): void
   setQuality(mode: 'high' | 'balanced' | 'low'): void
