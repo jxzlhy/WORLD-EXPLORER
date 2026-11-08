@@ -476,13 +476,23 @@ function fmtPopulation(p: number): string {
           <section>
             <div class="tour-launch">
               <p class="we-caps-label">收录地点 · {{ collectionDests.length }}</p>
-              <WeButton
-                variant="primary"
-                size="sm"
-                @click="explore.startTour(collection.id)"
-              >
-                ✈ 镜头巡游
-              </WeButton>
+              <div class="launch-btns">
+                <WeButton
+                  variant="primary"
+                  size="sm"
+                  @click="explore.startTour(collection.id)"
+                >
+                  ✈ 镜头巡游
+                </WeButton>
+                <WeButton
+                  variant="glass"
+                  size="sm"
+                  :disabled="collectionMediaStrip.length < 2"
+                  @click="ui.toggleShowcase(true)"
+                >
+                  ⛶ 沉浸巡展
+                </WeButton>
+              </div>
             </div>
             <p class="tour-hint">沿收录顺序自动飞行,每站停留片刻,可随时暂停或跳站。</p>
             <ul class="dest-list">
@@ -1078,6 +1088,10 @@ function fmtPopulation(p: number): string {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--we-sp-2);
+}
+.launch-btns {
+  display: flex;
   gap: var(--we-sp-2);
 }
 .tour-launch .we-caps-label {

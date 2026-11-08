@@ -34,6 +34,8 @@ export const useUiStore = defineStore('ui', {
     myWorldOpen: false,
     /** 全屏沉浸阅读(V2.5):目的地档案全屏呈现 */
     immersiveOpen: false,
+    /** 合集沉浸巡展(V2.5):已核验照片全屏轮播 */
+    showcaseOpen: false,
     /** 移动端控制抽屉(≤768px 时 LeftRail 收纳于此) */
     mobileControlsOpen: false,
   }),
@@ -91,6 +93,9 @@ export const useUiStore = defineStore('ui', {
     },
     toggleImmersive(open?: boolean) {
       this.immersiveOpen = open ?? !this.immersiveOpen
+    },
+    toggleShowcase(open?: boolean) {
+      this.showcaseOpen = open ?? !this.showcaseOpen
     },
     toggleMobileControls(open?: boolean) {
       this.mobileControlsOpen = open ?? !this.mobileControlsOpen

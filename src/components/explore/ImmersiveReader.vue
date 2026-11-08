@@ -2,6 +2,7 @@
 import { computed, nextTick, onUnmounted, watch } from 'vue'
 import gsap from 'gsap'
 import { useExploreStore } from '../../stores/explore-store'
+import { useMyWorldStore } from '../../stores/my-world-store'
 import { useUiStore } from '../../stores/ui-store'
 import { DESTINATION_TYPE_LABELS } from '../../domain/types'
 
@@ -11,6 +12,7 @@ import { DESTINATION_TYPE_LABELS } from '../../domain/types'
  * 退出:右上角按钮或 Esc(ExploreView 全局键位)。
  */
 const explore = useExploreStore()
+const myWorld = useMyWorldStore()
 const ui = useUiStore()
 
 const dest = computed(() => explore.selectedDestination)
@@ -121,6 +123,17 @@ function fmtCoord(v: number, pos: string, neg: string): string {
               :key="i"
             >
               {{ para }}
+            </p>
+          </section>
+
+          <!-- 我的笔记(只读回显;编辑请在档案面板) -->
+          <section
+            v-if="myWorld.notes[dest.id]"
+            class="my-note-ro"
+          >
+            <p class="we-caps-label gold">✎ 我的笔记</p>
+            <p class="note-text">
+              {{ myWorld.notes[dest.id] }}
             </p>
           </section>
 
@@ -305,6 +318,23 @@ function fmtCoord(v: number, pos: string, neg: string): string {
 }
 .timeline .text {
   color: var(--we-text);
+}
+
+.my-note-ro {
+  border-left: 2px solid rgba(232, 200, 150, 0.5);
+  padding: var(--we-sp-2) var(--we-sp-4);
+  background: rgba(232, 200, 150, 0.06);
+  border-radius: 0 var(--we-r-sm) var(--we-r-sm) 0;
+}
+.my-note-ro .we-caps-label {
+  margin: 0;
+}
+.my-note-ro .note-text {
+  margin: var(--we-sp-2) 0 0;
+  font-size: var(--we-fs-body);
+  line-height: 1.8;
+  color: var(--we-text);
+  white-space: pre-wrap;
 }
 
 .sources {

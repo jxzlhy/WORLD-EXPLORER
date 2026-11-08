@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **沉浸体系增强(2026-11-09 迭代四)**:①合集沉浸巡展 CollectionShowcase——合集面板「⛶ 沉浸巡展」(≥2 张已核验照片可用)→ 全屏照片轮播:自动 8s 推进(可暂停)、←/→ 键盘翻页、进度点直达、逐张 © 署名,Esc 退出;②沉浸阅读内「✎ 我的笔记」只读回显(编辑仍在档案面板);E2E 用例 O1/O2
 - **全屏沉浸阅读(V2.5 雏形,2026-11-08 迭代三)**:目的地面板「⛶ 沉浸阅读」→ 全屏覆盖层——已核验照片暗化通栏背景(无照片则程序渐变,诚实降级)+ `--we-fs-display` 大字标题 + 逐段故事(行高 2,62ch 阅读宽)+ 时间轴 + 来源;GSAP 逐段交错浮现(尊重 prefers-reduced-motion);Esc/按钮退出,z-modal 层级;E2E 用例 N(入口/呈现/Esc/按钮双退出)
 - **巡游航线进度化(2026-11-08 迭代二)**:`setRouteLine` 增 `RouteLineOptions.current`——全程淡虚线不变,已飞航段变实线(足迹感)、当前航段 PolylineGlow 发光高亮;ExploreView 接线改为 index 感知(顺带修复:原 watch 依赖 tour 对象引用,进度变化不触发);J 用例加航线实体数断言(启动 2 → 推进后 3 → 结束 0)
 - **V4.5 收官(2026-11-08,自主迭代批)**:①巡游每站停留时长三档可调(快 5s/标准 8s/从容 15s,持久化 localStorage,立即生效);②旅行笔记首次 E2E 验收(用例 M:失焦自动保存 → localStorage → 刷新回显 → 导出 JSON 含 notes——功能 V0.3 已有 UI,此前零测试覆盖);③MyWorld 列表行「✎ 有笔记」标记;至此 V4.5 清单:路线飞行 ✓ 收藏 ✓ 足迹 ✓ 探索进度 ✓ 旅行笔记 ✓,余项仅正式版扩展
@@ -43,7 +44,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-08,沉浸阅读批):E2E 17/17 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-09,沉浸体系增强批):E2E 19/19 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
