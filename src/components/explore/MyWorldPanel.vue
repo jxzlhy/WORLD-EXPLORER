@@ -180,6 +180,11 @@ function cancelImport(): void {
                   alt=""
                 >
                 <span class="name">{{ d.name }}</span>
+                <span
+                  v-if="myWorld.notes[d.id]"
+                  class="note-flag"
+                  title="有旅行笔记"
+                >✎</span>
                 <span class="country">{{ explore.countryById[d.countryId]?.name }}</span>
               </button>
             </li>
@@ -391,6 +396,12 @@ function cancelImport(): void {
 }
 .item:hover {
   background: rgba(111, 195, 255, 0.08);
+}
+.item .note-flag {
+  flex: none;
+  color: var(--we-gold-strong);
+  font-size: var(--we-fs-micro);
+  align-self: center;
 }
 .item .thumb {
   flex: none;

@@ -10,8 +10,12 @@ import WeButton from '../../design-system/WeButton.vue'
  */
 const explore = useExploreStore()
 
-/** 每站停留时长:飞行落地后留给面板阅读的时间 */
-const DWELL_MS = 8_000
+/** 停留时长三档(快览/标准/从容),持久化于 localStorage */
+const DWELL_OPTIONS: Array<{ label: string; ms: number }> = [
+  { label: '快 5s', ms: 5_000 },
+  { label: '标准 8s', ms: 8_000 },
+  { label: '从容 15s', ms: 15_000 },
+]
 
 let dwellTimer: ReturnType<typeof setTimeout> | null = null
 
@@ -24,12 +28,12 @@ function clearDwell(): void {
 
 /** 飞行落地(pendingFlight 清空)且未暂停 → 开始本站倒计时 */
 watch(
-  () => [explore.pendingFlight, explore.tour?.paused, explore.tour?.index] as const,
+  () => [explore.pendingFlight, explore.tour?.paused, explore.tour?.index, explore.tour?.dwellMs] as const,
   () => {
     clearDwell()
     if (!explore.tour || explore.tour.paused) return
     if (explore.pendingFlight) return // 仍在航段中
-    dwellTimer = setTimeout(() => explore.nextTourStop(), DWELL_MS)
+    dwellTimer = setTimeout(() => explore.nextTourStop(), explore.tour.dwellMs)
   },
   { immediate: true },
 )
@@ -41,6 +45,7 @@ const current = computed(() => explore.tourCurrent)
 const index = computed(() => explore.tour?.index ?? 0)
 const total = computed(() => explore.tourStops.length)
 const paused = computed(() => explore.tour?.paused ?? false)
+const dwellMs = computed(() => explore.tour?.dwellMs ?? 8_000)
 /** 进度:已飞过的航段占比(到站即计入) */
 const progress = computed(() => (total.value ? ((index.value + 1) / total.value) * 100 : 0))
 </script>
@@ -113,6 +118,22 @@ const progress = computed(() => (total.value ? ((index.value + 1) / total.value)
       >
         ✕
       </WeButton>
+    </div>
+
+    <div
+      class="dwell-picker"
+      role="group"
+      aria-label="每站停留时长"
+    >
+      <button
+        v-for="opt in DWELL_OPTIONS"
+        :key="opt.ms"
+        class="dwell-chip"
+        :class="{ active: dwellMs === opt.ms }"
+        @click="explore.setTourDwell(opt.ms)"
+      >
+        {{ opt.label }}
+      </button>
     </div>
   </div>
 </template>
@@ -192,5 +213,31 @@ const progress = computed(() => (total.value ? ((index.value + 1) / total.value)
   align-items: center;
   justify-content: center;
   gap: var(--we-sp-2);
+}
+
+.dwell-picker {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.dwell-chip {
+  appearance: none;
+  border: 1px solid transparent;
+  background: none;
+  color: var(--we-text-faint);
+  font-size: var(--we-fs-micro);
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--we-r-full);
+  cursor: pointer;
+  transition: all var(--we-dur-1) var(--we-ease-out);
+}
+.dwell-chip:hover {
+  color: var(--we-text-dim);
+}
+.dwell-chip.active {
+  background: rgba(232, 200, 150, 0.14);
+  border-color: rgba(232, 200, 150, 0.3);
+  color: var(--we-gold-strong);
 }
 </style>

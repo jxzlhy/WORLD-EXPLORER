@@ -34,7 +34,7 @@
 
 ### 2026-11-07 追加:V4.5 批次推送被凭据阻塞
 
-- 提交 `d76de59` / `31e7ccf` / `76d2e38` / `debccdc`(巡游雏形、探索进度、昼夜修复、GIBS 修正)均已完成本地提交,但 `git push` 鉴权失败:osxkeychain 中 GitHub 令牌失效("Invalid username or token"),非交互环境无法重新输入;`gh` CLI 未安装。**需要项目所有者更新 GitHub 凭据(PAT)后执行 `git push origin main`**(4 个提交一次推完),或将有效 PAT 提供给代理环境。
+- 提交 `d76de59` / `31e7ccf` / `76d2e38` / `debccdc` / `338edbf` / `b6496f5` / `18ade41`(共 7 个:巡游雏形、探索进度、昼夜修复、GIBS 修正、实时高清增强、照片展示面、V4.5 收官)均已完成本地提交,但推送持续失败:先是 PAT 鉴权失效,2026-11-08 晚间进一步出现 github.com:443 连接超时(代理规则漂移,github 暂不可达)。**需要项目所有者更新 GitHub 凭据并确认网络后执行 `git push origin main`**(7 个提交一次推完)。
 
 ## 关键教训(写给下一次会话)
 
@@ -50,6 +50,13 @@
 - 套件 12/12 + 单测 15/15;超时预算按 SwiftShader 实测调整 [V]
 - 推送:守望曾在恢复窗口推送至 9799c5c;6 提交待推,守望 v2 继续盯守 [V]
 - 混排乱码自检流程固化:python 脚本写入后立即校验,已捕获 7 处 [V]
+
+## V4.5 收官批(2026-11-08)—— 自主迭代(/goal 自行迭代)
+
+- 完成审计:旅行笔记 UI 实际 V0.3 已存在(DetailPanel「我的笔记」+ blur 落盘 + setNote 后端),但 **E2E 零覆盖**——补用例 M(自动保存 → localStorage → 刷新回显 → 导出含 notes)而非重复造轮子 [V]
+- 巡游停留可调:`TourState.dwellMs`(默认 8s 不变,J 用例兼容)+ TourHud 三档 chips(5s/8s/15s,localStorage 'tour-dwell' 持久化);dwell 变化会重启停留计时(watch 依赖含 dwellMs) [V]
+- MyWorld 列表行「✎ 有笔记」标记(读 myWorld.notes) [V]
+- 文档:CHANGELOG/ROADMAP(V4.5 清单全项 ✓)/SESSION-LOG [V]
 
 ## 实时模式高清增强(2026-11-08)—— 用户二次反馈「地球分辨率有点低」
 

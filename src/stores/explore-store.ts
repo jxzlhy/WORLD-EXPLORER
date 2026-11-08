@@ -13,17 +13,22 @@ export type SelectionPanel =
   | { kind: 'collection'; collectionId: string }
   | { kind: 'person'; personId: string }
 
-/** 合集镜头巡游状态(V4.5 雏形):沿收录顺序逐站飞行;定时推进由 TourHud 负责 */
+/** 合集镜头巡游状态(V4.5):沿收录顺序逐站飞行;定时推进由 TourHud 负责 */
 export interface TourState {
   collectionId: string
   /** 当前站(0 起) */
   index: number
   /** 暂停:飞行被打断或用户手动暂停时置真,恢复时重飞当前航段 */
   paused: boolean
+  /** 每站停留时长(ms),可调并持久化 */
+  dwellMs: number
 }
 
 /** 巡游航段固定时长(秒):电影感匀速节奏,不随距离跳动 */
 const TOUR_LEG_DURATION = 6
+
+/** 停留时长默认值(每站落地后的阅读时间) */
+export const TOUR_DWELL_DEFAULT = 8_000
 
 /** 镜头意图(引擎 FlyTarget 的 store 侧形态) */
 export interface PendingFlight {
@@ -182,9 +187,21 @@ export const useExploreStore = defineStore('explore', {
       if (!collection) return
       const stops = this.collectionDestinations(collection)
       if (stops.length < 2) return
-      this.tour = { collectionId, index: 0, paused: false }
+      this.tour = {
+        collectionId,
+        index: 0,
+        paused: false,
+        dwellMs: loadJson<number>('tour-dwell', TOUR_DWELL_DEFAULT),
+      }
       const first = stops[0]
       if (first) this.flyToTourStop(first)
+    },
+
+    /** 调整每站停留时长并持久化(立即生效于下一站) */
+    setTourDwell(ms: number) {
+      if (!this.tour) return
+      this.tour.dwellMs = ms
+      saveJson('tour-dwell', ms)
     },
 
     /** 跳转指定站(显式导航会解除暂停) */
