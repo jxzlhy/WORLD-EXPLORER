@@ -32,6 +32,8 @@ export const useUiStore = defineStore('ui', {
     cameraInfo: null as CameraInfo | null,
     searchOpen: false,
     myWorldOpen: false,
+    /** 全屏沉浸阅读(V2.5):目的地档案全屏呈现 */
+    immersiveOpen: false,
     /** 移动端控制抽屉(≤768px 时 LeftRail 收纳于此) */
     mobileControlsOpen: false,
   }),
@@ -86,6 +88,9 @@ export const useUiStore = defineStore('ui', {
     },
     toggleMyWorld(open?: boolean) {
       this.myWorldOpen = open ?? !this.myWorldOpen
+    },
+    toggleImmersive(open?: boolean) {
+      this.immersiveOpen = open ?? !this.immersiveOpen
     },
     toggleMobileControls(open?: boolean) {
       this.mobileControlsOpen = open ?? !this.mobileControlsOpen

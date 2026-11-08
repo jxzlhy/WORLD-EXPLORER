@@ -14,6 +14,7 @@ import TourHud from '../components/explore/TourHud.vue'
 import DiscoverBar from '../components/explore/DiscoverBar.vue'
 import StatusBar from '../components/explore/StatusBar.vue'
 import MyWorldPanel from '../components/explore/MyWorldPanel.vue'
+import ImmersiveReader from '../components/explore/ImmersiveReader.vue'
 import WeSpinner from '../design-system/WeSpinner.vue'
 import WeButton from '../design-system/WeButton.vue'
 
@@ -198,6 +199,7 @@ function onKeydown(e: KeyboardEvent): void {
     ui.toggleSearch(true)
   } else if (e.key === 'Escape') {
     if (ui.searchOpen) ui.toggleSearch(false)
+    else if (ui.immersiveOpen) ui.toggleImmersive(false)
     else if (ui.myWorldOpen) ui.toggleMyWorld(false)
     else if (explore.tour) explore.stopTour()
     else explore.closePanel()
@@ -277,6 +279,7 @@ onUnmounted(() => {
       <DiscoverBar />
       <StatusBar />
       <MyWorldPanel />
+      <ImmersiveReader />
       <SearchOverlay />
     </template>
   </div>

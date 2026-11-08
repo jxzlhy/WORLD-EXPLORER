@@ -3,6 +3,7 @@ import { computed, nextTick, onUnmounted, ref, watch } from 'vue'
 import gsap from 'gsap'
 import { useExploreStore } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
+import { useUiStore } from '../../stores/ui-store'
 import { DESTINATION_TYPE_LABELS } from '../../domain/types'
 import type { Destination } from '../../domain/types'
 import GlassPanel from '../../design-system/GlassPanel.vue'
@@ -14,6 +15,7 @@ import MediaStrip from './MediaStrip.vue'
 
 const explore = useExploreStore()
 const myWorld = useMyWorldStore()
+const ui = useUiStore()
 
 const destination = computed(() => explore.selectedDestination)
 const country = computed(() => explore.selectedCountry)
@@ -331,6 +333,13 @@ function fmtPopulation(p: number): string {
               @click="myWorld.toggleWantToGo(destination.id)"
             >
               ⛳ 想去
+            </WeButton>
+            <WeButton
+              variant="glass"
+              size="sm"
+              @click="ui.toggleImmersive(true)"
+            >
+              ⛶ 沉浸阅读
             </WeButton>
           </div>
 
