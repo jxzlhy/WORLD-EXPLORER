@@ -1,14 +1,31 @@
 <script setup lang="ts">
-import { computed, onUnmounted, watch } from 'vue'
+import { computed, onUnmounted, ref, watch } from 'vue'
 import { useExploreStore } from '../../stores/explore-store'
+import { TourAudio } from '../../services/tour-audio'
 import WeButton from '../../design-system/WeButton.vue'
 
 /**
- * TourHud — 合集镜头巡游控制条(V4.5 雏形)。
+ * TourHud — 合集镜头巡游控制条(V4.5)。
  * 仅在 explore.tour 非空时挂载(由 ExploreView v-if 控制),
- * 因此停留倒计时定时器随组件卸载而释放,不留在 store 层。
+ * 因此停留倒计时定时器与巡游音频随组件卸载而释放,不留在 store 层。
  */
 const explore = useExploreStore()
+
+// —— 巡游音频(默认静音;AudioContext 在用户点击手势中创建) ——
+let audio: TourAudio | null = null
+const audioOn = ref(false)
+
+async function toggleSound(): Promise<void> {
+  if (!audio) audio = new TourAudio()
+  if (audioOn.value) {
+    audio.disable()
+    audioOn.value = false
+  } else {
+    await audio.enable()
+    if (explore.tour && !explore.pendingFlight) audio.startAmbient()
+    audioOn.value = audio.enabled
+  }
+}
 
 /** 停留时长三档(快览/标准/从容),持久化于 localStorage */
 const DWELL_OPTIONS: Array<{ label: string; ms: number }> = [
@@ -26,19 +43,29 @@ function clearDwell(): void {
   }
 }
 
-/** 飞行落地(pendingFlight 清空)且未暂停 → 开始本站倒计时 */
+/** 飞行落地(pendingFlight 清空)且未暂停 → 开始本站倒计时;开启音频时播到站钟声 */
 watch(
   () => [explore.pendingFlight, explore.tour?.paused, explore.tour?.index, explore.tour?.dwellMs] as const,
   () => {
     clearDwell()
     if (!explore.tour || explore.tour.paused) return
-    if (explore.pendingFlight) return // 仍在航段中
+    if (explore.pendingFlight) {
+      return // 仍在航段中
+    }
+    if (audioOn.value) {
+      audio?.startAmbient()
+      audio?.chime()
+    }
     dwellTimer = setTimeout(() => explore.nextTourStop(), explore.tour.dwellMs)
   },
   { immediate: true },
 )
 
-onUnmounted(clearDwell)
+onUnmounted(() => {
+  clearDwell()
+  audio?.dispose()
+  audio = null
+})
 
 const collectionName = computed(() => explore.tourCollection?.name ?? '')
 const current = computed(() => explore.tourCurrent)
@@ -118,6 +145,15 @@ const progress = computed(() => (total.value ? ((index.value + 1) / total.value)
       >
         ✕
       </WeButton>
+      <button
+        class="sound"
+        :class="{ on: audioOn }"
+        :aria-label="audioOn ? '关闭巡游环境音' : '开启巡游环境音'"
+        :title="audioOn ? '关闭环境音' : '开启环境音(程序合成,默认静音)'"
+        @click="toggleSound"
+      >
+        {{ audioOn ? '🔊' : '🔇' }}
+      </button>
     </div>
 
     <div
@@ -239,5 +275,26 @@ const progress = computed(() => (total.value ? ((index.value + 1) / total.value)
   background: rgba(232, 200, 150, 0.14);
   border-color: rgba(232, 200, 150, 0.3);
   color: var(--we-gold-strong);
+}
+
+.sound {
+  appearance: none;
+  border: 1px solid var(--we-glass-border);
+  background: none;
+  color: var(--we-text-dim);
+  font-size: var(--we-fs-body);
+  width: 34px;
+  height: 30px;
+  border-radius: var(--we-r-full);
+  cursor: pointer;
+  transition: all var(--we-dur-1) var(--we-ease-out);
+}
+.sound:hover {
+  color: var(--we-text-hi);
+  border-color: rgba(232, 200, 150, 0.3);
+}
+.sound.on {
+  color: var(--we-gold-strong);
+  border-color: rgba(232, 200, 150, 0.35);
 }
 </style>

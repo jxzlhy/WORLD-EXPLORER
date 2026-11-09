@@ -43,15 +43,31 @@ test('J. 合集镜头巡游:启动/打断暂停/恢复/自动推进/结束', asy
   // 航线挂载:全程虚线 + 当前段发光(第 1 站无已飞段)= 2 实体
   await expect.poll(() => routeEntityCount(page), { timeout: 10_000, intervals: [500] }).toBe(2)
 
-  // 航段中打断飞行 → 巡游自动暂停(出现「继续」)
-  await page.waitForFunction(
-    () => (window as unknown as Record<string, any>).__WE_ENGINE__?.isFlying() === true,
-    { timeout: 10_000 },
-  )
-  await page.evaluate(() => {
-    ;(window as unknown as Record<string, any>).__WE_ENGINE__.cancelFlight()
-  })
-  await expect(page.getByRole('button', { name: '继续' })).toBeVisible({ timeout: 10_000 })
+  // 巡游音频:默认静音,点击后开启(程序合成,无外部素材)
+  const soundOff = page.locator('.tour-hud').getByRole('button', { name: '开启巡游环境音' })
+  await expect(soundOff).toBeVisible()
+  await soundOff.click()
+  await expect(
+    page.locator('.tour-hud').getByRole('button', { name: '关闭巡游环境音' }),
+  ).toBeVisible()
+
+  // 航段中打断飞行 → 巡游自动暂停(出现「继续」)。
+  // 负载抖动下注入可能落在航段已正常落地之后(取消成空操作),故轮询重试至多 3 轮:
+  // 每轮先确认 isFlying 再注入;若处于停留期(下一航段未起飞),waitForFunction 会等到起飞。
+  const resumeBtn = page.getByRole('button', { name: '继续' })
+  for (let i = 0; i < 3 && !(await resumeBtn.isVisible()); i++) {
+    await page
+      .waitForFunction(
+        () => (window as unknown as Record<string, any>).__WE_ENGINE__?.isFlying() === true,
+        { timeout: 15_000 },
+      )
+      .catch(() => {})
+    await page.evaluate(() => {
+      ;(window as unknown as Record<string, any>).__WE_ENGINE__.cancelFlight()
+    })
+    await page.waitForTimeout(800)
+  }
+  await expect(resumeBtn).toBeVisible({ timeout: 10_000 })
 
   // 恢复 → 重飞当前站并抵达(巡游航段固定 6s 电影感节奏)
   await page.getByRole('button', { name: '继续' }).click()

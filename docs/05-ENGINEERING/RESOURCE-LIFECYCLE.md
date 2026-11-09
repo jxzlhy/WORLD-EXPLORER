@@ -12,6 +12,7 @@
 | preRender 监听 | CameraController | 保存 remove 回调并调用 |
 | 事件订阅(pick/camera/stats) | world-engine | unsubs 数组统一退订 |
 | GSAP timeline | ExploreView 开场 | 一次性自毁(无持久句柄);新增 timeline 需 kill() |
+| Web Audio(巡游环境音) | TourAudio(随 TourHud 创建) | TourHud onUnmounted → `dispose()`:停振荡器/断节点/`close()` 上下文 |
 | RAF/定时器 | 无常驻 | — |
 | localStorage | storage-service | 命名空间 `world-explorer:v1:*` |
 
