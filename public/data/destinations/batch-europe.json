@@ -15,12 +15,24 @@
       "马蒂斯与夏加尔都在尼斯度过半生,「尼斯光线」是印象派之后画家的集体执念。2月的尼斯狂欢节是法国最大规模,花车大战(batailles de fleurs)把整条步行道变成花的海。"
     ],
     "bestSeason": "5-6月与9-10月;2月狂欢节",
-    "tags": ["海岸", "蔚蓝海岸", "步行道", "狂欢节"],
-    "sources": [
-      { "name": "Wikipedia: Promenade des Anglais", "url": "https://en.wikipedia.org/wiki/Promenade_des_Anglais", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "海岸",
+      "蔚蓝海岸",
+      "步行道",
+      "狂欢节"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Promenade des Anglais",
+        "url": "https://en.wikipedia.org/wiki/Promenade_des_Anglais",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -39,13 +51,30 @@
       "大酒商 château 的地窖深达数层,古堡钟楼(共196级台阶)可以俯瞰成片的梅洛园。当地的 macaron 修女饼配方自1620年沿用至今,配一杯右岸红酒是本地人推荐的下午茶。"
     ],
     "bestSeason": "9-10月采收季;春夏的葡萄园绿浪",
-    "tags": ["世界遗产", "葡萄酒", "中世纪", "石灰岩"],
+    "tags": [
+      "世界遗产",
+      "葡萄酒",
+      "中世纪",
+      "石灰岩"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/932", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Saint-Émilion", "url": "https://en.wikipedia.org/wiki/Saint-Émilion", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/932",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Saint-Émilion",
+        "url": "https://en.wikipedia.org/wiki/Saint-Émilion",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -64,13 +93,30 @@
       "富维耶圣母大教堂(1872-1884)是全法国最上镜的新拜占庭建筑之一;每年12月8日的灯光节(Fête des Lumières)源于市民在窗台点蜡烛感恩圣母——如今演变成四天四夜的全世界灯光艺术大展。"
     ],
     "bestSeason": "12月上旬灯光节;全年老城皆宜",
-    "tags": ["世界遗产", "文艺复兴", "丝绸之路", "灯光节"],
+    "tags": [
+      "世界遗产",
+      "文艺复兴",
+      "丝绸之路",
+      "灯光节"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/872", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Vieux Lyon", "url": "https://en.wikipedia.org/wiki/Vieux_Lyon", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/872",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Vieux Lyon",
+        "url": "https://en.wikipedia.org/wiki/Vieux_Lyon",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -89,12 +135,24 @@
       "教堂旁的埃马努埃莱二世长廊是「世界最老的购物中心」之一,与教堂同时代落成;地板上的公牛镶嵌画有一个传统:用脚跟在牛的关键部位转三圈会带来好运——大理石已被磨出一个浅坑。"
     ],
     "bestSeason": "全年;清晨第一批登顶避开人流",
-    "tags": ["教堂", "哥特", "大理石", "米兰"],
+    "tags": [
+      "教堂",
+      "哥特",
+      "大理石",
+      "米兰"
+    ],
     "sources": [
-      { "name": "Wikipedia: Duomo di Milano", "url": "https://en.wikipedia.org/wiki/Duomo_di_Milano", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "Wikipedia: Duomo di Milano",
+        "url": "https://en.wikipedia.org/wiki/Duomo_di_Milano",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -113,13 +171,30 @@
       "维罗纳本身是「朱丽叶之家」的所在地——阳台与铜像其实是20世纪的浪漫发明,但没有人愿意拆穿:每年数百万人在朱丽叶雕像旁摸右胸许愿,信件由「朱丽叶俱乐部」的志愿者逐一回信,这项服务已经持续了八十年。"
     ],
     "bestSeason": "6-9月歌剧节;建议提前订座",
-    "tags": ["古罗马", "歌剧", "竞技场", "朱丽叶"],
-    "sources": [
-      { "name": "UNESCO 世界遗产中心(维罗纳城)", "url": "https://whc.unesco.org/en/list/797", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Verona Arena", "url": "https://en.wikipedia.org/wiki/Verona_Arena", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "古罗马",
+      "歌剧",
+      "竞技场",
+      "朱丽叶"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心(维罗纳城)",
+        "url": "https://whc.unesco.org/en/list/797",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Verona Arena",
+        "url": "https://en.wikipedia.org/wiki/Verona_Arena",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -138,13 +213,30 @@
       "2013年埃特纳以「世界最活跃且记录最久的火山」列入世界遗产。缆车与越野车可上到约2900米,喷发期(常在冬季)火山口夜间的「喷灯」景观让山下小镇的居民和游客彻夜围观——地质学家称之为「可以安全围观的活地质学」。"
     ],
     "bestSeason": "5-6月与9-10月登山;冬季山顶滑雪",
-    "tags": ["世界遗产", "活火山", "西西里", "火山酒"],
+    "tags": [
+      "世界遗产",
+      "活火山",
+      "西西里",
+      "火山酒"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1427", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Mount Etna", "url": "https://en.wikipedia.org/wiki/Mount_Etna", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1427",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Mount Etna",
+        "url": "https://en.wikipedia.org/wiki/Mount_Etna",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -163,13 +255,30 @@
       "古浴场禁止入水(水体内有历史管网的铜锈与细菌),但两百年蒸汽浴传统由旁邻的 Thermae 浴场延续——在屋顶温泉池里泡着,眼前就是巴斯修道院的尖顶与整片乔治亚天际线。1987年巴斯城整体列入世界遗产,2021年「温泉之城」跨欧洲七国联合申遗再次入选。"
     ],
     "bestSeason": "全年;屋顶浴场黄昏最佳",
-    "tags": ["世界遗产", "罗马遗迹", "温泉", "乔治亚建筑"],
+    "tags": [
+      "世界遗产",
+      "罗马遗迹",
+      "温泉",
+      "乔治亚建筑"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/428", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Roman Baths (Bath)", "url": "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/428",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Roman Baths (Bath)",
+        "url": "https://en.wikipedia.org/wiki/Roman_Baths_(Bath)",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -188,12 +297,24 @@
       "莫德林学院的鹿园、新学院的中庭与「叹息桥」(赫特福德桥)都印在明信片上,但牛津最动人的是细节:学院草坪只允许院士行走;考试季学生必须佩戴 subfusc(黑色长袍与白花/红花),255道仪式规矩延续至今。"
     ],
     "bestSeason": "5-6月考试季长袍风情;9月新生入学周",
-    "tags": ["大学城", "哥特学院", "哈利波特", "牛津"],
-    "sources": [
-      { "name": "Wikipedia: University of Oxford", "url": "https://en.wikipedia.org/wiki/University_of_Oxford", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "大学城",
+      "哥特学院",
+      "哈利波特",
+      "牛津"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: University of Oxford",
+        "url": "https://en.wikipedia.org/wiki/University_of_Oxford",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -212,13 +333,30 @@
       "1693年一位主教向皇家学会提交论文后,争论在神创论与地质成因间持续了一个多世纪,被称为「巨人之路论战」——它是地质学作为科学诞生的标志性现场之一。1986年列入世界遗产,悬崖步道串起「风琴管」「骆驼石」等四十余处奇岩。"
     ],
     "bestSeason": "5-9月;风暴后的浪花最壮观(注意安全)",
-    "tags": ["世界遗产", "柱状节理", "玄武岩", "神话"],
+    "tags": [
+      "世界遗产",
+      "柱状节理",
+      "玄武岩",
+      "神话"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/369", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Giant's Causeway", "url": "https://en.wikipedia.org/wiki/Giant's_Causeway", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/369",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Giant's Causeway",
+        "url": "https://en.wikipedia.org/wiki/Giant's_Causeway",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   }
 ]

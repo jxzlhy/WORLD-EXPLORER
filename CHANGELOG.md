@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **数据分级一致性回填(2026-11-11 迭代十)**:实测量化——82 篇 A 级与 S 级故事字数中位 276 vs 271,内容量无差异,quality 标注是历史批次欠账;按 `destinationCompleteness` 口径全库回填 **S 68→150 · A 82→0 · B 0**(全库 0 不一致);新增防回归单测(真实 150 条 × validator 口径,批次文件遍历断言),防止以后新增批次再脱节;「S 级档案」徽标语义自此 = 完整档案
 - **相似目的地推荐(2026-11-11 迭代九)**:目的地面板「看过这处的人也看」Top3——`buildSimilarDestinations` 纯函数(以当前目的地为锚:质量基分 + 同合集 ×2 > 同国 ×1.5 > 同类型 ×0.8,内容关联不读用户状态,reason 同合集 > 同国 > 同类型);复用列表行样式(含缩略图);单测 5 断言(锚点排除/合集优先/回退链/limit/锚点不存在)+ E2E 用例 S(渲染 Top3 → 点击切换面板)
 - **数据覆盖统计面板(2026-11-11 迭代八)**:`/stats` 独立路由(懒加载)——`buildCoverageStats` 纯函数(质量分级 / 照片·时间轴·人物关联口径 / 按国矩阵降序 / 合集成员实时统计并剔除失效引用)+ 摘要卡 5 张 + 按国矩阵(照片覆盖进度条)+ 合集表;单测 5 断言(含空输入防 NaN)+ E2E 用例 R(150 目的地 / 29 照片 / 10 国矩阵 / 4 合集 / 返回探索)
 - **推荐进 DiscoverBar(2026-11-11 迭代七)**:首页一级入口「为你推荐」芯片——复用 buildRecommendations Top5,芯片显示首条(名称 + reason),↻ 逐个轮换,点击直达;足迹为空自动隐藏;E2E 用例 Q(播种足迹 → 芯片 → ↻ 轮换 → 点击直达)
@@ -49,7 +50,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-11,相似目的地批):E2E 23/23 · 单测 50/50 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-11,分级一致性批):E2E 23/23 · 单测 51/51 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)

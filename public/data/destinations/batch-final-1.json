@@ -14,13 +14,30 @@
       "梯田养的不只是稻:鱼在田里游,鸭在田间走,「稻鱼鸭」共生的传统农业模式被联合国粮农组织列为全球重要农业文化遗产——一千三百年过去,这套系统仍在产出粮食与风景。"
     ],
     "bestSeason": "11月-3月灌水期(镜面梯田);6-9月绿浪",
-    "tags": ["世界遗产", "梯田", "哈尼族", "农业遗产"],
+    "tags": [
+      "世界遗产",
+      "梯田",
+      "哈尼族",
+      "农业遗产"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1111", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Honghe Hani Rice Terraces", "url": "https://en.wikipedia.org/wiki/Honghe_Hani_Rice_Terraces", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1111",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Honghe Hani Rice Terraces",
+        "url": "https://en.wikipedia.org/wiki/Honghe_Hani_Rice_Terraces",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -39,12 +56,24 @@
       "基地也是城市生态的注脚:成都平原曾是大熊猫栖息地的南缘。大熊猫野化培训放归项目正把圈养后代送回岷山与邛崃山——「动物园的终点,是让它不再需要动物园」。"
     ],
     "bestSeason": "全年;清晨 8:30-10:00 最活跃",
-    "tags": ["大熊猫", "保护繁育", "成都", "亲子"],
-    "sources": [
-      { "name": "Wikipedia: Chengdu Research Base of Giant Panda Breeding", "url": "https://en.wikipedia.org/wiki/Chengdu_Research_Base_of_Giant_Panda_Breeding", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    "tags": [
+      "大熊猫",
+      "保护繁育",
+      "成都",
+      "亲子"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Chengdu Research Base of Giant Panda Breeding",
+        "url": "https://en.wikipedia.org/wiki/Chengdu_Research_Base_of_Giant_Panda_Breeding",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -62,13 +91,30 @@
       "阳明门「日暮门」的名号来自:看它太入迷,一天就过去了。2017 年大修完成后,白底贴金的原色重现——江户的「炫技」,在修旧如旧的原则下重新发光。"
     ],
     "bestSeason": "11月上中旬红叶(日光红叶在日本名列前茅)",
-    "tags": ["世界遗产", "德川家康", "雕刻", "日光"],
+    "tags": [
+      "世界遗产",
+      "德川家康",
+      "雕刻",
+      "日光"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心(日光社寺)", "url": "https://whc.unesco.org/en/list/913", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Nikkō Tōshō-gū", "url": "https://en.wikipedia.org/wiki/Nikkō_Tōshō-gū", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+      {
+        "name": "UNESCO 世界遗产中心(日光社寺)",
+        "url": "https://whc.unesco.org/en/list/913",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Nikkō Tōshō-gū",
+        "url": "https://en.wikipedia.org/wiki/Nikkō_Tōshō-gū",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -87,12 +133,24 @@
       "嵯峨野小火车沿保津峡行驶,赏枫季一票难求;大河内山庄的庭园是眺望岚山全景的最佳机位——别忘了竹径尽头的野宫神社:求学业与良缘的黑木鸟居,用树皮盖成,是《源氏物语》里出现过的「贤木」。"
     ],
     "bestSeason": "全年;清晨六点(人少光斜)最佳",
-    "tags": ["竹林", "岚山", "声音遗产", "京都"],
-    "sources": [
-      { "name": "Wikipedia: Sagano Bamboo forest", "url": "https://en.wikipedia.org/wiki/Sagano_Bamboo_forest", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    "tags": [
+      "竹林",
+      "岚山",
+      "声音遗产",
+      "京都"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Sagano Bamboo forest",
+        "url": "https://en.wikipedia.org/wiki/Sagano_Bamboo_forest",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -110,12 +168,24 @@
       "「会走路的石头」之谜:赛马场干湖(Racetrack Playa)的石块会自己滑行留下长痕——2020 年科学界终于抓到「现行」:薄冰在低温时形成,微风吹动大石与冰壳一起漂移。谜题解开,浪漫减半,科学加满。"
     ],
     "bestSeason": "11-3月(夏季严禁徒步);4月野花年景",
-    "tags": ["国家公园", "极热极干", "盐壳", "会走路的石头"],
-    "sources": [
-      { "name": "Wikipedia: Death Valley National Park", "url": "https://en.wikipedia.org/wiki/Death_Valley_National_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    "tags": [
+      "国家公园",
+      "极热极干",
+      "盐壳",
+      "会走路的石头"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Death Valley National Park",
+        "url": "https://en.wikipedia.org/wiki/Death_Valley_National_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -133,12 +203,24 @@
       "夜晚的纪念堂亮灯后,倒影池里的方尖碑与神殿同框——从国会山沿国家广场走到这里(约 3 公里),是美国宪法精神的一次「步行复习」。免费开放,全年无休。"
     ],
     "bestSeason": "全年;4月樱花季与 7月4日国庆夜最盛",
-    "tags": ["纪念地", "公民运动", "华盛顿", "免费"],
-    "sources": [
-      { "name": "Wikipedia: Lincoln Memorial", "url": "https://en.wikipedia.org/wiki/Lincoln_Memorial", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    "tags": [
+      "纪念地",
+      "公民运动",
+      "华盛顿",
+      "免费"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Lincoln Memorial",
+        "url": "https://en.wikipedia.org/wiki/Lincoln_Memorial",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -156,12 +238,24 @@
       "1970 年代,圣十字湖大坝在峡谷出口蓄水,形成那颗著名的「翡翠之心」——从空中看,湖与峡谷构成一只发光的绿眼睛。顺便:凡尔登战役与这里无关,别把名字搞混。"
     ],
     "bestSeason": "5-9月(水上活动);10月崖壁红叶",
-    "tags": ["峡谷", "翡翠绿", "皮划艇", "普罗旺斯"],
-    "sources": [
-      { "name": "Wikipedia: Verdon Gorge", "url": "https://en.wikipedia.org/wiki/Verdon_Gorge", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    "tags": [
+      "峡谷",
+      "翡翠绿",
+      "皮划艇",
+      "普罗旺斯"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Verdon Gorge",
+        "url": "https://en.wikipedia.org/wiki/Verdon_Gorge",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -179,12 +273,24 @@
       "科莫还是「丝绸之湖」:科莫市的丝绸工业自 15 世纪延续至今,爱马仕与香奈儿的丝巾很多在此织造。乘 19 世纪蒸汽游船穿过「Y」字湖臂,看雪山倒影——乔治·卢卡斯说这里「像另一个星球的布景」,他说对了。"
     ],
     "bestSeason": "5-9月;4月与10月游客少",
-    "tags": ["湖泊", "别墅", "阿尔卑斯", "取景地"],
-    "sources": [
-      { "name": "Wikipedia: Lake Como", "url": "https://en.wikipedia.org/wiki/Lake_Como", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    "tags": [
+      "湖泊",
+      "别墅",
+      "阿尔卑斯",
+      "取景地"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Lake Como",
+        "url": "https://en.wikipedia.org/wiki/Lake_Como",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -203,13 +309,30 @@
       "卡蒂萨克号(Cutty Sark)是现存最老的运茶快船(1869),玻璃罩下的船体像一只悬停的银鱼。从伦敦塔桥乘船 30 分钟即达——泰晤士河的下游,收藏着大英帝国海洋时代的光荣与争议。1997年列入世界遗产。"
     ],
     "bestSeason": "全年;6月格林尼治+多克兰节",
-    "tags": ["世界遗产", "本初子午线", "航海", "伦敦"],
-    "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/795", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Maritime Greenwich", "url": "https://en.wikipedia.org/wiki/Maritime_Greenwich", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    "tags": [
+      "世界遗产",
+      "本初子午线",
+      "航海",
+      "伦敦"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/795",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Maritime Greenwich",
+        "url": "https://en.wikipedia.org/wiki/Maritime_Greenwich",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   },
   {
@@ -227,13 +350,30 @@
       "峡谷在法尤姆绿洲以西的保护区深处,与Magic Lake(魔术湖)、水晶山组成法尤姆一日环线。日落时分,沙丘与鲸骨同色——「大漠孤烟」与「沧海桑田」在这里同时成立。"
     ],
     "bestSeason": "10-4月;需四驱车+向导",
-    "tags": ["世界遗产", "鲸化石", "演化论", "法尤姆"],
-    "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1186", "license": "事实参考", "checkedAt": "2026-11-06" },
-      { "name": "Wikipedia: Wadi El-Hitan", "url": "https://en.wikipedia.org/wiki/Wadi_El-Hitan", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-06" }
+    "tags": [
+      "世界遗产",
+      "鲸化石",
+      "演化论",
+      "法尤姆"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1186",
+        "license": "事实参考",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "name": "Wikipedia: Wadi El-Hitan",
+        "url": "https://en.wikipedia.org/wiki/Wadi_El-Hitan",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-06"
   }
 ]

@@ -14,12 +14,24 @@
       "「雾中少女」(Maid of the Mist)游船自1846年运营至今,穿过瀑雾的时刻人人尖叫又人人大笑;冬季极寒时,崖边凝成巨型冰雕,水量不减——零下的尼亚加拉依然在咆哮。"
     ],
     "bestSeason": "6-8月水量最盛;12-2月冰瀑奇景",
-    "tags": ["瀑布", "边境", "水力发电", "蜜月圣地"],
-    "sources": [
-      { "name": "Wikipedia: Niagara Falls", "url": "https://en.wikipedia.org/wiki/Niagara_Falls", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "瀑布",
+      "边境",
+      "水力发电",
+      "蜜月圣地"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Niagara Falls",
+        "url": "https://en.wikipedia.org/wiki/Niagara_Falls",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -38,12 +50,24 @@
       "芝加哥是摩天楼的故乡(世界第一座钢框架高楼在此拔起),1871年大火后整城重建,「风城」因此成了现代建筑的试验场——千禧公园是这场持续150年的实验最新的客厅。"
     ],
     "bestSeason": "5-9月(喷泉开放,草坪演出季)",
-    "tags": ["城市地标", "公共艺术", "建筑", "芝加哥"],
-    "sources": [
-      { "name": "Wikipedia: Millennium Park", "url": "https://en.wikipedia.org/wiki/Millennium_Park", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "城市地标",
+      "公共艺术",
+      "建筑",
+      "芝加哥"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Millennium Park",
+        "url": "https://en.wikipedia.org/wiki/Millennium_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -62,12 +86,24 @@
       "塔顶曾是世界最高的餐厅旋转台之一。每年跨年夜,西雅图人在塔下集结看塔顶烟花;雨天时塔身灯亮成翡翠绿——那是「翡翠之城」的别名来源。"
     ],
     "bestSeason": "7-9月晴天;晴日可见雷尼尔雪山",
-    "tags": ["观景塔", "世博会", "西雅图", "现代主义"],
-    "sources": [
-      { "name": "Wikipedia: Space Needle", "url": "https://en.wikipedia.org/wiki/Space_Needle", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "观景塔",
+      "世博会",
+      "西雅图",
+      "现代主义"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Space Needle",
+        "url": "https://en.wikipedia.org/wiki/Space_Needle",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -86,12 +122,24 @@
       "2018年大喷发后火山口崩塌出深达数百米的巨坑。如今火山国家公园重新开放,夜间的哈勒茂火山口泛着橘红辉光;熔岩隧道(Thurston Lava Tube)让人走进被岩浆「掏空」的管道——安全地站在昨天的河流里。"
     ],
     "bestSeason": "全年;黄昏后观火山口辉光最佳",
-    "tags": ["活火山", "熔岩", "夏威夷", "国家公园"],
-    "sources": [
-      { "name": "Wikipedia: Kīlauea", "url": "https://en.wikipedia.org/wiki/Kīlauea", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "活火山",
+      "熔岩",
+      "夏威夷",
+      "国家公园"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Kīlauea",
+        "url": "https://en.wikipedia.org/wiki/Kīlauea",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -109,12 +157,24 @@
       "绿洲水量近年靠人工补给维持,湖水曾一度干涸又被重新注水——它和月牙泉一样,是人类与沙漠谈判的脆弱样本。附近就是皮斯科酒乡与纳斯卡线条的门户。"
     ],
     "bestSeason": "12-3月南半球夏季;避开正午酷热",
-    "tags": ["绿洲", "沙漠", "滑沙", "伊卡"],
-    "sources": [
-      { "name": "Wikipedia: Huacachina", "url": "https://en.wikipedia.org/wiki/Huacachina", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "绿洲",
+      "沙漠",
+      "滑沙",
+      "伊卡"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Huacachina",
+        "url": "https://en.wikipedia.org/wiki/Huacachina",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -133,13 +193,30 @@
       "城市上空悬着米斯蒂火山(5822米)的对称雪顶,本地人把它当城市纹章。阿雷基帕也是秘鲁的「美食首都」之一,辣椒酿肉 Rocoto Relleno 与烤羊驼的香气混在广场的石板路上。"
     ],
     "bestSeason": "全年(海拔2328米,气候温和);8月建城庆典",
-    "tags": ["世界遗产", "殖民建筑", "火山岩", "修道院"],
+    "tags": [
+      "世界遗产",
+      "殖民建筑",
+      "火山岩",
+      "修道院"
+    ],
     "sources": [
-      { "name": "UNESCO 世界遗产中心", "url": "https://whc.unesco.org/en/list/1016", "license": "事实参考", "checkedAt": "2026-11-05" },
-      { "name": "Wikipedia: Arequipa", "url": "https://en.wikipedia.org/wiki/Arequipa", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1016",
+        "license": "事实参考",
+        "checkedAt": "2026-11-05"
+      },
+      {
+        "name": "Wikipedia: Arequipa",
+        "url": "https://en.wikipedia.org/wiki/Arequipa",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
     ],
     "quality": "S",
-    "media": { "status": "placeholder" },
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -157,12 +234,24 @@
       "峡谷深处有火山温泉(La Calera)、悬挂墓穴(前印加人在岩壁上的墓葬)和驼羊群。骑行与多日徒步路线穿越海拔4900米的山口——高原反应在此是真实的,敬畏也是。"
     ],
     "bestSeason": "5-10月旱季;清晨观鹰必到",
-    "tags": ["峡谷", "神鹰", "安第斯", "徒步"],
-    "sources": [
-      { "name": "Wikipedia: Colca Canyon", "url": "https://en.wikipedia.org/wiki/Colca_Canyon", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "峡谷",
+      "神鹰",
+      "安第斯",
+      "徒步"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Colca Canyon",
+        "url": "https://en.wikipedia.org/wiki/Colca_Canyon",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   },
   {
@@ -180,12 +269,24 @@
       "1536年西班牙人到来时,查查波亚文明已因内战与瘟疫式微。库拉普长期被丛林掩盖,1843年才被重新记录。2022年缆车开通后,这座「北方的马丘比丘」才开始被世界看见——去年到访者仍只有马丘比丘的十分之一。"
     ],
     "bestSeason": "5-9月旱季;缆车+徒步双路线",
-    "tags": ["考古", "查查波亚", "要塞", "云雾林"],
-    "sources": [
-      { "name": "Wikipedia: Kuelap", "url": "https://en.wikipedia.org/wiki/Kuelap", "license": "CC BY-SA 4.0(内容参考)", "checkedAt": "2026-11-05" }
+    "tags": [
+      "考古",
+      "查查波亚",
+      "要塞",
+      "云雾林"
     ],
-    "quality": "A",
-    "media": { "status": "placeholder" },
+    "sources": [
+      {
+        "name": "Wikipedia: Kuelap",
+        "url": "https://en.wikipedia.org/wiki/Kuelap",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-05"
+      }
+    ],
+    "quality": "S",
+    "media": {
+      "status": "placeholder"
+    },
     "updatedAt": "2026-11-05"
   }
 ]
