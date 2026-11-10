@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 import Fuse from 'fuse.js'
 import type { City, Collection, Country, Destination, Person } from '../domain/types'
+import { DESTINATION_TYPE_LABELS } from '../domain/types.ts'
 import type { WorldData } from '../services/data-service'
 import { loadJson, saveJson } from '../services/storage-service.ts'
 
@@ -361,6 +362,73 @@ function sanitizeList(v: unknown): string[] {
 /** 已探索足迹追加(去重、单调不减;纯函数便于单测) */
 export function addExplored(list: string[], id: string): string[] {
   return list.includes(id) ? list : [...list, id]
+}
+
+export interface Recommendation {
+  dest: Destination
+  reason: string
+}
+
+/**
+ * 探索推荐(V5.0 雏形)— 足迹驱动的「你可能想去」。
+ * 可解释评分:基础质量(S2/A1/B0.5)+ 同国已探索 ×1.5 + 同类型 ×0.8 + 含已探索成员的合集 ×1.2;
+ * 排除已探索/收藏/想去/去过;足迹为空或池空返回 []。
+ * reason 取最强信号:同国(带国名)> 同合集 > 同类型。
+ */
+export function buildRecommendations(
+  destinations: Destination[],
+  exploredIds: string[],
+  collections: Collection[],
+  countryNames: Record<string, string> = {},
+  excludeIds: string[] = [],
+  limit = 3,
+): Recommendation[] {
+  const exclude = new Set([...exploredIds, ...excludeIds])
+  const pool = destinations.filter((d) => !exclude.has(d.id))
+  const exploredSet = new Set(exploredIds)
+  if (!exploredSet.size || !pool.length) return []
+
+  const countryCount = new Map<string, number>()
+  const typeCount = new Map<string, number>()
+  for (const id of exploredIds) {
+    const d = destinations.find((x) => x.id === id)
+    if (!d) continue
+    countryCount.set(d.countryId, (countryCount.get(d.countryId) ?? 0) + 1)
+    typeCount.set(d.type, (typeCount.get(d.type) ?? 0) + 1)
+  }
+
+  // destId → 含已探索成员的合集
+  const collectionOf = new Map<string, Collection[]>()
+  for (const c of collections) {
+    if (!c.destinationIds.some((id) => exploredSet.has(id))) continue
+    for (const id of c.destinationIds) {
+      collectionOf.set(id, [...(collectionOf.get(id) ?? []), c])
+    }
+  }
+
+  const scored = pool.map((d) => {
+    const sameCountry = countryCount.get(d.countryId) ?? 0
+    const sameType = typeCount.get(d.type) ?? 0
+    const shared = (collectionOf.get(d.id) ?? []).length
+    const score =
+      (d.quality === 'S' ? 2 : d.quality === 'A' ? 1 : 0.5) +
+      sameCountry * 1.5 +
+      sameType * 0.8 +
+      shared * 1.2
+    const countryName = countryNames[d.countryId]
+    const reason =
+      sameCountry >= 1 && countryName
+        ? `同在${countryName}`
+        : shared >= 1
+          ? `同属合集《${collectionOf.get(d.id)![0]!.name}》`
+          : `同为${DESTINATION_TYPE_LABELS[d.type]}`
+    return { dest: d, reason, score }
+  })
+
+  return scored
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ dest, reason }) => ({ dest, reason }))
 }
 
 /** 全局搜索(Fuse.js 模糊匹配,中/英/别名) */

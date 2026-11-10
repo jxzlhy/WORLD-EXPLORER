@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **探索推荐(V5.0 雏形,2026-11-11 迭代六)**:足迹驱动的「你可能想去」——`buildRecommendations` 纯函数(可解释评分:基础质量 S2/A1/B0.5 + 同国已探索 ×1.5 + 同类型 ×0.8 + 含足迹成员的合集 ×1.2;排除已探索/收藏/想去/去过);MyWorld 面板进度块上方渲染 Top3(reason 取最强信号:同国带国名 > 同合集 > 同类型),点击直达;单测 6 断言(同国优先/排除/空足迹/limit/全排除)+ E2E 用例 P(addInitScript 播种足迹 → 渲染 → 点击直达)
 - **巡游环境音(2026-11-09 迭代五)**:程序化 Web Audio(`src/services/tour-audio.ts`,零素材零许可)——低频 drone(110/164.8Hz 双振荡器 + 慢 LFO 滤波)+ 极低增益气声(白噪声带通),到站双泛音钟声(880/1320Hz 指数衰减);TourHud 🔇/🔊 开关(默认静音,AudioContext 在点击手势中创建以规避自动播放限制,故不持久化偏好);随 TourHud 卸载 dispose(资源生命周期表已补充);J 用例加开关断言 + 打断注入改轮询重试(修首试 flaky:注入落在航段已落地之后成空操作)
 - **沉浸体系增强(2026-11-09 迭代四)**:①合集沉浸巡展 CollectionShowcase——合集面板「⛶ 沉浸巡展」(≥2 张已核验照片可用)→ 全屏照片轮播:自动 8s 推进(可暂停)、←/→ 键盘翻页、进度点直达、逐张 © 署名,Esc 退出;②沉浸阅读内「✎ 我的笔记」只读回显(编辑仍在档案面板);E2E 用例 O1/O2
 - **全屏沉浸阅读(V2.5 雏形,2026-11-08 迭代三)**:目的地面板「⛶ 沉浸阅读」→ 全屏覆盖层——已核验照片暗化通栏背景(无照片则程序渐变,诚实降级)+ `--we-fs-display` 大字标题 + 逐段故事(行高 2,62ch 阅读宽)+ 时间轴 + 来源;GSAP 逐段交错浮现(尊重 prefers-reduced-motion);Esc/按钮退出,z-modal 层级;E2E 用例 N(入口/呈现/Esc/按钮双退出)
@@ -45,7 +46,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-09,巡游音频批):E2E 19/19 · 单测 34/34 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-11,探索推荐批):E2E 20/20 · 单测 40/40 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)

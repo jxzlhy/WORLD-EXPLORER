@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useExploreStore } from '../../stores/explore-store'
+import { buildRecommendations } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
 import { useUiStore } from '../../stores/ui-store'
 import { exportAll } from '../../services/storage-service'
@@ -45,6 +46,23 @@ const exploreTotal = computed(() => explore.destinations.length)
 const explorePct = computed(() =>
   exploreTotal.value ? Math.round((exploredCount.value / exploreTotal.value) * 100) : 0,
 )
+
+/** 探索推荐(V5.0 雏形):足迹驱动,排除收藏/想去/去过 */
+const recommendations = computed(() =>
+  buildRecommendations(
+    explore.destinations,
+    explore.exploredIds,
+    explore.collections,
+    Object.fromEntries(explore.countries.map((c) => [c.id, c.name])),
+    [...myWorld.favorites, ...myWorld.wantToGo, ...myWorld.visited],
+    3,
+  ),
+)
+
+function goRecommendation(id: string): void {
+  ui.toggleMyWorld(false)
+  explore.selectDestination(id)
+}
 
 function exportData(): void {
   const payload = {
@@ -123,6 +141,27 @@ function cancelImport(): void {
             ✕
           </button>
         </header>
+
+        <div
+          v-if="recommendations.length"
+          class="recommend"
+        >
+          <p class="we-caps-label gold">
+            你可能想去
+          </p>
+          <div class="rec-list">
+            <button
+              v-for="r in recommendations"
+              :key="r.dest.id"
+              class="rec-item"
+              :title="r.reason"
+              @click="goRecommendation(r.dest.id)"
+            >
+              <span class="n">{{ r.dest.name }}</span>
+              <span class="why">{{ r.reason }}</span>
+            </button>
+          </div>
+        </div>
 
         <div class="progress-block">
           <p class="we-caps-label">
@@ -302,6 +341,49 @@ function cancelImport(): void {
 }
 .close:hover {
   color: var(--we-text-hi);
+}
+
+.recommend {
+  margin: var(--we-sp-3) var(--we-sp-4) 0;
+  padding: var(--we-sp-3);
+  border: 1px solid rgba(232, 200, 150, 0.22);
+  background: rgba(232, 200, 150, 0.05);
+  border-radius: var(--we-r-md);
+}
+.recommend .we-caps-label {
+  margin: 0;
+}
+.rec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: var(--we-sp-2);
+}
+.rec-item {
+  appearance: none;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: baseline;
+  gap: var(--we-sp-2);
+  padding: 6px 8px;
+  border-radius: var(--we-r-sm);
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--we-dur-1) var(--we-ease-out);
+}
+.rec-item:hover {
+  background: rgba(232, 200, 150, 0.09);
+}
+.rec-item .n {
+  font-size: var(--we-fs-small);
+  font-weight: 600;
+  color: var(--we-text-hi);
+}
+.rec-item .why {
+  margin-left: auto;
+  font-size: var(--we-fs-micro);
+  color: var(--we-gold-strong);
 }
 
 .progress-block {
