@@ -1,11 +1,35 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useExploreStore } from '../../stores/explore-store'
+import { useExploreStore, buildRecommendations } from '../../stores/explore-store'
+import { useMyWorldStore } from '../../stores/my-world-store'
 import WeButton from '../../design-system/WeButton.vue'
 
 const explore = useExploreStore()
+const myWorld = useMyWorldStore()
 const featured = computed(() => explore.todayFeatured())
 const collectionsOpen = ref(false)
+
+// —— 为你推荐(V5.0):足迹驱动 Top5,↻ 逐个轮换(足迹为空则不显示) ——
+const recs = computed(() =>
+  buildRecommendations(
+    explore.destinations,
+    explore.exploredIds,
+    explore.collections,
+    Object.fromEntries(explore.countries.map((c) => [c.id, c.name])),
+    [...myWorld.favorites, ...myWorld.wantToGo, ...myWorld.visited],
+    5,
+  ),
+)
+const recOffset = ref(0)
+const currentRec = computed(() => recs.value[recOffset.value % Math.max(recs.value.length, 1)] ?? null)
+
+function cycleRec(): void {
+  if (recs.value.length) recOffset.value = (recOffset.value + 1) % recs.value.length
+}
+
+function goRec(): void {
+  if (currentRec.value) explore.selectDestination(currentRec.value.dest.id)
+}
 </script>
 
 <template>
@@ -18,6 +42,25 @@ const collectionsOpen = ref(false)
     >
       <span class="we-caps-label gold">今日精选</span>
       <span class="name">{{ featured.name }}</span>
+    </button>
+
+    <!-- 为你推荐(V5.0 雏形):足迹驱动,点击直达,↻ 轮换 -->
+    <button
+      v-if="currentRec"
+      class="featured rec-chip"
+      :title="`为你推荐 · ${currentRec.reason}`"
+      @click="goRec"
+    >
+      <span class="we-caps-label gold">为你推荐</span>
+      <span class="name">{{ currentRec.dest.name }}</span>
+      <span class="why">{{ currentRec.reason }}</span>
+      <span
+        class="swap"
+        role="button"
+        aria-label="换一个推荐"
+        title="换一个推荐"
+        @click.stop="cycleRec"
+      >↻</span>
     </button>
 
     <!-- 主题合集(V1.5) -->
@@ -57,6 +100,25 @@ const collectionsOpen = ref(false)
 </template>
 
 <style scoped>
+/* —— 为你推荐(V5.0)—— */
+.rec-chip .why {
+  font-size: var(--we-fs-micro);
+  color: var(--we-gold-strong);
+  letter-spacing: 0.04em;
+}
+.rec-chip .swap {
+  margin-left: 4px;
+  font-size: var(--we-fs-small);
+  color: var(--we-text-faint);
+  padding: 2px 6px;
+  border-radius: var(--we-r-full);
+  transition: all var(--we-dur-1) var(--we-ease-out);
+}
+.rec-chip .swap:hover {
+  color: var(--we-gold-strong);
+  background: rgba(232, 200, 150, 0.12);
+}
+
 /* —— 合集菜单(V1.5)—— */
 .collections-wrap {
   position: relative;
