@@ -370,6 +370,52 @@ export interface Recommendation {
 }
 
 /**
+ * 相似目的地(V5.0 雏形)— 「看过这处的人也看」。
+ * 以当前目的地为锚的可解释评分:质量基分(S2/A1/B0.5)+ 同合集 ×2 > 同国 ×1.5 > 同类型 ×0.8;
+ * 排除当前目的地;reason 取最强信号:同合集 > 同国(带国名)> 同类型。
+ * 与 buildRecommendations(足迹驱动)不同:这是内容关联,不读用户状态。
+ */
+export function buildSimilarDestinations(
+  destinations: Destination[],
+  currentId: string,
+  collections: Collection[],
+  countryNames: Record<string, string> = {},
+  limit = 3,
+): Recommendation[] {
+  const current = destinations.find((d) => d.id === currentId)
+  if (!current) return []
+  const currentCollections = new Set(
+    collections.filter((c) => c.destinationIds.includes(currentId)).map((c) => c.id),
+  )
+
+  const scored = destinations
+    .filter((d) => d.id !== currentId)
+    .map((d) => {
+      const shared = collections.filter(
+        (c) => currentCollections.has(c.id) && c.destinationIds.includes(d.id),
+      )
+      const score =
+        (d.quality === 'S' ? 2 : d.quality === 'A' ? 1 : 0.5) +
+        shared.length * 2 +
+        (d.countryId === current.countryId ? 1.5 : 0) +
+        (d.type === current.type ? 0.8 : 0)
+      const countryName = countryNames[d.countryId]
+      const reason =
+        shared.length >= 1
+          ? `同属合集《${shared[0]!.name}》`
+          : d.countryId === current.countryId && countryName
+            ? `同在${countryName}`
+            : `同为${DESTINATION_TYPE_LABELS[d.type]}`
+      return { dest: d, reason, score }
+    })
+
+  return scored
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ dest, reason }) => ({ dest, reason }))
+}
+
+/**
  * 探索推荐(V5.0 雏形)— 足迹驱动的「你可能想去」。
  * 可解释评分:基础质量(S2/A1/B0.5)+ 同国已探索 ×1.5 + 同类型 ×0.8 + 含已探索成员的合集 ×1.2;
  * 排除已探索/收藏/想去/去过;足迹为空或池空返回 []。

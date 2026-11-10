@@ -2,6 +2,7 @@
 import { computed, nextTick, onUnmounted, ref, watch } from 'vue'
 import gsap from 'gsap'
 import { useExploreStore } from '../../stores/explore-store'
+import { buildSimilarDestinations } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
 import { useUiStore } from '../../stores/ui-store'
 import { DESTINATION_TYPE_LABELS } from '../../domain/types'
@@ -34,6 +35,18 @@ const personDests = computed(() =>
 /** 目的地相关人物(V2.0) */
 const destPeople = computed(() =>
   destination.value ? explore.peopleOfDestination(destination.value.id) : [],
+)
+/** 相似目的地(V5.0 雏形):同合集/同国/同类型 Top3,内容关联不读用户状态 */
+const similarDests = computed(() =>
+  destination.value
+    ? buildSimilarDestinations(
+        explore.destinations,
+        destination.value.id,
+        explore.collections,
+        Object.fromEntries(explore.countries.map((c) => [c.id, c.name])),
+        3,
+      )
+    : [],
 )
 /** 合集头图:优先取收录中已有已核验照片的目的地 */
 const collectionHero = computed(() => {
@@ -281,6 +294,29 @@ function fmtPopulation(p: number): string {
                 <span class="r">{{ p.roles[0] }}</span>
               </button>
             </div>
+          </div>
+
+          <!-- 相似目的地(V5.0 雏形):同合集/同国/同类型 -->
+          <div v-if="similarDests.length" class="similar">
+            <span class="we-caps-label">看过这处的人也看</span>
+            <ul class="dest-list">
+              <li v-for="r in similarDests" :key="r.dest.id">
+                <button class="dest-item" :title="r.reason" @click="explore.selectDestination(r.dest.id)">
+                  <img
+                    v-if="r.dest.media?.status === 'verified' && r.dest.media?.file"
+                    class="thumb"
+                    :src="r.dest.media!.file"
+                    alt=""
+                  >
+                  <i
+                    v-else
+                    :style="{ background: typeColor(r.dest) }"
+                  />
+                  <span class="n">{{ r.dest.name }}</span>
+                  <span class="t">{{ r.reason }}</span>
+                </button>
+              </li>
+            </ul>
           </div>
 
           <!-- 我的笔记(本地,自动保存) -->
