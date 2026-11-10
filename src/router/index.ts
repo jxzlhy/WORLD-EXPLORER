@@ -14,6 +14,12 @@ const router = createRouter({
       name: 'design-lab',
       component: () => import('../views/DesignLabView.vue'),
     },
+    {
+      path: '/stats',
+      name: 'data-coverage',
+      // 数据质量监控(V5.0 雏形):只读统计面板,懒加载不影响主体验
+      component: () => import('../views/DataCoverageView.vue'),
+    },
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
 })
