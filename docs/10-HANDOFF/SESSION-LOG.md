@@ -51,6 +51,14 @@
 - 推送:守望曾在恢复窗口推送至 9799c5c;6 提交待推,守望 v2 继续盯守 [V]
 - 混排乱码自检流程固化:python 脚本写入后立即校验,已捕获 7 处 [V]
 
+## 银河星空批(2026-11-12 迭代十二)—— V1.0 收官
+
+- 勘察确认项目从未有过星空实现(ROADMAP 项是设想)→ 从零做:纯数据点云方案(零素材零许可,对比 SkyBox 六面图更轻) [O]
+- `star-layer.ts`:`generateStarDirections` 纯函数(背景均匀球面 2200 + 银河大圆 3000,倾斜 60°,银纬 σ=11°,银心 30% 高斯团)+ mulberry32 种子 PRNG(确定性视觉);StarLayer PointPrimitiveCollection 半径 9e7m,深度测试尊重地球遮挡;Mimosa 弱随机提示 = 确定性视觉 PRNG,非加密用途 [V]
+- world-engine 接入 load/teardown;setQuality low → 整层隐藏(性能红线);Cesium PrimitiveCollection.remove 类型仅单参(数据源 remove 才有双参) [V]
+- 单测 star.test.ts 6 断言 + E2E 用例 U(点云 5200 + low 联动);U 排障:画质按钮 accessible name 是「低」(hint 在 title),用 radiogroup 定位 [V]
+- 推送:PAT 仍失效(11-12 复测),17 个提交本地待推 [V]
+
 ## 国家/城市影像条带批(2026-11-11 迭代十一)
 
 - 数据勘察:国家维度 10 国全部 ≥2 张(PE 仅 1),城市仅巴黎 3/京都 2/北京 2 够格 → 条带阈值定为 verified ≥3(数据驱动,避免单张条带) [V]

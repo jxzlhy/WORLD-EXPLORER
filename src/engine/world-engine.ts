@@ -6,6 +6,7 @@ import { CountriesLayer } from './countries-layer'
 import { ImageryLayersController } from './imagery-layers'
 import { MarkersLayer } from './markers-layer'
 import { RouteLayer } from './route-layer'
+import { StarLayer } from './star-layer'
 import type {
   CameraInfo,
   DayNightMode,
@@ -45,6 +46,7 @@ export class WorldEngine implements IWorldEngine {
   private countries = new CountriesLayer()
   private markers = new MarkersLayer()
   private route = new RouteLayer()
+  private stars = new StarLayer()
   private pickHandler: Cesium.ScreenSpaceEventHandler | null = null
   private readonly unsubs: Array<() => void> = []
   private initPromise: Promise<void> | null = null
@@ -71,6 +73,7 @@ export class WorldEngine implements IWorldEngine {
       this.countries.destroy(this.viewer)
       this.markers.destroy(this.viewer)
       this.route.destroy(this.viewer)
+      this.stars.destroy(this.viewer)
       this.viewer.destroy()
     }
     this.viewer = null
@@ -158,6 +161,8 @@ export class WorldEngine implements IWorldEngine {
     if (this.aborted(seq)) return
 
     this.route.load(this.viewer)
+
+    this.stars.load(this.viewer)
 
     this.camera = new CameraController(this.viewer)
 
@@ -275,6 +280,8 @@ export class WorldEngine implements IWorldEngine {
     } catch {
       /* fxaa 不可用时忽略 */
     }
+    // 性能红线:low 档隐藏星空层(纯视觉,不影响功能)
+    this.stars.setVisible(mode !== 'low')
   }
 
   onPick(listener: (payload: PickPayload) => void): () => void {
