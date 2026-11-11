@@ -4,16 +4,22 @@ import type { Destination } from '../../domain/types'
 
 /**
  * MediaStrip — 已核验照片横向条带(合集/国家/城市面板共用)。
- * 只展示 status=verified 的真实影像;点击直达目的地档案。
+ * 只展示 status=verified 的真实影像;excludeId 用于排除面板 hero 已展示的首图;点击直达目的地档案。
  */
 const props = defineProps<{
   items: Destination[]
+  excludeId?: string
 }>()
 
 const emit = defineEmits<{ select: [destinationId: string] }>()
 
 const verified = computed(() =>
-  props.items.filter((d) => d.media?.status === 'verified' && !!d.media?.file),
+  props.items.filter(
+    (d) =>
+      d.media?.status === 'verified' &&
+      !!d.media?.file &&
+      (props.excludeId ? d.id !== props.excludeId : true),
+  ),
 )
 </script>
 

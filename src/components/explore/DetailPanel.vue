@@ -66,6 +66,11 @@ const countryHero = computed(() =>
   country.value ? heroMediaOf(explore.destinationsOfCountry(country.value.id)) : null,
 )
 const cityHero = computed(() => (city.value ? heroMediaOf(cityDestinations.value) : null))
+/** 国家/城市影像条带:hero 之外的已核验照片(≥2 才值得成带,由模板 v-if 控制) */
+const countryMediaStrip = computed(() =>
+  country.value ? explore.destinationsOfCountry(country.value.id) : [],
+)
+const cityMediaStrip = computed(() => cityDestinations.value)
 
 /**
  * 内容交错入场(V0.3-D):档案内容切换时,子块依次浮现。
@@ -440,6 +445,12 @@ function fmtPopulation(p: number): string {
               图:{{ cityHero.name }}(此地目的地)·
               {{ cityHero.media?.author }}
             </figcaption>
+            <MediaStrip
+              v-if="cityMediaStrip.length >= 3"
+              :items="cityMediaStrip"
+              :exclude-id="cityHero.id"
+              @select="(id: string) => explore.selectDestination(id)"
+            />
           </div>
 
           <p class="lead">{{ city.summary }}</p>
@@ -653,6 +664,12 @@ function fmtPopulation(p: number): string {
               图:{{ countryHero.name }}(收录地点)·
               {{ countryHero.media?.author }}
             </figcaption>
+            <MediaStrip
+              v-if="countryMediaStrip.length >= 3"
+              :items="countryMediaStrip"
+              :exclude-id="countryHero.id"
+              @select="(id: string) => explore.selectDestination(id)"
+            />
           </div>
 
           <p class="lead">

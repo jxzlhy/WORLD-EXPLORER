@@ -14,8 +14,9 @@ test('L. 国家 hero / 合集影像条带 / 列表缩略图', async ({ page }) =
     explore.selectCountry('EG')
   })
   await expect(page.locator('.detail-panel .name')).toHaveText('埃及')
-  await expect(page.locator('.detail-panel .panel-hero img')).toBeVisible()
-  await expect(page.locator('.detail-panel .panel-hero .credit')).toContainText('©')
+  // hero 的 DestinationMedia(限定 .dest-media,避免与迭代十一新增的影像条带 img 混淆)
+  await expect(page.locator('.detail-panel .panel-hero .dest-media img')).toBeVisible()
+  await expect(page.locator('.detail-panel .panel-hero .dest-media .credit')).toContainText('©')
 
   // 列表行缩略图:埃及目的地列表中应有已核验照片的圆形 thumb
   await expect(page.locator('.detail-panel .dest-item .thumb').first()).toBeVisible()
