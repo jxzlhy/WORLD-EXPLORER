@@ -31,7 +31,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "cn-shanghai",
-    "wikidataId": "Q745685"
+    "wikidataId": "Q745685",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/cn-yuyuan-garden.jpg",
+      "author": "Chainwit.",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2024-Apr_Shanghai_Yu_Yuan_Garden_%E8%B1%AB%E5%9B%AD_-_img_20.jpg"
+    }
   },
   {
     "id": "cn-lingyin-temple",
@@ -65,7 +72,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "cn-hangzhou",
-    "wikidataId": "Q1026316"
+    "wikidataId": "Q1026316",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/cn-lingyin-temple.jpg",
+      "author": "Yxh1433",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E7%81%B5%E9%9A%90%E5%AF%BA%E3%80%8C%E5%92%AB%E5%B0%BA%E8%A5%BF%E5%A4%A9%E3%80%8D%E5%A2%99.jpg"
+    }
   },
   {
     "id": "jp-sensoji",
@@ -99,7 +113,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "jp-tokyo",
-    "wikidataId": "Q192854"
+    "wikidataId": "Q192854",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/jp-sensoji.jpg",
+      "author": "小林清親",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANDL1306192_%E6%B5%85%E8%8D%89%E5%AF%BA%E5%B9%B4%E4%B9%83%E5%B8%82.jpg"
+    }
   },
   {
     "id": "jp-shitennoji",
@@ -133,7 +154,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "jp-osaka",
-    "wikidataId": "Q1151058"
+    "wikidataId": "Q1151058",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/jp-shitennoji.jpg",
+      "author": "Mihoko Nakajima",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AShitennojihabikigaokajshs.jpg"
+    }
   },
   {
     "id": "us-millennium-park",
@@ -167,7 +195,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "us-chicago",
-    "wikidataId": "Q1370489"
+    "wikidataId": "Q1370489",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/us-millennium-park.jpg",
+      "author": "Panek",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABiurowiec_millennium_park.jpg"
+    }
   },
   {
     "id": "us-pike-place",
@@ -201,7 +236,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "us-seattle",
-    "wikidataId": "Q1114402"
+    "wikidataId": "Q1114402",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/us-pike-place.jpg",
+      "author": "Julian Lupyan",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMaximilien_Restaurant_Sign_in_Pike_Place_Market%2C_Seattle%2C_Washington%2C_2025.jpg"
+    }
   },
   {
     "id": "fr-notre-dame",
@@ -241,7 +283,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "fr-paris",
-    "wikidataId": "Q158364"
+    "wikidataId": "Q158364",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/fr-notre-dame.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AParis%2C_Notre_Dame_--_2014_--_1458-65.jpg"
+    }
   },
   {
     "id": "fr-promenade-anglais",
@@ -274,7 +323,14 @@
     ],
     "quality": "S",
     "updatedAt": "2026-11-15",
-    "cityId": "fr-nice"
+    "cityId": "fr-nice",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/fr-promenade-anglais.jpg",
+      "author": "Spike",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANice_from_Castle_Hill_01.jpg"
+    }
   },
   {
     "id": "it-duomo-milano",
@@ -308,7 +364,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "it-milano",
-    "wikidataId": "Q1394"
+    "wikidataId": "Q1394",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/it-duomo-milano.jpg",
+      "author": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AView_west_along_Duomo_roof%2C_Milan.jpg"
+    }
   },
   {
     "id": "it-doge-palace",
@@ -348,7 +411,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "it-venice",
-    "wikidataId": "Q760846"
+    "wikidataId": "Q760846",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/it-doge-palace.jpg",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%28Venice%29_Doge%27s_Palace_facing_the_sea.jpg"
+    }
   },
   {
     "id": "gb-tate-modern",
@@ -382,7 +452,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "gb-london",
-    "wikidataId": "Q908123"
+    "wikidataId": "Q908123",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/gb-tate-modern.jpg",
+      "author": "Colin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASuper_moon_over_City_of_London_from_Tate_Modern_2018-01-31_4.jpg"
+    }
   },
   {
     "id": "gb-oxford",
@@ -416,7 +493,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "gb-oxford",
-    "wikidataId": "Q34433"
+    "wikidataId": "Q34433",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/gb-oxford.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AClarendon_Building%2C_Oxford%2C_England_-_May_2010.jpg"
+    }
   },
   {
     "id": "eg-kom-ombo",
@@ -450,7 +534,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "eg-aswan",
-    "wikidataId": "Q1476394"
+    "wikidataId": "Q1476394",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/eg-kom-ombo.jpg",
+      "author": "Olaf Tausch",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKom_Ombo_20.jpg"
+    }
   },
   {
     "id": "eg-siwa-oasis",
@@ -483,7 +574,14 @@
     ],
     "quality": "S",
     "updatedAt": "2026-11-15",
-    "wikidataId": "Q244152"
+    "wikidataId": "Q244152",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/eg-siwa-oasis.jpg",
+      "author": "mykola.rykov",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASiwa_Oasis%2C_Qesm_Siwah%2C_Matrouh_Governorate%2C_Egypt_-_panoramio_%287%29.jpg"
+    }
   },
   {
     "id": "pe-qorikancha",
@@ -523,7 +621,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "pe-cusco",
-    "wikidataId": "Q1301981"
+    "wikidataId": "Q1301981",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/pe-qorikancha.jpg",
+      "author": "Håkan Svensson (Xauxa)",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACusco_Coricancha_Inti-Huasi_main_view.jpg"
+    }
   },
   {
     "id": "pe-sacsayhuaman",
@@ -563,7 +668,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "pe-cusco",
-    "wikidataId": "Q2129637"
+    "wikidataId": "Q2129637",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/pe-sacsayhuaman.jpg",
+      "author": "Martin St-Amant (S23678)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASacsayhuam%C3%A1n_D%C3%A9cembre_2006_-_Vue_Panoramique_-_Pleine_r%C3%A9solution.jpg"
+    }
   },
   {
     "id": "au-bondi-beach",
@@ -597,7 +709,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "au-sydney",
-    "wikidataId": "Q856283"
+    "wikidataId": "Q856283",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/au-bondi-beach.jpg",
+      "author": "caoyadong",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%82%A6%E8%BF%AA%E6%B5%B7%E6%BB%A9_-_panoramio.jpg"
+    }
   },
   {
     "id": "au-cradle-mountain",
@@ -636,7 +755,14 @@
     ],
     "quality": "S",
     "updatedAt": "2026-11-15",
-    "wikidataId": "Q1136542"
+    "wikidataId": "Q1136542",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/au-cradle-mountain.jpg",
+      "author": "tiimta",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACradle_Mountain_Lake_St_Clair_banner_Dove_Lake.jpg"
+    }
   },
   {
     "id": "is-hallgrimskirkja",
@@ -670,7 +796,14 @@
     "quality": "S",
     "updatedAt": "2026-11-15",
     "cityId": "is-reykjavik",
-    "wikidataId": "Q160384"
+    "wikidataId": "Q160384",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/is-hallgrimskirkja.jpg",
+      "author": "Andreas Tille",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHallgr%C3%ADmskirkja.jpeg"
+    }
   },
   {
     "id": "is-geysir",
@@ -703,6 +836,13 @@
     ],
     "quality": "S",
     "updatedAt": "2026-11-15",
-    "wikidataId": "Q211052"
+    "wikidataId": "Q211052",
+    "media": {
+      "status": "verified",
+      "file": "/media/destinations/is-geysir.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGeysir_Geothermal_Field%2C_Haukadalur%2C_Iceland%2C_20230501_0846_3718.jpg"
+    }
   }
 ]
