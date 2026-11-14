@@ -26,12 +26,21 @@ const prefersReducedMotion =
 /** 阅读进度(0-100):沉浸容器滚动比例;打开/内容切换时归零 */
 const progress = ref(0)
 
+let lastMeasure = 0
+
 function updateProgress(): void {
   const el = rootEl.value
   if (!el) return
   const denom = Math.max(1, el.scrollHeight - el.clientHeight)
   progress.value = Math.min(100, Math.round((el.scrollTop / denom) * 100))
-  deriveActive()
+  // 内容尺寸随图片/字体可能变化:滚动时节流重测章节锚点(150ms)
+  const now = performance.now()
+  if (now - lastMeasure > 150) {
+    lastMeasure = now
+    measureSections()
+  } else {
+    deriveActive()
+  }
 }
 
 const rootEl = ref<HTMLElement | null>(null)
@@ -56,6 +65,11 @@ function measureSections(): void {
   const root = rootEl.value
   if (!root) return
   const denom = Math.max(1, root.scrollHeight - root.clientHeight)
+  // 可滚行程 < 视口 60% 时章节锚点无区分度(所有块几乎同时可见)→ 隐藏 markers,进度条保留
+  if (denom < root.clientHeight * 0.6) {
+    markers.value = []
+    return
+  }
   const blocks = root.querySelectorAll<HTMLElement>('[data-section]')
   const next: SectionMarker[] = []
   blocks.forEach((b) => {
@@ -91,13 +105,35 @@ function jumpTo(key: string): void {
   })
 }
 
+/** PgDn/PgUp:按章节顺序键盘导航 */
+function jumpBySection(step: number): void {
+  const keys = markers.value.map((m) => m.key)
+  const at = keys.indexOf(activeKey.value)
+  const target = keys[Math.max(0, Math.min(keys.length - 1, (at === -1 ? 0 : at) + step))]
+  if (target) jumpTo(target)
+}
+
+function onReaderKey(e: KeyboardEvent): void {
+  if (e.key === 'PageDown') {
+    e.preventDefault()
+    jumpBySection(1)
+  } else if (e.key === 'PageUp') {
+    e.preventDefault()
+    jumpBySection(-1)
+  }
+}
+
 watch(
   () => [ui.immersiveOpen, dest.value?.id] as const,
   async ([open]) => {
     progress.value = 0
     markers.value = []
     activeKey.value = ''
-    if (!open) return
+    if (!open) {
+      window.removeEventListener('keydown', onReaderKey)
+      return
+    }
+    window.addEventListener('keydown', onReaderKey)
     await nextTick()
     // GSAP 交错入场不改布局,offsetTop 稳定;等待一轮渲染后测量
     await nextTick()
@@ -136,6 +172,7 @@ watch(
 onUnmounted(() => {
   introTimeline?.kill()
   introTimeline = null
+  window.removeEventListener('keydown', onReaderKey)
 })
 
 function fmtCoord(v: number, pos: string, neg: string): string {
