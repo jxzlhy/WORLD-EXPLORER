@@ -26,6 +26,30 @@ let timer: ReturnType<typeof setTimeout> | null = null
 
 const current = computed(() => photos.value[idx.value] ?? null)
 
+/** 策展语片头:打开时短暂展示后淡出(3.5s);paused 不影响 */
+const introVisible = ref(false)
+let introTimer: ReturnType<typeof setTimeout> | null = null
+
+function clearIntro(): void {
+  if (introTimer) {
+    clearTimeout(introTimer)
+    introTimer = null
+  }
+}
+
+/** 当前站故事摘要(首段,截断 110 字) */
+const storyExcerpt = computed(() => {
+  const first = current.value?.story?.[0] ?? ''
+  return first.length > 110 ? `${first.slice(0, 110)}…` : first
+})
+
+function viewDest(): void {
+  const id = current.value?.id
+  if (!id) return
+  ui.toggleShowcase(false)
+  explore.selectDestination(id)
+}
+
 function resetTimer(): void {
   if (timer) {
     clearTimeout(timer)
@@ -60,8 +84,13 @@ watch(
     if (open) {
       idx.value = 0
       paused.value = false
+      // 策展语片头:3.5s 后淡出
+      introVisible.value = true
+      clearIntro()
+      introTimer = setTimeout(() => (introVisible.value = false), 3_500)
       window.addEventListener('keydown', onKey)
     } else {
+      clearIntro()
       window.removeEventListener('keydown', onKey)
     }
   },
@@ -70,6 +99,7 @@ watch(
 
 onUnmounted(() => {
   resetTimer()
+  clearIntro()
   window.removeEventListener('keydown', onKey)
 })
 </script>
@@ -124,6 +154,22 @@ onUnmounted(() => {
           ›
         </button>
 
+        <!-- 策展语片头 -->
+        <Transition name="intro-fade">
+          <div
+            v-if="introVisible"
+            class="curator-intro"
+            role="status"
+          >
+            <p class="we-caps-label gold">
+              {{ collection.name }}
+            </p>
+            <p class="intro-text">
+              {{ collection.curatorNote }}
+            </p>
+          </div>
+        </Transition>
+
         <div class="caption">
           <p class="we-caps-label gold">
             {{ collection.name }} · 沉浸巡展
@@ -131,9 +177,23 @@ onUnmounted(() => {
           <p class="dest-name">
             {{ current?.name }}
           </p>
-          <p class="credit">
-            © {{ current?.media?.author }} · {{ current?.media?.license }}
+          <p
+            v-if="storyExcerpt"
+            class="story-excerpt"
+          >
+            {{ storyExcerpt }}
           </p>
+          <div class="caption-ops">
+            <button
+              class="view-dest"
+              @click="viewDest"
+            >
+              查看完整档案 →
+            </button>
+            <p class="credit">
+              © {{ current?.media?.author }} · {{ current?.media?.license }}
+            </p>
+          </div>
         </div>
 
         <div
@@ -269,7 +329,7 @@ onUnmounted(() => {
   position: absolute;
   left: var(--we-sp-8);
   bottom: var(--we-sp-8);
-  max-width: 70%;
+  max-width: 62%;
 }
 .caption p {
   margin: 0;
@@ -281,9 +341,74 @@ onUnmounted(() => {
   margin: var(--we-sp-2) 0 var(--we-sp-1);
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.8);
 }
+.story-excerpt {
+  font-size: var(--we-fs-small);
+  line-height: 1.8;
+  color: rgba(239, 244, 252, 0.82);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.caption-ops {
+  display: flex;
+  align-items: center;
+  gap: var(--we-sp-3);
+  margin-top: var(--we-sp-2);
+}
+.view-dest {
+  appearance: none;
+  border: 1px solid rgba(232, 200, 150, 0.4);
+  background: rgba(3, 6, 9, 0.45);
+  color: var(--we-gold);
+  font-size: var(--we-fs-small);
+  padding: 6px 14px;
+  border-radius: var(--we-r-full);
+  cursor: pointer;
+  transition: all var(--we-dur-1) var(--we-ease-out);
+}
+.view-dest:hover {
+  background: rgba(232, 200, 150, 0.12);
+}
 .credit {
   font-size: var(--we-fs-small);
   color: rgba(239, 244, 252, 0.72);
+}
+
+/* —— 策展语片头 —— */
+.curator-intro {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--we-sp-4);
+  background: rgba(3, 6, 9, 0.72);
+  padding: var(--we-sp-8);
+  text-align: center;
+  pointer-events: none;
+}
+.curator-intro .we-caps-label {
+  margin: 0;
+}
+.intro-text {
+  max-width: 640px;
+  font-family: var(--we-serif);
+  font-size: var(--we-fs-h2);
+  line-height: 2;
+  color: var(--we-text-hi);
+  margin: 0;
+}
+.intro-fade-enter-active,
+.intro-fade-leave-active {
+  transition: opacity 900ms var(--we-ease-out);
+}
+.intro-fade-enter-from,
+.intro-fade-leave-to {
+  opacity: 0;
 }
 
 .dots {

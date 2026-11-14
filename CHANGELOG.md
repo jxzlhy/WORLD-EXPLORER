@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **巡展叙事升级(2026-11-14 迭代十八)**:合集沉浸巡展从纯图片走向叙事——①打开时**策展语片头**(3.5s 淡出,居中大字);②caption 新增**当前站故事摘要**(首段截 110 字 + 两行截断);③「查看完整档案 →」按钮直达目的地面板(退出巡展);E2E 用例 Z(片头出现/淡出/摘要长度/直达)
 - **沉浸阅读章节跳转(2026-11-14 迭代十七)**:进度条上标注章节锚点(导语/正文/时间轴/笔记/来源,data-section 块自动测量)——点击平滑滚动直达(`prefers-reduced-motion` 时瞬时),滚动时当前章节点自动高亮;E2E 用例 Y(4 markers/跳转来源/高亮);**排障**:markers 原在 `aria-hidden` 容器内,role 查询跳过隐藏子树致点击定位失败——移除 aria-hidden(含交互按钮的容器不应隐藏)
 - **沉浸阅读进度指示(2026-11-14 迭代十六)**:全屏阅读顶部细线进度条(金色)+ 左上百分比——容器滚动 passive 监听,打开/切换目的地归零重算,除零防护;E2E 用例 X(顶部 0% → 滚底 100% → 回顶 0% → Esc 退出)
 - **沉浸巡展 Ken Burns 缓动(2026-11-14 迭代十五)**:巡展照片逐张缓慢推近/拉远(奇偶交替 kb-in/kb-out,时长 = 停留 8s + 1.2s 全周期覆盖);暂停联动(`animation-play-state: paused`);`prefers-reduced-motion` 纯 CSS 禁用;E2E 用例 W(动画名/交替/暂停/键盘导航)+ W2(reduced-motion);**排障**:Transition 端点嗅探误读照片自带 9.2s 动画时长致旧图滞留——显式 `:duration="300"` 修复
@@ -57,7 +58,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-14,章节跳转批):E2E 30/30 · 单测 65/65 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-14,巡展叙事批):E2E 31/31 · 单测 65/65 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
