@@ -55,6 +55,11 @@ const plannedModules = 'DESTINATIONS · STORIES · JOURNEYS · CINEMA · WONDERS
       </button>
       <RouterLink
         class="design-link"
+        to="/stats"
+        title="数据覆盖统计"
+      >▦</RouterLink>
+      <RouterLink
+        class="design-link"
         to="/design"
         title="设计系统实验页"
       >Aa</RouterLink>
