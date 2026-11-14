@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onUnmounted, watch } from 'vue'
+import { computed, nextTick, onUnmounted, ref, watch } from 'vue'
 import gsap from 'gsap'
 import { useExploreStore } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
@@ -18,6 +18,28 @@ const ui = useUiStore()
 const dest = computed(() => explore.selectedDestination)
 const verifiedBg = computed(() =>
   dest.value?.media?.status === 'verified' ? (dest.value.media.file ?? '') : '',
+)
+
+/** 阅读进度(0-100):沉浸容器滚动比例;打开/内容切换时归零 */
+const progress = ref(0)
+
+function updateProgress(): void {
+  const el = rootEl.value
+  if (!el) return
+  const denom = Math.max(1, el.scrollHeight - el.clientHeight)
+  progress.value = Math.min(100, Math.round((el.scrollTop / denom) * 100))
+}
+
+const rootEl = ref<HTMLElement | null>(null)
+
+watch(
+  () => [ui.immersiveOpen, dest.value?.id] as const,
+  async ([open]) => {
+    progress.value = 0
+    if (!open) return
+    await nextTick()
+    updateProgress()
+  },
 )
 
 const prefersReducedMotion =
@@ -65,11 +87,25 @@ function fmtCoord(v: number, pos: string, neg: string): string {
     <Transition name="immersive-fade">
       <div
         v-if="ui.immersiveOpen && dest"
+        ref="rootEl"
         class="immersive"
         role="dialog"
         aria-modal="true"
         :aria-label="`${dest.name} 沉浸阅读`"
+        @scroll.passive="updateProgress"
       >
+        <!-- 阅读进度(顶部细线) -->
+        <div
+          class="progress-rail"
+          aria-hidden="true"
+        >
+          <i :style="{ width: `${progress}%` }" />
+        </div>
+        <span
+          class="progress-pct mono"
+          aria-label="阅读进度"
+        >{{ progress }}%</span>
+
         <!-- 背景:已核验照片暗化;否则同色系程序渐变(诚实降级) -->
         <div
           class="backdrop"
@@ -190,6 +226,31 @@ function fmtCoord(v: number, pos: string, neg: string): string {
   z-index: var(--we-z-modal);
   overflow-y: auto;
   background: var(--we-void);
+}
+
+.progress-rail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 3;
+  background: var(--we-glass-tint);
+}
+.progress-rail i {
+  display: block;
+  height: 100%;
+  background: var(--we-gold);
+  transition: width var(--we-dur-1) var(--we-ease-out);
+}
+.progress-pct {
+  position: fixed;
+  top: var(--we-sp-4);
+  left: var(--we-sp-5);
+  z-index: 3;
+  font-size: var(--we-fs-micro);
+  color: var(--we-text-faint);
+  letter-spacing: 0.08em;
 }
 .backdrop {
   position: fixed;
