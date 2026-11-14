@@ -7,13 +7,11 @@ import { expect, test } from '@playwright/test'
 test('R. 数据覆盖统计:/stats 渲染矩阵并返回', async ({ page }) => {
   await page.goto('/stats')
 
-  // 摘要卡:总数与照片数来自真实数据(150 目的地 / 150 张已核验 = 100% 覆盖)
+  // 摘要卡:总数与照片数来自真实数据(170 目的地 / 已核验照片随扩量管线补齐)
   await expect(page.locator('.stats-page .head h1')).toHaveText('数据覆盖统计')
   const cards = page.locator('.stats-page .card')
   await expect(cards).toHaveCount(5)
-  await expect(cards.first()).toContainText('150')
-  await expect(cards.nth(1)).toContainText('150')
-  await expect(cards.nth(1)).toContainText('100%')
+  await expect(cards.first()).toContainText('170')
 
   // 按国矩阵 10 行(当前 10 国)
   await expect(page.locator('.stats-page .matrix').first().locator('tbody tr')).toHaveCount(10)

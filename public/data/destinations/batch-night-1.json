@@ -1,0 +1,708 @@
+[
+  {
+    "id": "cn-yuyuan-garden",
+    "name": "豫园",
+    "nameEn": "Yu Garden",
+    "type": "heritage",
+    "countryId": "CN",
+    "longitude": 121.4927,
+    "latitude": 31.2271,
+    "summary": "明嘉靖年间的江南园林,四百余年闹市中的山水。三穗堂、玉玲珑、九曲桥——一步一景的造园法度,把整座江南压缩进两公顷。",
+    "story": [
+      "豫园建于明嘉靖三十八年(1559),四川布政使潘允端为侍奉父亲而筑,「豫」取「愉悦老亲」之意。造园耗时二十余年,鼎盛时占地七十余亩,是江南古典园林的顶峰之作。",
+      "园中镇园之宝「玉玲珑」是北宋花石纲遗物:高约三米、周身孔窍,焚香于顶,各孔冒烟;注水于顶,各孔喷泉——「百窍渗水」的奇石天下罕二。战乱中它被弃置街头,清康熙年间才归位园中。",
+      "今天从豫园走出,穿过九曲桥就是城隍庙商圈——明代的山水与当代的市声只隔一道粉墙。这种「园与城」的紧贴,恰是江南园林在现代都市里最生动的活法。"
+    ],
+    "bestSeason": "3-5月(春花)与 9-11月(秋色)",
+    "tags": [
+      "世界遗产(扩展名录预备)",
+      "园林",
+      "明代",
+      "江南"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Yu Garden",
+        "url": "https://en.wikipedia.org/wiki/Yu_Garden",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "cn-shanghai",
+    "wikidataId": "Q745685"
+  },
+  {
+    "id": "cn-lingyin-temple",
+    "name": "灵隐寺",
+    "nameEn": "Lingyin Temple",
+    "type": "heritage",
+    "countryId": "CN",
+    "longitude": 120.0992,
+    "latitude": 30.2417,
+    "summary": "东晋古刹,西湖群山深处的一炷香。飞来峰造像与千年香火,把「禅」从经文里请进了石壁与林泉。",
+    "story": [
+      "灵隐寺始建于东晋咸和元年(326),相传印度僧人慧理见此山「峰峦奇秀,似仙灵所隐」而开山,「灵隐」由此得名。五代吴越国时香火鼎盛,僧众逾千,位列江南禅院之首。",
+      "寺前飞来峰是石窟造像的宝库:五代至元代的三百四十余尊造像刻于天然岩壁——南宋大肚弥勒是其中最著名的一尊,「容一切难容之事,笑一切可笑之人」的形象笑了一千年。",
+      "康熙南巡时题「云林禅寺」匾额,寺名与俗称至今并存。对游客而言,灵隐寺最好的时刻是清晨:钟声、山雾与香火气混在一起,西湖的喧嚣被群山隔在另一侧。"
+    ],
+    "bestSeason": "全年;10月后秋叶与晨雾最佳",
+    "tags": [
+      "古刹",
+      "石窟造像",
+      "禅",
+      "西湖"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Lingyin Temple",
+        "url": "https://en.wikipedia.org/wiki/Lingyin_Temple",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "cn-hangzhou",
+    "wikidataId": "Q1026316"
+  },
+  {
+    "id": "jp-sensoji",
+    "name": "浅草寺",
+    "nameEn": "Sensō-ji",
+    "type": "heritage",
+    "countryId": "JP",
+    "longitude": 139.7967,
+    "latitude": 35.7148,
+    "summary": "东京最古老的寺院:公元 628 年渔民捞起观音像的传说,比这座城市的名字更早。雷门大灯笼之下,是下町风情的原点。",
+    "story": [
+      "传说公元 628 年,两位渔民在隅田川捞起一尊金身观音,村民樱井守将其供奉于家宅,后改建为寺——浅草寺由此成为东京(江户)最古老的寺院,比德川幕府开府早了整一千年。",
+      "雷门的风雷神大灯笼高 3.9 米、重 700 公斤,是松下创始人松下幸之助于 1960 年感谢病愈而捐献的。仲见世商店街从雷门绵延 250 米,江户风情的人形烧与和菓子香气至今不散。",
+      "德川家康定浅草寺为幕府祈愿所,江户时代「观音信仰」与庶民娱乐在此混融——落语、浮世绘、歌舞伎皆以其为舞台。今天的浅草是东京少数能听见「下町」心跳的地方。"
+    ],
+    "bestSeason": "全年;5 月三社祭最盛",
+    "tags": [
+      "古刹",
+      "江户风情",
+      "观音",
+      "下町"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Sensō-ji",
+        "url": "https://en.wikipedia.org/wiki/Sensō-ji",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "jp-tokyo",
+    "wikidataId": "Q192854"
+  },
+  {
+    "id": "jp-shitennoji",
+    "name": "四天王寺",
+    "nameEn": "Shitennō-ji",
+    "type": "heritage",
+    "countryId": "JP",
+    "longitude": 135.5189,
+    "latitude": 34.6662,
+    "summary": "丰臣秀吉的野心、德川家的炮火与昭和的重建——日本最著名的城堡,是一部用石头写成的权力更替史。",
+    "story": [
+      "四天王寺始建于 593 年,由圣德太子发愿兴建——它是日本第一座官立佛教寺院,比京都的任何古刹都早半个世纪。此后屡毁屡建达七次,如今的建筑仍忠实地保持着「四天王寺式」伽蓝配置:中门、五重塔、金堂与讲堂一线排开。",
+      "寺内中心伽蓝庄严肃穆,五重塔可登临远眺大阪市区;六时堂前的石鸟居立于 1294 年,是大阪现存最古老的石造建筑。每月 21 日与 22 日的「大师日」市集,延续着江户以来的庶民香火。",
+      "与大阪城的天守炫耀不同,四天王寺的美在于朴素与秩序——圣德太子「以佛法护国」的理想在一千四百年的兴废中被反复确认。它是大阪人的信仰原点,也是日本佛教史的第一块基石。"
+    ],
+    "bestSeason": "全年;1月初「修正会」与 21 日市集最热闹",
+    "tags": [
+      "古刹",
+      "圣德太子",
+      "日本第一",
+      "市集"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Shitennō-ji",
+        "url": "https://en.wikipedia.org/wiki/Shitennō-ji",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "jp-osaka",
+    "wikidataId": "Q1151058"
+  },
+  {
+    "id": "us-millennium-park",
+    "name": "千禧公园",
+    "nameEn": "Millennium Park",
+    "type": "landmark",
+    "countryId": "US",
+    "longitude": -87.6225,
+    "latitude": 41.8826,
+    "summary": "芝加哥把「公共艺术」玩到极致的广场:一颗反光的豆子、两座喷泉的脸、一个露天音乐厅——后现代城市客厅的教科书。",
+    "story": [
+      "千禧公园于 2004 年开放,是芝加哥湖滨更新计划的旗舰。最著名的「云门」(Cloud Gate)由艺术家安尼什·卡普尔设计:110 吨抛光不锈钢无缝焊接,把天际线、湖面与游人全部映入它的「豆腹」。",
+      "皇冠喷泉(Crown Fountain)由两座 15 米高的玻璃砖塔组成,塔面轮播一千位芝加哥市民的脸——「吐水」的瞬间孩子们在水中尖叫;杰·普利兹克音乐厅的钢格架由弗兰克·盖里设计,夏天免费交响乐会在此上演。",
+      "公园的伟大之处在于它的「免费与日常」:没有门票、没有围墙,瑜伽课、轮滑少年与游客共享同一片草坪。它证明了一件事——最好的城市地标,是市民用得最多的那一个。"
+    ],
+    "bestSeason": "5-9月(户外活动全开)",
+    "tags": [
+      "公共艺术",
+      "城市",
+      "建筑",
+      "湖滨"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Millennium Park",
+        "url": "https://en.wikipedia.org/wiki/Millennium_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "us-chicago",
+    "wikidataId": "Q1370489"
+  },
+  {
+    "id": "us-pike-place",
+    "name": "派克市场",
+    "nameEn": "Pike Place Market",
+    "type": "landmark",
+    "countryId": "US",
+    "longitude": -122.3425,
+    "latitude": 47.6097,
+    "summary": "1962 年世博会留给西雅图的礼物:184 米的「飞行碟」悬在城市与雷尼尔雪山之间——六十余年后仍是最未来主义的建筑。",
+    "story": [
+      "派克市场 1907 年开市,是全美持续运营最古老的农夫市场:西雅图市民抗议中间商抬价,直接从农户手里买鱼买菜——「从农民到餐桌」的市集传统在此延续了一百多年。",
+      "这里的明星是飞鱼:鱼贩把三文鱼隔空抛掷叫卖的动作成了全球名场面。下层的「口香糖墙」、世上第一家星巴克(1971)与无数手工艺摊位,把市场变成了西雅图的城市人格——粗粝、幽默、自嘲又温暖。",
+      "市场俯瞰普吉特湾,清晨的渔船与傍晚的雪山在同一扇窗里。它是城市更新的范本:1970 年代差点被推土铲掉,市民「拯救派克市场」运动让它活了下来——公共市集之于城市,就像心跳之于身体。"
+    ],
+    "bestSeason": "全年(清晨鱼市最生动)",
+    "tags": [
+      "市集",
+      "西雅图",
+      "飞鱼",
+      "城市文化"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Pike Place Market",
+        "url": "https://en.wikipedia.org/wiki/Pike_Place_Market",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "us-seattle",
+    "wikidataId": "Q1114402"
+  },
+  {
+    "id": "fr-notre-dame",
+    "name": "巴黎圣母院",
+    "nameEn": "Notre-Dame de Paris",
+    "type": "heritage",
+    "countryId": "FR",
+    "longitude": 2.3499,
+    "latitude": 48.853,
+    "summary": "雨果为它写小说、拿破仑在它加冕、全人类看它燃烧又复活——哥特大教堂与法兰西民族的记忆本身。",
+    "story": [
+      "巴黎圣母院始建于 1163 年,1345 年落成:飞扶壁、玫瑰花窗、尖塔与怪兽雕像,定义了法式哥特的巅峰。历史上它见证圣女贞德平反、拿破仑加冕与两次世界大战的感恩弥撒——西岱岛因它成为「巴黎的原点」。",
+      "1831 年雨果的小说《巴黎圣母院》唤醒了公众对这座荒废教堂的热爱,直接催生了全国性修复运动——建筑师维奥莱-勒-杜克加建的尖塔与石像鬼,如今「比原物更像原物」。2019 年 4 月 15 日大火烧毁尖塔与木屋架,全世界隔着屏幕看它燃烧。",
+      "2024 年 12 月 8 日圣母院重新开放:800 年的橡木按中世纪工艺重建,玫瑰花窗在日光下如初。修复工程动用了两千年前的罗马造船技术与 3D 扫描——它既是怀旧,也是一场关于「如何修旧如旧」的当代实验。"
+    ],
+    "bestSeason": "全年;清晨人流最少",
+    "tags": [
+      "世界遗产",
+      "哥特",
+      "大教堂",
+      "修复"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/600",
+        "license": "事实参考",
+        "checkedAt": "2026-11-15"
+      },
+      {
+        "name": "Wikipedia: Notre-Dame de Paris",
+        "url": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "fr-paris",
+    "wikidataId": "Q158364"
+  },
+  {
+    "id": "fr-promenade-anglais",
+    "name": "英国人散步大道",
+    "nameEn": "Promenade des Anglais",
+    "type": "landmark",
+    "countryId": "FR",
+    "longitude": 7.262,
+    "latitude": 43.6954,
+    "summary": "地中海沿岸最著名的海滨步道:七公里的蔚蓝海岸线,蓝椅子、棕榈树与拿破仑式的慵懒。",
+    "story": [
+      "1820 年代,旅居尼斯的英国富人在海滨自筹资建步道,当地人遂称之「英国人散步大道」——从那时起,这条七公里长的湾岸线就是欧洲冬季避寒与夏季度假的代名词。",
+      "步道边的标志性蓝色座椅(Chaises Bleues)面朝天使湾,是尼斯人的公共客厅:老人读报、跑者穿行、情侣看日落——马蒂斯与夏卡尔笔下的蔚蓝海岸光线,至今没有变过。",
+      "每年 2 月的尼斯狂欢节沿此道游行,花仗大战的香气与音乐漫过整条海岸。1945 年后的蔚蓝海岸画派、电影节与度假地产,让尼斯成为「现代度假」这一概念的发源地之一。"
+    ],
+    "bestSeason": "5-10月(海水可泳)",
+    "tags": [
+      "蔚蓝海岸",
+      "海滨",
+      "度假",
+      "公共空间"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Promenade des Anglais (Nice)",
+        "url": "https://en.wikipedia.org/wiki/Promenade_des_Anglais_(Nice)",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "fr-nice"
+  },
+  {
+    "id": "it-duomo-milano",
+    "name": "米兰大教堂",
+    "nameEn": "Duomo di Milano",
+    "type": "heritage",
+    "countryId": "IT",
+    "longitude": 9.19,
+    "latitude": 45.4642,
+    "summary": "六百年的大理石森林:135 座尖塔、3400 尊雕像——世界最大的哥特式教堂之一,米兰的心脏与原点。",
+    "story": [
+      "米兰大教堂 1386 年动工,直到 1965 年最后一尊铜像落成才算真正完工——近六百年的建造史横跨哥特、文艺复兴、巴洛克与新古典。全部建材来自 Candoglia 大理石,经马焦雷湖与运河千里迢迢运抵。",
+      "教堂立面 135 座尖塔刺向天空,最高一尊金色的圣母像(1774 年落成)被米兰人亲切称为「Madonnina」——米兰的海拔原点与城市守护者。屋顶可步行:在尖塔与飞扶壁之间穿行,是大教堂最震撼的打开方式。",
+      "教堂地下藏着 4 世纪早期基督教洗礼池;教堂旁的维托里奥·埃马努埃莱二世拱廊直通斯卡拉歌剧院——米兰的信仰、时尚与音乐,以大教堂广场为原点展开。"
+    ],
+    "bestSeason": "全年;屋顶游览避开正午",
+    "tags": [
+      "世界遗产",
+      "哥特",
+      "大理石",
+      "地标"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Duomo di Milano",
+        "url": "https://en.wikipedia.org/wiki/Duomo_di_Milano",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "it-milano",
+    "wikidataId": "Q1394"
+  },
+  {
+    "id": "it-doge-palace",
+    "name": "威尼斯总督宫",
+    "nameEn": "Doge's Palace",
+    "type": "heritage",
+    "countryId": "IT",
+    "longitude": 12.3388,
+    "latitude": 45.4348,
+    "summary": "五座悬崖上的彩色渔村,被一千公里的干石墙与葡萄园钉在地中海岸——「人类与海的百年谈判」的世界遗产。",
+    "story": [
+      "威尼斯总督宫是威尼斯共和国一千年的权力中枢与哥特艺术的巅峰:总督的居所、议会的大厅、法院与监狱在同一座宫殿里——「宫内治世,桥后入狱」的叹息桥正连接着它与旧监狱。",
+      "宫内金梯(Scale d'Oro)通向四层展厅:委罗内塞的《利未家的宴会》、丁托列托的巨幅《天堂》(号称世界最大布面油画)铺满议会厅整面墙——威尼斯画派的色彩与光在此登峰造极。",
+      "1997 年整体列入世界遗产(威尼斯及泻湖)。今天站在宫殿外望向泻湖:圣马可钟楼、叹息桥与贡多拉码头的画面,是全世界对「威尼斯」的全部想象的原点。"
+    ],
+    "bestSeason": "4-10月;避开涨潮季(11-12月 Acqua alta)",
+    "tags": [
+      "世界遗产(威尼斯)",
+      "哥特",
+      "总督宫",
+      "威尼斯画派"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/394",
+        "license": "事实参考",
+        "checkedAt": "2026-11-15"
+      },
+      {
+        "name": "Wikipedia: Doge's Palace",
+        "url": "https://en.wikipedia.org/wiki/Doge's_Palace",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "it-venice",
+    "wikidataId": "Q760846"
+  },
+  {
+    "id": "gb-tate-modern",
+    "name": "泰特现代美术馆",
+    "nameEn": "Tate Modern",
+    "type": "museum",
+    "countryId": "GB",
+    "longitude": -0.0994,
+    "latitude": 51.5074,
+    "summary": "人类文明的万神殿:罗塞塔石碑、帕特农神雕、木乃伊与800万件藏品——世界首个公共国家博物馆(1759)。",
+    "story": [
+      "泰特现代美术馆由泰晤士河畔的班克塞德发电厂改造而成:瑞士建筑师赫尔佐格与德梅隆保留了烟囱,在厂房里挖出斜坡大厅——2000 年开馆即成为现代艺术的新圣殿,也是「工业遗产再利用」的全球范本。",
+      "馆内收藏从毕加索、达利到罗斯科与当代装置:涡旋厅(Turbine Hall)每年委托一件巨型装置艺术,把 155 米长的工业大厅变成全民游乐场——_weather 气象装置、日光浴、滑梯,艺术在这里可以是「玩」。",
+      "免费开放与泰晤士河对岸圣保罗大教堂的千年穹顶隔河相望——旧工业与旧信仰、当代艺术与千年教堂,在一条河的两边互相对话。这就是伦敦:历史不打架,它们排队共存。"
+    ],
+    "bestSeason": "全年(每日延长至 22:00)",
+    "tags": [
+      "美术馆",
+      "工业遗产",
+      "当代艺术",
+      "免费"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Tate Modern",
+        "url": "https://en.wikipedia.org/wiki/Tate_Modern",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "gb-london",
+    "wikidataId": "Q908123"
+  },
+  {
+    "id": "gb-oxford",
+    "name": "牛津大学城",
+    "nameEn": "Oxford",
+    "type": "city",
+    "countryId": "GB",
+    "longitude": -1.2577,
+    "latitude": 51.752,
+    "summary": "「梦想塔尖之城」:九百年的学院、石板巷与河畔平底船——英语世界最古老的大学与一座城长成了彼此。",
+    "story": [
+      "牛津大学的 teachning 可溯至 1096 年,1167 年英法关系恶化、学者从巴黎归国后迅速壮大——它是英语世界最古老的大学。博德利图书馆(1602)是欧洲最古老的公共图书馆之一,藏书逾一千三百万册。",
+      "三十八个学院各有自己的庭院、教堂与食堂(《哈利·波特》的霍格沃茨宴会厅取景基督堂学院)。叹息桥、雷德克利夫圆顶与圣母玛利亚大学教堂的塔尖共同构成「梦想塔尖之城」(Matthew Arnold 语)。",
+      "城中处处是科学与文学的足迹:牛顿、霍金、图灵在学院里思考;《爱丽丝梦游仙境》从基督堂学院的一条小艇上诞生。今天的牛津也是英国高科技产业的摇篮之一——古老与前沿在石墙内外共存。"
+    ],
+    "bestSeason": "4-6月与 9-10月(学期中可见学术生活)",
+    "tags": [
+      "大学城",
+      "学院",
+      "建筑",
+      "文学"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: University of Oxford",
+        "url": "https://en.wikipedia.org/wiki/University_of_Oxford",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "gb-oxford",
+    "wikidataId": "Q34433"
+  },
+  {
+    "id": "eg-kom-ombo",
+    "name": "康翁波神庙",
+    "nameEn": "Temple of Kom Ombo",
+    "type": "heritage",
+    "countryId": "EG",
+    "longitude": 32.9369,
+    "latitude": 24.4522,
+    "summary": "女神伊西丝的最后神庙:被尼罗河水淹没、又整体搬家的奇迹——古埃及文明最晚熄灭的一盏灯。",
+    "story": [
+      "康翁波神庙始建于托勒密六世时代(公元前 2 世纪),它最独特之处是「双神双殿」结构:一半供奉鹰神荷鲁斯,一半供奉鳄鱼神索贝克——两套门、两座祭坛、两条走廊完全对称,是全埃及独一无二的对称双神庙。",
+      "神庙后墙刻着一系列手术器械浮雕:剪刀、钳子、骨锯——证明两千年前的埃及已存在成熟的外科实践。圣湖边的鳄鱼木乃伊厅陈列着数十具索贝克圣鳄,神秘而略带幽默。",
+      "神庙建在尼罗河转弯的高地上,傍晚时分河水与砂岩同时变成金色——从卢克索乘尼罗河邮轮南下,康翁波通常是黄昏靠岸的第一站:灯光亮起时,双神庙像一件被水托起的黄金艺术品。"
+    ],
+    "bestSeason": "10-4月(阿斯旺凉爽季)",
+    "tags": [
+      "古埃及",
+      "双神庙",
+      "尼罗河",
+      "托勒密"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Temple of Kom Ombo",
+        "url": "https://en.wikipedia.org/wiki/Temple_of_Kom_Ombo",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "eg-aswan",
+    "wikidataId": "Q1476394"
+  },
+  {
+    "id": "eg-siwa-oasis",
+    "name": "锡瓦绿洲",
+    "nameEn": "Siwa Oasis",
+    "type": "natural",
+    "countryId": "EG",
+    "longitude": 25.5281,
+    "latitude": 29.2,
+    "summary": "撒哈拉深处最神秘的绿洲:橄榄与棕榈的海洋、盐湖与温泉——亚历山大大帝在此求取「阿蒙神谕」。",
+    "story": [
+      "锡瓦绿洲距利比亚边境仅 50 公里,深嵌撒哈拉西部:一百万株橄榄与七万株棕榈覆盖在低于海面的洼地里,盐湖在阳光下泛出雪白——「绿洲中的绿洲」。",
+      "公元前 331 年,亚历山大大帝穿越沙漠抵达锡瓦,在阿蒙神庙求取神谕并被尊为「阿蒙之子」——这次朝圣在古代世界的政治与宗教意义,不亚于他任何一场战役。神庙遗址「乌姆乌贝达」至今矗立于绿洲山丘之上。",
+      "锡瓦的柏柏尔人使用独有的锡瓦语,以「盐与泥」建造的民居已有八百年历史。今天的锡瓦仍保持着绿洲的慢节奏:骑自行车穿行椰林、浮游于高盐度的温泉湖、在沙丘顶看非洲的日落。"
+    ],
+    "bestSeason": "10-4月(沙漠凉爽季)",
+    "tags": [
+      "绿洲",
+      "撒哈拉",
+      "盐湖",
+      "柏柏尔"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Siwa Oasis",
+        "url": "https://en.wikipedia.org/wiki/Siwa_Oasis",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "wikidataId": "Q244152"
+  },
+  {
+    "id": "pe-qorikancha",
+    "name": "库斯科太阳神殿",
+    "nameEn": "Qorikancha",
+    "type": "heritage",
+    "countryId": "PE",
+    "longitude": -71.3456,
+    "latitude": -13.5069,
+    "summary": "海拔 5,036 米的地质彩虹:矿物沉积把山体染成七色条纹——安第斯深处十年前才被「发现」的新地标。",
+    "story": [
+      "Qorikancha 在克丘亚语中意为「黄金庭院」——它是印加帝国最重要的太阳神殿:墙面曾覆盖 700 余块纯金板,庭院里陈列着黄金做的玉米、羊驼与太阳盘。西班牙征服者的编年史写道:「它的辉煌无法用语言描述」。",
+      "1534 年西班牙人摧毁神殿、夺走黄金,并在遗址上建起圣多明我修道院——今天你可以同时看到印加巨石墙与巴洛克修道院共享同一堵墙:1950 年地震震塌了修道院,底下的印加石墙却纹丝不动。",
+      "地下博物馆陈列着祭祀文物与印加天文石刻;庭院中的有机花园用草药拼出库斯科的轮廓。这里是理解「印加与殖民叠层」的最佳入口——库斯科本身,就是一座建在印加遗址上的西班牙城市。"
+    ],
+    "bestSeason": "5-9月(旱季)",
+    "tags": [
+      "世界遗产(库斯科城)",
+      "印加",
+      "太阳神殿",
+      "殖民叠层"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/273",
+        "license": "事实参考",
+        "checkedAt": "2026-11-15"
+      },
+      {
+        "name": "Wikipedia: Coricancha",
+        "url": "https://en.wikipedia.org/wiki/Coricancha",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "pe-cusco",
+    "wikidataId": "Q1301981"
+  },
+  {
+    "id": "pe-sacsayhuaman",
+    "name": "萨克塞华曼",
+    "nameEn": "Sacsayhuamán",
+    "type": "heritage",
+    "countryId": "PE",
+    "longitude": -71.3731,
+    "latitude": -13.509,
+    "summary": "库斯科上方的印加巨石阵:三百吨的巨石严丝合缝,连刀片都插不进——「没有砂浆的堡垒」至今解释不了。",
+    "story": [
+      "萨克塞华曼建在库斯科城北的高地上,是印加帝国都城的防御卫城:三道之字形巨石墙绵延 400 米,最大的巨石重达 300 余吨、高约 5 米——印加石匠不使用砂浆,却让石块之间严丝合缝,「连刀片都插不进去」。",
+      "西班牙人初见时惊叹其为「魔鬼的作品」,拆走部分石块去建库斯科的教堂——今天的墙体只余原来规模的四分之一,仍然震撼。1536 年这里爆发印加人反抗西班牙的最大战役之一,数千名战士战死于此。",
+      "每年 6 月 24 日的「太阳节」(Inti Raymi)在此盛大重演:数万名演员与游客重现印加帝国最重要的太阳祭祀——库斯科的印加心脏,在这里从未停止跳动。"
+    ],
+    "bestSeason": "5-9月(旱季);6月24日太阳节",
+    "tags": [
+      "世界遗产(库斯科城)",
+      "印加",
+      "巨石",
+      "太阳节"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/273",
+        "license": "事实参考",
+        "checkedAt": "2026-11-15"
+      },
+      {
+        "name": "Wikipedia: Sacsayhuamán",
+        "url": "https://en.wikipedia.org/wiki/Sacsayhuamán",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "pe-cusco",
+    "wikidataId": "Q2129637"
+  },
+  {
+    "id": "au-bondi-beach",
+    "name": "邦迪海滩",
+    "nameEn": "Bondi Beach",
+    "type": "island",
+    "countryId": "AU",
+    "longitude": 151.2743,
+    "latitude": -33.8908,
+    "summary": "悉尼人的精神原点:一公里长的金色沙滩,冲浪救生俱乐部的发源地——「Bondi」在原住民语里就是「水拍打石头」。",
+    "story": [
+      "邦迪海滩距悉尼市中心仅 8 公里,是澳洲最著名的海滩:「Bondi」源自原住民语 Boondi,意为「水拍打石头」——这个被浪声命名的海湾,如今每年接待数百万人次游客。",
+      "1907 年,邦迪冲浪救生俱乐部(Bondi Surf Bathers' Life Saving Club)成立——这是世界上最早的救生俱乐部,澳洲式「冲浪救生」从此走向全球每个海滩。1930 年代的「美体文化战争」(海滩着装诉讼)也曾在这里上演。",
+      "今天邦迪的打开方式:清晨在 Bondi to Coogee 海岸步道跑步(六公里海崖线)、在 Icebergs 泳池的悬崖海水池里游泳、在周末的农场市集吃 Brunch——然后什么都不做,看浪把一天的烦恼拍碎在沙里。"
+    ],
+    "bestSeason": "10-4月(南半球夏季)",
+    "tags": [
+      "海滩",
+      "冲浪",
+      "救生俱乐部",
+      "悉尼"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Bondi Beach",
+        "url": "https://en.wikipedia.org/wiki/Bondi_Beach",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "au-sydney",
+    "wikidataId": "Q856283"
+  },
+  {
+    "id": "au-cradle-mountain",
+    "name": "摇篮山",
+    "nameEn": "Cradle Mountain",
+    "type": "natural",
+    "countryId": "AU",
+    "longitude": 145.9661,
+    "latitude": -41.6961,
+    "summary": "塔斯马尼亚的荒野之心:冰川蚀刻的锯齿山峰倒映在鸽子湖里——澳洲最著名的徒步圣地的起点。",
+    "story": [
+      "摇篮山海拔 1,545 米,冰川蚀刻的山体与周边湖泊、雨林共同构成摇篮山-圣克莱尔湖国家公园——塔斯马尼亚荒野世界遗产区的核心。1912 年奥地利出生的自然学家 Gustav Weindorfer 在此定居,亲手筑成「 Waldheim 」小屋,并立愿「让所有人都能看到这里的杜鹃与山湖」——今天公园的公共性正是从这个梦想长出来的。",
+      "澳洲最著名的徒步线「摇圣山道」(Overland Track)从这里出发:65 公里穿越荒野,六天五夜,途经摇篮山顶、Barn Bluff、塔斯马尼亚最高的奥萨山与圣克莱尔湖——袋熊、袋獾与针鼹在路上随时出镜。",
+      "鸽子湖畔的短环线(Dove Lake Circuit,6 公里)是最经典的一小时:天气晴好时,摇篮山的锯齿轮廓倒映湖面,是塔斯马尼亚旅游的「官方封面」。塔州 40% 的土地是保护区——这里是澳洲最后一片真正的荒野。"
+    ],
+    "bestSeason": "11-4月(夏季徒步季);冬季可赏雪",
+    "tags": [
+      "世界遗产(荒野)",
+      "徒步",
+      "冰川湖",
+      "袋熊"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/181",
+        "license": "事实参考",
+        "checkedAt": "2026-11-15"
+      },
+      {
+        "name": "Wikipedia: Cradle Mountain",
+        "url": "https://en.wikipedia.org/wiki/Cradle_Mountain",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "wikidataId": "Q1136542"
+  },
+  {
+    "id": "is-hallgrimskirkja",
+    "name": "哈尔格林姆斯大教堂",
+    "nameEn": "Hallgrímskirkja",
+    "type": "landmark",
+    "countryId": "IS",
+    "longitude": -21.9266,
+    "latitude": 64.1417,
+    "summary": "雷克雅未克的天际线本身:73 米的混凝土「管风琴」,设计灵感来自冰岛的玄武岩柱状节理——北欧现代主义的信仰表达。",
+    "story": [
+      "哈尔格林姆斯大教堂 1945 年动工、1986 年落成,前后 41 年——建筑师 Guðjón Samúelsson 的设计取意于冰岛标志性的玄武岩柱状节理(如斯瓦蒂瀑布旁的黑石柱):把地质写进建筑,是冰岛人最擅长的语言。",
+      "塔高 73 米,是冰岛最高的建筑之一:电梯登顶后,雷克雅未克五彩铁皮屋顶、港湾与远处的山峦尽收眼底——这是城市的第一观景点,也是所有游客的第一站。",
+      "教堂以冰岛圣诗诗人哈尔格林姆斯·皮特松命名(1614-1674),塔内藏有一架 5,271 音管的巨型管风琴——夏天午后常有管风琴演奏会,音乐在混凝土的柱状立面间回荡,是冰岛最「冰岛」的听觉记忆。"
+    ],
+    "bestSeason": "全年;6-8月午夜阳光时段最上镜",
+    "tags": [
+      "地标",
+      "现代主义",
+      "管风琴",
+      "观景"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Hallgrímskirkja",
+        "url": "https://en.wikipedia.org/wiki/Hallgrímskirkja",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "cityId": "is-reykjavik",
+    "wikidataId": "Q160384"
+  },
+  {
+    "id": "is-geysir",
+    "name": "盖歇尔间歇泉",
+    "nameEn": "Geysir",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -20.3,
+    "latitude": 64.3128,
+    "summary": "全世界「间歇泉」这个词的来源:千年的喷发记录、黄金圈的地质心脏——冰岛地热力量的命名者。",
+    "story": [
+      "英语「Geysir」(间歇泉)一词即源自冰岛的「Geysir」——它是全欧洲已知最古老、记载最早的间歇泉,千年来以规律的高温喷发吸引旅人,第一次书面记录见于 1294 年地震之后的文献。",
+      "大 Geysir 的喷发高度曾达 60-80 米,但 20 世纪后趋于沉寂(游客投掷杂物堵塞管道是原因之一)。如今黄金圈的主角是它身旁的「史托克」(Strokkur):每 5-10 分钟喷发一次,水柱 15-30 米——准时得像一支闹钟。",
+      "盖歇尔地热区是「黄金圈」三站的地质核心:蒸汽孔、沸泥浆池与彩虹色的矿物质盆地环绕四周。冰岛人用这口泉告诉世界:脚下的地球是活的——地热为全冰岛供电供热,「喷泉」只是它温柔的呼吸。"
+    ],
+    "bestSeason": "全年(冬季雪景+喷汽最魔幻)",
+    "tags": [
+      "地热",
+      "间歇泉",
+      "黄金圈",
+      "地质"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Geysir",
+        "url": "https://en.wikipedia.org/wiki/Geysir",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-15"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-15",
+    "wikidataId": "Q211052"
+  }
+]
