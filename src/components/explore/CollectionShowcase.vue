@@ -2,6 +2,7 @@
 import { computed, onUnmounted, ref, watch } from 'vue'
 import { useExploreStore } from '../../stores/explore-store'
 import { useUiStore } from '../../stores/ui-store'
+import { TourAudio } from '../../services/tour-audio'
 
 /**
  * CollectionShowcase — 合集沉浸巡展(V2.5)。
@@ -71,6 +72,21 @@ function jump(i: number): void {
   resetTimer()
 }
 
+// —— 巡展音频(复用 TourAudio;默认静音,手势解锁,翻页钟声) ——
+let audio: TourAudio | null = null
+const audioOn = ref(false)
+
+async function toggleSound(): Promise<void> {
+  if (!audio) audio = new TourAudio()
+  if (audioOn.value) {
+    audio.disable()
+    audioOn.value = false
+  } else {
+    await audio.enable()
+    audioOn.value = audio.enabled
+  }
+}
+
 /** 打开期间监听 ←/→ 翻页 */
 function onKey(e: KeyboardEvent): void {
   if (e.key === 'ArrowLeft') next(-1)
@@ -91,16 +107,24 @@ watch(
       window.addEventListener('keydown', onKey)
     } else {
       clearIntro()
+      introVisible.value = false
       window.removeEventListener('keydown', onKey)
     }
   },
   { immediate: true },
 )
 
+/** 翻页钟声(开启音频时) */
+watch(idx, () => {
+  if (audioOn.value) audio?.chime()
+})
+
 onUnmounted(() => {
   resetTimer()
   clearIntro()
   window.removeEventListener('keydown', onKey)
+  audio?.dispose()
+  audio = null
 })
 </script>
 
@@ -216,6 +240,15 @@ onUnmounted(() => {
           @click="paused = !paused; resetTimer()"
         >
           {{ paused ? '▶ 自动播放' : '‖ 暂停播放' }}
+        </button>
+        <button
+          class="sound"
+          :class="{ on: audioOn }"
+          :aria-label="audioOn ? '关闭巡展环境音' : '开启巡展环境音'"
+          :title="audioOn ? '关闭环境音' : '开启环境音(程序合成,默认静音)'"
+          @click="toggleSound"
+        >
+          {{ audioOn ? '🔊' : '🔇' }}
         </button>
       </div>
     </Transition>
@@ -437,7 +470,7 @@ onUnmounted(() => {
 
 .pause {
   position: absolute;
-  right: var(--we-sp-8);
+  right: calc(var(--we-sp-8) + 52px);
   bottom: var(--we-sp-8);
   appearance: none;
   border: 1px solid var(--we-glass-border);
@@ -450,6 +483,27 @@ onUnmounted(() => {
 }
 .pause:hover {
   color: var(--we-text-hi);
+}
+.sound {
+  position: absolute;
+  right: var(--we-sp-8);
+  bottom: var(--we-sp-8);
+  appearance: none;
+  border: 1px solid var(--we-glass-border);
+  background: var(--we-glass);
+  color: var(--we-text-dim);
+  font-size: var(--we-fs-body);
+  width: 36px;
+  height: 34px;
+  border-radius: var(--we-r-full);
+  cursor: pointer;
+}
+.sound:hover {
+  color: var(--we-text-hi);
+}
+.sound.on {
+  color: var(--we-gold-strong);
+  border-color: rgba(232, 200, 150, 0.35);
 }
 
 .showcase-fade-enter-active,
