@@ -66,5 +66,16 @@ export const useMyWorldStore = defineStore('my-world', {
       saveJson('want-to-go', this.wantToGo)
       saveJson('notes', this.notes)
     },
+    /** 重置全部本地数据(收藏/去过/想去/笔记;两步确认由 UI 层负责) */
+    resetAll() {
+      this.favorites = []
+      this.visited = []
+      this.wantToGo = []
+      this.notes = {}
+      saveJson('favorites', this.favorites)
+      saveJson('visited', this.visited)
+      saveJson('want-to-go', this.wantToGo)
+      saveJson('notes', this.notes)
+    },
   },
 })

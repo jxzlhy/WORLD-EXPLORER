@@ -336,6 +336,14 @@ export const useExploreStore = defineStore('explore', {
       this.exploredIds = sanitizeList(loadJson<unknown>('explored', []))
     },
 
+    /** 清空探索足迹与历史(重置数据批;MyWorld 列表由 my-world-store.resetAll 负责) */
+    resetExploration() {
+      this.recentIds = []
+      this.exploredIds = []
+      saveJson('recent', this.recentIds)
+      saveJson('explored', this.exploredIds)
+    },
+
     /** 随机发现一个目的地 */
     randomDestination(): Destination | null {
       if (!this.destinations.length) return null

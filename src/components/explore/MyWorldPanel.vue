@@ -116,6 +116,19 @@ function cancelImport(): void {
   importPreview.value = null
   importError.value = ''
 }
+
+/** 重置数据(两步确认):清空收藏/去过/想去/笔记/足迹/历史 */
+const confirmReset = ref(false)
+
+function onResetClick(): void {
+  if (!confirmReset.value) {
+    confirmReset.value = true
+    return
+  }
+  myWorld.resetAll()
+  explore.resetExploration()
+  confirmReset.value = false
+}
 </script>
 
 <template>
@@ -244,6 +257,22 @@ function cancelImport(): void {
             @click="fileInput?.click()"
           >
             导入 JSON
+          </WeButton>
+          <WeButton
+            variant="ghost"
+            size="sm"
+            :class="{ 'reset-armed': confirmReset }"
+            @click="onResetClick"
+          >
+            {{ confirmReset ? '⚠ 确认重置' : '重置数据' }}
+          </WeButton>
+          <WeButton
+            v-if="confirmReset"
+            variant="ghost"
+            size="sm"
+            @click="confirmReset = false"
+          >
+            取消
           </WeButton>
           <input
             ref="fileInput"
@@ -503,6 +532,11 @@ function cancelImport(): void {
   margin-left: auto;
   color: var(--we-text-faint);
   font-size: var(--we-fs-micro);
+}
+
+.reset-armed {
+  border-color: rgba(232, 106, 106, 0.5) !important;
+  color: var(--we-danger) !important;
 }
 
 .data-ops {
