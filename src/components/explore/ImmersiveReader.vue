@@ -20,6 +20,9 @@ const verifiedBg = computed(() =>
   dest.value?.media?.status === 'verified' ? (dest.value.media.file ?? '') : '',
 )
 
+const prefersReducedMotion =
+  typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
+
 /** 阅读进度(0-100):沉浸容器滚动比例;打开/内容切换时归零 */
 const progress = ref(0)
 
@@ -28,22 +31,80 @@ function updateProgress(): void {
   if (!el) return
   const denom = Math.max(1, el.scrollHeight - el.clientHeight)
   progress.value = Math.min(100, Math.round((el.scrollTop / denom) * 100))
+  deriveActive()
 }
 
 const rootEl = ref<HTMLElement | null>(null)
+
+/** 章节锚点(渲染自 data-section 块;pct = 该块顶部在滚动行程中的百分比位置) */
+export interface SectionMarker {
+  key: string
+  name: string
+  pct: number
+}
+const SECTION_NAMES: Record<string, string> = {
+  lead: '导语',
+  story: '正文',
+  timeline: '时间轴',
+  note: '我的笔记',
+  sources: '资料来源',
+}
+const markers = ref<SectionMarker[]>([])
+const activeKey = ref('')
+
+function measureSections(): void {
+  const root = rootEl.value
+  if (!root) return
+  const denom = Math.max(1, root.scrollHeight - root.clientHeight)
+  const blocks = root.querySelectorAll<HTMLElement>('[data-section]')
+  const next: SectionMarker[] = []
+  blocks.forEach((b) => {
+    const key = b.dataset.section!
+    if (!SECTION_NAMES[key]) return
+    next.push({
+      key,
+      name: SECTION_NAMES[key]!,
+      pct: Math.min(100, Math.round((b.offsetTop / denom) * 100)),
+    })
+  })
+  markers.value = next
+  deriveActive()
+}
+
+/** 当前章节 = 最后一个 pct ≤ 阅读进度的锚点 */
+function deriveActive(): void {
+  let key = markers.value[0]?.key ?? ''
+  for (const m of markers.value) {
+    if (m.pct <= progress.value + 2) key = m.key
+  }
+  activeKey.value = key
+}
+
+function jumpTo(key: string): void {
+  const root = rootEl.value
+  const block = root?.querySelector<HTMLElement>(`[data-section="${key}"]`)
+  if (!root || !block) return
+  const denom = Math.max(1, root.scrollHeight - root.clientHeight)
+  root.scrollTo({
+    top: Math.min(block.offsetTop - 48, denom),
+    behavior: prefersReducedMotion ? 'auto' : 'smooth',
+  })
+}
 
 watch(
   () => [ui.immersiveOpen, dest.value?.id] as const,
   async ([open]) => {
     progress.value = 0
+    markers.value = []
+    activeKey.value = ''
     if (!open) return
     await nextTick()
+    // GSAP 交错入场不改布局,offsetTop 稳定;等待一轮渲染后测量
+    await nextTick()
     updateProgress()
+    measureSections()
   },
 )
-
-const prefersReducedMotion =
-  typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
 
 let introTimeline: gsap.core.Timeline | null = null
 
@@ -94,12 +155,22 @@ function fmtCoord(v: number, pos: string, neg: string): string {
         :aria-label="`${dest.name} 沉浸阅读`"
         @scroll.passive="updateProgress"
       >
-        <!-- 阅读进度(顶部细线) -->
-        <div
-          class="progress-rail"
-          aria-hidden="true"
-        >
-          <i :style="{ width: `${progress}%` }" />
+        <!-- 阅读进度(顶部细线)+ 章节锚点(可交互,不设 aria-hidden) -->
+        <div class="progress-rail">
+          <i
+            aria-hidden="true"
+            :style="{ width: `${progress}%` }"
+          />
+          <button
+            v-for="m in markers"
+            :key="m.key"
+            class="marker"
+            :class="{ active: activeKey === m.key }"
+            :style="{ left: `${m.pct}%` }"
+            :title="m.name"
+            :aria-label="`跳转到${m.name}`"
+            @click="jumpTo(m.key)"
+          />
         </div>
         <span
           class="progress-pct mono"
@@ -142,7 +213,10 @@ function fmtCoord(v: number, pos: string, neg: string): string {
             </span>
           </p>
 
-          <p class="lead">
+          <p
+            class="lead"
+            data-section="lead"
+          >
             {{ dest.summary }}
           </p>
 
@@ -153,7 +227,10 @@ function fmtCoord(v: number, pos: string, neg: string): string {
             <i /><span>✦</span><i />
           </div>
 
-          <section class="story">
+          <section
+            class="story"
+            data-section="story"
+          >
             <p
               v-for="(para, i) in dest.story"
               :key="i"
@@ -166,6 +243,7 @@ function fmtCoord(v: number, pos: string, neg: string): string {
           <section
             v-if="myWorld.notes[dest.id]"
             class="my-note-ro"
+            data-section="note"
           >
             <p class="we-caps-label gold">✎ 我的笔记</p>
             <p class="note-text">
@@ -176,6 +254,7 @@ function fmtCoord(v: number, pos: string, neg: string): string {
           <div
             v-if="dest.timeline?.length"
             class="timeline"
+            data-section="timeline"
           >
             <span class="we-caps-label">时间轴</span>
             <ul>
@@ -189,7 +268,10 @@ function fmtCoord(v: number, pos: string, neg: string): string {
             </ul>
           </div>
 
-          <footer class="sources">
+          <footer
+            class="sources"
+            data-section="sources"
+          >
             <p class="we-caps-label">
               资料来源
             </p>
@@ -242,6 +324,26 @@ function fmtCoord(v: number, pos: string, neg: string): string {
   height: 100%;
   background: var(--we-gold);
   transition: width var(--we-dur-1) var(--we-ease-out);
+}
+.marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(232, 200, 150, 0.55);
+  background: var(--we-void);
+  cursor: pointer;
+  padding: 0;
+  transition: all var(--we-dur-1) var(--we-ease-out);
+}
+.marker:hover {
+  transform: translate(-50%, -50%) scale(1.35);
+}
+.marker.active {
+  background: var(--we-gold);
+  border-color: var(--we-gold);
 }
 .progress-pct {
   position: fixed;
