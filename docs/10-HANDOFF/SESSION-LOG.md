@@ -67,6 +67,14 @@
 - ImmersiveReader 顶部细线进度条 + 左上百分比:容器 @scroll.passive 监听(除零防护),打开/切换目的地归零重算;progress-rail 金色 3px [V]
 - E2E 用例 X:scrollTop 编程滚动 → 0%/100%/0% 三态 + Esc 退出,一次通过(首版漏 import ref,typecheck 拦截) [V]
 
+## 照片全覆盖批(2026-11-14/15 通宵批次)—— 里程碑
+
+- **150/150 全覆盖**:Commons 解禁后 expand-media-coverage.py 分 7 轮(3+24+30+16+30+12+6)跑完剩余 121 张;网络断续 4 次自动保全续跑(断点续跑设计首次实战验证) [V]
+- 许可全白名单(CC BY-SA 4.0×61/3.0×29+2igo/CC BY 3.0×11/PD×11/CC BY 2.0×10/CC0×8/CC BY 4.0×8/CC BY-SA 2.0×6/2.5×4),自动署名;本地 96MB(1920px 缩放版) [V]
+- 用例适配:R(29→150 张/100% 覆盖)、T(埃及条带 2→14、巴黎改 ≥2 稳健断言) [V]
+- 按国分布 12-19 张:CN 18/JP 19/FR 15/EG 15/GB 15/IT 13/PE 13/US 18/AU 12/IS 12 [V]
+- 推送:PAT 仍失效,24 个提交本地待推(照片数据批即将成为第 25 个) [V]
+
 ## Ken Burns 批(2026-11-14 迭代十五)
 
 - 巡展照片 Ken Burns:奇偶交替 kb-in/kb-out(推近/拉远,时长 = 停留 8s + 1.2s 全周期);暂停联动 play-state;reduced-motion 纯 CSS 禁用 [V]

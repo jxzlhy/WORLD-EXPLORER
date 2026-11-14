@@ -309,7 +309,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-potala-palace.jpg",
+      "author": "Ondřej Žváček",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APotala.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -345,7 +349,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-li-river.jpg",
+      "author": "Ｔｉｇｅｒ",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%A1%82%E6%9E%97%E6%BC%93%E6%B1%9F%E9%A3%8E%E5%85%89_-_panoramio.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -386,7 +394,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-jiuzhaigou.jpg",
+      "author": "George Lu",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E4%B9%9D%E5%AF%A8%E6%B2%9F%E4%BA%94%E8%8A%B1%E6%B5%B7%E5%85%A8%E6%99%AF_Jiuzhaigou_Five_Flower_Lake_Panorama.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -422,7 +434,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-the-bund.jpg",
+      "author": "Dainis Matisons from Mezares, Latvia, EU",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E4%B8%AD%E5%9B%BD%E4%B8%8A%E6%B5%B7%E5%A4%96%E6%BB%A9%E5%A4%9C%E6%99%AF.jpg"
     },
     "updatedAt": "2026-11-05"
   }

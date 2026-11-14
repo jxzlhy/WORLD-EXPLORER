@@ -105,7 +105,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-zhangjiajie.jpg",
+      "author": "chensiyuan",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1_zhangjiajie_huangshizhai_wulingyuan_panorama_2012.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -147,7 +151,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-dujiangyan.jpg",
+      "author": "Thehistorianisaac",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADujiangyan_panorama.jpg"
     },
     "updatedAt": "2026-11-05",
     "timeline": [
@@ -201,7 +209,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-crescent-spring.jpg",
+      "author": "Hiroki Ogawa",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACrescent_Moon_Spring_Yueyaquan_Mingshashan_Dunhuang_Gansu_China_%E6%95%A6%E7%85%8C_%E9%B8%A3%E6%B2%99%E5%B1%B1_%E6%9C%88%E7%89%99%E6%B3%89_-_panoramio.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -237,7 +249,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-osaka-castle.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AOsaka_Castle_Outer_Moat_and_Osaka_Business_Park%2C_November_2016.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -343,7 +359,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-shuri-castle.jpg",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANaha_Shuri_Castle50s3s4500.jpg"
     },
     "updatedAt": "2026-11-05"
   }

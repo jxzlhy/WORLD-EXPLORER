@@ -33,14 +33,15 @@
 - 核验:2026-11-07(瓦片端点 L0/L6/L7 实测 200;**此前 always-day 的 URL 含错误时间槽 "500m",所有瓦片 400,该层从未真正渲染,已修正**)
 - 运行时可达性:本机代理环境实测可达(shell curl 200);NASA eoimages / Wikimedia Commons 当前被拦,本地 4K 贴图升级暂缓——升级管线已就绪(`experiments/fetch-hd-textures.py`),源站可达时运行即可
 
-### 4. Wikimedia Commons(首批 10 张真实照片)
+### 4. Wikimedia Commons(150/150 全覆盖,2026-11-15)
 - 官方:https://commons.wikimedia.org/
-- 许可:**逐张核验**,仅接受 CC0 / Public Domain / CC BY / CC BY-SA(允许商用,需署名)
-- 明细:`public/data/media-samples.json`(含作者、许可、原始页面链接、字节数)
-- 展示署名:DestinationMedia 组件在图片上叠加 "© 作者 · 许可" 行
-- 用途:目的地档案头图
-- 服务限制:API 礼貌用量;本项目仅构建期抓取一次,运行时零请求
-- 抓取脚本:`experiments/fetch-media-samples.py`(HTTPS+域名白名单+私网阻断)
+- 许可:**逐张核验**,仅接受 CC0 / Public Domain / CC BY / CC BY-SA(允许商用,需署名);当前分布:CC BY-SA 4.0×61、CC BY-SA 3.0×29+2(igo)、CC BY 3.0×11、PD×11、CC BY 2.0×10、CC0×8、CC BY 4.0×8、CC BY-SA 2.0×6、CC BY 2.5×4
+- 明细:`public/data/media-samples.json`(150 条,含作者、许可、原始页面链接、字节数)
+- 展示署名:DestinationMedia 组件在图片上叠加 "© 作者 · 许可" 行;沉浸巡展逐张署名;条带逐张署名
+- 用途:全部 150 个目的地档案头图 + 国家/城市/合集影像条带 + 沉浸背景
+- 服务限制:API 礼貌用量;构建期抓取,运行时零请求;本地 `public/media/destinations/`(约 96MB,1920px 宽缩放版)
+- 抓取脚本:`experiments/fetch-media-samples.py`(首批 10 张)+ `experiments/expand-media-coverage.py`(覆盖扩容,断点续跑)
+- 里程碑:2026-11-05 首批 10 张 → 11-06 扩至 29 → **11-15 全覆盖 150**(11-08/11-09 Commons 被代理拦截期间管线挂起,11-14 深夜解禁后分 7 轮完成)
 
 ### 5. 云层贴图(V1.0,2026-11-06 接入)
 - 来源:Wikimedia Commons「Transparent Fair Weather Clouds Map」,作者 GabrielGGD

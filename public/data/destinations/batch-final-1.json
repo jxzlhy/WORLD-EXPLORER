@@ -36,7 +36,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-yuanyang-terraces.jpg",
+      "author": "Luocheng Li",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AJingkou_Sunrise_%28151240987%29.jpeg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -72,7 +76,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-chengdu-panda-base.jpg",
+      "author": "jetsun",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%88%90%E9%83%BD%E5%A4%A7%E7%86%8A%E7%8C%AB%E7%B9%81%E8%82%B2%E7%A0%94%E7%A9%B6%E5%9F%BA%E5%9C%B0_-_panoramio_%285%29.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -113,7 +121,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-nikko-toshogu.jpg",
+      "author": "Ray in Manila",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Three_Wise_Monkeys%2C_Nikk%C5%8D_T%C5%8Dsh%C5%8D-g%C5%AB%3B_April_2018.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -149,7 +161,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-arashiyama-bamboo.jpg",
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -184,7 +200,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-death-valley.jpg",
+      "author": "Tuxyso",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADeath_Valley_exit_SR190_view_Panamint_Butt_flash_flood_2013.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -219,7 +239,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-lincoln-memorial.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALincoln_Memorial_east_side.JPG"
     },
     "updatedAt": "2026-11-06"
   },
@@ -254,7 +278,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-verdon-gorge.jpg",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AVerdon_Gorge_1.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -289,7 +317,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-lake-como.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALago_de_Como%2C_Italia%2C_2016-06-25%2C_DD_02-06_PAN.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -331,7 +363,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-royal-greenwich.jpg",
+      "author": "DiscoA340",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APeninsula_Square%2C_Greenwich_%28January_2024%29_02.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -372,7 +408,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-wadi-el-hitan.jpg",
+      "author": "Tom Horton from Shanghai, China",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWadi_Hitan_%28Whale_Valley%29_Panorama.jpg"
     },
     "updatedAt": "2026-11-06"
   }

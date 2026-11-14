@@ -105,7 +105,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-cusco-historic.jpg",
+      "author": "Lunaloop",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACusco_sharp.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -146,7 +150,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-nazca-lines.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AL%C3%ADneas_de_Nazca%2C_Nazca%2C_Per%C3%BA%2C_2015-07-29%2C_DD_44.JPG"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
@@ -184,7 +192,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-lake-titicaca.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAmanecer_en_el_lago_Titicaca%2C_Puno%2C_Per%C3%BA%2C_2015-08-01%2C_DD_01.JPG"
     },
     "updatedAt": "2026-11-05"
   },
@@ -221,7 +233,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-rainbow-mountain.jpg",
+      "author": "MareikeHeuer(WMDE)",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARainbow_Mountain_Peru.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -263,7 +279,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-inca-trail.jpg",
+      "author": "Chuck Moravec",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AInca_Trail_Patallacta_1.jpg"
     },
     "updatedAt": "2026-11-05"
   }

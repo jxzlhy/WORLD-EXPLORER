@@ -30,7 +30,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-niagara-falls.jpg",
+      "author": "Nandaro",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANiagara_Falls_001.JPG"
     },
     "updatedAt": "2026-11-05"
   },
@@ -66,7 +70,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-chicago-bean.jpg",
+      "author": "Panek",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABiurowiec_millennium_park.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -102,7 +110,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-space-needle.jpg",
+      "author": "MyName (Cacophony)",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASpaceNeedleTopClose.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -138,7 +150,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-kilauea.jpg",
+      "author": "Brocken Inaglory",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASulfur_dioxide_emissions_from_the_Halemaumau_vent_04-08-1_1.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -173,7 +189,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-huacachina.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AOasis_de_Huacachina%2C_Ica%2C_Per%C3%BA%2C_2015-07-29%2C_DD_18.JPG"
     },
     "updatedAt": "2026-11-05"
   },
@@ -215,7 +235,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-arequipa-historic.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AComplejo_San_Francisco%2C_Arequipa%2C_Per%C3%BA%2C_2015-08-02%2C_DD_79-81_HDR.JPG"
     },
     "updatedAt": "2026-11-05"
   },
@@ -250,7 +274,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-colca-canyon.jpg",
+      "author": "world-wide-gifts.com",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AColca_Canyon_Puno.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -285,7 +313,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-kuelap.jpg",
+      "author": "Christopher Crouzet",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AVue_From_Kuelap%2C_Chachapoyas%2C_Peru.jpg"
     },
     "updatedAt": "2026-11-05"
   }

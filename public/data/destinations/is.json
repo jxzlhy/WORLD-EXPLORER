@@ -36,7 +36,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-thingvellir.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARoca_de_la_Ley%2C_Parque_Nacional_de_%C3%9Eingvellir%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-16%2C_DD_022.JPG"
     },
     "updatedAt": "2026-11-05",
     "timeline": [
@@ -171,7 +175,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-skogafoss.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASk%C3%B3gafoss_Waterfall%2C_Iceland%2C_20240720_1330_2993.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -207,7 +215,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-reynisfjara.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AReynisfjara%2C_Su%C3%B0urland%2C_Islandia%2C_2014-08-17%2C_DD_164.JPG"
     },
     "updatedAt": "2026-11-05"
   },
@@ -248,7 +260,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-vatnajokull.jpg",
+      "author": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A004_Toyota_Land_Cruiser_IV_in_Iceland_-_Toyota_Land_Cruiser_in_Vatnajokull_National_Park.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -284,7 +300,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-aurora-reykjavik.jpg",
+      "author": "sergejf",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANorthern_Lights_over_Reykjavik_%2815849686473%29.jpg"
     },
     "updatedAt": "2026-11-05"
   }

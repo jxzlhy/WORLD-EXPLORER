@@ -37,7 +37,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-saqqara.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASaqqara%2C_Ancient_Egypt.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -79,7 +83,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-philae-temple.jpg",
+      "author": "Unknown",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Curse_of_Artemisia_%E2%80%93_Fragment_WDL4310.png"
     },
     "updatedAt": "2026-11-05"
   },
@@ -114,7 +122,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-white-desert.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWhite_Desert%2C_Rock_formations_in_desert_landscape%2C_Egypt.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -156,7 +168,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-blue-mountains.jpg",
+      "author": "0x010C",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2019-04_Blue_Mountains_National_Park_55.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -191,7 +207,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-kangaroo-island.jpg",
+      "author": "Paul Asman and Jill Lenoble",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKangaroo_Island_kangaroos.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -232,7 +252,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-bungle-bungles.jpg",
+      "author": "Maclearite",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABungle_Bungle_Range_Purnululu_National_Park%2C_Cathedral_Gorge.png"
     },
     "updatedAt": "2026-11-05"
   },
@@ -267,7 +291,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-dettifoss.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADettifoss%2C_Iceland%2C_20240716_1500_1531.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -302,7 +330,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-landmannalaugar.jpg",
+      "author": "Chmee2/Valtameri",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALandscape_during_Laugavegur_hiking_trail_2-CA_reduced.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -337,7 +369,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-mvatn.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A039_Northern_lights_over_M%C3%BDvatn_%28Iceland%29_Photo_by_Giles_Laurent.jpg"
     },
     "updatedAt": "2026-11-05"
   }

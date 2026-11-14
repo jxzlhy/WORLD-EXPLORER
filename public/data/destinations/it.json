@@ -171,7 +171,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-florence-duomo.jpg",
+      "author": "Dllu",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFlorence_Cathedral_seen_from_Piazzale_Michelangelo_night_dllu.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -257,7 +261,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-pompeii.jpg",
+      "author": "Jebulon",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AComposition_ruins_Pompeii.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -298,7 +306,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-cinque-terre.jpg",
+      "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AManarola_NW_Cemetery_Corniglia_Monterosso_Cinque_Terre_Sep23_A7C_06872.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -339,7 +351,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-dolomites.jpg",
+      "author": "Anna Zvereva from Tallinn, Estonia",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAir_Dolomiti%2C_I-ADJL%2C_Embraer_ERJ-195LR_%2849581148362%29.jpg"
     },
     "updatedAt": "2026-11-05"
   }

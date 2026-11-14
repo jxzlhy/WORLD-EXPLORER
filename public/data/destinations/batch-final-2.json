@@ -36,7 +36,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-chan-chan.jpg",
+      "author": "Jim Williams",
+      "license": "CC BY-SA 3.0 igo",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AChan_Chan_Archaeological_Zone-110903.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -71,7 +75,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-wineglass-bay.jpg",
+      "author": "JJ Harrison (https://www.jjharrison.com.au/)",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AWineglass_Bay_from_Lookout_crop.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -106,7 +114,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-hekla.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AView_of_Hekla_from_Road_32%2C_Iceland%2C_20230501_1120_3861.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -141,7 +153,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-naoshima.jpg",
+      "author": "ブルーノ・プラス",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANaoshima_post_office.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -182,7 +198,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-yakushima.jpg",
+      "author": "Grendelkhan",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AForest_on_Yakushima_from_Route_592.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -223,7 +243,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-assisi.jpg",
+      "author": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARear_NW_Basilica_Francesco_Assisi_Sep23_A7C_07913.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -265,7 +289,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-tower-of-london.jpg",
+      "author": "Bob Collowan",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATower_of_London_viewed_from_the_River_Thames.jpg"
     },
     "updatedAt": "2026-11-06",
     "timeline": [
@@ -318,7 +346,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-alexandria-citadel.jpg",
+      "author": "لا روسا",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACitadel_of_Qaitbay_014.JPG"
     },
     "updatedAt": "2026-11-06"
   },
@@ -354,7 +386,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-central-park.jpg",
+      "author": "Jet Lowe",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACentral_Park_New_York_City_New_York_23_cropped.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -395,7 +431,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-carcassonne.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACiudadela%2C_Carcasona%2C_Francia%2C_2023-01-07%2C_DD_216-218_HDR.jpg"
     },
     "updatedAt": "2026-11-06"
   }

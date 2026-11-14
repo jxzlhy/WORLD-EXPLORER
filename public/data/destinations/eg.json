@@ -157,7 +157,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-valley-of-kings.jpg",
+      "author": "lienyuan lee",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Valley_of_the_Kings_%E5%B8%9D%E7%8E%8B%E8%B0%B7_-_panoramio.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -267,7 +271,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-karnak.jpg",
+      "author": "Hamerani",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKarnak_temple_complex_12.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -304,7 +312,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-bibliotheca-alexandrina.jpg",
+      "author": "Original:  Mono Abo-Abda\nDerivative work:  Radomianin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABibliotiqa_Alexandria_9_edited.jpg"
     },
     "updatedAt": "2026-11-05"
   }

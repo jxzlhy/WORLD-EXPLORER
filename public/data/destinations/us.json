@@ -77,7 +77,11 @@
     "wikidataId": "Q171782",
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-yellowstone.jpg",
+      "author": "Brocken Inaglory",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADaisy_Geyser_erupting_in_Yellowstone_National_Park_edit.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -120,7 +124,11 @@
     "wikidataId": "Q9200",
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-statue-of-liberty.jpg",
+      "author": "William Warby",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AStatue_of_Liberty%2C_NY.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [
@@ -178,7 +186,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-golden-gate.jpg",
+      "author": "Brocken Inaglory",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASan_Francisco_with_two_bridges_and_the_low_fog.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -219,7 +231,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-yosemite.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATunnel_View%2C_Yosemite_Valley%2C_Yosemite_NP_-_Diliff.jpg"
     },
     "updatedAt": "2026-11-05"
   },

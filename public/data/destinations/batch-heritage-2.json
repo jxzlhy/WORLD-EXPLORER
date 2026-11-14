@@ -36,7 +36,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-hadrians-wall.jpg",
+      "author": "Gordon Leggett",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A2018-06-07_Sycamore_Gap_Tree_%28Acer_pseudoplatanus%29%2C_next_to_Hadrian%E2%80%99s_Wall_UK.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -77,7 +81,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-ironbridge.jpg",
+      "author": "Mat Fascione",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Ironbridge_Gorge_viewed_from_the_Rotunda_-_geograph.org.uk_-_7624190.jpg"
     },
     "updatedAt": "2026-11-06",
     "timeline": [
@@ -131,7 +139,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-khan-el-khalili.jpg",
+      "author": "V Manninen from Funland",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Khan_el-Khalili_market_in_Cairo%2C_Egypt_%282743501345%29.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -172,7 +184,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-saint-catherine.jpg",
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKatharinenkloster_Sinai_BW_2.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -214,7 +230,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-lima-historic.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AIglesia_de_Santo_Domingo%2C_Lima%2C_Per%C3%BA%2C_2015-07-28%2C_DD_52-54_HDR.JPG"
     },
     "updatedAt": "2026-11-06"
   },
@@ -255,7 +275,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-ningaloo-reef.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A00_0865_Ningaloo_Reef%2C_Western_Australia.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -290,7 +314,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/is-kirkjufell.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKirkjufell%2C_Iceland%2C_20240714_1631_0713.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -331,7 +359,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-koyasan.jpg",
+      "author": "baggio4ever",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E9%AB%98%E9%87%8E%E5%B1%B1_%E4%B8%80%E4%B9%97%E9%99%A21_Koyasan_%28Mount_Koya%29_-_panoramio.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -366,7 +398,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-dune-pilat.jpg",
+      "author": "Grand Parc - Bordeaux, France from France",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABassin_d%27Arcachon%2C_Gironde%2C_France_-_Image_Picture_Photography_%2814477618256%29.jpg"
     },
     "updatedAt": "2026-11-06"
   }

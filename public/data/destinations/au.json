@@ -38,7 +38,11 @@
     "wikidataId": "Q1801",
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-great-barrier-reef.jpg",
+      "author": "Ank Kumar",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat_Barrier_Reef_Queensland_Ank_Kumar.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -210,7 +214,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-twelve-apostles.jpg",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APrincetown_%28AU%29%2C_Port_Campbell_National_Park%2C_Twelve_Apostles_--_2019_--_0969.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -251,7 +259,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-kakadu.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A00_2236_Kakadu_National_Park_-_Australien.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -292,7 +304,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-tasmanian-wilderness.jpg",
+      "author": "Francesco Bandarin",
+      "license": "CC BY-SA 3.0 igo",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATasmanian_Wilderness-108952.jpg"
     },
     "updatedAt": "2026-11-05"
   }

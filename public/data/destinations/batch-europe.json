@@ -31,7 +31,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-nice-promenade.jpg",
+      "author": "Cayambe",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ANice_Baie_des_anges_02.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -73,7 +77,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-saint-emilion.jpg",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APanorama_de_Saint_Emilion_De_la_tour_du_roi_2_-_Gironde.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -115,7 +123,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-lyon-fourviere.jpg",
+      "author": "Florian Fèvre",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFuniculaire_Fourvi%C3%A8re_Von_Roll_n%C2%B02_TCL_Vieux_Lyon-Cath%C3%A9drale_Saint-Jean.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -151,7 +163,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-milano-duomo.jpg",
+      "author": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AView_west_along_Duomo_roof%2C_Milan.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -193,7 +209,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-verona-arena.jpg",
+      "author": "Unknown",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGroup_of_Circus_Performers_WDL10692.png"
     },
     "updatedAt": "2026-11-05"
   },
@@ -235,7 +255,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-mount-etna.jpg",
+      "author": "NASA",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AEtna_eruption_seen_from_the_International_Space_Station.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -277,7 +301,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-roman-baths.jpg",
+      "author": "Diliff",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ARoman_Baths_in_Bath_Spa%2C_England_-_July_2006.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -313,7 +341,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-oxford-university.jpg",
+      "author": "Michael D Beckwith",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AUniversity_Of_Oxford_The_Bridge_Of_Sighs.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -355,7 +387,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-giants-causeway.jpg",
+      "author": "Chmee2",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGiant%27s_Causeway_%2814%29.JPG"
     },
     "updatedAt": "2026-11-05"
   }

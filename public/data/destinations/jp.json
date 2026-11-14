@@ -87,7 +87,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-kiyomizu-dera.jpg",
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AFour_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -168,7 +172,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-himeji-castle.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ACh%C3%A2teau_de_Himeji02.jpg"
     },
     "updatedAt": "2026-11-05",
     "timeline": [
@@ -291,7 +299,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-shirakawa-go.jpg",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AOgi_Shirakawa-g%C5%8D%2C_Gifu%2C_Japan.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -327,7 +339,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-shibuya-crossing.jpg",
+      "author": "David Kernan",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AShibuya_Crossing%2C_Aerial.jpg"
     },
     "updatedAt": "2026-11-05",
     "aliases": [

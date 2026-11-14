@@ -31,7 +31,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-egyptian-museum.jpg",
+      "author": "Georgius LXXXIX at Italian Wikipedia",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMuseo_Egizio_e_Galleria_sabauda%2C_Torino.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -67,7 +71,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-met-museum.jpg",
+      "author": "Hugo Schneider",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMetropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -103,7 +111,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-natural-history-museum.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMuseo_de_Historia_Natural%2C_Londres%2C_Inglaterra%2C_2022-11-25%2C_DD_50-52_HDR.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -139,7 +151,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-tokyo-national-museum.jpg",
+      "author": "Wiiii",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATokyo_National_Museum%2C_Honkan_2010.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -174,7 +190,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-antelope-canyon.jpg",
+      "author": "Uploaded by Meckimac",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALower_Antelope_Canyon_478.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -215,7 +235,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/au-shark-bay.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A00_1812_Shark_Bay_-_Western_Australia.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -256,7 +280,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-huangshan.jpg",
+      "author": "LunMa4",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABeleuchtete_Stra%C3%9Fe_von_Huangshan_bei_Nacht.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -298,7 +326,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-summer-palace.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ALongevity_Hill_of_the_Summer_Palace.jpg"
     },
     "updatedAt": "2026-11-06",
     "timeline": [
@@ -352,7 +384,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/pe-ballestas-islands.jpg",
+      "author": "PIERRE ANDRE LECLERCQ",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABallestas_Islands_P%C3%A9rou_2011.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -388,7 +424,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-alcatraz.jpg",
+      "author": "Photograph:  Radomianin",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AAlcatraz_recreation_yard%2C_NW_view.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -424,7 +464,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-dotonbori.jpg",
+      "author": "Zest",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AD%C5%8Dtonbori_Canal_2.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -459,7 +503,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/eg-red-sea-hurghada.jpg",
+      "author": "Sohilaali869",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHurghada_Marina%2C_Red_Sea._32.jpg"
     },
     "updatedAt": "2026-11-06"
   }

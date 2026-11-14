@@ -100,7 +100,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-british-museum.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABritish_Museum_Great_Court%2C_London%2C_UK_-_Diliff.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -209,7 +213,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-edinburgh-castle.jpg",
+      "author": "George Washington Wilson / Adam Cuerden",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AEdinburgh_Castle_from_Grass_Market.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -250,7 +258,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-lake-district.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AKeswick_Panorama_-_Oct_2009.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -286,7 +298,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-tower-bridge.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ATower_Bridge_London_Dusk_Feb_2006.jpg"
     },
     "updatedAt": "2026-11-05"
   },
@@ -322,7 +338,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/gb-cotswolds.jpg",
+      "author": "Saffron Blaze",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABridge-over_Bourton_Waters.jpg"
     },
     "updatedAt": "2026-11-05"
   }

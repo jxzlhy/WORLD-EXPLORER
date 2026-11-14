@@ -36,7 +36,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-lijiang-ancient-town.jpg",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E4%B8%BD%E6%B1%9F%E6%9C%BA%E5%9C%BA_-_%E4%B8%BD%E6%B1%9F%E5%8F%A4%E5%9F%8E%E7%AB%8B%E6%9D%BF_-_2025-05-12_06.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -77,7 +81,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/cn-fujian-tulou.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A20260323_%E7%A6%8F%E5%BB%BA%E5%9C%9F%E6%A5%BC%EF%BC%88%E9%AB%98%E5%8C%97%E5%9C%9F%E6%A5%BC%E7%BE%A4%EF%BC%89.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -176,7 +184,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/jp-kamakura-daibutsu.jpg",
+      "author": "Alexandar Vujadinovic",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AThe_Great_Buddha_of_Kamakura.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -211,7 +223,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-arches-np.jpg",
+      "author": "Flicka",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADouble-O-Arch_Arches_National_Park_2.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -247,7 +263,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/us-brooklyn-bridge.jpg",
+      "author": "Martin St-Amant (S23678)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APont_de_Brooklyn_de_nuit_-_Octobre_2008_edit.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -288,7 +308,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-pont-du-gard.jpg",
+      "author": "Benh LIEU SONG (Flickr)",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3APont_du_Gard_BLS.jpg"
     },
     "updatedAt": "2026-11-06",
     "timeline": [
@@ -341,7 +365,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/fr-giverny-monet.jpg",
+      "author": "Claude Monet",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AMonet_-_Monet%27s_Garden_at_Giverny%2C_1895.jpg"
     },
     "updatedAt": "2026-11-06"
   },
@@ -382,7 +410,11 @@
     ],
     "quality": "S",
     "media": {
-      "status": "placeholder"
+      "status": "verified",
+      "file": "/media/destinations/it-sassi-matera.jpg",
+      "author": "Jules Verne Times Two",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AView_of_Sassi_di_Matera%2C_Matera%2C_Italy_%28PPL1-Corrected%29_julesvernex2.jpg"
     },
     "updatedAt": "2026-11-06",
     "timeline": [
