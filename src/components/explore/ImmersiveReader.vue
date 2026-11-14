@@ -2,6 +2,7 @@
 import { computed, nextTick, onUnmounted, ref, watch } from 'vue'
 import gsap from 'gsap'
 import { useExploreStore } from '../../stores/explore-store'
+import { buildSimilarDestinations } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
 import { useUiStore } from '../../stores/ui-store'
 import { DESTINATION_TYPE_LABELS } from '../../domain/types'
@@ -18,6 +19,19 @@ const ui = useUiStore()
 const dest = computed(() => explore.selectedDestination)
 const verifiedBg = computed(() =>
   dest.value?.media?.status === 'verified' ? (dest.value.media.file ?? '') : '',
+)
+
+/** 相似目的地(V5.0):沉浸内连续浏览——点击后保持沉浸,内容切换 */
+const similarDests = computed(() =>
+  dest.value
+    ? buildSimilarDestinations(
+        explore.destinations,
+        dest.value.id,
+        explore.collections,
+        Object.fromEntries(explore.countries.map((c) => [c.id, c.name])),
+        3,
+      )
+    : [],
 )
 
 const prefersReducedMotion =
@@ -135,6 +149,8 @@ watch(
     }
     window.addEventListener('keydown', onReaderKey)
     await nextTick()
+    // 切换目的地/打开:滚动归零(新档案从顶部开始)
+    if (rootEl.value) rootEl.value.scrollTop = 0
     // GSAP 交错入场不改布局,offsetTop 稳定;等待一轮渲染后测量
     await nextTick()
     updateProgress()
@@ -286,6 +302,27 @@ function fmtCoord(v: number, pos: string, neg: string): string {
             <p class="note-text">
               {{ myWorld.notes[dest.id] }}
             </p>
+          </section>
+
+          <!-- 相似目的地(V5.0):沉浸内连续浏览 -->
+          <section
+            v-if="similarDests.length"
+            class="imm-similar"
+            data-section="similar"
+          >
+            <p class="we-caps-label">看过这处的人也看</p>
+            <div class="sim-chips">
+              <button
+                v-for="r in similarDests"
+                :key="r.dest.id"
+                class="sim-chip"
+                :title="r.reason"
+                @click="explore.selectDestination(r.dest.id)"
+              >
+                <span class="n">{{ r.dest.name }}</span>
+                <span class="why">{{ r.reason }}</span>
+              </button>
+            </div>
           </section>
 
           <div
@@ -535,6 +572,46 @@ function fmtCoord(v: number, pos: string, neg: string): string {
   line-height: 1.8;
   color: var(--we-text);
   white-space: pre-wrap;
+}
+
+.imm-similar {
+  border-top: 1px solid var(--we-glass-border);
+  padding-top: var(--we-sp-4);
+}
+.imm-similar .we-caps-label {
+  margin: 0;
+}
+.sim-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: var(--we-sp-2);
+}
+.sim-chip {
+  appearance: none;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: baseline;
+  gap: var(--we-sp-2);
+  padding: 6px 8px;
+  border-radius: var(--we-r-sm);
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--we-dur-1) var(--we-ease-out);
+}
+.sim-chip:hover {
+  background: rgba(232, 200, 150, 0.09);
+}
+.sim-chip .n {
+  font-size: var(--we-fs-small);
+  font-weight: 600;
+  color: var(--we-text-hi);
+}
+.sim-chip .why {
+  margin-left: auto;
+  font-size: var(--we-fs-micro);
+  color: var(--we-gold-strong);
 }
 
 .sources {

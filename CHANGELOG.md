@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [0.4.0] — 2026-11-15(照片全覆盖 · 沉浸体系 · V5.0 雏形 · V1.0 收官)
 
 ### Added
+- **沉浸内连续浏览(2026-11-15 迭代十九)**:沉浸阅读底部新增「看过这处的人也看」相似 chips(复用 V5.0 相似推荐评分,不读用户状态)——点击保持沉浸、切换目的地、**滚动归零**(修复:切换时残留旧滚动位置的真 bug);wiki 式无尽浏览闭环;E2E 用例(沉浸保持/内容切换/进度归零/Esc 退出后面板即该目的地)
 - **照片全覆盖 150/150(2026-11-15 通宵批次,里程碑)**:Commons 解禁后 `expand-media-coverage.py` 分 7 轮跑完剩余 121 张(网络断续自动续,断点续跑设计生效)——全部 150 个目的地拥有逐张许可核验的真实照片(CC0/PD/CC BY 系/CC BY-SA 系白名单,自动署名);按国分布 12-19 张,国家/城市/合集条带全面激活;本地 96MB(1920px 缩放版);R/T 用例硬编码断言适配(150 张/100% 覆盖/埃及条带 14 张)
 - **巡展叙事升级(2026-11-14 迭代十八)**:合集沉浸巡展从纯图片走向叙事——①打开时**策展语片头**(3.5s 淡出,居中大字);②caption 新增**当前站故事摘要**(首段截 110 字 + 两行截断);③「查看完整档案 →」按钮直达目的地面板(退出巡展);E2E 用例 Z(片头出现/淡出/摘要长度/直达)
 - **沉浸阅读章节跳转(2026-11-14 迭代十七)**:进度条上标注章节锚点(导语/正文/时间轴/笔记/来源,data-section 块自动测量)——点击平滑滚动直达(`prefers-reduced-motion` 时瞬时),滚动时当前章节点自动高亮;E2E 用例 Y(4 markers/跳转来源/高亮);**排障**:markers 原在 `aria-hidden` 容器内,role 查询跳过隐藏子树致点击定位失败——移除 aria-hidden(含交互按钮的容器不应隐藏)
@@ -59,7 +60,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-15,章节跳转批):E2E 31/31 · 单测 65/65 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-15,沉浸连续浏览批):E2E 32/32 · 单测 65/65 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
