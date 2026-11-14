@@ -48,6 +48,13 @@ const heightKm = computed(() => {
       aria-hidden="true"
     >·</span>
     <span class="mono hide-mobile">{{ explore.destinations.length }} DESTINATIONS</span>
+    <Transition name="fade">
+      <span
+        v-if="ui.autoDegradeNote"
+        class="degrade-note"
+        role="status"
+      >{{ ui.autoDegradeNote }}</span>
+    </Transition>
   </footer>
 </template>
 
@@ -90,6 +97,21 @@ const heightKm = computed(() => {
 }
 .mono.warn {
   color: var(--we-warning);
+}
+.degrade-note {
+  font-size: var(--we-fs-micro);
+  color: var(--we-warning);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  margin-left: 2px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--we-dur-3) var(--we-ease-out);
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 @media (max-width: 768px) {

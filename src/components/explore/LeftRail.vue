@@ -138,6 +138,13 @@ const typeChips: Array<{ value: string; label: string; color: string }> = [
         <span>性能面板</span>
         <WeSwitch v-model="ui.showStats" />
       </label>
+      <label
+        class="row"
+        title="帧率持续偏低时自动降低画质(仅降不升)"
+      >
+        <span>自动降档</span>
+        <WeSwitch v-model="ui.autoDegrade" />
+      </label>
     </div>
   </aside>
 </template>

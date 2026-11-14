@@ -6,6 +6,7 @@ import { setEngine, getEngine } from '../engine/engine-holder'
 import { loadWorldData } from '../services/data-service'
 import { useExploreStore } from '../stores/explore-store'
 import { useUiStore } from '../stores/ui-store'
+import { PerformanceGuard, degradeNote } from '../services/performance-guard'
 import TopBar from '../components/explore/TopBar.vue'
 import SearchOverlay from '../components/explore/SearchOverlay.vue'
 import LeftRail from '../components/explore/LeftRail.vue'
@@ -33,6 +34,8 @@ let introTimeline: gsap.core.Timeline | null = null
 /** 卸载标记:防止异步初始化续体在组件销毁后继续创建资源 */
 let disposed = false
 const unsubs: Array<() => void> = []
+/** FPS 自动降档守门(开关开启时运行;RESOURCE-LIFECYCLE:随视图卸载 stop) */
+const perfGuard = new PerformanceGuard()
 
 async function bootstrap(): Promise<void> {
   ui.setEngineError('')
@@ -169,6 +172,27 @@ async function bootstrap(): Promise<void> {
       (types) => getEngine()?.setTypesFilter(types),
       { immediate: true },
     ),
+    // FPS 自动降档守门:开关驱动启停;降档时提示(8s 后清除)
+    watch(
+      () => ui.autoDegrade,
+      (on) => {
+        if (!on) {
+          perfGuard.stop()
+          return
+        }
+        perfGuard.start(
+          () => ui.fps,
+          () => ui.quality,
+          (_from, to) => {
+            ui.setQuality(to)
+            ui.setAutoDegradeNote(degradeNote(to))
+            window.setTimeout(() => {
+              if (ui.autoDegradeNote.startsWith('帧率偏低')) ui.setAutoDegradeNote('')
+            }, 8_000)
+          },
+        )
+      },
+    ),
   )
 
   // 5. 开场序列(GSAP)——尊重 prefers-reduced-motion
@@ -215,6 +239,7 @@ onUnmounted(() => {
   for (const unsub of unsubs.splice(0)) unsub()
   introTimeline?.kill()
   introTimeline = null
+  perfGuard.stop()
   engine?.destroy()
   engine = null
   setEngine(null)
