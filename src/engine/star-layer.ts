@@ -99,31 +99,42 @@ const STAR_TONES: Cesium.Color[] = [
 ]
 
 export class StarLayer {
-  private points: Cesium.PointPrimitiveCollection | null = null
+  private background: Cesium.PointPrimitiveCollection | null = null
+  private milkyWay: Cesium.PointPrimitiveCollection | null = null
 
   load(viewer: Cesium.Viewer): void {
     const dirs = generateStarDirections()
-    this.points = new Cesium.PointPrimitiveCollection()
-    for (const s of dirs) {
-      this.points.add({
+    // 前 backgroundCount 为背景星,其余为银河带(三档联动按此拆分)
+    const split = 2200
+    this.background = new Cesium.PointPrimitiveCollection()
+    this.milkyWay = new Cesium.PointPrimitiveCollection()
+    dirs.forEach((s, i) => {
+      const target = i < split ? this.background : this.milkyWay
+      target!.add({
         position: new Cesium.Cartesian3(s.x * STAR_RADIUS, s.y * STAR_RADIUS, s.z * STAR_RADIUS),
         pixelSize: s.brightness > 0.75 ? 2 : 1.4,
         color: STAR_TONES[s.tone]!.withAlpha(s.brightness * 0.9),
         disableDepthTestDistance: 0, // 尊重深度:被地球遮挡的星不显示
       })
-    }
-    viewer.scene.primitives.add(this.points)
+    })
+    viewer.scene.primitives.add(this.background)
+    viewer.scene.primitives.add(this.milkyWay)
   }
 
-  /** 性能联动:low 档整层隐藏 */
-  setVisible(visible: boolean): void {
-    if (this.points) this.points.show = visible
+  /** 性能三档:high 全显 / balanced 保留背景星(银河减负) / low 全隐 */
+  setQualityMode(mode: 'high' | 'balanced' | 'low'): void {
+    if (this.background) this.background.show = mode !== 'low'
+    if (this.milkyWay) this.milkyWay.show = mode === 'high'
   }
 
   destroy(viewer: Cesium.Viewer): void {
-    if (!this.points) return
-    // remove 默认即销毁该 primitive(Cesium 类型此处仅声明单参)
-    viewer.scene.primitives.remove(this.points)
-    this.points = null
+    if (this.background) {
+      viewer.scene.primitives.remove(this.background)
+      this.background = null
+    }
+    if (this.milkyWay) {
+      viewer.scene.primitives.remove(this.milkyWay)
+      this.milkyWay = null
+    }
   }
 }

@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [Unreleased] — V1.5 前置批次(2026-11-05/06/07)
 
 ### Added
+- **晨昏带暖色分级 + 星空三档联动(2026-11-14 迭代十三,V1.0 视觉打磨)**:①合成器新增 `twilightWarmth` 纯函数(正弦钟形)——晨昏带像素向暖橙(232,150,84)靠拢,峰值 ≈ 带中心,日出日落辉光;②星空拆双 collection(背景 2200/银河 3000),画质三档联动:high 全显 / balanced 保留背景星(银河减负)/ low 全隐;单测 twilight 4 断言(浮点容差教训:sin(π)≈1.2e-16、钟形对称非单调)+ U 用例重写为三档断言(四步切换)
 - **程序化银河星空(2026-11-12 迭代十二,V1.0 收官)**:新引擎层 `star-layer.ts`(零素材零许可)——背景星均匀球面 2200 颗 + 银河带 3000 颗(绕 X 轴倾斜 60° 大圆、银纬高斯 σ=11°、银心方向 30% 高斯增密增亮,种子 PRNG 确定性视觉);全部 PointPrimitive(半径 9e7m,深度测试尊重地球遮挡),渲染开销极小;`generateStarDirections` 纯函数可测(数量/单位向量/银纬约束/银心增密/同种子同结果,6 断言);quality=low 整层隐藏(性能红线);E2E 用例 U(点云 5200 + low 联动)。ROADMAP V1.0「星空增强」至此落地
 - **国家/城市影像条带(2026-11-11 迭代十一)**:MediaStrip 加 `excludeId`(hero 排除,避免首图重复)——国家面板与城市面板 hero 之下渲染其余已核验照片(≥3 张才成带,数据驱动:埃及/意大利/法国/巴黎/京都/北京可见,仅 1-2 张的自动隐藏);E2E 用例 T(埃及条带 hero 排除断言 + 巴黎城市条带)
 - **数据分级一致性回填(2026-11-11 迭代十)**:实测量化——82 篇 A 级与 S 级故事字数中位 276 vs 271,内容量无差异,quality 标注是历史批次欠账;按 `destinationCompleteness` 口径全库回填 **S 68→150 · A 82→0 · B 0**(全库 0 不一致);新增防回归单测(真实 150 条 × validator 口径,批次文件遍历断言),防止以后新增批次再脱节;「S 级档案」徽标语义自此 = 完整档案
@@ -52,7 +53,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-12,银河星空批):E2E 25/25 · 单测 57/57 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-14,晨昏暖色批):E2E 25/25 · 单测 61/61 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)

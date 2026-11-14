@@ -9,7 +9,7 @@
  *
  * 数据:NASA Blue/Black Marble(Public Domain),与 V0.1 相同的本地贴图。
  */
-import { sunSubPoint } from './sun-position'
+import { sunSubPoint } from './sun-position.ts'
 
 const DAY_URL = '/textures/earth-blue-marble.jpg'
 const NIGHT_URL = '/textures/earth-night.jpg'
@@ -17,6 +17,15 @@ const NIGHT_URL = '/textures/earth-night.jpg'
 /** 晨昏带:太阳仰角从 -12°(民用晨昏)到 +3° 平滑过渡到日侧 */
 const TWILIGHT_START_DEG = -12
 const TWILIGHT_END_DEG = 3
+
+/**
+ * 晨昏带暖色权重(纯函数,可单测):日出日落辉光。
+ * u 为带内归一位置(0=夜缘,1=日缘),正弦钟形,边缘为 0、带中心最强。
+ */
+export function twilightWarmth(u: number): number {
+  const clamped = Math.max(0, Math.min(1, u))
+  return Math.sin(Math.PI * clamped)
+}
 
 interface LoadedImage {
   image: HTMLImageElement
@@ -115,6 +124,13 @@ export class DayNightCompositor {
           dpx[idx + 2] = Math.min(255, npx[idx + 2]! * 1.1 + 14)
           dpx[idx + 3] = 255
         } else {
+          // 晨昏带暖色分级:日出日落辉光向暖橙(232,150,84)靠拢,峰值 ≈ 带中心
+          const warm = twilightWarmth((cosZ - cosStart) / span) * 0.38
+          if (warm > 0.01) {
+            dpx[idx] = dpx[idx]! + (232 - dpx[idx]!) * warm
+            dpx[idx + 1] = dpx[idx + 1]! + (150 - dpx[idx + 1]!) * warm
+            dpx[idx + 2] = dpx[idx + 2]! + (84 - dpx[idx + 2]!) * warm
+          }
           dpx[idx] = dpx[idx]! * t + npx[idx]! * (1 - t)
           dpx[idx + 1] = dpx[idx + 1]! * t + npx[idx + 1]! * (1 - t)
           dpx[idx + 2] = dpx[idx + 2]! * t + npx[idx + 2]! * (1 - t)

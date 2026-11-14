@@ -280,8 +280,8 @@ export class WorldEngine implements IWorldEngine {
     } catch {
       /* fxaa 不可用时忽略 */
     }
-    // 性能红线:low 档隐藏星空层(纯视觉,不影响功能)
-    this.stars.setVisible(mode !== 'low')
+    // 星空三档联动:high 全显 / balanced 保留背景星 / low 全隐(纯视觉,不影响功能)
+    this.stars.setQualityMode(mode)
   }
 
   onPick(listener: (payload: PickPayload) => void): () => void {
