@@ -84,10 +84,16 @@ onUnmounted(() => {
         aria-modal="true"
         :aria-label="`${collection.name} 沉浸巡展`"
       >
-        <Transition name="photo-fade">
+        <!-- 显式时长:元素自带 9.2s Ken Burns 动画,Vue 端点嗅探会误读离开时长 -->
+        <Transition
+          name="photo-fade"
+          :duration="300"
+        >
           <img
             :key="current?.id"
             class="photo"
+            :class="{ 'kb-paused': paused }"
+            :style="{ animationDuration: `${AUTO_MS + 1200}ms`, animationName: idx % 2 ? 'kb-out' : 'kb-in' }"
             :src="current?.media?.file"
             :alt="current?.name ?? ''"
           >
@@ -170,6 +176,34 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  will-change: transform;
+}
+/* Ken Burns 缓动:奇偶交替推近/拉远(时长 = 停留时长 + 1.2s,全周期覆盖) */
+@keyframes kb-in {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+  to {
+    transform: scale(1.1) translate(-1.8%, 1.2%);
+  }
+}
+@keyframes kb-out {
+  from {
+    transform: scale(1.12) translate(1.5%, -1%);
+  }
+  to {
+    transform: scale(1) translate(0, 0);
+  }
+}
+.kb-paused {
+  animation-play-state: paused !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .photo {
+    animation: none !important;
+  }
 }
 .photo-fade-enter-active {
   transition: opacity var(--we-dur-3) var(--we-ease-out);

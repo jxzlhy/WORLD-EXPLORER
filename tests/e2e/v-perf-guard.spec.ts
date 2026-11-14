@@ -13,7 +13,7 @@ test('V. FPS 自动降档:stub 低帧 → 两级降档 + 提示', async ({ page 
   await page.evaluate(() => {
     const ui = (document.getElementById('app') as any).__vue_app__.config.globalProperties.$pinia._s.get('ui')
     const orig = ui.setFps.bind(ui)
-    ui.setFps = (fps: number) => orig(5)
+    ui.setFps = (_fps: number) => orig(5)
   })
 
   // 开启自动降档
