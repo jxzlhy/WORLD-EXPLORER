@@ -1,0 +1,703 @@
+[
+  {
+    "id": "cn-suzhou-gardens",
+    "name": "苏州古典园林",
+    "nameEn": "Classical Gardens of Suzhou",
+    "type": "heritage",
+    "countryId": "CN",
+    "longitude": 120.6243,
+    "latitude": 31.3229,
+    "summary": "「江南园林甲天下,苏州园林甲江南」:拙政园、留园、网师园等九座园林于 1997/2000 年列入世界遗产——咫尺之内再造乾坤的东方造园哲学。",
+    "story": [
+      "苏州造园史始于春秋,盛于明清:文人罢官归乡,把仕途失意化作叠山理水——「虽由人作,宛自天开」。拙政园(王献臣 1509 年始建,文徵明参与设计)以水为中心,亭台皆临水而筑;留园的建筑空间切割与冠云峰太湖石,代表造园技艺的另一极。",
+      "「借景」「框景」「移步换景」是苏州园林的空间语法:一扇漏窗把虎丘塔借进园内,一条曲廊把四季框成画幅。网师园是小型园林的极致——八亩之地容纳厅堂、书斋、庭院与假山,夜游版昆曲与园林的结合已成招牌。",
+      "1997 年拙政园、留园、网师园、环秀山庄列入世界遗产,2000 年沧浪亭、狮子林、艺圃、耦园、退思园扩展入选——九座园林共同构成一部可以走进去的江南文人史。"
+    ],
+    "bestSeason": "3-5月与 9-11月(避开暑期人潮)",
+    "tags": [
+      "世界遗产",
+      "园林",
+      "明代",
+      "文人"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/813",
+        "license": "事实参考",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "name": "Wikipedia: Classical Gardens of Suzhou",
+        "url": "https://en.wikipedia.org/wiki/Classical_Gardens_of_Suzhou",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q217073"
+  },
+  {
+    "id": "cn-hukou-waterfall",
+    "name": "壶口瀑布",
+    "nameEn": "Hukou Waterfall",
+    "type": "natural",
+    "countryId": "CN",
+    "longitude": 110.4667,
+    "latitude": 36.1311,
+    "summary": "黄河在这里收成一条壶口:300 米河面骤缩至 50 米,20 米落差把「黄河之水天上来」吼成现实——世界上最大的黄色瀑布。",
+    "story": [
+      "壶口是黄河的「喉咙」:晋陕峡谷把千里奔流的黄河压缩进 50 米宽的石槽,水量最大时以每秒数千立方米的流量砸进 20 米下的深潭——涛声数里可闻,水雾腾起如烟,阳光下「旱地行船」与彩虹同框是著名奇观。",
+      "壶口是黄河文化的精神图腾:1938 年冼星海在此构思《黄河大合唱》,「风在吼,马在叫」写的就是这里;明代「壶口秋风」位列山西胜景。冬季河水冻结,「冰桥」与冰瀑是另一番奇景。",
+      "两岸分属山西吉县与陕西宜川,隔河相望皆可观赏——「千里黄河一壶收」的构图,是每个中国摄影师的必修课。"
+    ],
+    "bestSeason": "4-5月(桃花汛)与 9-11月(秋汛)",
+    "tags": [
+      "自然奇观",
+      "黄河",
+      "瀑布",
+      "图腾"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Hukou Waterfall",
+        "url": "https://en.wikipedia.org/wiki/Hukou_Waterfall",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q7463955"
+  },
+  {
+    "id": "jp-nagoya-castle",
+    "name": "名古屋城",
+    "nameEn": "Nagoya Castle",
+    "type": "heritage",
+    "countryId": "JP",
+    "longitude": 136.8969,
+    "latitude": 35.1853,
+    "summary": "德川家康的「天下普请」收官之作:金鯱装饰的天守、本丸御殿的桃花洞障壁画——江户幕府权威的石头宣言。",
+    "story": [
+      "名古屋城 1610 年动工,是德川家康下令的最后一座「天下普请」:各大名献上巨石,天守上的金鯱(虎鱼尾兽)用纯金铸成,价值超过当时京都全城的町屋——「金鯱」从此成为名古屋的代名词。",
+      "本丸御殿的障壁画出自狩野派画师之手,「桃花洞图」等 1200 余面障壁画是江户初期绘画的集成;二战空袭烧毁天守与御殿,本丸御殿经 10 年修缮于 2018 年完整复原——障壁画因战前已撤下保存而幸免,原件得以重见。",
+      "今天的天守为 1959 年重建(混凝土),2018 年起本丸区域整体开放;名古屋城与姬路城、大阪城并称日本三大名城,樱花季的城壕与金鯱同框是名古屋的官方封面。"
+    ],
+    "bestSeason": "3月底-4月初(樱花)与 11月(红叶)",
+    "tags": [
+      "城堡",
+      "江户",
+      "德川家康",
+      "障壁画"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Nagoya Castle",
+        "url": "https://en.wikipedia.org/wiki/Nagoya_Castle",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q1197108"
+  },
+  {
+    "id": "jp-hakone",
+    "name": "箱根",
+    "nameEn": "Hakone",
+    "type": "natural",
+    "countryId": "JP",
+    "longitude": 139.0228,
+    "latitude": 35.2036,
+    "summary": "富士山最好的取景框:温泉、芦之湖海贼船、大涌谷的硫磺云——东京近郊第一疗养地的百年口碑。",
+    "story": [
+      "箱根是「箱根十七汤」的温泉总称:1300 年前开汤,江户时代参勤交代的诸侯与庶民在此共浴——强罗、仙石原、汤本,每处泉质与温度各不相同。",
+      "芦之湖的「海贼船」是观光名物:火山湖上帆船航行,晴天时倒映富士山构成「逆富士」名景;大涌谷的地狱烟云中产出黑色的「黑玉子」温泉蛋——吃一颗延寿七年,是箱根最著名的土产传说。",
+      "箱根关所是江户时代封锁东海道的关卡,如今复原为史料馆;箱根美术馆与雕刻之森美术馆把艺术搬进山林——这里既是温泉乡,也是一座露天博物馆。"
+    ],
+    "bestSeason": "全年;10-11月红叶与温泉最配",
+    "tags": [
+      "温泉",
+      "芦之湖",
+      "富士山",
+      "近郊"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Hakone",
+        "url": "https://en.wikipedia.org/wiki/Hakone",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q232953"
+  },
+  {
+    "id": "us-mount-rushmore",
+    "name": "拉什莫尔山",
+    "nameEn": "Mount Rushmore",
+    "type": "landmark",
+    "countryId": "US",
+    "longitude": -103.4591,
+    "latitude": 43.8791,
+    "summary": "四位总统的脸被刻进黑山花岗岩:华盛顿、杰斐逊、罗斯福、林肯——60 英尺高的国家纪念碑与它的争议并存。",
+    "story": [
+      "拉什莫尔山纪念公园:1927-1941 年,雕塑家格曾·博格勒姆率 400 名工人用炸药与气钻,把四位总统的肖像刻进 60 英尺高的花岗岩壁——华盛顿(建国)、杰斐逊(独立宣言)、老罗斯福(进步时代)、林肯(统一),象征美国的前 150 年。",
+      "纪念碑每年接待逾两百万游客;拉什莫尔山所在的黑山(Black Hills)对苏族(Lakota)原住民是神圣之地——1868 年条约承诺归降他们,金矿发现后被撕毁——「六祖父」(Crazy Horse 纪念碑)正在山的那一侧雕刻,规模将是拉什莫尔的十倍。",
+      "它同时是国家认同的纪念碑与历史争议的现场——两者共同构成了它的完整故事。"
+    ],
+    "bestSeason": "5-9月(公路开放与徒步季)",
+    "tags": [
+      "地标",
+      "纪念碑",
+      "总统",
+      "争议"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Mount Rushmore",
+        "url": "https://en.wikipedia.org/wiki/Mount_Rushmore",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q216444"
+  },
+  {
+    "id": "us-hoover-dam",
+    "name": "胡佛水坝",
+    "nameEn": "Hoover Dam",
+    "type": "landmark",
+    "countryId": "US",
+    "longitude": -114.7377,
+    "latitude": 36.0161,
+    "summary": "大萧条时代的工程奇迹:726 英尺的混凝土巨壁把科罗拉多河拦成米德湖——为拉斯维加斯与西南部发电的大坝。",
+    "story": [
+      "胡佛水坝 1931-1936 年建造,是大萧条时代最大的公共工程:数千工人三班倒浇筑混凝土,440 万立方米的坝体至今拦住米德湖——美国最大的人工水库之一,为西南部三州供水发电。",
+      "「胡佛水坝创造了拉斯维加斯」并非虚言:大坝的电力与水源让莫哈韦沙漠中的小城长成赌城——科罗拉多河的治理同时孕育了加州的农业帝国与西南部的大都市群。",
+      "大坝顶部可步行跨越内华达-亚利桑那州界:钟表在这里「时差一小时」;坝体艺术装饰( winged figures )是大萧条时期艺术装饰风格( Art Deco )的代表作——工程与美学在此罕见地统一。"
+    ],
+    "bestSeason": "全年(夏季炎热,清晨最佳)",
+    "tags": [
+      "工程奇迹",
+      "大坝",
+      "大萧条",
+      "科罗拉多河"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Hoover Dam",
+        "url": "https://en.wikipedia.org/wiki/Hoover_Dam",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q181263"
+  },
+  {
+    "id": "fr-strasbourg",
+    "name": "斯特拉斯堡大岛",
+    "nameEn": "Strasbourg, Grande-Île",
+    "type": "heritage",
+    "countryId": "FR",
+    "longitude": 7.736,
+    "latitude": 48.5734,
+    "summary": "法德边界的「十字路口之城」:斯堡圣母大教堂的单塔曾是世界最高建筑,小法兰西区运河纵横——1988 年列入世界遗产。",
+    "story": [
+      "斯特拉斯堡大岛(Grande-Île)1988 年整体列入世界遗产:伊尔河的运河把城区切成小威尼斯(Petite France)——半木结构房屋、石板巷与花窗,是阿尔萨斯「法德混血」气质的浓缩。",
+      "斯堡圣母大教堂的哥特立面是欧洲石雕的百科全书:南塔 142 米,四个世纪里保持「世界最高建筑」纪录(1647-1874)。天文钟的机械人偶每正午报时,文艺复兴的科学与中世纪的信仰在此相遇。",
+      "今天斯特拉斯堡是欧洲议会所在地——「欧洲首都」的政治身份与小法兰西的中世纪巷弄,让这座城同时属于历史与未来。"
+    ],
+    "bestSeason": "全年;12月圣诞集市全欧最古老(1570 年起)",
+    "tags": [
+      "世界遗产",
+      "哥特",
+      "法德边界",
+      "运河"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/495",
+        "license": "事实参考",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "name": "Wikipedia: Grande Île, Strasbourg",
+        "url": "https://en.wikipedia.org/wiki/Grande_Île,_Strasbourg",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q16994"
+  },
+  {
+    "id": "fr-bordeaux-moon-port",
+    "name": "波尔多月亮港",
+    "nameEn": "Bordeaux, Port of the Moon",
+    "type": "heritage",
+    "countryId": "FR",
+    "longitude": -0.5805,
+    "latitude": 44.8404,
+    "summary": "加龙河畔的「月亮港」:18 世纪的金色石墙城市、世界葡萄酒首都——2007 年整体列入世界遗产。",
+    "story": [
+      "波尔多港月形湾岸( Port of the Moon )2007 年列入世界遗产:18 世纪启蒙时代的城市规划把中世纪小城扩展成欧洲最完整的新古典主义城市群——镜面广场( Miroir d'eau )是世界最大的水镜,倒映着加龙河与交易所宫。",
+      "波尔多与葡萄酒的绑定从 12 世纪阿基坦的埃莉诺联姻英格兰开始;1855 年梅多克列级庄分级制度至今统治着全球红酒的价格体系。葡萄酒博物馆( La Cité du Vin )用整座楼讲述一瓶酒的世界史。",
+      "月亮港的名称来自加龙河的月形弯道——满月之夜,水镜广场的浅水把整座金色城市倒转过来,是法国摄影师的圣地。"
+    ],
+    "bestSeason": "5-10月;9月底葡萄收获季",
+    "tags": [
+      "世界遗产",
+      "葡萄酒",
+      "新月港",
+      "18 世纪"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/1256",
+        "license": "事实参考",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "name": "Wikipedia: Bordeaux",
+        "url": "https://en.wikipedia.org/wiki/Bordeaux",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q1479"
+  },
+  {
+    "id": "it-trulli-alberobello",
+    "name": "阿尔贝罗贝洛特鲁利",
+    "nameEn": "The Trulli of Alberobello",
+    "type": "heritage",
+    "countryId": "IT",
+    "longitude": 17.2369,
+    "latitude": 40.7781,
+    "summary": "南意大利的「圆顶石屋镇」:1600 座无灰浆的锥形石屋——1996 年列入世界遗产的普利亚童话小镇。",
+    "story": [
+      "特鲁利( Trullo )是普利亚特有的干石圆顶屋:石片层层内收成锥形屋顶,不用一滴灰浆——这种工艺可溯至史前,而阿尔贝罗贝洛的成片特鲁利源于 16 世纪的避税智慧:可快速拆解的临时屋免缴房产税。",
+      "1996 年阿尔贝罗贝洛列入世界遗产:白色石墙、灰色锥顶与屋顶的神秘白色符号(宗教或驱邪记号)构成普利亚最上镜的画面。镇上的特鲁利教堂( Trullo Sovrano )是唯一的双层特鲁利。",
+      "今天特鲁利被改造成民宿、餐厅与手作工坊——住进一座圆锥形石屋,听导游讲「拆屋顶逃税」的传奇,是南意大利最独特的住宿体验。"
+    ],
+    "bestSeason": "4-6月与 9-10月",
+    "tags": [
+      "世界遗产",
+      "干石建筑",
+      "特鲁利",
+      "童话镇"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/787",
+        "license": "事实参考",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "name": "Wikipedia: Alberobello",
+        "url": "https://en.wikipedia.org/wiki/Alberobello",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q736667"
+  },
+  {
+    "id": "it-lake-garda",
+    "name": "加尔达湖",
+    "nameEn": "Lake Garda",
+    "type": "natural",
+    "countryId": "IT",
+    "longitude": 10.675,
+    "latitude": 45.6,
+    "summary": "意大利最大的湖:阿尔卑斯雪水与地中海阳光在此交汇——柠檬树与雪峰同框的阿尔卑斯南麓明珠。",
+    "story": [
+      "加尔达湖长 52 公里,是意大利最大的湖泊:北岸险峰属阿尔卑斯(里瓦德尔加尔达),南岸橄榄与柠檬林属地中海气候——「一湖跨两洲」的微气候让它成为北欧人的度假圣地已达两个世纪。",
+      "湖畔小镇各具性格:西尔米奥内的斯卡利杰城堡浮在水上、加尔多内的瀑布与游乐园、马尔切西内的葡萄酒庄——罗马诗人卡图卢斯的别墅遗址见证了「湖畔别墅文化」的两千年传统。",
+      "湖区是意大利帆船与风帆冲浪的圣地(北岸佩斯凯拉马拉廖洛的风力恒定);环湖公路则是欧洲摩托车文化的巡礼之路。"
+    ],
+    "bestSeason": "5-9月(水温与风况最佳)",
+    "tags": [
+      "湖泊",
+      "阿尔卑斯",
+      "帆船",
+      "度假"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Lake Garda",
+        "url": "https://en.wikipedia.org/wiki/Lake_Garda",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q15098"
+  },
+  {
+    "id": "gb-canterbury-cathedral",
+    "name": "坎特伯雷大教堂",
+    "nameEn": "Canterbury Cathedral",
+    "type": "heritage",
+    "countryId": "GB",
+    "longitude": 1.0836,
+    "latitude": 51.2799,
+    "summary": "英国圣公会的母堂:贝克特殉难之地(1170)——英格兰基督教摇篮与世界遗产「坎特伯雷」的核心。",
+    "story": [
+      "坎特伯雷大教堂可溯至 597 年圣奥古斯丁的传教使命——英格兰基督教的起点。1170 年大主教托马斯·贝克特在堂内被国王骑士刺杀,四年后封圣;「坎特伯雷朝圣」由此成为中世纪欧洲最大的信仰流动,乔叟的《坎特伯雷故事集》为之立传。",
+      "大教堂历经火毁与重建:哥特中殿、贝克特殉难地(「殉难之剑」祭坛)与地下墓穴构成复杂的三层空间。1988 年与圣奥古斯丁修道院、圣马丁教堂共同列入世界遗产。",
+      "今天它是世界遗产、_active 圣公会主教座堂与世界遗产合唱传统的三合一——乔叟笔下的朝圣者路线,如今由步行的旅人继续。"
+    ],
+    "bestSeason": "全年;合唱晚祷免费开放",
+    "tags": [
+      "世界遗产",
+      "大教堂",
+      "贝克特",
+      "朝圣"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/496",
+        "license": "事实参考",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "name": "Wikipedia: Canterbury Cathedral",
+        "url": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q192308"
+  },
+  {
+    "id": "gb-loch-ness",
+    "name": "尼斯湖",
+    "nameEn": "Loch Ness",
+    "type": "natural",
+    "countryId": "GB",
+    "longitude": -4.4814,
+    "latitude": 57.3224,
+    "summary": "苏格兰高地最深的一汪黑水:230 米深的峡谷湖与「尼斯湖水怪」的百年传说——乔治式探险与神秘主义的合流地。",
+    "story": [
+      "尼斯湖是苏格兰高地大峡谷(Great Glen)链湖中最深的一座:冰蚀峡谷深达 230 米,湖水终年浑浊(泥炭染色)——能见度不足两米,为传说提供了完美的舞台。",
+      "「尼西」( Nessie )的现代传说始于 1933 年一对夫妇的目击与次年的「外科医生照片」——1994 年该照片被证实为模型恶作剧,但水怪已深度绑定苏格兰旅游业。声呐扫描与 DNA 采样(2019 年确认以鳗鱼为主)没有终结传说——传说的价值本就不在真相。",
+      "湖畔的厄克特城堡( Urquhart Castle )废墟是最佳观景点:中世纪要塞的残垣与黑色湖水同框——苏格兰高地的忧郁与神秘,在这里浓度最高。"
+    ],
+    "bestSeason": "全年(5-9月气候最佳)",
+    "tags": [
+      "湖泊",
+      "传说",
+      "苏格兰高地",
+      "城堡"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Loch Ness",
+        "url": "https://en.wikipedia.org/wiki/Loch_Ness",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q190208"
+  },
+  {
+    "id": "eg-dendera",
+    "name": "丹德拉神庙群",
+    "nameEn": "Dendera Temple Complex",
+    "type": "heritage",
+    "countryId": "EG",
+    "longitude": 32.6378,
+    "latitude": 26.1422,
+    "summary": "哈托尔女神的圣殿:托勒密时代的星空天花板与「丹德拉灯」浮雕——保存最完好的古埃及神庙之一。",
+    "story": [
+      "丹德拉神庙群供奉爱与美的女神哈托尔,现存主体为托勒密时代(公元前 1 世纪)所建,罗马时代续建——它是埃及保存状态最好的神庙之一:彩色浮雕的颜料仍隐约可见,屋顶未曾塌毁。",
+      "「丹德拉黄道带」浮雕(原件藏于卢浮宫)是古埃及天文学的icon:黄道十二宫与行星刻于圆形穹顶——关于它是否是「古埃及灯泡」的阴谋论流传甚广,而学界共识是莲花与蛇缠绕的创世符号。",
+      "地下密室与屋顶礼拜间对外开放:沿螺旋石梯登上屋顶,俯瞰上埃及的田野——神庙的冷清与卢克索的喧闹形成鲜明对比,是深度古埃及旅行者的私藏。"
+    ],
+    "bestSeason": "10-4月(凉爽季;常与阿拜多斯联游)",
+    "tags": [
+      "古埃及",
+      "哈托尔",
+      "黄道带",
+      "保存完好"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Dendera Temple complex",
+        "url": "https://en.wikipedia.org/wiki/Dendera_Temple_complex",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q557601"
+  },
+  {
+    "id": "eg-ras-mohamed",
+    "name": "拉斯穆罕默德国家公园",
+    "nameEn": "Ras Muhammad National Park",
+    "type": "natural",
+    "countryId": "EG",
+    "longitude": 34.2419,
+    "latitude": 27.7345,
+    "summary": "红海与苏伊士湾交汇处的海洋国家公园:珊瑚壁、沉船与 200 种珊瑚——埃及第一座国家公园(1983)。",
+    "story": [
+      "拉斯穆罕默德位于西奈半岛尖端,1983 年设为埃及第一座国家公园:两海交汇的洋流滋养出红海最茂密的珊瑚礁——Yolanda 沉船(1981 年搁浅的货轮,满载卫浴设备)与 Shark Reef 的「梭鱼龙卷风」是全球潜水圈的顶级潜点。",
+      "这里也是候鸟迁徙的空中走廊:每年数百万候鸟经此往返欧非——陆地部分的红树林与盐沼是沙漠中的生态奇迹。",
+      "红海的珊瑚白化同样威胁这里:国家公园的准入与潜水规则(禁止触碰珊瑚、浮潜配额)是埃及海洋保护的试验田——它的存续直接回答「旅游业与珊瑚能否共存」。"
+    ],
+    "bestSeason": "全年(6-8月水温最高)",
+    "tags": [
+      "国家公园",
+      "珊瑚礁",
+      "潜水",
+      "红海"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Ras Muhammad National Park",
+        "url": "https://en.wikipedia.org/wiki/Ras_Muhammad_National_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q1414685"
+  },
+  {
+    "id": "pe-laguna-69",
+    "name": "拉古纳 69",
+    "nameEn": "Laguna 69",
+    "type": "natural",
+    "countryId": "PE",
+    "longitude": -77.5667,
+    "latitude": -8.9833,
+    "summary": "布兰卡雪山中的高原宝石:4,600 米海拔的冰川湖,颜色随阳光在青绿与钴蓝间切换——瓦伊瓦斯反击战徒步线的皇冠。",
+    "story": [
+      "拉古纳 69 位于瓦斯卡兰国家公园(UNESCO 生物圈):冰川融水在 4,600 米海拔汇成一泓变色湖——阳光角度不同,湖水在青绿与钴蓝之间切换,湖底沉积物随波起舞。",
+      "徒步单程约 3 公里,但海拔从 3,800 米爬升至 4,600 米:高原反应是真实的对手。沿途的安第斯牛马(驯化的羊驼)与 Puya Raimundi 巨型凤梨(百年开一次花)是徒步的彩蛋。",
+      "它是「瓦伊瓦斯反击战」( Huayhuash )徒步线的日间支线,也是库斯科之外体验安第斯高原的最佳一日——布兰卡雪山的 6 座 6000 米雪峰环湖而立。"
+    ],
+    "bestSeason": "5-9月(旱季;雨季道路难行)",
+    "tags": [
+      "高原湖",
+      "冰川",
+      "徒步",
+      "瓦斯卡兰"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Laguna 69",
+        "url": "https://en.wikipedia.org/wiki/Laguna_69",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q20871034"
+  },
+  {
+    "id": "pe-huascaran",
+    "name": "瓦斯卡兰国家公园",
+    "nameEn": "Huascarán National Park",
+    "type": "natural",
+    "countryId": "PE",
+    "longitude": -77.5458,
+    "latitude": -9.1178,
+    "summary": "安第斯心脏的世界遗产(1985):布兰卡雪山的 25 座 6000 米雪峰、蓝湖群与 Puya Raimundi 巨型凤梨——秘鲁最高峰的家园。",
+    "story": [
+      "瓦斯卡兰国家公园建于 1975 年、1985 年列入世界遗产(生物圈保护区):布兰卡雪山 25 座 6000 米以上雪峰纵列,最高峰瓦斯卡兰(6,768 米)是秘鲁屋脊——1970 年大地震引发的雪崩掩埋了永贵镇,是 20 世纪最惨烈的山难。",
+      "公园内 300 余座冰川湖散布山谷:帕龙湖( Llanganuco / Chinancocha )的青绿湖水被两座雪峰夹峙,是秘鲁高原湖泊的封面画面。Puya Raimundi 巨型凤梨可长至 10 米、百年开花一次——「植物界的世纪奇观」。",
+      "这里是安第斯神鹫( Condor )的栖息地,也是 1970 年大地震后「永贵 ghost town 」遗址的所在地——雪山的美与它的力量,在同一个公园里被记住。"
+    ],
+    "bestSeason": "5-9月(旱季徒步季)",
+    "tags": [
+      "世界遗产",
+      "雪山",
+      "冰川湖",
+      "安第斯"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/333",
+        "license": "事实参考",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "name": "Wikipedia: Huascarán National Park",
+        "url": "https://en.wikipedia.org/wiki/Huascarán_National_Park",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q1477064"
+  },
+  {
+    "id": "au-fraser-island",
+    "name": "费沙岛",
+    "nameEn": "K'gari (Fraser Island)",
+    "type": "natural",
+    "countryId": "AU",
+    "longitude": 153.1833,
+    "latitude": -25.2333,
+    "summary": "世界最大的沙岛(1840 平方公里):沙上雨林、百年淡水「悬湖」与纯种野犬——2021 年恢复原住民语名「K'gari(天堂)」。",
+    "story": [
+      "费沙岛是世界最大的纯沙岛:1840 平方公里的沙上长着高逾 50 米的雨林——「沙上雨林」之所以成立,是因为岛心的沙层深处有天然「红土茶树垫层」锁住淡水:百余个悬湖( perched lakes )是世界罕见的纯雨水湖,湖水酸性极高、清澈如玻璃。",
+      "75 英里海滩本身就是一条「公路」:潮汐时刻表就是航班表,飞机在此起降;麦肯锡湖( Lake McKenzie )的白沙底让湖水呈现蓝绿渐变——「天堂」( K'gari )在布楚拉( Butchulla )原住民语中名副其实。2021 年世界遗产正式恢复其原住民语名。",
+      "纯种澳洲野犬( Dingo )是岛上的顶级掠食者——费沙岛的野犬因基因纯净被视为「活体基因库」。沙岛生态极其脆弱:潮汐、四驱车与野犬管理,让这里成为澳洲荒野管理的显微镜。"
+    ],
+    "bestSeason": "3-10月(避开雨季与盛夏)",
+    "tags": [
+      "世界遗产",
+      "沙岛",
+      "悬湖",
+      "野犬"
+    ],
+    "sources": [
+      {
+        "name": "UNESCO 世界遗产中心",
+        "url": "https://whc.unesco.org/en/list/630",
+        "license": "事实参考",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "name": "Wikipedia: Fraser Island",
+        "url": "https://en.wikipedia.org/wiki/Fraser_Island",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q128035"
+  },
+  {
+    "id": "au-wilsons-prom",
+    "name": "威尔逊岬国家公园",
+    "nameEn": "Wilsons Promontory",
+    "type": "natural",
+    "countryId": "AU",
+    "longitude": 146.4292,
+    "latitude": -39.0338,
+    "summary": "维多利亚州「The Prom」:澳洲大陆最南端的荒野岬角——花岗岩山、白色 Squeaky Beach 与袋鼠群同框的徒步天堂。",
+    "story": [
+      "威尔逊岬是澳洲大陆最南端的岬角(南隔 Bass 海峡与塔斯马尼亚相望):花岗岩山体、雨林与开阔荒滩在 5 万公顷内共存——1905 年设为国家公园,是维州最古老的保护区之一。",
+      "Squeaky Beach 的白沙「踩上去会吱吱叫」(石英颗粒摩擦)是它的招牌;Mount Oberon 登顶看日落、Tidal River 营地的袋鼠与袋熊清晨出没——「The Prom」是墨尔本人周末的荒野疗愈地。",
+      "原住民 Gunai/Kurnai 与 Boonwurrung 人在此生活逾六千年;1800 年代海豹捕猎者与伐木者的痕迹已被荒野重新吞没——国家公园的意义,在这里被解释为「让时间倒流」。"
+    ],
+    "bestSeason": "11-4月(夏季徒步季);全年可访",
+    "tags": [
+      "国家公园",
+      "徒步",
+      "花岗岩",
+      "荒野"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Wilsons Promontory",
+        "url": "https://en.wikipedia.org/wiki/Wilsons_Promontory",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q1341074"
+  },
+  {
+    "id": "is-askja",
+    "name": "阿斯恰火山",
+    "nameEn": "Askja",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -16.75,
+    "latitude": 65.0333,
+    "summary": "高地腹地的破火山口湖群:1875 年喷发把浮石抛到挪威——维提湖( Viti )的地热蓝水可以游泳。",
+    "story": [
+      "阿斯恰是冰岛高地腹地的巨大破火山口(直径 8 公里):1875 年的爆发性喷发把浮石抛掷到挪威海岸,迫使周边农庄集体迁离——冰岛最后一次大规模火山移民。火山口内的 Öskjuvatn 湖(深 220 米)是冰岛最深的湖。",
+      "维提( Viti ,「地狱」之意)湖是 1924 年小喷发形成的地热湖:乳蓝色的温水( 22-29°C )可以下水游泳——在高地荒原的火山口里游泳,是冰岛最超现实的体验之一。",
+      "阿斯恰位于高地 F 路腹地,只有高底盘四驱车与夏季窗口( 7-9 月)可抵达——它是高地徒步(Dreki 营地出发)与月球地貌巡礼的目的地:阿波罗宇航员 1965-67 年在此接受地质训练。"
+    ],
+    "bestSeason": "7-9月(高地 F 路开放窗口)",
+    "tags": [
+      "火山",
+      "高地",
+      "破火山口湖",
+      "阿波罗训练地"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Askja",
+        "url": "https://en.wikipedia.org/wiki/Askja",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16",
+    "wikidataId": "Q579985"
+  },
+  {
+    "id": "is-vestrahorn",
+    "name": "维斯特拉霍恩山",
+    "nameEn": "Vestrahorn",
+    "type": "natural",
+    "countryId": "IS",
+    "longitude": -14.5167,
+    "latitude": 64.25,
+    "summary": "「蝙蝠山」:454 米的陡峭玄武岩山体倒映在黑沙滩上——冰岛摄影师私藏的日落圣地(与维克试图避开人潮的替代品)。",
+    "story": [
+      "维斯特拉霍恩(绰号「蝙蝠山」)是霍芬附近的陡峭山体:454 米的玄武岩山峰三面环水,山脚的黑沙滩上常有浅水倒影——「山与镜」的构图使它成为冰岛摄影师的私藏机位,人潮远少于雷尼斯法加拉。",
+      "山脚的 Stokksnes 半岛是私人领地(维京村落影视布景所在地),缴纳小额入场费即可进入:海豹、午夜阳光与北极光在此轮流出演——风的瞬间会把浅水倒影打碎,摄影师称之为「冰岛的脾气」。",
+      "附近的 Viking Café 以一碗咖喱鱼汤和维京村落布景闻名——冰岛东南部的小众目的地,正在从「路过」变成「专程」。"
+    ],
+    "bestSeason": "全年(日落与极光季最上镜)",
+    "tags": [
+      "山体",
+      "黑沙滩",
+      "倒影",
+      "摄影师"
+    ],
+    "sources": [
+      {
+        "name": "Wikipedia: Vestrahorn",
+        "url": "https://en.wikipedia.org/wiki/Vestrahorn",
+        "license": "CC BY-SA 4.0(内容参考)",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "quality": "S",
+    "updatedAt": "2026-11-16"
+  }
+]

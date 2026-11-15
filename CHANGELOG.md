@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [0.4.0] — 2026-11-15(照片全覆盖 · 沉浸体系 · V5.0 雏形 · V1.0 收官)
 
 ### Added
+- **目的地扩容 180 → 200(2026-11-16 通宵批次 3)**:每国新增 2 篇全 S 级原创档案(苏州古典园林/壶口瀑布/名古屋城/箱根/拉什莫尔/胡佛水坝/斯特拉斯堡/波尔多月亮港/维罗纳圆形剧场→总督宫/加尔达湖/坎特伯雷/尼斯湖/丹德拉/拉斯穆罕默德/拉古纳 69/瓦斯卡兰/费沙岛/威尔逊岬/阿斯恰/维斯特拉霍恩),事实保守、来源登记 UNESCO+Wikipedia;防回归单测计数同步 200;新批 30 张照片待 Commons 窗口(管线就绪,示意图兜底)
 - **内容新鲜度监控(2026-11-15,V1.5 DATA EARTH 步骤 3)**:`buildFreshness` 纯函数(updatedAt 分桶:≤14 新鲜 / 15-60 近期 / >60 待复审,缺 updatedAt 过滤,now 可注入)+ /stats 新鲜度区块(分桶图例 + 最待复审 Top5 表);单测 4 断言 + R 用例扩展
 - **探索密度 choropleth(2026-11-15,V1.5 DATA EARTH 步骤 2)**:countries-layer 重构(iso 索引 + effectiveFill 优先级:choropleth > 高亮 > 基底)+ 引擎接口 `setChoropleth(intensity)`(金色调 alpha 0.06-0.42)+ LeftRail「数据填色」开关(默认关);足迹变化实时重填色;E2E 用例(埃及金色调 rgba 断言/关闭恢复基底)
 - **生成我的巡游(2026-11-15,V1.5 DATA EARTH 步骤 1)**:MyWorld 推荐区一键「✈ 生成我的巡游」——推荐 Top3 构造自定义巡游(`TourState.stops` 合成合集,复用巡游全套管线:TourHud/航线/音频/可调停留);推荐与巡游两大体系产品级打通;E2E 用例(播种埃及足迹 → 生成 → 合成巡游运行/结束);ROADMAP 新增「V1.5 DATA EARTH」三步走规划

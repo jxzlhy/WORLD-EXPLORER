@@ -11,7 +11,7 @@ test('R. 数据覆盖统计:/stats 渲染矩阵并返回', async ({ page }) => {
   await expect(page.locator('.stats-page .head h1')).toHaveText('数据覆盖统计')
   const cards = page.locator('.stats-page .card')
   await expect(cards).toHaveCount(5)
-  await expect(cards.first()).toContainText('180')
+  await expect(cards.first()).toContainText('200')
 
   // 按国矩阵 10 行(当前 10 国)
   await expect(page.locator('.stats-page .matrix').first().locator('tbody tr')).toHaveCount(10)
