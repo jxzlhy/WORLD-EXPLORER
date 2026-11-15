@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useExploreStore, buildRecommendations } from '../../stores/explore-store'
+import {
+  useExploreStore,
+  buildRecommendations,
+  buildCountryRecommendations,
+  buildCityRecommendations,
+} from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
 import WeButton from '../../design-system/WeButton.vue'
 
@@ -9,26 +14,70 @@ const myWorld = useMyWorldStore()
 const featured = computed(() => explore.todayFeatured())
 const collectionsOpen = ref(false)
 
-// —— 为你推荐(V5.0):足迹驱动 Top5,↻ 逐个轮换(足迹为空则不显示) ——
-const recs = computed(() =>
+// —— 为你推荐(V5.0 迭代二十四):目的地/国度/城市 三合一混合轮换 ——
+const destRecs = computed(() =>
   buildRecommendations(
     explore.destinations,
     explore.exploredIds,
     explore.collections,
     Object.fromEntries(explore.countries.map((c) => [c.id, c.name])),
     [...myWorld.favorites, ...myWorld.wantToGo, ...myWorld.visited],
-    5,
+    3,
   ),
 )
+const countryRec = computed(
+  () => buildCountryRecommendations(explore.countries, explore.destinations, explore.exploredIds)[0] ?? null,
+)
+const cityRec = computed(
+  () => buildCityRecommendations([...explore.cityById.values()], explore.destinations, explore.exploredIds)[0] ?? null,
+)
+
+interface MixedRec {
+  kind: '目的地' | '国度' | '城市'
+  name: string
+  reason: string
+  go: () => void
+}
+
+const mixedRecs = computed<MixedRec[]>(() => {
+  const out: MixedRec[] = destRecs.value.map((r) => ({
+    kind: '目的地' as const,
+    name: r.dest.name,
+    reason: r.reason,
+    go: () => explore.selectDestination(r.dest.id),
+  }))
+  const c = countryRec.value
+  if (c) {
+    out.push({
+      kind: '国度',
+      name: c.country.name,
+      reason: c.reason,
+      go: () => explore.selectCountry(c.country.id),
+    })
+  }
+  const ct = cityRec.value
+  if (ct) {
+    out.push({
+      kind: '城市',
+      name: ct.city.name,
+      reason: ct.reason,
+      go: () => explore.flyToCity(ct.city.id),
+    })
+  }
+  return out
+})
+
 const recOffset = ref(0)
-const currentRec = computed(() => recs.value[recOffset.value % Math.max(recs.value.length, 1)] ?? null)
+const currentRec = computed(
+  () => mixedRecs.value[recOffset.value % Math.max(mixedRecs.value.length, 1)] ?? null,
+)
 
 function cycleRec(): void {
-  if (recs.value.length) recOffset.value = (recOffset.value + 1) % recs.value.length
+  if (mixedRecs.value.length) recOffset.value = (recOffset.value + 1) % mixedRecs.value.length
 }
 
 function goRec(): void {
-  if (currentRec.value) explore.selectDestination(currentRec.value.dest.id)
+  currentRec.value?.go()
 }
 </script>
 
@@ -44,15 +93,16 @@ function goRec(): void {
       <span class="name">{{ featured.name }}</span>
     </button>
 
-    <!-- 为你推荐(V5.0 雏形):足迹驱动,点击直达,↻ 轮换 -->
+    <!-- 为你推荐(V5.0):目的地/国度/城市 三合一,↻ 轮换,点击直达 -->
     <button
       v-if="currentRec"
       class="featured rec-chip"
-      :title="`为你推荐 · ${currentRec.reason}`"
+      :title="`为你推荐 · ${currentRec.kind} · ${currentRec.reason}`"
       @click="goRec"
     >
       <span class="we-caps-label gold">为你推荐</span>
-      <span class="name">{{ currentRec.dest.name }}</span>
+      <span class="kind">{{ currentRec.kind }}</span>
+      <span class="name">{{ currentRec.name }}</span>
       <span class="why">{{ currentRec.reason }}</span>
       <span
         class="swap"
@@ -101,6 +151,15 @@ function goRec(): void {
 
 <style scoped>
 /* —— 为你推荐(V5.0)—— */
+.rec-chip .kind {
+  flex: none;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  padding: 1px 6px;
+  border-radius: var(--we-r-full);
+  border: 1px solid rgba(232, 200, 150, 0.35);
+  color: var(--we-gold-strong);
+}
 .rec-chip .why {
   font-size: var(--we-fs-micro);
   color: var(--we-gold-strong);

@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [0.4.0] — 2026-11-15(照片全覆盖 · 沉浸体系 · V5.0 雏形 · V1.0 收官)
 
 ### Added
+- **DiscoverBar 三合一混合轮换(2026-11-15 迭代二十四)**:首页推荐芯片升级——目的地 Top3 + 国度 Top1 + 城市 Top1 合并轮换(↻ 循环,kind 徽标标注粒度),点击按粒度直达(selectDestination/selectCountry/flyToCity);E2E 用例(五种推荐全轮换 + 三粒度齐全 + 城市直达京都)
 - **城市粒度推荐「延伸的城」(2026-11-15 迭代二十三)**:`buildCityRecommendations` 纯函数——信号(同城已探索 ×2 + 同城剩余 ×1.2 + 同国动量 ×0.6),只推荐「还有剩余可看」的城市(全逛完/无信号不计分),reason 同城动量 > 同国延伸;MyWorld「延伸的城」区块(点击 flyToCity);单测 5 断言 + E2E 用例(播种京都 2/4 → 京都居首「还有 2 处」→ 点击进城市面板)
 - **国家粒度推荐「下一站国度」(2026-11-15 迭代二十二)**:`buildCountryRecommendations` 纯函数——动量评分(同国已探索 ×1.2 × 剩余可探索 ×0.5,探索完/显式排除的国家剔除,无足迹返回空);MyWorld 新增「下一站国度」区块(点击进国家面板);单测 5 断言 + E2E 用例(播种埃及足迹 → 动量居首 → 点击直达)
 - **MyWorld 数据重置(2026-11-15 迭代二十一)**:两步确认的「重置数据」按钮——清空收藏/去过/想去/笔记/足迹/历史(localStorage 同步),取消路径不破坏数据;隐私友好的自助清理;E2E 用例(两步确认/取消路径/全清断言)
@@ -65,7 +66,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-15,城市推荐批):E2E 35/35 · 单测 70/70 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-15,混合轮换批):E2E 36/36 · 单测 70/70 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
