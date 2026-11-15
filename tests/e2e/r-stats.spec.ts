@@ -18,6 +18,12 @@ test('R. 数据覆盖统计:/stats 渲染矩阵并返回', async ({ page }) => {
   // 合集表 4 行
   await expect(page.locator('.stats-page .matrix').nth(1).locator('tbody tr')).toHaveCount(4)
 
+  // 内容新鲜度区块(V1.5 步骤 3):分桶图例 + 最待复审 Top5
+  const fresh = page.locator('.stats-page .block').filter({ hasText: '内容新鲜度' })
+  await expect(fresh).toBeVisible()
+  await expect(fresh.locator('.fresh-legend')).toContainText('≤14 天')
+  await expect(fresh.locator('tbody tr')).toHaveCount(5)
+
   // 返回探索 → 主体验就绪(状态栏出现 DESTINATIONS 计数)
   await page.locator('.stats-page .back').click()
   await expect(page).toHaveURL(/\/$/)

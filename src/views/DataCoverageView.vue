@@ -1,15 +1,21 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
-import { buildCoverageStats, type CoverageStats } from '../services/coverage-stats'
+import {
+  buildCoverageStats,
+  buildFreshness,
+  type CoverageStats,
+  type FreshnessStats,
+} from '../services/coverage-stats'
 import { loadWorldData } from '../services/data-service'
 import WeSpinner from '../design-system/WeSpinner.vue'
 import WeEmpty from '../design-system/WeEmpty.vue'
 
 /**
  * DataCoverageView — 数据覆盖统计(V5.0 数据质量监控雏形)。
- * 只读面板:质量分级 / 照片·时间轴·人物覆盖 / 合集与按国矩阵。独立路由 /stats。
+ * 只读面板:质量分级 / 照片·时间轴·人物覆盖 / 合集与按国矩阵 / 内容新鲜度。独立路由 /stats。
  */
 const stats = ref<CoverageStats | null>(null)
+const freshness = ref<FreshnessStats | null>(null)
 const error = ref('')
 const loading = ref(true)
 
@@ -29,6 +35,7 @@ onMounted(async () => {
   try {
     const data = await loadWorldData()
     stats.value = buildCoverageStats(data.destinations, data.people ?? [], data.collections ?? [])
+    freshness.value = buildFreshness(data.destinations, new Date(), 5)
   } catch (err) {
     error.value = String(err)
   } finally {
@@ -129,6 +136,35 @@ onMounted(async () => {
           </tbody>
         </table>
       </section>
+
+      <section
+        v-if="freshness"
+        class="block"
+      >
+        <p class="we-caps-label">
+          内容新鲜度 · 平均 {{ freshness.avgDays }} 天
+        </p>
+        <p class="fresh-legend mono">
+          ≤14 天 {{ freshness.freshCount }} · 15-60 天 {{ freshness.recentCount }} · &gt;60 天 {{ freshness.staleCount }}
+        </p>
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th>最待复审</th>
+              <th>距今天数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="o in freshness.oldest"
+              :key="o.id"
+            >
+              <td>{{ o.name }}</td>
+              <td class="mono">{{ o.days }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </template>
   </div>
 </template>
@@ -191,6 +227,11 @@ onMounted(async () => {
 }
 .block .we-caps-label {
   margin: 0 0 var(--we-sp-2);
+}
+.fresh-legend {
+  margin: 0;
+  font-size: var(--we-fs-micro);
+  color: var(--we-text-dim);
 }
 .matrix {
   width: 100%;

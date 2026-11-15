@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [0.4.0] — 2026-11-15(照片全覆盖 · 沉浸体系 · V5.0 雏形 · V1.0 收官)
 
 ### Added
+- **内容新鲜度监控(2026-11-15,V1.5 DATA EARTH 步骤 3)**:`buildFreshness` 纯函数(updatedAt 分桶:≤14 新鲜 / 15-60 近期 / >60 待复审,缺 updatedAt 过滤,now 可注入)+ /stats 新鲜度区块(分桶图例 + 最待复审 Top5 表);单测 4 断言 + R 用例扩展
 - **探索密度 choropleth(2026-11-15,V1.5 DATA EARTH 步骤 2)**:countries-layer 重构(iso 索引 + effectiveFill 优先级:choropleth > 高亮 > 基底)+ 引擎接口 `setChoropleth(intensity)`(金色调 alpha 0.06-0.42)+ LeftRail「数据填色」开关(默认关);足迹变化实时重填色;E2E 用例(埃及金色调 rgba 断言/关闭恢复基底)
 - **生成我的巡游(2026-11-15,V1.5 DATA EARTH 步骤 1)**:MyWorld 推荐区一键「✈ 生成我的巡游」——推荐 Top3 构造自定义巡游(`TourState.stops` 合成合集,复用巡游全套管线:TourHud/航线/音频/可调停留);推荐与巡游两大体系产品级打通;E2E 用例(播种埃及足迹 → 生成 → 合成巡游运行/结束);ROADMAP 新增「V1.5 DATA EARTH」三步走规划
 - **目的地扩容 170 → 180(2026-11-15 通宵批次 2)**:每国新增 1 篇全 S 级原创档案(天坛/平等院/威基基海滩/加尼叶歌剧院/特拉斯提弗列/巴斯修道院/达哈布/戈克塔瀑布/国王峡谷/迪霍拉里),事实保守、来源登记 UNESCO+Wikipedia;防回归单测计数同步 180;新批 10 张照片待 Commons 窗口(网络再断,示意图兜底)
@@ -69,7 +70,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-15,choropleth 批):E2E 38/38 · 单测 75/75 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-15,新鲜度监控批):E2E 38/38 · 单测 79/79 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)
