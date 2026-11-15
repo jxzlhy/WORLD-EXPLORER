@@ -5,6 +5,7 @@ All notable changes to WORLD EXPLORER are documented here.
 ## [0.4.0] — 2026-11-15(照片全覆盖 · 沉浸体系 · V5.0 雏形 · V1.0 收官)
 
 ### Added
+- **生成我的巡游(2026-11-15,V1.5 DATA EARTH 步骤 1)**:MyWorld 推荐区一键「✈ 生成我的巡游」——推荐 Top3 构造自定义巡游(`TourState.stops` 合成合集,复用巡游全套管线:TourHud/航线/音频/可调停留);推荐与巡游两大体系产品级打通;E2E 用例(播种埃及足迹 → 生成 → 合成巡游运行/结束);ROADMAP 新增「V1.5 DATA EARTH」三步走规划
 - **目的地扩容 170 → 180(2026-11-15 通宵批次 2)**:每国新增 1 篇全 S 级原创档案(天坛/平等院/威基基海滩/加尼叶歌剧院/特拉斯提弗列/巴斯修道院/达哈布/戈克塔瀑布/国王峡谷/迪霍拉里),事实保守、来源登记 UNESCO+Wikipedia;防回归单测计数同步 180;新批 10 张照片待 Commons 窗口(网络再断,示意图兜底)
 - **DiscoverBar 三合一混合轮换(2026-11-15 迭代二十四)**:首页推荐芯片升级——目的地 Top3 + 国度 Top1 + 城市 Top1 合并轮换(↻ 循环,kind 徽标标注粒度),点击按粒度直达(selectDestination/selectCountry/flyToCity);E2E 用例(五种推荐全轮换 + 三粒度齐全 + 城市直达京都)
 - **城市粒度推荐「延伸的城」(2026-11-15 迭代二十三)**:`buildCityRecommendations` 纯函数——信号(同城已探索 ×2 + 同城剩余 ×1.2 + 同国动量 ×0.6),只推荐「还有剩余可看」的城市(全逛完/无信号不计分),reason 同城动量 > 同国延伸;MyWorld「延伸的城」区块(点击 flyToCity);单测 5 断言 + E2E 用例(播种京都 2/4 → 京都居首「还有 2 处」→ 点击进城市面板)
@@ -67,7 +68,7 @@ All notable changes to WORLD EXPLORER are documented here.
 
 ### Changed
 - storage-service 导入补 .ts 扩展名(allowImportingTsExtensions,Node ESM 兼容)(allowImportingTsExtensions,Node ESM 兼容)
-- 全量验证(2026-11-15,混合轮换批):E2E 36/36 · 单测 70/70 · lint 0 错误 · typecheck ✓ · build ✓
+- 全量验证(2026-11-15,数据地球步骤 1 批):E2E 37/37 · 单测 75/75 · lint 0 错误 · typecheck ✓ · build ✓
 - 已知限制:默认「实时」模式为单张 4K 合成贴图,拉近(~450km)清晰度受源图限制——更高清本地源(8100 Blue Marble)因 NASA eoimages / Commons 被本机代理拦截暂缓,升级管线已就绪(`experiments/fetch-hd-textures.py`,许可链 NASA PD → Commons,源站可达时运行即可);拉近清晰度当前由永昼/永夜的 GIBS L8 瓦片承担
 
 ## [0.3.0] — 2026-11-05(V0.3 DEPTH PASS)

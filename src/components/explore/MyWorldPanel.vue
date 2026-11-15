@@ -64,6 +64,14 @@ function goRecommendation(id: string): void {
   explore.selectDestination(id)
 }
 
+/** 生成我的巡游(V5.0):推荐 Top3 → 自定义巡游,复用巡游全套管线 */
+function generateMyTour(): void {
+  const ids = recommendations.value.map((r) => r.dest.id)
+  if (ids.length < 2) return
+  ui.toggleMyWorld(false)
+  explore.startCustomTour('我的巡游', ids)
+}
+
 /** 国家粒度推荐(V5.0 迭代二十二):「下一站国度」——已排除全部探索完的国家 */
 const countryRecs = computed(() =>
   buildCountryRecommendations(
@@ -206,6 +214,16 @@ function onResetClick(): void {
               <span class="why">{{ r.reason }}</span>
             </button>
           </div>
+          <WeButton
+            v-if="recommendations.length >= 2"
+            variant="glass"
+            size="sm"
+            class="gen-tour"
+            title="把推荐生成一条个性化巡游航线(复用巡游系统)"
+            @click="generateMyTour"
+          >
+            ✈ 生成我的巡游
+          </WeButton>
         </div>
 
         <div
@@ -487,6 +505,9 @@ function onResetClick(): void {
   margin-left: auto;
   font-size: var(--we-fs-micro);
   color: var(--we-gold-strong);
+}
+.gen-tour {
+  margin-top: var(--we-sp-2);
 }
 
 .progress-block {

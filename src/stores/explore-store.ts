@@ -14,7 +14,8 @@ export type SelectionPanel =
   | { kind: 'collection'; collectionId: string }
   | { kind: 'person'; personId: string }
 
-/** 合集镜头巡游状态(V4.5):沿收录顺序逐站飞行;定时推进由 TourHud 负责 */
+/** 合集镜头巡游状态(V4.5):沿收录顺序逐站飞行;定时推进由 TourHud 负责。
+ *  V5.0 支持自定义巡游:stops 为目的地 id 序列(如「生成我的巡游」),title 为航线名 */
 export interface TourState {
   collectionId: string
   /** 当前站(0 起) */
@@ -23,6 +24,10 @@ export interface TourState {
   paused: boolean
   /** 每站停留时长(ms),可调并持久化 */
   dwellMs: number
+  /** 自定义巡游的目的地 id 序列(存在时 tourCollection 为合成合集) */
+  stops?: string[]
+  /** 自定义巡游航线名 */
+  title?: string
 }
 
 /** 巡游航段固定时长(秒):电影感匀速节奏,不随距离跳动 */
@@ -141,7 +146,19 @@ export const useExploreStore = defineStore('explore', {
     },
     /** 巡游合集 */
     tourCollection(): Collection | null {
-      return this.tour ? (this.collectionById.get(this.tour.collectionId) ?? null) : null
+      const t = this.tour
+      if (!t) return null
+      // 自定义巡游(「生成我的巡游」):由 stops 合成临时合集,复用巡游全套管线
+      if (t.stops) {
+        return {
+          id: t.collectionId,
+          name: t.title ?? '我的巡游',
+          nameEn: 'My Tour',
+          curatorNote: '',
+          destinationIds: t.stops,
+        }
+      }
+      return this.collectionById.get(t.collectionId) ?? null
     },
     /** 巡游站点序列 */
     tourStops(): Destination[] {
@@ -252,6 +269,25 @@ export const useExploreStore = defineStore('explore', {
     /** 结束巡游(航线由接线层随 tour 清空而移除) */
     stopTour() {
       this.tour = null
+    },
+
+    /** 生成我的巡游(V5.0):从推荐目的地构造自定义巡游(与合集巡游共用全套管线) */
+    startCustomTour(title: string, destIds: string[]) {
+      const stops = destIds
+        .map((id) => this.destinationById.get(id))
+        .filter((d): d is Destination => !!d)
+        .map((d) => d.id)
+      if (stops.length < 2) return
+      this.tour = {
+        collectionId: 'my-tour',
+        index: 0,
+        paused: false,
+        dwellMs: loadJson<number>('tour-dwell', TOUR_DWELL_DEFAULT),
+        stops,
+        title,
+      }
+      const first = this.destinationById.get(stops[0]!)
+      if (first) this.flyToTourStop(first)
     },
 
     /** 巡游航段起飞:与手动选中同管线,仅采用固定电影感时长 */
