@@ -377,6 +377,58 @@ export interface Recommendation {
   reason: string
 }
 
+export interface CountryRecommendation {
+  country: Country
+  exploredCount: number
+  reason: string
+}
+
+/**
+ * 国家粒度推荐(V5.0 迭代二十二)— 「下一站国度」。
+ * 动量评分:同国已探索数 ×1.2(你对哪国投入多,就推荐哪国的更多目的地)
+ * × 剩余可探索数 ×0.5(还有货可看);已探索完的国家排除,显式 exclude 国家也排除;
+ * 足迹为空返回 [](无信号不推荐)。
+ */
+export function buildCountryRecommendations(
+  countries: Country[],
+  destinations: Destination[],
+  exploredIds: string[],
+  excludeCountryIds: string[] = [],
+  limit = 3,
+): CountryRecommendation[] {
+  if (!exploredIds.length) return []
+  const exploredSet = new Set(exploredIds)
+  const byCountry = new Map<string, number>()
+  const totals = new Map<string, number>()
+  for (const d of destinations) {
+    totals.set(d.countryId, (totals.get(d.countryId) ?? 0) + 1)
+    if (exploredSet.has(d.id)) {
+      byCountry.set(d.countryId, (byCountry.get(d.countryId) ?? 0) + 1)
+    }
+  }
+  const excluded = new Set(excludeCountryIds)
+
+  const scored = countries
+    .filter((c) => !excluded.has(c.id))
+    .map((c) => {
+      const exploredCount = byCountry.get(c.id) ?? 0
+      const unexplored = (totals.get(c.id) ?? 0) - exploredCount
+      // 动量 × 剩余供给;探索完(或无档案)的国家 score ≤ 0 被自然过滤
+      const score = unexplored > 0 && totals.get(c.id) ? exploredCount * 1.2 + unexplored * 0.5 : -1
+      const reason =
+        exploredCount > 0
+          ? `你已探索过 ${exploredCount} 处${c.name}目的地`
+          : '尚未探索的新国度'
+      return { country: c, exploredCount, unexplored, reason, score }
+    })
+    .filter((r) => r.score > 0 && r.unexplored > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ country, exploredCount, reason }) => ({ country, exploredCount, reason }))
+
+  return scored
+}
+
 /**
  * 相似目的地(V5.0 雏形)— 「看过这处的人也看」。
  * 以当前目的地为锚的可解释评分:质量基分(S2/A1/B0.5)+ 同合集 ×2 > 同国 ×1.5 > 同类型 ×0.8;

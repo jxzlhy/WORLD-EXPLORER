@@ -20,7 +20,8 @@ test('P. 探索推荐:播种足迹 → 渲染推荐 → 点击直达', async ({ 
   await expect(page.locator('.my-world')).toBeVisible()
 
   // 推荐区:足迹含埃及 2 处 → 同国信号最强,首条 reason 为「同在埃及」
-  const rec = page.locator('.my-world .recommend')
+  // (迭代二十二新增「下一站国度」国家推荐区块,.recommend 匹配两块,故用 .first())
+  const rec = page.locator('.my-world .recommend').first()
   await expect(rec).toBeVisible()
   await expect(rec.locator('.we-caps-label')).toHaveText('你可能想去')
   const items = rec.locator('.rec-item')

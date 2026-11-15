@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useExploreStore } from '../../stores/explore-store'
-import { buildRecommendations } from '../../stores/explore-store'
+import { buildRecommendations, buildCountryRecommendations } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
 import { useUiStore } from '../../stores/ui-store'
 import { exportAll } from '../../services/storage-service'
@@ -62,6 +62,22 @@ const recommendations = computed(() =>
 function goRecommendation(id: string): void {
   ui.toggleMyWorld(false)
   explore.selectDestination(id)
+}
+
+/** 国家粒度推荐(V5.0 迭代二十二):「下一站国度」——已排除全部探索完的国家 */
+const countryRecs = computed(() =>
+  buildCountryRecommendations(
+    explore.countries,
+    explore.destinations,
+    explore.exploredIds,
+    [],
+    3,
+  ),
+)
+
+function goCountryRec(id: string): void {
+  ui.toggleMyWorld(false)
+  explore.selectCountry(id)
 }
 
 function exportData(): void {
@@ -171,6 +187,27 @@ function onResetClick(): void {
               @click="goRecommendation(r.dest.id)"
             >
               <span class="n">{{ r.dest.name }}</span>
+              <span class="why">{{ r.reason }}</span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          v-if="countryRecs.length"
+          class="recommend country-rec"
+        >
+          <p class="we-caps-label gold">
+            下一站国度
+          </p>
+          <div class="rec-list">
+            <button
+              v-for="r in countryRecs"
+              :key="r.country.id"
+              class="rec-item"
+              :title="r.reason"
+              @click="goCountryRec(r.country.id)"
+            >
+              <span class="n">{{ r.country.name }}</span>
               <span class="why">{{ r.reason }}</span>
             </button>
           </div>
