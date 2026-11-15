@@ -26,7 +26,8 @@
     "/data/destinations/batch-heritage-2.json",
     "/data/destinations/batch-final-1.json",
     "/data/destinations/batch-final-2.json",
-    "/data/destinations/batch-night-1.json"
+    "/data/destinations/batch-night-1.json",
+    "/data/destinations/batch-night-2.json"
   ],
   "collectionsFile": "/data/collections.json",
   "peopleFile": "/data/people.json"
