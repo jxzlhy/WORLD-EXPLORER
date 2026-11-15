@@ -193,6 +193,27 @@ async function bootstrap(): Promise<void> {
         )
       },
     ),
+    // 探索密度 choropleth(V1.5 步骤 2):开关 + 足迹变化 → 国家填色
+    watch(
+      () => [ui.choroplethOn, [...explore.exploredIds]] as const,
+      ([on]) => {
+        const eng = getEngine()
+        if (!eng) return
+        if (!on) {
+          eng.setChoropleth(null)
+          return
+        }
+        const entries = explore.countries
+          .map((c) => {
+            const dests = explore.destinationsOfCountry(c.id)
+            const total = dests.length
+            const explored = dests.filter((d) => explore.exploredIds.includes(d.id)).length
+            return { id: c.id, intensity: total ? explored / total : 0 }
+          })
+          .filter((e) => e.intensity > 0)
+        eng.setChoropleth(entries.length ? entries : null)
+      },
+    ),
   )
 
   // 5. 开场序列(GSAP)——尊重 prefers-reduced-motion

@@ -34,7 +34,7 @@
 
 ### 2026-11-07 追加:V4.5 批次推送被凭据阻塞
 
-- 提交 `d76de59` / `31e7ccf` / `76d2e38` / `69f1182` / `338edbf` / `b6496f5` / `112b92b` / `5c98af7` / `45bddad` / `45cde59` / `ebad42a` / `5a1bccf` / `2f2d959` / `4612cd7` / `279520d` / `813c7d4` / `8e43ffe` / `7f3f975` / `5925ba4` / `4508ee2` / `ff141a3` / `f0a0aeb` / `a5e8a4c` / `5bfa5ab`(共 38 个:巡游雏形…混合轮换、目的地 180 扩容、生成我的巡游)均已完成本地提交,但推送持续失败:PAT 鉴权失效 + github 网络间歇不稳(连接超时/SSL/鉴权错误交替,11-08 至 11-15 多次复测)。**需要项目所有者更新 GitHub 凭据并确认网络后执行 `git push origin main`**(34 个提交一次推完)。
+- 提交 `d76de59` / `31e7ccf` / `76d2e38` / `69f1182` / `338edbf` / `b6496f5` / `112b92b` / `5c98af7` / `45bddad` / `45cde59` / `ebad42a` / `5a1bccf` / `2f2d959` / `4612cd7` / `279520d` / `813c7d4` / `8e43ffe` / `7f3f975` / `5925ba4` / `4508ee2` / `ff141a3` / `f0a0aeb` / `a5e8a4c` / `5bfa5ab`(共 39 个:巡游雏形…生成我的巡游、探索 choropleth)均已完成本地提交,但推送持续失败:PAT 鉴权失效 + github 网络间歇不稳(连接超时/SSL/鉴权错误交替,11-08 至 11-15 多次复测)。**需要项目所有者更新 GitHub 凭据并确认网络后执行 `git push origin main`**(34 个提交一次推完)。
 
 ## 关键教训(写给下一次会话)
 
@@ -50,6 +50,12 @@
 - 套件 12/12 + 单测 15/15;超时预算按 SwiftShader 实测调整 [V]
 - 推送:守望曾在恢复窗口推送至 9799c5c;6 提交待推,守望 v2 继续盯守 [V]
 - 混排乱码自检流程固化:python 脚本写入后立即校验,已捕获 7 处 [V]
+
+## 数据地球步骤 2 批(2026-11-15 迭代二十六)—— choropleth
+
+- countries-layer 重构:iso 索引缓存(load 后一次构建)+ effectiveFill 优先级(choropleth > 高亮 > 基底)+ setChoropleth(与高亮共存,互相让位) [V]
+- engine 接口 `setChoropleth({id, intensity})`:intensity 0-1 → 金色 alpha 0.06-0.42(引擎内转色,接口不暴露 Cesium 类型);ui choroplethOn 开关(默认关)+ LeftRail「数据填色」;ExploreView watch 开关+足迹 → 填色 [V]
+- E2E choropleth.spec:埃及 polygon 填充 rgba 断言(金 0.91,0.78 ↔ 基底 0.24,0.43)一次通过 [V]
 
 ## 数据地球步骤 1 批(2026-11-15 迭代二十五)—— 下一阶段启动
 

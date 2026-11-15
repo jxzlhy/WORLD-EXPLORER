@@ -145,6 +145,13 @@ const typeChips: Array<{ value: string; label: string; color: string }> = [
         <span>自动降档</span>
         <WeSwitch v-model="ui.autoDegrade" />
       </label>
+      <label
+        class="row"
+        title="在地球上按探索密度为国家填色"
+      >
+        <span>数据填色</span>
+        <WeSwitch v-model="ui.choroplethOn" />
+      </label>
     </div>
   </aside>
 </template>

@@ -245,6 +245,23 @@ export class WorldEngine implements IWorldEngine {
     this.markers.setTypesFilter(activeTypes)
   }
 
+  /**
+   * 探索密度 choropleth(V1.5 步骤 2):intensity(0-1)→ 金色填充 alpha 0.06-0.42;
+   * intensity ≤ 0 的国家不出现在 entries 中即恢复基底。
+   */
+  setChoropleth(entries: Array<{ id: string; intensity: number }> | null): void {
+    if (!this.countries) return
+    const colors = entries?.length
+      ? entries.map((e) => ({
+          id: e.id,
+          color: Cesium.Color.fromCssColorString('#e8c896').withAlpha(
+            Cesium.Math.clamp(0.06 + e.intensity * 0.36, 0.06, 0.42),
+          ),
+        }))
+      : null
+    this.countries.setChoropleth(colors)
+  }
+
   setLayerVisible(layer: LayerId, visible: boolean): void {
     if (layer === 'countries') this.countries.setVisible(visible)
     if (layer === 'markers') this.markers.setVisible(visible)

@@ -76,6 +76,8 @@ export interface IWorldEngine {
   setCloudsVisible(visible: boolean): Promise<void>
   /** 设置/清除巡游航线(大圆线;传 null 清除)。current 指示已飞进度:已飞航段实线、当前航段发光 */
   setRouteLine(stops: RouteStopPoint[] | null, options?: RouteLineOptions): void
+  /** 探索密度 choropleth(V1.5 步骤 2):按国家设置填充色强度(0-1,引擎转金色调);null 清除 */
+  setChoropleth(entries: Array<{ id: string; intensity: number }> | null): void
   setAutoRotate(enabled: boolean): void
   setDayNightMode(mode: DayNightMode): void
   /** 渲染质量档位:high=原生+FXAA / balanced=0.85x+FXAA / low=0.7x 无 FXAA */

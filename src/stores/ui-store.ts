@@ -29,6 +29,8 @@ export const useUiStore = defineStore('ui', {
     cloudsOn: false,
     /** FPS 自动降档守门(默认关:自动改画质需用户显式开启) */
     autoDegrade: false,
+    /** 探索密度 choropleth(默认关:数据可视化属于可选叠加) */
+    choroplethOn: false,
     /** 自动降档提示(触发后短暂展示,由 ExploreView 清除) */
     autoDegradeNote: '',
     showStats: false,
@@ -62,6 +64,9 @@ export const useUiStore = defineStore('ui', {
     setAutoDegrade(on: boolean) {
       this.autoDegrade = on
       if (!on) this.autoDegradeNote = ''
+    },
+    setChoropleth(on: boolean) {
+      this.choroplethOn = on
     },
     setAutoDegradeNote(note: string) {
       this.autoDegradeNote = note
