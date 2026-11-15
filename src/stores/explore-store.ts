@@ -372,6 +372,11 @@ export function addExplored(list: string[], id: string): string[] {
   return list.includes(id) ? list : [...list, id]
 }
 
+/** 推荐评分的质量基分(S2/A1/B0.5;buildRecommendations/buildSimilarDestinations 共用) */
+function qualityBase(d: Destination): number {
+  return d.quality === 'S' ? 2 : d.quality === 'A' ? 1 : 0.5
+}
+
 export interface Recommendation {
   dest: Destination
   reason: string
@@ -522,7 +527,7 @@ export function buildSimilarDestinations(
         (c) => currentCollections.has(c.id) && c.destinationIds.includes(d.id),
       )
       const score =
-        (d.quality === 'S' ? 2 : d.quality === 'A' ? 1 : 0.5) +
+        qualityBase(d) +
         shared.length * 2 +
         (d.countryId === current.countryId ? 1.5 : 0) +
         (d.type === current.type ? 0.8 : 0)
@@ -584,7 +589,7 @@ export function buildRecommendations(
     const sameType = typeCount.get(d.type) ?? 0
     const shared = (collectionOf.get(d.id) ?? []).length
     const score =
-      (d.quality === 'S' ? 2 : d.quality === 'A' ? 1 : 0.5) +
+      qualityBase(d) +
       sameCountry * 1.5 +
       sameType * 0.8 +
       shared * 1.2
