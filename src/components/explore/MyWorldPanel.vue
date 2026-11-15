@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useExploreStore } from '../../stores/explore-store'
-import { buildRecommendations, buildCountryRecommendations } from '../../stores/explore-store'
+import { buildRecommendations, buildCountryRecommendations, buildCityRecommendations } from '../../stores/explore-store'
 import { useMyWorldStore } from '../../stores/my-world-store'
 import { useUiStore } from '../../stores/ui-store'
 import { exportAll } from '../../services/storage-service'
@@ -78,6 +78,22 @@ const countryRecs = computed(() =>
 function goCountryRec(id: string): void {
   ui.toggleMyWorld(false)
   explore.selectCountry(id)
+}
+
+/** 城市粒度推荐(V5.0 迭代二十三):「延伸的城」——同城剩余可看 + 同国延伸 */
+const cityRecs = computed(() =>
+  buildCityRecommendations(
+    [...explore.cityById.values()],
+    explore.destinations,
+    explore.exploredIds,
+    [],
+    3,
+  ),
+)
+
+function goCityRec(id: string): void {
+  ui.toggleMyWorld(false)
+  explore.flyToCity(id)
 }
 
 function exportData(): void {
@@ -208,6 +224,27 @@ function onResetClick(): void {
               @click="goCountryRec(r.country.id)"
             >
               <span class="n">{{ r.country.name }}</span>
+              <span class="why">{{ r.reason }}</span>
+            </button>
+          </div>
+        </div>
+
+        <div
+          v-if="cityRecs.length"
+          class="recommend city-rec"
+        >
+          <p class="we-caps-label gold">
+            延伸的城
+          </p>
+          <div class="rec-list">
+            <button
+              v-for="r in cityRecs"
+              :key="r.city.id"
+              class="rec-item"
+              :title="r.reason"
+              @click="goCityRec(r.city.id)"
+            >
+              <span class="n">{{ r.city.name }}</span>
               <span class="why">{{ r.reason }}</span>
             </button>
           </div>

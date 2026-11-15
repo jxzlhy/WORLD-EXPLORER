@@ -383,6 +383,73 @@ export interface CountryRecommendation {
   reason: string
 }
 
+export interface CityRecommendation {
+  city: City
+  exploredCount: number
+  unexploredCount: number
+  reason: string
+}
+
+/**
+ * 城市粒度推荐(V5.0 迭代二十三)— 「延伸的城」。
+ * 信号:同城已探索数(动量 ×2)+ 同城剩余可看(×1.2)+ 同国探索动量(×0.6);
+ * 只推荐「还有剩余可看」的城市;同城/同国均无探索信号的城市不计分;
+ * reason:同城动量 > 同国延伸。
+ */
+export function buildCityRecommendations(
+  cities: City[],
+  destinations: Destination[],
+  exploredIds: string[],
+  excludeCityIds: string[] = [],
+  limit = 3,
+): CityRecommendation[] {
+  if (!exploredIds.length) return []
+  const exploredSet = new Set(exploredIds)
+  const exclude = new Set(excludeCityIds)
+
+  const byCity = new Map<string, Destination[]>()
+  for (const d of destinations) {
+    if (!d.cityId) continue
+    if (!byCity.has(d.cityId)) byCity.set(d.cityId, [])
+    byCity.get(d.cityId)!.push(d)
+  }
+  const countryExplored = new Map<string, number>()
+  for (const d of destinations) {
+    if (exploredSet.has(d.id)) {
+      countryExplored.set(d.countryId, (countryExplored.get(d.countryId) ?? 0) + 1)
+    }
+  }
+
+  const scored = cities
+    .filter((c) => !exclude.has(c.id))
+    .map((c) => {
+      const dests = byCity.get(c.id) ?? []
+      const exploredLocal = dests.filter((d) => exploredSet.has(d.id)).length
+      const unexploredLocal = dests.length - exploredLocal
+      const countryCount = countryExplored.get(c.countryId) ?? 0
+      const score =
+        exploredLocal * 2 + unexploredLocal * 1.2 + (countryCount > 0 ? 0.6 : 0)
+      let reason = ''
+      if (exploredLocal > 0) {
+        reason = `你已逛过此城 ${exploredLocal} 处,还有 ${unexploredLocal} 处`
+      } else if (countryCount > 0 && unexploredLocal > 0) {
+        reason = `同国之旅的延伸`
+      }
+      return { city: c, exploredLocal, unexploredLocal, reason, score }
+    })
+    .filter((r) => r.score > 0 && r.reason !== '' && r.unexploredLocal > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ city, exploredLocal, unexploredLocal, reason }) => ({
+      city,
+      exploredCount: exploredLocal,
+      unexploredCount: unexploredLocal,
+      reason,
+    }))
+
+  return scored
+}
+
 /**
  * 国家粒度推荐(V5.0 迭代二十二)— 「下一站国度」。
  * 动量评分:同国已探索数 ×1.2(你对哪国投入多,就推荐哪国的更多目的地)
