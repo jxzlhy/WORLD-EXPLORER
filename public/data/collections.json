@@ -74,5 +74,43 @@
       "fr-louvre",
       "cn-the-bund"
     ]
+  },
+  {
+    "id": "world-wonders",
+    "name": "世界奇迹巡礼",
+    "nameEn": "World Wonders",
+    "curatorNote": "从吉萨到长城,从佩特拉到奇琴伊察——人类用石头回答「永恒」之问的顶级答卷。世界新七大奇迹与古典奇观在此同台。",
+    "destinationIds": [
+      "eg-giza-pyramids",
+      "cn-great-wall",
+      "pe-machu-picchu",
+      "it-colosseum",
+      "gb-stonehenge",
+      "eg-abu-simbel",
+      "cn-terracotta-army",
+      "it-pompeii",
+      "eg-karnak",
+      "fr-mont-saint-michel",
+      "jp-itsukushima-shrine",
+      "us-statue-of-liberty"
+    ]
+  },
+  {
+    "id": "human-marvels",
+    "name": "人类奇迹",
+    "nameEn": "Human Marvels",
+    "curatorNote": "大坝、大桥、运河与玻璃金字塔——工业时代以来,人类把自己的意志浇筑进地表。这些工程奇迹证明:奇迹不止属于古代。",
+    "destinationIds": [
+      "us-golden-gate",
+      "us-brooklyn-bridge",
+      "us-hoover-dam",
+      "fr-pont-du-gard",
+      "gb-ironbridge",
+      "fr-eiffel-tower",
+      "us-statue-of-liberty",
+      "cn-dujiangyan",
+      "it-leaning-tower-pisa",
+      "gb-tower-bridge"
+    ]
   }
 ]

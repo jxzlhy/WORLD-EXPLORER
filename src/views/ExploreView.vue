@@ -214,6 +214,11 @@ async function bootstrap(): Promise<void> {
         eng.setChoropleth(entries.length ? entries : null)
       },
     ),
+    // 时间机器(V3.0 雏形):年份过滤 → 标记层显隐
+    watch(
+      () => ui.timeMachineYear,
+      (year) => getEngine()?.setTimelineYear(year),
+    ),
   )
 
   // 5. 开场序列(GSAP)——尊重 prefers-reduced-motion

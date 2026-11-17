@@ -31,6 +31,8 @@ export const useUiStore = defineStore('ui', {
     autoDegrade: false,
     /** 探索密度 choropleth(默认关:数据可视化属于可选叠加) */
     choroplethOn: false,
+    /** 时间机器(V3.0 雏形):null=关闭;数值=只显示该年份已建成的目的地 */
+    timeMachineYear: null as number | null,
     /** 自动降档提示(触发后短暂展示,由 ExploreView 清除) */
     autoDegradeNote: '',
     showStats: false,
@@ -67,6 +69,9 @@ export const useUiStore = defineStore('ui', {
     },
     setChoropleth(on: boolean) {
       this.choroplethOn = on
+    },
+    setTimeMachineYear(year: number | null) {
+      this.timeMachineYear = year
     },
     setAutoDegradeNote(note: string) {
       this.autoDegradeNote = note

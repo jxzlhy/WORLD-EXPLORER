@@ -262,6 +262,11 @@ export class WorldEngine implements IWorldEngine {
     this.countries.setChoropleth(colors)
   }
 
+  /** 时间机器(V3.0 雏形):year → 标记层按「已建成年份」过滤 */
+  setTimelineYear(year: number | null): void {
+    this.markers.setTimelineYear(year)
+  }
+
   setLayerVisible(layer: LayerId, visible: boolean): void {
     if (layer === 'countries') this.countries.setVisible(visible)
     if (layer === 'markers') this.markers.setVisible(visible)

@@ -15,8 +15,8 @@ test('R. 数据覆盖统计:/stats 渲染矩阵并返回', async ({ page }) => {
 
   // 按国矩阵 10 行(当前 10 国)
   await expect(page.locator('.stats-page .matrix').first().locator('tbody tr')).toHaveCount(10)
-  // 合集表 4 行
-  await expect(page.locator('.stats-page .matrix').nth(1).locator('tbody tr')).toHaveCount(4)
+  // 合集表 6 行(世界奇迹/人类奇迹 2026-11-16 加入)
+  await expect(page.locator('.stats-page .matrix').nth(1).locator('tbody tr')).toHaveCount(6)
 
   // 内容新鲜度区块(V1.5 步骤 3):分桶图例 + 最待复审 Top5
   const fresh = page.locator('.stats-page .block').filter({ hasText: '内容新鲜度' })

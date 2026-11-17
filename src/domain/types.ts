@@ -35,6 +35,27 @@ export interface SourceRef {
   checkedAt: string
 }
 
+/**
+ * 纪年字符串 → 数值年份(时间机器过滤用,纯函数可测)。
+ * 口径:负数 = 公元前;「约/前后」取整;「世纪」取该世纪起始年;不可解析(旧石器时代等)→ null。
+ */
+export function parseEraYear(raw: string): number | null {
+  const s = raw.trim()
+  if (!s) return null
+  // 公元前判定:「前」必须紧邻数字(「约前447年」✓;「930年前后」✗——「前后」是后缀词)
+  const bc = /前\s*\d|BC|B\.C\./i.test(s)
+  const m = s.match(/(\d{1,5})/)
+  if (!m) return null // 「旧石器时代」等无数字纪年
+  const n = Number(m[1])
+  // 「N 世纪」:取该世纪起始年(18 世纪 → 1701;公元前 4 世纪 → -400)
+  if (/世纪/.test(s)) {
+    const start = bc ? -(n * 100) : (n - 1) * 100 + 1
+    return start
+  }
+  const y = bc ? -n : n
+  return y
+}
+
 /** 媒体资源(图片)引用 */
 export interface MediaRef {
   /** 应用内相对路径;status=placeholder 时为空 */

@@ -152,6 +152,31 @@ const typeChips: Array<{ value: string; label: string; color: string }> = [
         <span>数据填色</span>
         <WeSwitch v-model="ui.choroplethOn" />
       </label>
+      <label
+        class="row"
+        title="只显示该年份已建成的目的地(有历史时间轴的档案参与过滤)"
+      >
+        <span>时间机器</span>
+        <WeSwitch :model-value="ui.timeMachineYear !== null" @update:model-value="ui.setTimeMachineYear($event ? 2030 : null)" />
+      </label>
+      <div
+        v-if="ui.timeMachineYear !== null"
+        class="section"
+      >
+        <p class="we-caps-label">
+          年份 <span class="mono tm-year">{{ ui.timeMachineYear }}</span>
+        </p>
+        <input
+          class="tm-slider"
+          type="range"
+          min="-2600"
+          max="2030"
+          step="10"
+          :value="ui.timeMachineYear"
+          aria-label="历史年份"
+          @input="ui.setTimeMachineYear(Number(($event.target as HTMLInputElement).value))"
+        >
+      </div>
     </div>
   </aside>
 </template>
@@ -321,5 +346,14 @@ const typeChips: Array<{ value: string; label: string; color: string }> = [
     pointer-events: auto;
     transform: translateY(0);
   }
+}
+.tm-year {
+  color: var(--we-gold);
+  margin-left: 4px;
+}
+.tm-slider {
+  width: 100%;
+  accent-color: var(--we-gold);
+  cursor: pointer;
 }
 </style>

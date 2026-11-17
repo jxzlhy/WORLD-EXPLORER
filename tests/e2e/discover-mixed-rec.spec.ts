@@ -42,6 +42,8 @@ test('DiscoverBar 混合推荐:五档轮换覆盖三种粒度 + 城市直达', a
     await chip.locator('.swap').click()
   }
   await expect(chip.locator('.kind')).toHaveText('城市')
+  // 等文本稳定(轮换瞬间重渲染会导致 actionability 检测失败)
+  await expect(chip.locator('.name')).toHaveText('京都')
   await chip.locator('.name').click()
   await expect(page.locator('.detail-panel .name')).toHaveText('京都')
 })

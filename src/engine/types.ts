@@ -78,6 +78,8 @@ export interface IWorldEngine {
   setRouteLine(stops: RouteStopPoint[] | null, options?: RouteLineOptions): void
   /** 探索密度 choropleth(V1.5 步骤 2):按国家设置填充色强度(0-1,引擎转金色调);null 清除 */
   setChoropleth(entries: Array<{ id: string; intensity: number }> | null): void
+  /** 时间机器(V3.0 雏形):year → 只显示该年份已建成的目的地;null 清除过滤 */
+  setTimelineYear(year: number | null): void
   setAutoRotate(enabled: boolean): void
   setDayNightMode(mode: DayNightMode): void
   /** 渲染质量档位:high=原生+FXAA / balanced=0.85x+FXAA / low=0.7x 无 FXAA */

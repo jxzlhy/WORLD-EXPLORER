@@ -1,5 +1,5 @@
 import * as Cesium from 'cesium'
-import type { Destination, DestinationType } from '../domain/types'
+import { parseEraYear, type Destination, type DestinationType } from '../domain/types'
 
 const TYPE_COLORS: Record<DestinationType, string> = {
   heritage: '#e8c896',
@@ -34,12 +34,14 @@ export function labelPriority(d: Destination): number {
  */
 export class MarkersLayer {
   private dataSource: Cesium.CustomDataSource | null = null
-  private meta = new Map<string, { priority: number; type: string }>()
+  private meta = new Map<string, { priority: number; type: string; earliestYear: number | null }>()
   private selectedId: string | null = null
   private hoveredId: string | null = null
   private pulseEnabled = true
   private labelsVisible = true
   private activeTypes: Set<string> | null = null
+  /** 时间机器(V3.0 雏形):显示「该年份已建成」的目的地;null = 不过滤 */
+  private timelineYear: number | null = null
   private lastCollisionUpdate = 0
   private removePreRender: (() => void) | null = null
 
@@ -54,7 +56,13 @@ export class MarkersLayer {
 
     for (const d of destinations) {
       const color = destinationColor(d.type)
-      this.meta.set(d.id, { priority: labelPriority(d), type: d.type })
+      // 时间机器:timeline 各条目解析为数值年,取最早(建成)年;全部不可解析 → null(不参与过滤)
+      let earliestYear: number | null = null
+      for (const t of d.timeline ?? []) {
+        const y = parseEraYear(t.year)
+        if (y !== null && (earliestYear === null || y < earliestYear)) earliestYear = y
+      }
+      this.meta.set(d.id, { priority: labelPriority(d), type: d.type, earliestYear })
       const id = d.id
       // 选中呼吸脉冲 / 悬停放大 / 常态,由单一 CallbackProperty 统一驱动
       const pixelSize = new Cesium.CallbackProperty(() => {
@@ -199,17 +207,34 @@ export class MarkersLayer {
   /** 类型过滤:仅显示启用类型;选中项始终显示。null 表示不过滤 */
   setTypesFilter(activeTypes: string[] | null): void {
     this.activeTypes = activeTypes ? new Set(activeTypes) : null
+    this.applyVisibility()
+  }
+
+  /** 时间机器(V3.0 雏形):year → 只显示该年份「已建成」的目的地;null = 不过滤 */
+  setTimelineYear(year: number | null): void {
+    this.timelineYear = year
+    this.applyVisibility()
+  }
+
+  /** 类型过滤与时间机器的交集可见性;选中项始终显示 */
+  private applyVisibility(): void {
     if (!this.dataSource) return
     for (const e of this.dataSource.entities.values) {
       const raw = e.id as string
       const id = raw.startsWith('dest:') ? raw.slice(5) : null
       if (!id) continue
-      if (this.selectedId === id || !this.activeTypes) {
+      if (this.selectedId === id) {
         e.show = true
         continue
       }
-      const type = this.meta.get(id)?.type
-      e.show = type !== undefined && this.activeTypes.has(type)
+      const m = this.meta.get(id)
+      const typeOk = !this.activeTypes || (m ? this.activeTypes.has(m.type) : false)
+      const timeOk =
+        this.timelineYear === null ||
+        m?.earliestYear === null ||
+        m?.earliestYear === undefined ||
+        m.earliestYear <= this.timelineYear
+      e.show = typeOk && timeOk
     }
   }
 
