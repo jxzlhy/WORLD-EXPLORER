@@ -112,5 +112,23 @@
       "it-leaning-tower-pisa",
       "gb-tower-bridge"
     ]
+  },
+  {
+    "id": "on-location",
+    "name": "银幕之外",
+    "nameEn": "On Location",
+    "curatorNote": "这些地方先于电影存在,却因为电影被全世界记住——角斗士的斗兽场、迷失东京的涩谷、阿甘正传的纪念碑谷。取景地是电影留在这个世界的「物理彩蛋」。",
+    "destinationIds": [
+      "it-colosseum",
+      "jp-shibuya-crossing",
+      "us-monument-valley",
+      "us-central-park",
+      "us-golden-gate",
+      "fr-notre-dame",
+      "us-chicago-bean",
+      "eg-giza-pyramids",
+      "jp-mount-fuji",
+      "gb-london-tower"
+    ]
   }
 ]
